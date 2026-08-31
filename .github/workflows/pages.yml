@@ -27,7 +27,6 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /cosanalyst
           NEXT_TELEMETRY_DISABLED: "1"
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'

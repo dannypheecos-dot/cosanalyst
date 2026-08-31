@@ -23,8 +23,8 @@ npm run build
 npm start
 ```
 
-`basePath` defaults to `/cosanalyst` so project Pages resolve. Canonical URLs and JSON-LD stay on `https://cosanalyst.com/...`.
+`basePath` and `assetPrefix` are empty so the apex custom domain serves `/_next` and nav at site root. Canonical URLs and JSON-LD stay on `https://cosanalyst.com/...`.
 
 ## Pages
 
-GitHub Actions builds `out/` and deploys from `main`. A `CNAME` file ships with exactly `cosanalyst.com`. Apex DNS is pointed later.
+GitHub Actions builds `out/` and deploys from `main`. A `CNAME` file ships with exactly `cosanalyst.com`.
