@@ -35,6 +35,9 @@ function walk(dir) {
         hits.push(`${rule.name} ${path}: ${[...new Set(found)].join(", ")}`);
       }
     }
+    if (body.includes("/cosanalyst/_next") || body.includes('href="/cosanalyst/')) {
+      hits.push(`apex-prefix ${path}: /cosanalyst path prefix in export`);
+    }
   }
 }
 
