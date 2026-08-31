@@ -1,0 +1,22 @@
+{
+  "name": "cosanalyst",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CosAnalyst publication — book fact, not a ticket.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/strip-maps.mjs && node scripts/check-ship.mjs",
+    "start": "npx --yes serve out"
+  },
+  "dependencies": {
+    "next": "^15.5.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "typescript": "^5.9.2"
+  }
+}
