@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import energyLoad from "./energy-load-not-a-ticket";
 import hormuz from "./hormuz-larak-not-a-90-breakout";
 import japan from "./japan-10y-highest-since-1996";
 import noWarsh from "./no-warsh-tuesday";
@@ -10,6 +11,7 @@ import printZero from "./the-print-was-zero";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  energyLoad,
   printZero,
   qqq,
   japan,
