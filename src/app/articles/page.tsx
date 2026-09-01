@@ -15,7 +15,7 @@ export default function Page() {
         <div className="page-head">
           <p className="kicker">Publication</p>
           <h1>Articles</h1>
-          <p>Eight verified notes. CosAnalyst.com is the publication home.</p>
+          <p>Nine verified notes. CosAnalyst.com is the publication home.</p>
         </div>
         <div className="grid">
           {articles.map((article) => (
