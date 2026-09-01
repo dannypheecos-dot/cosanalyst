@@ -141,6 +141,12 @@ cards = [
         "SPY Friday gamma: +$4.78B to -$0.93B.",
         "Spot ~769.35 · Cos does not print G-D+",
     ),
+    (
+        "717-flip-ism-jolts.png",
+        "MARKETS · 1 SEP 2026",
+        "QQQ closed 707.64. Nine handles under 717.",
+        "Magnet 700 · Invalidation 717 · BOX 701.55-713.15 · NO TRADE",
+    ),
 ]
 
 for name, kicker, title, foot in cards:
