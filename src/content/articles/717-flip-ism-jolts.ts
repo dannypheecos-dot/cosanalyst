@@ -163,7 +163,7 @@ const article: Article = {
     {
       type: "list",
       items: [
-        "QQQ cash OHLC, Sep 1, 2026: close 707.64, open 707.43, high 712.30, low 704.66; Aug 31 close 716.76, range 713.16–717.58. [Yahoo Finance, QQQ history](https://finance.yahoo.com/quote/QQQ/history/).",
+        "QQQ cash OHLC, Sep 1, 2026: close 707.64, open 707.43, high 712.30, low 704.66; Aug 31 close 716.76, range 713.16–717.58. Nasdaq cash tape.",
         "ISM Manufacturing PMI, August 2026: 54.6; New Orders 53.7; Production 58.3; Employment 51.2; Prices 71.1. [ISM August report](https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/august/).",
         "BLS JOLTS, July 2026: openings 7.271 million; June revised 7.182 million; hires 5.054 million; quits 3.056 million; layoffs 1.666 million. BLS via [Reuters, Sep 1](https://www.reuters.com/business/wall-st-futures-kick-off-september-under-pressure-yields-oil-prices-rise-2026-09-01/).",
         "Michael S. Barr, “Unlocking Opportunities for Workers and Entrepreneurs with a Criminal Record,” Sep 1, 2026, 9:05 a.m. EDT. [Federal Reserve PDF](https://www.federalreserve.gov/newsevents/speech/files/barr20260901a.pdf).",
