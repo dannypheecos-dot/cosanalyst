@@ -17,7 +17,7 @@ export default function Page() {
           <p className="kicker">Publication</p>
           <h1>Research</h1>
           <p>
-            Nine verified desk notes. CosAnalyst.com is the publication home.
+            Ten verified desk notes. CosAnalyst.com is the publication home.
             We do not invent GEX, CMT, or FedWatch.
           </p>
         </div>
