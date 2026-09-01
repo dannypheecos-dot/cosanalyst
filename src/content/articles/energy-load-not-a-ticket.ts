@@ -104,10 +104,10 @@ const article: Article = {
     {
       type: "list",
       items: [
-        "LBNL 2024, *United States Data Center Energy Usage Report*: 176 TWh in 2023, about 4.4 percent of U.S. electricity; 325–580 TWh by 2028. [LBNL 2024](https://eta.lbl.gov/publications/united-states-data-center-energy).",
+        "LBNL 2024, United States Data Center Energy Usage Report: 176 TWh in 2023, about 4.4 percent of U.S. electricity; 325–580 TWh by 2028. [LBNL 2024](https://eta.lbl.gov/publications/united-states-data-center-energy).",
         "LBNL 2025 update: 192 TWh in 2024, about 4.7 percent; 2030 reference 649 TWh, compounded range 521–843 TWh. [LBNL 2025 update](https://energyanalysis.lbl.gov/publications/united-states-data-center-energy-2025).",
-        "IEA *Energy and AI* (2025): data-center electricity as a named global demand stack, with the United States the largest single book. [IEA Energy and AI](https://www.iea.org/reports/energy-and-ai).",
-        "EPRI *Powering Intelligence 2026*: 177–192 TWh in 2024; 384–793 TWh by 2030 across low/medium/high — about 60 percent above EPRI’s 2024 band. [EPRI 2026](https://powering-intelligence.epri.com/executive-summary.html).",
+        "IEA Energy and AI (2025): data-center electricity as a named global demand stack, with the United States the largest single book. [IEA Energy and AI](https://www.iea.org/reports/energy-and-ai).",
+        "EPRI Powering Intelligence 2026: 177–192 TWh in 2024; 384–793 TWh by 2030 across low/medium/high — about 60 percent above EPRI’s 2024 band. [EPRI 2026](https://powering-intelligence.epri.com/executive-summary.html).",
         "EIA Short-Term Energy Outlook: U.S. electricity to record highs in 2025 and 2026, with the commercial sector carrying data-center consumption. [EIA STEO](https://www.eia.gov/outlooks/steo/).",
       ],
     },
