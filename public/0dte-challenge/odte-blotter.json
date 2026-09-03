@@ -1,0 +1,816 @@
+{
+  "asOf": "2026-09-02",
+  "asOfLabel": "Sep 2, 2026, ~1:25 PM ET",
+  "asOfAt": "2026-09-02T13:25:00-04:00",
+  "asOfApprox": true,
+  "windowStart": "2026-09-01",
+  "windowEnd": "2026-10-01",
+  "windowDay": 2,
+  "windowDays": 30,
+  "startingCash": 10000,
+  "modelCash": 9840,
+  "publisher": "CosAnalyst",
+  "challengeTitle": "THE COSANALYST 0DTE CHALLENGE",
+  "premise": "A public, timestamped experiment in trading same-day options using market structure, gamma exposure and defined-risk decision rules.",
+  "simLine": "SIMULATED RESEARCH \u2014 NOT LIVE TRADING",
+  "disclosure": "This is an educational research challenge. One simulated book. Not live trading. No cherry-picking, deleted losses, invented fills, or retroactive entries.",
+  "ledgerNote": "Append-only public ledger. Corrections are appended. Prior OPEN status is not erased. Three performance types never mix: Peak Opportunity After Alert, All-or-Nothing Research Outcome, and Managed Execution Outcome. Only Managed Execution Outcomes (plus approved pre-rule baseline P&L) change modelCash. Counters iterate trades[] by unique id. Trade Zero is counted once.",
+  "closedNeededForWinRate": 1,
+  "heroStatus": "SETUP WATCHING",
+  "heroStatusOptions": [
+    "TRADE ACTIVE",
+    "SETUP WATCHING",
+    "NO QUALIFYING ENTRY",
+    "TRADE CLOSED"
+  ],
+  "officialTodayId": "2026-09-02-official-no-entry",
+  "today": {
+    "id": "2026-09-02-official-no-entry",
+    "status": "WATCHING \u2014 NO ENTRY",
+    "heroStatus": "SETUP WATCHING",
+    "copy": "The AI is monitoring SPY, QQQ, and IWM. No setup currently meets the published entry and risk standards.",
+    "underlying": "SPY / QQQ / IWM",
+    "contract": "None \u2014 no qualifying entry",
+    "dteLabel": "0DTE",
+    "preferredEntryRange": "\u2014",
+    "maxEntry": "PASS \u2014 no chase",
+    "actionable": "Watching \u2014 not actionable",
+    "invalidation": "\u2014",
+    "primaryTarget": "\u2014",
+    "positionSize": "0 contracts \u00b7 no debit",
+    "plannedStopLoss": "\u2014",
+    "maxCapitalAtRisk": "$0 \u2014 no premium deployed",
+    "alertExpiration": "Verify the ETF-option cutoff for the exact product. SPY/QQQ/IWM typically remain eligible until 4:15 PM ET on regular sessions \u2014 they are ETF options, not cash-settled index options.",
+    "lastUpdated": "Sep 2, 2026, ~1:25 PM ET",
+    "lastUpdatedAt": "2026-09-02T13:25:00-04:00",
+    "lastUpdatedPtNote": "10:25 AM PT source clock",
+    "candidatesMonitored": [
+      "SPY",
+      "QQQ",
+      "IWM"
+    ],
+    "whyNoneQualified": "Index tape sitting in a positive-GEX pin. IWM 290 not broken. No chase into the 2:00 PM ET Beige Book print or leftover Sep 2 707 puts.",
+    "sameDayPnl": 0,
+    "officialRecord": "NO QUALIFYING ENTRY \u2014 CAPITAL PRESERVED",
+    "observation": "Capital stays in cash until a published entry and risk standard is met. Same-day slot P&L is $0. Carry-in of Trade Zero is a separate overnight ticket, not a second official candidate.",
+    "sessionNote": "Session still open until the verified product cutoff. Same-day official record remains NO QUALIFYING ENTRY unless a qualifying fill is logged."
+  },
+  "progress": {
+    "day": 2,
+    "days": 30,
+    "qualifiedAlerts": 0,
+    "verifiedPlus25": null,
+    "verifiedPlus25Label": "NOT ENOUGH VERIFIED DATA",
+    "medianVerifiedPeakPct": null,
+    "medianVerifiedPeakLabel": "NOT ENOUGH VERIFIED DATA",
+    "modelBalance": 9840,
+    "managedNetPnlRulesBased": null,
+    "noQualifyingEntryDays": 1,
+    "compliance": null,
+    "complianceLabel": "N/A",
+    "verifiedDataStatus": "NOT ENOUGH VERIFIED DATA",
+    "caption": "Official Peak Opportunity statistics require VERIFIED NBBO or BROKER QUOTE VERIFIED. Trade Zero\u2019s official peak is NOT PRESERVED \u2014 insufficient historical quote evidence; the bid/NBBO was not captured before expiration. Charted +28.6% is a traded-price high, not a verified executable bid, and does not increment verified +25%. Overnight ~$4.00\u2013$4.40 is not a peak. Rules-based managed record begins after Trade Zero. Model balance $9,840 includes the approved pre-rule baseline \u2212$160 only.",
+    "chartedPlus25": 1,
+    "chartedOpportunityRate": "1 / 1 executed \u00b7 CHARTED, not verified"
+  },
+  "lessons": [
+    {
+      "id": "lesson-01",
+      "number": "01",
+      "title": "PROTECT THE GIFT",
+      "effectiveAt": "2026-09-02T12:35:00-04:00",
+      "effectiveLabel": "Sep 2, 2026, ~12:35 PM ET",
+      "forwardOnly": true,
+      "tradeId": "2026-09-01-qqq-707p",
+      "body": "An overnight indicated double on a 1-lot is a gift. From this stamp forward, +50% on a 1-lot must REALIZE PROFIT or become a PROTECTED RUNNER with a published premium floor. +100% is a harvest or a tightened floor \u2014 not an unprotected hold into the cash open. This lesson is forward-only. It does not rewrite Trade Zero."
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-09-01",
+      "label": "Sep 1, 2026",
+      "officialRecord": "EXECUTED TRADE",
+      "officialLabel": "OPEN \u2014 CARRIED OVERNIGHT",
+      "sameDayPnl": null,
+      "sameDayPnlNote": "No realized P&L on the entry date. Realized P&L posts on the exit date only.",
+      "tradeIds": [
+        "2026-09-01-qqq-707p"
+      ],
+      "carryOutId": "2026-09-01-qqq-707p",
+      "isToday": false
+    },
+    {
+      "date": "2026-09-02",
+      "label": "Sep 2, 2026",
+      "officialRecord": "NO QUALIFYING ENTRY \u2014 CAPITAL PRESERVED",
+      "officialLabel": "WATCHING \u2014 NO ENTRY",
+      "sameDayPnl": 0,
+      "candidatesMonitored": [
+        "SPY",
+        "QQQ",
+        "IWM"
+      ],
+      "whyNoneQualified": "Positive GEX pin on the indexes. IWM 290 not broken. No chase into Beige Book or leftover 707 puts.",
+      "observation": "One official same-day record: no qualifying entry. IWM was a watch only \u2014 officialCandidate false, not a second official candidate.",
+      "tradeIds": [
+        "2026-09-02-official-no-entry"
+      ],
+      "carryInId": "2026-09-01-qqq-707p",
+      "carryInLabel": "CARRY-IN FROM SEP 1",
+      "carryInPnl": -160,
+      "isToday": true
+    }
+  ],
+  "timeline": [
+    {
+      "id": "2026-09-01-1615-enter",
+      "at": "2026-09-01T16:15:00-04:00",
+      "atLabel": "Sep 1, 2026, 4:15 PM ET",
+      "approx": false,
+      "action": "ENTER",
+      "tradeId": "2026-09-01-qqq-707p",
+      "summary": "QQQ Sep 2 707P SIMULATED 1x @ $2.20. Target QQQ 700. Invalidation 717. 1DTE overnight. Source: desk alert."
+    },
+    {
+      "id": "2026-09-02-0929-hold-protect",
+      "at": "2026-09-02T09:29:00-04:00",
+      "atLabel": "Sep 2, 2026, ~9:29 AM ET",
+      "approx": true,
+      "sourceClock": "6:29 AM PT Bookmap",
+      "action": "HOLD/PROTECT",
+      "tradeId": "2026-09-01-qqq-707p",
+      "summary": "Bookmap QQQ ~707.06, overnight low ~703.60, offers 708/709/709.60/711, bids 706/705/700. Classified PROTECTED RUNNER. Invalidation tightened to 711 (hard 717). Premium floor $2.75. Indicated ~$4.00 unaudited."
+    },
+    {
+      "id": "2026-09-02-0930-execution-mfe",
+      "at": "2026-09-02T09:30:00-04:00",
+      "atLabel": "Sep 2, 2026, ~9:30 AM ET",
+      "approx": true,
+      "loggedAt": "2026-09-02T12:28:00-04:00",
+      "loggedAtLabel": "Sep 2, 2026, ~12:28 PM ET",
+      "sourceClock": "overnight indicated high; logged 9:28 AM PT desk lock",
+      "action": "MFE / OVERNIGHT",
+      "tradeId": "2026-09-01-qqq-707p",
+      "summary": "Overnight indicated +100% (~$4.40 = 2\u00d7 $2.20 fill) UNAUDITED, not harvested. No OPRA bid/ask captured; do not treat as an official print. Prior indicated ~$4.00 remains unaudited. Official P&L is still the later $0.60 close (\u2212$160). Logged later; this line does not rewrite ENTER, HOLD, or CLOSE fills. Cash-open print is a separate stamp."
+    },
+    {
+      "id": "2026-09-02-0930-cash-open-254",
+      "at": "2026-09-02T09:30:00-04:00",
+      "atLabel": "Sep 2, 2026, ~9:30 AM ET",
+      "approx": true,
+      "loggedAt": "2026-09-02T12:35:00-04:00",
+      "loggedAtLabel": "Sep 2, 2026, ~12:35 PM ET",
+      "sourceClock": "cash open $2.54 user-stated; logged after the cut",
+      "action": "CASH OPEN / MARK",
+      "tradeId": "2026-09-01-qqq-707p",
+      "summary": "QQQ Sep 2 707P cash open $2.54 user-stated. Fill $2.20 \u2192 $2.54 is +$0.34 / ~+15%. Already a giveback from overnight indicated +100% / ~$4.40 MFE (still UNAUDITED \u2014 no OPRA). Not an OPRA verify. Official CLOSE remains $0.60 vs $2.20 (\u2212$1.60 / \u2212$160). This line does not rewrite ENTER, HOLD, CLOSE, or official P&L."
+    },
+    {
+      "id": "2026-09-02-1003-hold-update",
+      "at": "2026-09-02T10:03:00-04:00",
+      "atLabel": "Sep 2, 2026, ~10:03 AM ET",
+      "approx": true,
+      "sourceClock": "7:03 AM PT desk lock",
+      "action": "HOLD/UPDATE",
+      "tradeId": "2026-09-01-qqq-707p",
+      "summary": "Desk lock on the official OPEN. Invalidation: tape 711 / hard GEX 717 / today\u2019s 0DTE HVL reclaim 707 if it holds. Floor: do not let $2.20 go red; ~$2.75 min protect after +50%. Cancel 700 if GEX flips positive / HVL reclaimed and holds. Time: 2:00 PM ET needs an active exit plan; 3:30 PM ET default flatten; 4:15 PM ET latest. Indicated ~$4.00 remains user-supplied, not an executable bid."
+    },
+    {
+      "id": "2026-09-02-1003-iwm-no-trade",
+      "at": "2026-09-02T10:03:00-04:00",
+      "atLabel": "Sep 2, 2026, ~10:03 AM ET",
+      "approx": true,
+      "sourceClock": "7:03 AM PT desk lock",
+      "action": "NO TRADE",
+      "tradeId": "2026-09-02-iwm-watch",
+      "summary": "IWM same-day 0DTE is watch / no-entry. Not an official candidate. No 292P or 293C fill. Spot ~292.5. GEX snapshot: 0DTE net +16.7M positive gamma, pin 291\u2013293, C1 293, HVL/P1 290. Capital preserved."
+    },
+    {
+      "id": "2026-09-02-1225-close",
+      "at": "2026-09-02T12:25:00-04:00",
+      "atLabel": "Sep 2, 2026, ~12:25 PM ET",
+      "approx": true,
+      "sourceClock": "9:25 AM PT desk lock",
+      "action": "CLOSE",
+      "tradeId": "2026-09-01-qqq-707p",
+      "summary": "QQQ Sep 2 707P SIMULATED 1x CLOSED @ $0.60 vs fill $2.20. Official P&L \u2212$1.60 / share (\u2212$160 / contract). 707 HVL reclaim held ~2h; GEX flipped positive; 700 thesis cancelled. QQQ ~708.86 at the cut. CLOSED \u2014 LOSS. Carry-in realized here only. Not a live blotter."
+    },
+    {
+      "id": "2026-09-02-1235-lesson-01",
+      "at": "2026-09-02T12:35:00-04:00",
+      "atLabel": "Sep 2, 2026, ~12:35 PM ET",
+      "approx": true,
+      "action": "LESSON",
+      "tradeId": "2026-09-01-qqq-707p",
+      "summary": "LESSON 01 \u2014 PROTECT THE GIFT adopted, forward only. +50% on a 1-lot must realize or become a protected runner. +100% is a harvest or a published floor. Does not rewrite Trade Zero."
+    },
+    {
+      "id": "2026-09-02-1325-watching-no-entry",
+      "at": "2026-09-02T13:25:00-04:00",
+      "atLabel": "Sep 2, 2026, ~1:25 PM ET",
+      "approx": true,
+      "sourceClock": "10:25 AM PT desk lock",
+      "action": "WATCHING",
+      "tradeId": "2026-09-02-official-no-entry",
+      "summary": "Official same-day record remains NO QUALIFYING ENTRY \u2014 CAPITAL PRESERVED while the session hunt is still open. Monitoring SPY, QQQ, and IWM. Positive GEX pin; IWM 290 not broken; no chase into Beige Book (2:00 PM ET) or leftover 707 puts. Same-day P&L $0."
+    }
+  ],
+  "watches": [
+    {
+      "id": "2026-09-02-iwm-watch",
+      "date": "2026-09-02",
+      "underlying": "IWM",
+      "officialCandidate": false,
+      "status": "watch",
+      "statusLabel": "WATCH ONLY",
+      "dteLabel": "0DTE",
+      "notes": "IWM same-day watch. Not an official candidate. Spot ~292.5. No 292P or 293C fill. GEX snapshot: 0DTE net +16.7M positive gamma, pin 291\u2013293, C1 293, HVL/P1 290."
+    }
+  ],
+  "trades": [
+    {
+      "id": "2026-09-01-qqq-707p",
+      "classification": "pre-rule-baseline",
+      "rulesBased": false,
+      "complianceLabel": "N/A \u2014 RULES ADOPTED AFTERWARD",
+      "date": "2026-09-01",
+      "entryDate": "2026-09-01",
+      "exitDate": "2026-09-02",
+      "dteLabel": "1DTE",
+      "carriedOvernight": true,
+      "underlying": "QQQ",
+      "contract": "QQQ Sep 2 2026 707 put",
+      "contractDetail": "QQQ 707P exp 2026-09-02",
+      "side": "BTO 1",
+      "entry": 2.2,
+      "openedAlerted": "Sep 1, 2026, ~4:15 PM ET",
+      "openedAlertedAt": "2026-09-01T16:15:00-04:00",
+      "alertedAtEntry": true,
+      "entryAsOf": "Sep 1, 2026, ~4:15 PM ET",
+      "exit": 0.6,
+      "exitAt": "2026-09-02T12:25:00-04:00",
+      "exitLabel": "Sep 2, 2026, ~12:25 PM ET",
+      "status": "closed",
+      "statusLabel": "PRE-RULE BASELINE \u2014 TRADE ZERO",
+      "entryCardStatus": "OPEN \u2014 CARRIED OVERNIGHT",
+      "exitCardStatus": "CARRY-IN FROM SEP 1",
+      "statusPath": [
+        {
+          "at": "2026-09-01T16:15:00-04:00",
+          "atLabel": "Sep 1, 2026, 4:15 PM ET",
+          "status": "OPEN \u2014 CARRIED OVERNIGHT"
+        },
+        {
+          "at": "2026-09-02T09:29:00-04:00",
+          "atLabel": "Sep 2, 2026, ~9:29 AM ET",
+          "status": "OPEN \u2014 PROTECTED RUNNER"
+        },
+        {
+          "at": "2026-09-02T12:25:00-04:00",
+          "atLabel": "Sep 2, 2026, ~12:25 PM ET",
+          "status": "CLOSED \u2014 LOSS"
+        }
+      ],
+      "label": "SIMULATED",
+      "live": false,
+      "book": "overnight",
+      "bookLabel": "1DTE \u00b7 carried overnight",
+      "bookNote": "One trade object. One executed count. One P&L. Entered near the Sep 1 close; realized on Sep 2 expiration. Not a same-day 0DTE entry.",
+      "pnl": -160,
+      "pnlPerShare": -1.6,
+      "pnlPct": -72.7,
+      "pnlLabel": "\u2212$160 / \u221272.7%",
+      "openPnlLine": null,
+      "indicatedMark": 4.0,
+      "indicatedMarkLabel": "~$4.00",
+      "indicatedMarkStatus": "UNAUDITED / not an executable bid \u2014 superseded by official close $0.60",
+      "cashOpen": 2.54,
+      "cashOpenLabel": "$2.54 user-stated",
+      "cashOpenNote": "Sep 2 ~9:30 AM ET cash open. User-stated. Not an OPRA verify. Fill $2.20 \u2192 $2.54 is +$0.34 / ~+15%. Giveback from overnight MFE.",
+      "cashOpenStatus": "UNAUDITED / user-stated \u2014 not official P&L",
+      "officialReturnPct": -72.7,
+      "bidAsk": null,
+      "bidAskLabel": "Official paper exit $0.60",
+      "contractsEntered": 1,
+      "contractsRemaining": 0,
+      "modelPositionSize": "1 contract",
+      "premiumDeployed": 220,
+      "plannedStopLoss": "N/A \u2014 rules adopted afterward",
+      "maxCapitalAtRisk": "$220 (full premium)",
+      "preferredEntryRange": "Fill $2.20 (desk alert)",
+      "maxEntry": "$2.20 actual fill",
+      "actionable": "Expired \u2014 closed",
+      "target": 700,
+      "targetLabel": "QQQ $700",
+      "underlyingTarget": 700,
+      "underlyingTargetLabel": "QQQ $700",
+      "underlyingTargetHorizon": "expiration session, Sep 2",
+      "stretch": null,
+      "stretchNote": "None published.",
+      "invalidationInitial": 717,
+      "invalidationInitialNote": "GEX HVL 717",
+      "invalidationCurrent": 711,
+      "invalidationCurrentNote": "Tape 711 / hard GEX 717 / today\u2019s 0DTE HVL reclaim 707 if it holds",
+      "invalidationHard": 717,
+      "invalidationHvlReclaim": 707,
+      "premiumFloor": 2.75,
+      "premiumFloorNote": "Published after the open. Forward-only.",
+      "mfe": 4.4,
+      "mfeLabel": "+100% / $4.40 overnight UNAUDITED \u00b7 cash open $2.54 user-stated",
+      "mfeNote": "User-stated overnight indicated high. No OPRA bid/ask captured. Not official P&L. Not a +$220 result. Cash open was $2.54, not $4.40.",
+      "mae": 0.6,
+      "maeLabel": "$0.60 official close",
+      "lastUpdated": "Sep 2, 2026, ~12:35 PM ET",
+      "lastUpdatedAt": "2026-09-02T12:35:00-04:00",
+      "lastUpdatedPt": "9:35 AM PT",
+      "marketDataSource": "Official paper exit $0.60 from desk lock. Cash open $2.54 user-stated, not an OPRA verify. Overnight MFE +100% / $4.40 UNAUDITED. Prior indicated ~$4.00 was user-supplied and never an executable bid.",
+      "gexDataSource": "GEX snapshot at the cut: 707 HVL reclaim held ~2h; GEX flipped positive; 700 thesis cancelled. Entry snapshot 2026-09-01 ~1:13 PT (QQQ 707.76, HVL 717, P1 700, C1 725, net GEX \u221286.5M)",
+      "spotAtEntry": 707.76,
+      "spotAtExit": 708.86,
+      "closeReason": "707 HVL reclaim held (~2h) with GEX flipped positive; 700 thesis cancelled. QQQ ~708.86 at the cut.",
+      "cancelRule": "700 cancelled: GEX flipped positive / HVL reclaimed and held.",
+      "timePlan": [
+        "10:00 ET review",
+        "11:30 ET reassess",
+        "2:00 PM ET remaining contract needs an active exit plan",
+        "3:30 PM ET default flatten",
+        "4:15 PM ET latest"
+      ],
+      "hardLatest": "Sep 2, 2026, 4:15 PM ET",
+      "thesis": "1DTE put against QQQ 700 (GEX P1) with hard invalidation at HVL 717. Overnight carry into expiration. Not a same-day 0DTE entry.",
+      "commentary": "Pre-rule baseline. Rules \u2014 including the profit-protection ladder \u2014 were adopted after this ticket\u2019s open (LESSON 01, 12:35 PM ET). Official managed P&L is \u2212$160 (\u221272.7%). Charted peak after alert is +28.6% from the $2.83 9:30 AM ET traded-price high vs $2.20 \u2014 CHARTED, not a verified executable bid. Official / verified executable peak is NOT PRESERVED \u2014 the bid/NBBO was not captured before this 0DTE left the chain, so it cannot be verified later. Overnight indicated +100% / $4.40 is UNAUDITED, occurred while options were closed, and is not the peak. Cash open $2.54 is user-stated, not a close. On-chart 2.59 is a later local label, not the session high. Model cash includes this \u2212$160 once ($9,840). Excluded from rules-based trade count, win rate, compliance, expectancy, and profit factor.",
+      "notes": "SIMULATED. CLOSED \u2014 LOSS @ $0.60 vs $2.20. Official P&L \u2212$160 / \u221272.7%. Overnight MFE +100% / $4.40 UNAUDITED \u2014 not harvested. Cash open $2.54 user-stated (+$0.34 / ~+15%) \u2014 not official P&L. Compliance: N/A \u2014 RULES ADOPTED AFTERWARD. Unique id counted once. Not a live blotter. Not the sector-swing book.",
+      "opportunityIdentified": "YES",
+      "referenceEntry": 2.2,
+      "referenceEntryVerified": false,
+      "referenceEntryNote": "Published desk fill / alert reference $2.20. Not a verified executable ASK tape. Charted peak uses this $2.20 as the published reference entry.",
+      "peakExecutableBid": null,
+      "peakBidAt": null,
+      "peakOpportunityPct": null,
+      "peakOpportunityLabel": "NOT PRESERVED \u2014 insufficient historical quote evidence",
+      "peakVerification": "NOT PRESERVED \u2014 insufficient historical quote evidence",
+      "quoteSource": "TradingView Superchart 1m traded OHLC (not NBBO)",
+      "measurementStart": "2026-09-01T16:15:00-04:00",
+      "measurementEnd": "2026-09-02T09:30:00-04:00",
+      "measurementEndNote": "Expiration session. Last preserved charted evidence is the 9:30 AM ET 1-minute high. The verified executable window is closed because the bid/NBBO tape was not preserved before the contract left the chain.",
+      "maeBeforePeak": null,
+      "timeToPeak": "Overnight carry into the 9:30 AM ET cash-open minute (charted high)",
+      "peakVsManagedInvalidation": null,
+      "peakDay": "Later day \u2014 Sep 2 expiration session",
+      "indicativePeak": {
+        "low": 4.0,
+        "high": 4.4,
+        "status": "INDICATIVE \u2014 NOT EXECUTABLE",
+        "excludedFromOfficial": true,
+        "notUsedAsPeak": true,
+        "note": "Overnight indication approximately $4.00\u2013$4.40 occurred before the public alert / while the options market was closed. Not a verified executable bid. Not the charted peak. Charted peak is the $2.83 traded-price high at 9:30 AM ET."
+      },
+      "cashOpenOfficialOpportunity": false,
+      "signalQuality": {
+        "opportunityIdentified": "YES",
+        "opportunityIdentifiedKind": "CHARTED",
+        "opportunityIdentifiedQualifier": "CHARTED \u2014 traded-price high, not a verified executable bid",
+        "referenceEntry": 2.2,
+        "peakExecutableBid": null,
+        "peakBidAt": null,
+        "peakOpportunityPct": null,
+        "peakOpportunityLabel": "NOT PRESERVED \u2014 insufficient historical quote evidence",
+        "verification": "NOT PRESERVED \u2014 insufficient historical quote evidence",
+        "chartedPeakPct": 28.6,
+        "chartedHigh": 2.83,
+        "chartedVerification": "TRADINGVIEW TRADED-PRICE HIGH \u2014 NOT A VERIFIED EXECUTABLE BID",
+        "maeBeforePeak": null,
+        "timeToPeak": "Overnight carry into the 9:30 AM ET cash-open minute (charted high)",
+        "peakDay": "Later day \u2014 Sep 2 expiration session"
+      },
+      "allOrNothingOutcome": {
+        "notional": 1000,
+        "terminalExitAt": "2026-09-02T12:25:00-04:00",
+        "terminalExitLabel": "Sep 2, 2026, ~12:25 PM ET last known exit \u2014 no invented cutoff bid",
+        "terminalValue": 0.6,
+        "terminalPct": -72.7,
+        "dollarOutcome": null,
+        "maxPossibleLoss": 1000,
+        "lowestDuringHold": 0.6,
+        "highestVerifiedExecutableBid": null,
+        "levelsAvailable": {
+          "plus25": null,
+          "plus50": null,
+          "plus100": null,
+          "plus200": null
+        },
+        "status": "INDICATIVE / UNAVAILABLE",
+        "excludedFromOfficial": true,
+        "label": "Hypothetical $1,000 fixed-notional research model. Not the model-account position size and not realized performance.",
+        "note": "Uses the actual $0.60 terminal as last known exit without a verified cutoff bid. Do not invent a 4:00 PM bid. Do not treat the $2.83 charted high as an all-or-nothing exit. Do not feed into official all-or-nothing aggregates."
+      },
+      "managedExecution": {
+        "modelPositionSize": "1 contract",
+        "plannedStopLoss": "N/A \u2014 rules adopted afterward",
+        "maxCapitalAtRisk": 220,
+        "scales": "N/A \u2014 pre-rule baseline",
+        "modeledExit": 0.6,
+        "pctResult": -72.7,
+        "dollarResult": -160,
+        "ruleCompliance": "N/A \u2014 RULES ADOPTED AFTERWARD",
+        "opportunityCaptureRate": null,
+        "excludedFromRulesBased": true,
+        "excludedFromManagedStrategyStats": true,
+        "includedInModelCashAsPreRuleBaseline": true
+      },
+      "opportunityIdentifiedKind": "CHARTED",
+      "opportunityIdentifiedQualifier": "CHARTED \u2014 traded-price high, not a verified executable bid",
+      "chartedPeak": {
+        "pct": 28.6,
+        "high": 2.83,
+        "referenceEntry": 2.2,
+        "formula": "($2.83 \u2212 $2.20) \u00f7 $2.20 \u00d7 100 = +28.6%",
+        "at": "2026-09-02T09:30:00-04:00",
+        "atLabel": "Sep 2, 2026, 9:30 AM ET",
+        "label": "+28.6%",
+        "verification": "TRADINGVIEW TRADED-PRICE HIGH \u2014 NOT A VERIFIED EXECUTABLE BID",
+        "excludedFromOfficialPeak": true,
+        "excludedFromVerifiedPlus25": true,
+        "ohlc": {
+          "open": 2.18,
+          "high": 2.83,
+          "low": 2.12,
+          "close": 2.45
+        },
+        "note": "The contract recorded a $2.83 traded-price high during the 9:30 AM ET one-minute candle, approximately 28.6% above the $2.20 reference entry. This establishes a charted opportunity above the challenge\u2019s +25% threshold, but it does not prove that the entire position could have been sold at that price. On-chart label 2.59 sits above a later local peak in the 1m series \u2014 it is not the session high and is not used as charted peak, verified peak, or managed result. On-chart 1.61 is a local trough label (volume pane also shows 1.61K), not a peak.",
+        "unusedOnChartLabels": {
+          "laterLocalHigh": 2.59,
+          "localTrough": 1.61,
+          "usedAsPeak": false,
+          "note": "On-chart 2.59 is a later local peak label. On-chart 1.61 is a local trough / 1.61K volume. Neither is the session high. Neither is used."
+        }
+      },
+      "evidence": {
+        "path": "evidence/trade-zero-qqq-707p-2026-09-02-0930-1m.png",
+        "platform": "TradingView",
+        "contract": "QQQ Sep 2, 2026 $707 put",
+        "timeframe": "One minute",
+        "candleTime": "Sep 2, 2026, 9:30 AM ET",
+        "candleTimeAt": "2026-09-02T09:30:00-04:00",
+        "ohlc": {
+          "open": 2.18,
+          "high": 2.83,
+          "low": 2.12,
+          "close": 2.45
+        },
+        "evidenceLevel": "Charted traded-price data",
+        "executableBidVerification": "NOT PRESERVED \u2014 insufficient historical quote evidence",
+        "quoteSource": "TradingView Superchart 1m traded OHLC (not NBBO)"
+      },
+      "gexObservation": {
+        "maps": [
+          {
+            "id": "overnight-2026-09-01",
+            "at": "2026-09-01T16:13:00-04:00",
+            "atLabel": "Sep 1, 2026, ~1:13 PM PT entry snapshot",
+            "phase": "ORIGINAL",
+            "spot": 707.76,
+            "netGex": -86500000,
+            "netGexRegime": "negative",
+            "netGexLabel": "\u221286.5M",
+            "gammaFlip": 717,
+            "hvl": 717,
+            "callWalls": [
+              725
+            ],
+            "putWalls": [],
+            "concentrations": {
+              "c1": 725,
+              "c2": null,
+              "p1": 700,
+              "p2": null
+            },
+            "pins": [
+              {
+                "level": 700,
+                "type": "MAGNET/PIN"
+              }
+            ],
+            "levels": [
+              {
+                "price": 700,
+                "type": "MAGNET/PIN",
+                "note": "P1 put-side magnet \u2014 destination, not entry alone"
+              },
+              {
+                "price": 717,
+                "type": "TRIGGER",
+                "note": "Gamma flip / HVL hard invalidation"
+              }
+            ],
+            "expectedMoveBox": null,
+            "note": "Overnight map had QQQ under the 717 flip with 700 as the put-side magnet."
+          },
+          {
+            "id": "cash-open-2026-09-02",
+            "at": "2026-09-02T09:30:00-04:00",
+            "atLabel": "Sep 2, 2026, 9:30 AM ET cash open",
+            "phase": "INTRADAY UPDATE",
+            "spot": null,
+            "netGex": null,
+            "netGexRegime": "positive",
+            "netGexLabel": "flipped positive (intraday)",
+            "gammaFlip": 717,
+            "hvl": 707,
+            "callWalls": [
+              708
+            ],
+            "putWalls": [],
+            "concentrations": {
+              "c1": 708,
+              "c2": null,
+              "p1": 700,
+              "p2": null
+            },
+            "pins": [],
+            "levels": [
+              {
+                "price": 707,
+                "type": "TRIGGER",
+                "note": "0DTE HVL reclaimed and held"
+              },
+              {
+                "price": 708,
+                "type": "SUPPORT/RESISTANCE",
+                "note": "Call wall rolled to 708"
+              },
+              {
+                "price": 700,
+                "type": "MAGNET/PIN",
+                "note": "CANCELLED \u2014 thesis invalidated",
+                "status": "CANCELLED"
+              }
+            ],
+            "expectedMoveBox": null,
+            "materialChanges": [
+              "707 HVL reclaimed and held",
+              "net GEX flipped positive",
+              "call wall rolled to 708",
+              "700 thesis CANCELLED"
+            ],
+            "note": "After the cash open the options structure changed materially. When the structure changes, the thesis changes."
+          }
+        ],
+        "originalThesis": {
+          "at": "2026-09-01T16:15:00-04:00",
+          "atLabel": "Sep 1, 2026, 4:15 PM ET",
+          "text": "1DTE put against QQQ 700 (GEX P1) with hard invalidation at HVL 717. Overnight carry into expiration. Not a same-day 0DTE entry."
+        },
+        "thesisUpdates": [
+          {
+            "at": "2026-09-02T10:03:00-04:00",
+            "atLabel": "Sep 2, 2026, ~10:03 AM ET",
+            "text": "Cancel 700 if GEX flips positive / HVL reclaimed and holds. Invalidation: tape 711 / hard GEX 717 / today's 0DTE HVL reclaim 707 if it holds.",
+            "reason": "Intraday structure watch \u2014 pre-cancel rule published at desk lock"
+          },
+          {
+            "at": "2026-09-02T12:25:00-04:00",
+            "atLabel": "Sep 2, 2026, ~12:25 PM ET",
+            "text": "700 thesis CANCELLED \u2014 707 HVL reclaim held ~2h; GEX flipped positive; call wall rolled to 708.",
+            "reason": "GEX regime change + HVL reclaim confirmed"
+          }
+        ]
+      },
+      "targets": {
+        "initialTarget": {
+          "underlying": 700,
+          "label": "QQQ $700 (GEX P1 magnet)"
+        },
+        "structuralGexTarget": {
+          "underlying": 700,
+          "label": "700 magnet \u2014 CANCELLED after HVL reclaim",
+          "status": "CANCELLED"
+        },
+        "profitActuallyCaptured": {
+          "premium": 0.6,
+          "pnl": -160,
+          "label": "Managed exit $0.60 \u2014 \u2212$160 realized"
+        },
+        "peakOpportunity": {
+          "charted": {
+            "pct": 28.6,
+            "high": 2.83,
+            "label": "+28.6% charted traded-price high"
+          },
+          "verifiedExecutable": null,
+          "verifiedExecutableLabel": "NOT PRESERVED \u2014 insufficient historical quote evidence"
+        }
+      }
+    },
+    {
+      "id": "2026-09-02-official-no-entry",
+      "classification": "official-daily-record",
+      "rulesBased": true,
+      "officialCandidate": true,
+      "officialRecord": "NO QUALIFYING ENTRY \u2014 CAPITAL PRESERVED",
+      "date": "2026-09-02",
+      "entryDate": "2026-09-02",
+      "exitDate": null,
+      "dteLabel": "0DTE",
+      "carriedOvernight": false,
+      "underlying": "SPY / QQQ / IWM",
+      "contract": "None \u2014 no qualifying entry",
+      "side": null,
+      "entry": null,
+      "openedAlerted": "Sep 2, 2026, ~1:25 PM ET",
+      "openedAlertedAt": "2026-09-02T13:25:00-04:00",
+      "alertedAtEntry": false,
+      "entryAsOf": "Sep 2, 2026, ~1:25 PM ET",
+      "exit": null,
+      "status": "no-qualifying-entry",
+      "statusLabel": "WATCHING \u2014 NO ENTRY",
+      "label": "SIMULATED",
+      "live": false,
+      "book": "same-day",
+      "bookLabel": "Same-day 0DTE",
+      "bookNote": "Official daily record. Not an executed trade. IWM watch is not a second official candidate.",
+      "pnl": 0,
+      "pnlLabel": "$0 same-day slot",
+      "contractsEntered": 0,
+      "contractsRemaining": 0,
+      "modelPositionSize": "0",
+      "plannedStopLoss": "\u2014",
+      "maxCapitalAtRisk": "$0 \u2014 no premium deployed",
+      "candidatesMonitored": [
+        "SPY",
+        "QQQ",
+        "IWM"
+      ],
+      "whyNoneQualified": "Positive GEX pin; IWM 290 not broken; no chase into Beige Book / 707 puts.",
+      "gexDataSource": "GEX snapshot \u00b7 index tape in a positive-gamma pin. IWM 0DTE net +16.7M, pin 291\u2013293, HVL/P1 290.",
+      "notes": "Official same-day record for Sep 2. Daily P&L $0 for the same-day slot. Carry-in of Trade Zero is separate and already counted once.",
+      "opportunityIdentified": "NO",
+      "referenceEntry": null,
+      "peakExecutableBid": null,
+      "peakOpportunityPct": null,
+      "peakOpportunityLabel": "\u2014",
+      "peakVerification": "UNAVAILABLE \u2014 INSUFFICIENT DATA",
+      "managedExecution": {
+        "dollarResult": 0,
+        "excludedFromRulesBased": false,
+        "note": "Official daily record. Not an executed trade. $0 same-day slot. Does not change modelCash."
+      },
+      "allOrNothingOutcome": {
+        "notional": 1000,
+        "excludedFromOfficial": true,
+        "note": "No qualifying fill. All-or-nothing does not fire."
+      }
+    }
+  ],
+  "dataAvailability": {
+    "historicalNbbo": "NOT PRESERVED \u2014 insufficient historical quote evidence",
+    "quoteProvider": null,
+    "fullTapeFromAlertToCutoff": false,
+    "note": "The bid/NBBO tape was not captured before the QQQ Sep 2 707 put left the chain. Official / verified executable peak is terminal: NOT PRESERVED \u2014 insufficient historical quote evidence. This is a protocol miss, not a pending lookup. Candle highs, last-trade highs, ask highs, midpoints, theoretical marks, intrinsic value, unsupported prints, overnight closed-market indications, and TradingView Superchart traded OHLC are rejected for official Peak Opportunity. Trade Zero\u2019s $2.83 09:30 ET 1-minute high is CHARTED only. On-chart 2.59 is a later local label, not used."
+  },
+  "productHours": {
+    "underlyings": [
+      "SPY",
+      "QQQ",
+      "IWM"
+    ],
+    "productClass": "ETF options \u2014 physically settled, not cash-settled index options",
+    "typicalRegularSessionCutoffEt": "16:15",
+    "doNotAssumeUniversalCutoff": true,
+    "note": "SPY, QQQ, and IWM ETF options typically remain eligible until 4:15 PM ET on regular sessions. Verify the exact product. Do not assume 4:15 PM ET for every option. A single midday or close snapshot cannot establish Peak Opportunity."
+  },
+  "allOrNothing": {
+    "name": "allOrNothingResearch",
+    "label": "Hypothetical $1,000 fixed-notional research model. Not the model-account position size and not realized performance.",
+    "notionalPerQualifiedAlert": 1000,
+    "mutatesModelCash": false,
+    "officialTotal": null,
+    "officialTotalLabel": "NOT ENOUGH VERIFIED DATA",
+    "indicativeExcludedIds": [
+      "2026-09-01-qqq-707p"
+    ],
+    "maxLossPerAlert": 1000,
+    "note": "Terminal exit is the last verifiable executable bid before the product cutoff, or the correctly defined expiration/settlement value. Never a cherry-picked favorable time. Zero terminal value = \u2212$1,000. Never added to modelCash."
+  },
+  "methodology": {
+    "peakOpportunityPct": "(highest verified executable bid after referenceEntry \u2212 referenceEntry) \u00f7 referenceEntry \u00d7 100",
+    "referenceEntry": "First verifiable executable ASK after the timestamped public alert, inside preferred entry range, at or below maximum entry, before alert expiration/invalidation, with enough displayed size for the model position.",
+    "opportunityIdentifiedYes": "Public card YES may be CHARTED (traded-price high \u2265 +25% from reference entry) or VERIFIED EXECUTABLE. Official verified YES / verified +25% counts require a verifiable executable BID after a verified referenceEntry. Never collapse charted YES into verified YES.",
+    "officialPeakVerification": [
+      "VERIFIED NBBO",
+      "BROKER QUOTE VERIFIED"
+    ],
+    "rejectedPeakSources": [
+      "candle high",
+      "last-trade high",
+      "ask high",
+      "midpoint high",
+      "theoretical option value",
+      "intrinsic as an executable sale",
+      "unsupported isolated print",
+      "overnight theoretical mark while options market closed",
+      "TradingView Superchart traded OHLC",
+      "traded-price high"
+    ],
+    "captureRate": "managed realized profit \u00f7 maximum verified opportunity profit \u2014 only when Peak Opportunity is positive AND managed profit is positive AND both use verified executable data.",
+    "managedBalance": "startingCash + unique-id managed P&L (including approved pre-rule baseline). Peak and all-or-nothing dollars never enter.",
+    "chartedPeakPct": "(charted traded-price high after alert \u2212 reference entry) \u00f7 reference entry \u00d7 100. Not an executable bid. Excluded from official Peak aggregates.",
+    "visitorPeakStates": {
+      "awaiting": "AWAITING VERIFIED QUOTE DATA \u2014 only while the contract is still live AND capture is still possible (chain still quoted).",
+      "notPreserved": "NOT PRESERVED \u2014 insufficient historical quote evidence. The bid/NBBO was not captured before this 0DTE expired, so it cannot be verified later. Never use AWAITING after the chain is gone."
+    },
+    "endOfSessionEvidence": {
+      "typicalEtfOptionCutoffEt": "16:15",
+      "verifyProduct": true,
+      "records": [
+        "CHARTED PEAK \u2014 highest traded price after public alert/reference entry and before cutoff (Superchart 1m OHLC high, timestamped screenshot). Not executable.",
+        "VERIFIED EXECUTABLE PEAK \u2014 highest executable bid/NBBO/broker-verified price with preserved quote evidence (chain bid + size, timestamped). If the chain is gone, mark NOT PRESERVED. Never invent.",
+        "MANAGED RESULT \u2014 actual result from published management rules. Never the peak."
+      ],
+      "note": "These three never conflate. Missing bid evidence on an expired contract is a protocol miss, not a pending lookup."
+    },
+    "gexFramework": {
+      "title": "GEX framework",
+      "regimePlainLanguage": {
+        "positiveGex": "Positive GEX does NOT mean bullish. Positive gamma is primarily a volatility-dampening / mean-reverting regime.",
+        "negativeGex": "Negative GEX does NOT mean bearish. Negative gamma is a regime where dealer hedging can amplify movement in EITHER direction."
+      },
+      "levelTypes": [
+        {
+          "type": "MAGNET/PIN",
+          "definition": "Price may gravitate toward this level."
+        },
+        {
+          "type": "SUPPORT/RESISTANCE",
+          "definition": "Structural level from the options book."
+        },
+        {
+          "type": "TRIGGER",
+          "definition": "Level whose loss or reclaim changes the thesis."
+        },
+        {
+          "type": "ACCELERATION CONDITION",
+          "definition": "Price break accompanied by a gamma-regime change that could amplify the move."
+        }
+      ],
+      "intradayReevaluation": "Morning GEX maps are never permanent. Walls, HVLs, pins, and net gamma change materially during a session. The journal preserves an ORIGINAL THESIS and timestamped THESIS UPDATES.",
+      "endOfSessionEvidence": {
+        "typicalEtfOptionCutoffEt": "16:15",
+        "verifyProduct": true,
+        "records": [
+          "CHARTED PEAK \u2014 highest traded price after public alert/reference entry and before cutoff (Superchart 1m OHLC high, timestamped screenshot). Not executable.",
+          "VERIFIED EXECUTABLE PEAK \u2014 highest executable bid/NBBO/broker-verified price with preserved quote evidence (chain bid + size, timestamped). If the chain is gone, mark NOT PRESERVED. Never invent.",
+          "MANAGED RESULT \u2014 actual result from published management rules. Never the peak."
+        ],
+        "note": "These three never conflate. Missing bid evidence on an expired contract is a protocol miss, not a pending lookup."
+      }
+    }
+  },
+  "expandedRecord": {
+    "avgVerifiedPeakPct": null,
+    "pctReached50": null,
+    "pctReached100": null,
+    "pctReached200": null,
+    "avgMaeBeforePeak": null,
+    "medianTimeToPeak": null,
+    "aonOfficialTotal": null,
+    "managedWins": 0,
+    "managedLosses": 0,
+    "opportunityCaptureRate": null,
+    "odteVs1dte": null,
+    "status": "NOT ENOUGH VERIFIED DATA",
+    "chartedPlus25": 1,
+    "chartedOpportunityRate": "1 / 1 executed \u00b7 CHARTED, not verified"
+  },
+  "canonicalUrl": "https://cosanalyst.com/0dte-challenge/",
+  "dashboard": {
+    "startingCapital": 10000,
+    "currentEquity": 9840,
+    "realizedPnl": -160,
+    "returnPct": -1.6,
+    "completedTrades": 1,
+    "rulesBasedWins": 0,
+    "rulesBasedLosses": 0,
+    "preRuleCompleted": 1,
+    "preRuleWins": 0,
+    "preRuleLosses": 1,
+    "winRate": null,
+    "winRateLabel": "NOT MEANINGFUL \u2014 n=1 pre-rule baseline only",
+    "avgWinner": null,
+    "avgWinnerLabel": "NOT ENOUGH RULES-BASED WINS",
+    "avgLoser": -160,
+    "avgLoserNote": "Single pre-rule baseline loss; not a rules-based sample",
+    "profitFactor": null,
+    "profitFactorLabel": "NOT YET MEANINGFUL \u2014 insufficient rules-based sample",
+    "maxDrawdown": 160,
+    "maxDrawdownPct": 1.6,
+    "openTrade": null,
+    "openTradeLabel": "No open position \u2014 SETUP WATCHING",
+    "peakOpportunityStats": {
+      "verifiedExecutablePeaks": 0,
+      "chartedPlus25": 1,
+      "note": "Peak Opportunity is analytical only \u2014 never mixed with realized challenge P&L."
+    },
+    "sampleSizeNote": "One completed trade (Trade Zero, pre-rule baseline). Do not read win rate or profit factor as a performance claim."
+  }
+}

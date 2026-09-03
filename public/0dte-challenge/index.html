@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>THE COSANALYST 0DTE CHALLENGE — CosAnalyst</title>
+  <meta name="description" content="A public, timestamped experiment in trading same-day options using market structure, gamma exposure and defined-risk decision rules. Simulated research.">
+  <meta name="theme-color" content="#101214">
+  <meta property="og:title" content="THE COSANALYST 0DTE CHALLENGE">
+  <meta property="og:description" content="Can an AI research desk improve its 0DTE execution over 30 market days? Simulated research. Educational only.">
+  <meta property="og:url" content="https://cosanalyst.com/0dte-challenge/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cosanalyst.com/brand/fox-mark-arrow.png">
+  <meta property="og:image:alt" content="THE COSANALYST 0DTE CHALLENGE — simulated research experiment">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="THE COSANALYST 0DTE CHALLENGE">
+  <meta name="twitter:description" content="Can an AI research desk improve its 0DTE execution over 30 market days? Simulated research. Educational only.">
+  <meta name="twitter:image" content="https://cosanalyst.com/brand/fox-mark-arrow.png">
+  <link rel="canonical" href="https://cosanalyst.com/0dte-challenge/">
+  <link rel="icon" href="/brand/fox-mark-arrow.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@8..72,400;8..72,650&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="challenge.css">
+</head>
+<body data-page="odte-challenge" data-root="/" data-odte-blotter="odte-blotter.json">
+  <a class="skip" href="#today">Skip to today’s opportunity</a>
+
+  <header class="mast">
+    <div class="wrap mast-inner">
+      <a class="brand" href="/" aria-label="CosAnalyst home">
+        <img src="/brand/fox-mark-arrow.png" alt="CosAnalyst fox mark" width="36" height="36">
+        <span>
+          <span class="brand-name">CosAnalyst</span>
+          <span class="brand-tag">BOOK FACT · NOT A TICKET</span>
+        </span>
+      </a>
+      <div class="mast-tools">
+        <span class="sim-pill">
+          <button type="button" class="sim-pill-btn" aria-describedby="sim-tip-odte">SIMULATED RESEARCH ⓘ</button>
+          <span class="sim-tip" id="sim-tip-odte" role="tooltip">Setups are tracked on paper using published rules. No real-money performance is claimed.</span>
+        </span>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+      <nav class="mast-nav" id="site-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/markets/">Markets</a>
+        <a href="/options/">Options</a>
+        <a href="/research/">Research</a>
+        <a href="/0dte-challenge/" aria-current="page">0DTE Challenge</a>
+        <a href="/newsletter/">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="odte-sticky" id="odte-sticky" role="status">
+    <div class="wrap odte-sticky-row">
+      <span id="odte-sticky-day">DAY 2/30</span>
+      <span aria-hidden="true">·</span>
+      <span id="odte-sticky-status">SETUP WATCHING</span>
+      <span aria-hidden="true">·</span>
+      <span id="odte-sticky-update">LAST UPDATE ~1:25 PM ET</span>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="odte-hero" id="top">
+      <div class="wrap odte-hero-copy">
+        <img class="odte-hero-fox" src="/brand/fox-mark-arrow.png" alt="" width="48" height="48">
+        <p class="kicker">SIMULATED RESEARCH — NOT LIVE TRADING</p>
+        <h1>THE COSANALYST 0DTE CHALLENGE</h1>
+        <p class="odte-premise">A public, timestamped experiment in trading same-day options using market structure, gamma exposure and defined-risk decision rules.</p>
+        <p class="odte-hero-meta">
+          <span class="odte-hero-day" id="odte-hero-day">Day 2/30</span>
+          <span class="status-badge status-watch" id="odte-hero-status">SETUP WATCHING</span>
+        </p>
+        <a class="cta-btn odte-hero-cta" href="#today">SEE TODAY'S OPPORTUNITY</a>
+        <p class="odte-hero-fine">Simulated research. Transparent audit — not a signal service.</p>
+        <nav class="odte-jump" aria-label="On this page">
+          <a href="#today">Today</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#gex-framework">GEX</a>
+          <a href="#progress">Progress</a>
+          <a href="#lessons">Lessons</a>
+          <a href="#rules">Rules &amp; Record</a>
+        </nav>
+      </div>
+    </section>
+
+    
+    <section class="wrap section" id="dashboard">
+      <div class="section-head">
+        <h2>Track-record dashboard</h2>
+        <p class="asof">Simulated book · small sample · peak kept separate</p>
+      </div>
+      <p class="intro" id="odte-d-sample">One completed trade (Trade Zero, pre-rule baseline). Do not read win rate or profit factor as a performance claim.</p>
+      <dl class="odte-dashboard stats" id="odte-dashboard">
+        <div class="stat"><dt class="label">Starting capital</dt><dd class="value" id="odte-d-start">$10,000</dd></div>
+        <div class="stat"><dt class="label">Current equity</dt><dd class="value" id="odte-d-equity">$9,840</dd></div>
+        <div class="stat"><dt class="label">Realized P&amp;L</dt><dd class="value" id="odte-d-pnl">−$160</dd></div>
+        <div class="stat"><dt class="label">Return %</dt><dd class="value" id="odte-d-ret">−1.6%</dd></div>
+        <div class="stat"><dt class="label">Completed trades</dt><dd class="value" id="odte-d-completed">1</dd><dd class="note">includes pre-rule baseline</dd></div>
+        <div class="stat"><dt class="label">Wins / losses</dt><dd class="value" id="odte-d-wl">0 / 0 rules-based</dd></div>
+        <div class="stat"><dt class="label">Win rate</dt><dd class="value warn" id="odte-d-winrate">NOT MEANINGFUL — n=1 pre-rule baseline only</dd></div>
+        <div class="stat"><dt class="label">Average winner</dt><dd class="value" id="odte-d-avgwin">NOT ENOUGH RULES-BASED WINS</dd></div>
+        <div class="stat"><dt class="label">Average loser</dt><dd class="value" id="odte-d-avglos">−$160</dd><dd class="note">pre-rule only</dd></div>
+        <div class="stat"><dt class="label">Profit factor</dt><dd class="value warn" id="odte-d-pf">NOT YET MEANINGFUL</dd></div>
+        <div class="stat"><dt class="label">Max drawdown</dt><dd class="value" id="odte-d-dd">$160</dd><dd class="note" id="odte-d-ddpct">1.6% of starting capital</dd></div>
+        <div class="stat"><dt class="label">Open trade</dt><dd class="value" id="odte-d-open">No open position</dd></div>
+        <div class="stat"><dt class="label">Peak opportunity</dt><dd class="value" id="odte-d-peak">Charted +25%: 1 · Verified executable peaks: 0</dd><dd class="note">Analytical only — not realized P&amp;L</dd></div>
+      </dl>
+    </section>
+
+    <section class="wrap section" id="gex-framework">
+      <div class="section-head">
+        <h2>GEX framework</h2>
+        <p class="asof">Maps re-evaluate intraday</p>
+      </div>
+      <div class="odte-gex-framework">
+        <p><strong>Positive GEX does NOT mean bullish.</strong> Positive gamma is primarily a volatility-dampening / mean-reverting regime.</p>
+        <p><strong>Negative GEX does NOT mean bearish.</strong> Negative gamma is a regime where dealer hedging can amplify movement in <em>either</em> direction.</p>
+        <p>Morning GEX snapshots are never permanent. Walls, HVLs, pins, and net gamma change materially during a session. Each journal entry preserves an <strong>ORIGINAL THESIS</strong> and timestamped <strong>THESIS UPDATES</strong> — not a retroactively clean story.</p>
+        <h3>Level types</h3>
+        <div class="odte-level-types">
+          <div><strong>MAGNET/PIN</strong> — price may gravitate toward the level.</div>
+          <div><strong>SUPPORT/RESISTANCE</strong> — structural level from the options book.</div>
+          <div><strong>TRIGGER</strong> — level whose loss or reclaim changes the thesis.</div>
+          <div><strong>ACCELERATION CONDITION</strong> — price break with a gamma-regime change that could amplify the move.</div>
+        </div>
+        <p>Canonical example (Trade Zero, Sep 2 2026): overnight map had QQQ under the 717 flip with 700 as the put-side magnet. After the cash open, 707 HVL was reclaimed and held, net GEX flipped positive, the call wall rolled to 708, and the 700 thesis was <strong>CANCELLED</strong>. When the options structure changes, the thesis changes.</p>
+      </div>
+    </section>
+
+    <section class="wrap section" id="today">
+      <div class="section-head">
+        <h2>Today’s Opportunity</h2>
+        <p class="asof" id="odte-asof">Last updated <time class="stamp-et" datetime="2026-09-02T13:25:00-04:00" data-et data-et-approx>Sep 2, 2026, ~1:25 PM ET</time></p>
+      </div>
+      <p class="intro" id="odte-today-copy">The AI is monitoring SPY, QQQ, and IWM. No setup currently meets the published entry and risk standards.</p>
+      <p class="odte-empty" id="odte-no-open" hidden>No official 0DTE candidate on the book.</p>
+
+      <article class="odte-ticket odte-ticket-watch" id="odte-open-card">
+        <div class="odte-ticket-top">
+          <span class="status-badge status-watch" id="odte-open-badge">WATCHING — NO ENTRY</span>
+          <span class="odte-label odte-label-sim" id="odte-open-label">SIMULATED</span>
+          <span class="odte-dte" id="odte-open-dte">0DTE session</span>
+        </div>
+        <p class="odte-ticket-contract" id="odte-open-contract">None — no qualifying entry</p>
+        <p class="odte-book-flag" id="odte-open-book">One official same-day record · session still open until the verified ETF-option cutoff</p>
+
+        <dl class="odte-card-grid" id="odte-open-dl">
+          <div><dt>Status</dt><dd id="odte-f-status">WATCHING — NO ENTRY</dd></div>
+          <div><dt>Underlying</dt><dd id="odte-f-underlying">SPY / QQQ / IWM</dd></div>
+          <div><dt>Exact contract</dt><dd id="odte-f-contract">None — no qualifying entry</dd></div>
+          <div><dt>0DTE or 1DTE</dt><dd id="odte-f-dte">0DTE</dd></div>
+          <div><dt>Preferred entry range</dt><dd id="odte-f-entry">—</dd></div>
+          <div><dt>Maximum entry / PASS ABOVE</dt><dd id="odte-f-maxentry">PASS — no chase</dd></div>
+          <div><dt>Actionable or expired</dt><dd id="odte-f-actionable">Watching — not actionable</dd></div>
+          <div><dt>Underlying invalidation</dt><dd id="odte-f-invalidation">—</dd></div>
+          <div><dt>Primary target</dt><dd id="odte-f-target">—</dd></div>
+          <div><dt>Model position size</dt><dd id="odte-f-size">0 contracts · no debit</dd></div>
+          <div><dt>Planned stop-loss amount</dt><dd id="odte-f-stop">—</dd></div>
+          <div><dt>Maximum capital at risk</dt><dd id="odte-f-maxrisk">$0 — no premium deployed</dd></div>
+          <div><dt>Alert expiration</dt><dd id="odte-f-alert">Verify the ETF-option cutoff for the exact product. SPY/QQQ/IWM typically remain eligible until 4:15 PM ET on regular sessions — they are ETF options, not cash-settled index options.</dd></div>
+          <div><dt>Last updated ET</dt><dd id="odte-f-updated">Sep 2, 2026, ~1:25 PM ET</dd></div>
+        </dl>
+
+        <p class="odte-risk-lock">Planned stop-loss amount is a management plan, not a guaranteed fill. Maximum capital at risk on a long option is the full premium paid. A stop is not a ceiling when premium is larger than the planned stop.</p>
+
+        <button type="button" class="ghost-btn odte-details-btn" id="odte-today-details-btn" aria-expanded="false" aria-controls="odte-today-details">VIEW FULL TRADE DETAILS</button>
+        <div class="odte-details" id="odte-today-details" hidden>
+          <h3>Candidates monitored</h3>
+          <p>SPY, QQQ, and IWM. One official daily record — not one record per symbol. IWM remains a watch only (<span class="mono">officialCandidate: false</span>), not a second official candidate.</p>
+          <h3>Why none qualified</h3>
+          <p>Index tape in a positive-GEX pin. IWM 290 not broken. No chase into the 2:00 PM ET Beige Book print or leftover Sep 2 707 puts.</p>
+          <h3>GEX snapshot</h3>
+          <p>IWM 0DTE net +16.7M positive gamma, pin 291–293, C1 293, HVL/P1 290. Index names sitting in a positive-gamma pin. GEX is a destination, not an entry by itself.</p>
+          <h3>Same-day P&amp;L</h3>
+          <p>$0 for the same-day slot. Capital preserved. Carry-in of Trade Zero is a separate overnight ticket — realized once, not here as a second official candidate.</p>
+          <h3>Observation</h3>
+          <p>The session stays open until the verified cutoff for the exact ETF option (typically 4:15 PM ET for SPY/QQQ/IWM on regular sessions — not cash-settled index options). If nothing qualifies, the official close of this day remains NO QUALIFYING ENTRY — CAPITAL PRESERVED.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap section" id="progress">
+      <div class="section-head">
+        <h2>Compact progress</h2>
+        <p class="asof">Managed $10k book · Peak is not realized P&amp;L</p>
+      </div>
+      <dl class="odte-strip" id="odte-progress">
+        <div><dt>Day</dt><dd id="odte-p-day">2/30</dd></div>
+        <div><dt>RULES-BASED QUALIFIED ALERTS</dt><dd id="odte-p-alerts">0</dd></div>
+        <div><dt>Verified +25% opportunities</dt><dd id="odte-p-plus25">NOT ENOUGH VERIFIED DATA</dd></div>
+        <div><dt>Median verified Peak Opportunity</dt><dd id="odte-p-peak">NOT ENOUGH VERIFIED DATA</dd></div>
+        <div><dt>Managed model-account balance</dt><dd id="odte-p-cash">$9,840</dd></div>
+        <div><dt>Managed net P&amp;L</dt><dd id="odte-p-pnl">—</dd></div>
+        <div><dt>No-qualifying-entry days</dt><dd id="odte-p-nq">1</dd></div>
+        <div><dt>Rules-based compliance</dt><dd id="odte-p-comp">N/A</dd></div>
+      </dl>
+      <dl class="odte-strip odte-charted-strip" id="odte-charted-progress">
+        <div><dt>Charted +25% opportunities</dt><dd id="odte-p-charted">1</dd></div>
+        <div><dt>Charted Opportunity Rate</dt><dd id="odte-p-charted-rate">1 / 1 executed · CHARTED, not verified</dd></div>
+      </dl>
+      <p class="odte-strip-caption" id="odte-progress-caption">Official Peak Opportunity statistics require VERIFIED NBBO or BROKER QUOTE VERIFIED. Trade Zero’s official peak is NOT PRESERVED — insufficient historical quote evidence; the bid/NBBO was not captured before expiration. Charted +28.6% is a traded-price high, not a verified executable bid, and does not increment verified +25%. Overnight ~$4.00–$4.40 is not a peak. Rules-based managed record begins after Trade Zero. Model balance $9,840 includes the approved pre-rule baseline −$160 only.</p>
+      <p class="odte-peak-disc" id="odte-peak-disc">Peak Opportunity After Alert is the largest verifiable executable gain that became available after the timestamped alert and before the contract’s trading window ended. It is not realized profit and does not mean anyone captured the full move.</p>
+      <details class="odte-expanded-record" id="odte-expanded-record">
+        <summary>Expanded record (not official until verified quotes)</summary>
+        <dl class="odte-card-grid" id="odte-expanded-dl">
+          <div><dt>Average Peak Opportunity</dt><dd id="odte-x-avgpeak">NOT ENOUGH VERIFIED DATA</dd></div>
+          <div><dt>% reaching +50% / +100% / +200%</dt><dd id="odte-x-rungs">NOT ENOUGH VERIFIED DATA</dd></div>
+          <div><dt>Average MAE before peak</dt><dd id="odte-x-mae">NOT ENOUGH VERIFIED DATA</dd></div>
+          <div><dt>Median time to peak</dt><dd id="odte-x-ttp">NOT ENOUGH VERIFIED DATA</dd></div>
+          <div><dt>All-or-nothing $1,000 total</dt><dd id="odte-x-aon">NOT ENOUGH VERIFIED DATA</dd></div>
+          <div><dt>Managed win / loss</dt><dd id="odte-x-wl">0 / 0</dd></div>
+          <div><dt>Opportunity Capture Rate</dt><dd id="odte-x-cap">—</dd></div>
+          <div><dt>0DTE vs 1DTE</dt><dd id="odte-x-dte">NOT ENOUGH VERIFIED DATA</dd></div>
+          <div><dt>Charted Opportunity Rate</dt><dd id="odte-x-charted">1 / 1 executed · CHARTED, not verified</dd></div>
+        </dl>
+        <p class="footnote">Hypothetical $1,000 fixed-notional research model. Not the model-account position size and not realized performance. All-or-nothing dollars never change the $10,000 managed account.</p>
+      </details>
+    </section>
+
+    <section class="wrap section" id="lessons">
+      <div class="section-head">
+        <h2>What the AI Is Learning</h2>
+        <p class="asof">Forward only</p>
+      </div>
+<article class="odte-lesson" id="lesson-01" data-odte-lesson="lesson-01">
+        <p class="odte-board-kicker">Lesson 01 · effective <time class="stamp-et" datetime="2026-09-02T12:35:00-04:00" data-et data-et-approx>Sep 2, 2026, ~12:35 PM ET</time></p>
+        <h3>PROTECT THE GIFT</h3>
+        <p>An overnight indicated double on a 1-lot is a gift. From this stamp forward, +50% on a 1-lot must REALIZE PROFIT or become a PROTECTED RUNNER with a published premium floor. +100% is a harvest or a tightened floor — not an unprotected hold into the cash open.</p>
+        <p>This lesson is forward-only. It does not rewrite <a href="#journal-2026-09-01-qqq-707p">Trade Zero</a> (QQQ Sep 2 707 put, 1DTE, pre-rule baseline).</p>
+      </article>
+    </section>
+
+    <section class="wrap section" id="results">
+      <div class="section-head">
+        <h2>Recent Results</h2>
+        <p class="asof">Unique trade ids · one count each</p>
+      </div>
+      <p class="intro">Collapsed cards show Opportunity Identified, Peak Opportunity, and Managed Result. A CHARTED YES is a traded-price high, not a verified executable bid. All-or-Nothing dollars stay in the details. Peak Opportunity is not realized profit. AWAITING VERIFIED QUOTE DATA is only while the contract is still live and still quoted. After expiration with no preserved bid tape, Official Peak is NOT PRESERVED — insufficient historical quote evidence. That is a protocol miss, not a pending lookup.</p>
+      <div id="odte-results">
+        <article class="odte-result" data-trade-id="2026-09-01-qqq-707p">
+          <p class="odte-result-date mono">2026-09-01</p>
+          <h3>QQQ Sep 2 2026 707 put</h3>
+          <dl class="odte-result-mini">
+            <div><dt>Opportunity identified</dt><dd>YES · CHARTED</dd></div>
+            <div><dt>Peak Opportunity</dt><dd>NOT PRESERVED — insufficient historical quote evidence</dd></div>
+            <div><dt>Managed Result</dt><dd>−$160</dd></div>
+          </dl>
+          <p class="odte-peak-line">PEAK OPPORTUNITY AFTER ALERT: NOT PRESERVED — insufficient historical quote evidence</p>
+          <p class="odte-charted-line">CHARTED PEAK AFTER ALERT: +28.6%</p>
+          <button type="button" class="ghost-btn odte-details-btn" aria-expanded="false" aria-controls="odte-result-details-2026-09-01-qqq-707p">VIEW DETAILS</button>
+          <div class="odte-details odte-three" id="odte-result-details-2026-09-01-qqq-707p" hidden>
+            <section>
+              <h3>Signal quality</h3>
+              <dl class="odte-card-grid">
+                <div><dt>Opportunity identified</dt><dd>YES · CHARTED</dd></div>
+                <div><dt>Qualifier</dt><dd>CHARTED — traded-price high, not a verified executable bid</dd></div>
+                <div><dt>Reference entry</dt><dd>$2.20 published alert / desk fill — not a verified ASK tape</dd></div>
+                <div><dt>Verified executable bid</dt><dd>NOT PRESERVED — insufficient historical quote evidence</dd></div>
+                <div><dt>Official Peak Opportunity</dt><dd>NOT PRESERVED — insufficient historical quote evidence</dd></div>
+                <div><dt>Official verification</dt><dd>NOT PRESERVED — insufficient historical quote evidence</dd></div>
+                <div><dt>Charted peak after alert</dt><dd>+28.6%</dd></div>
+                <div><dt>Charted high / time</dt><dd>$2.83 · Sep 2, 2026, 9:30 AM ET</dd></div>
+                <div><dt>Charted verification</dt><dd>TRADINGVIEW TRADED-PRICE HIGH — NOT A VERIFIED EXECUTABLE BID</dd></div>
+                <div><dt>MAE before peak</dt><dd>—</dd></div>
+                <div><dt>Time to peak</dt><dd>Overnight carry into the 9:30 AM ET cash-open minute (charted high)</dd></div>
+                <div><dt>Peak vs managed invalidation</dt><dd>—</dd></div>
+                <div><dt>Peak day</dt><dd>Later day — Sep 2 expiration session</dd></div>
+              </dl>
+              <p class="odte-charted-disc">The contract recorded a $2.83 traded-price high during the 9:30 AM ET one-minute candle, approximately 28.6% above the $2.20 reference entry. This establishes a charted opportunity above the challenge’s +25% threshold, but it does not prove that the entire position could have been sold at that price. On-chart 2.59 is a later local peak label — not the session high, not the charted peak, not a verified bid, not the managed result. On-chart 1.61 is a local trough, not a peak.</p>
+              <p>Overnight indication approximately $4.00–$4.40 occurred before the public alert / while the options market was closed. Not a verified executable bid. Not the charted peak. The bid/NBBO was not captured before this 0DTE expired, so Official Peak cannot be verified later.</p>
+              <figure class="odte-evidence">
+                <img src="evidence/trade-zero-qqq-707p-2026-09-02-0930-1m.png" alt="TradingView one-minute chart of QQQ Sep 2, 2026 $707 put, 9:30 AM ET candle">
+                <figcaption>
+                  <span class="mono">TradingView · One minute · Sep 2, 2026, 9:30 AM ET</span>
+                  <span>Contract: QQQ Sep 2, 2026 $707 put</span>
+                  <span>OHLC: $2.18 / $2.83 / $2.12 / $2.45</span>
+                  <span>Evidence level: Charted traded-price data</span>
+                  <span>Executable-bid verification: NOT PRESERVED — insufficient historical quote evidence</span>
+                  <span>quoteSource: TradingView Superchart 1m traded OHLC (not NBBO)</span>
+                </figcaption>
+              </figure>
+            </section>
+            <section>
+              <h3>All-or-nothing research model</h3>
+              <p>Hypothetical $1,000 fixed-notional research model. Not the model-account position size and not realized performance.</p>
+              <dl class="odte-card-grid">
+                <div><dt>Notional</dt><dd>$1,000</dd></div>
+                <div><dt>Terminal exit time</dt><dd>Sep 2, 2026, ~12:25 PM ET last known exit</dd></div>
+                <div><dt>Terminal value</dt><dd>$0.60 INDICATIVE / UNAVAILABLE</dd></div>
+                <div><dt>% outcome</dt><dd>−72.7% indicative</dd></div>
+                <div><dt>$ outcome</dt><dd>Not entered in official AON totals</dd></div>
+                <div><dt>Max possible loss</dt><dd>$1,000</dd></div>
+              </dl>
+            </section>
+            <section>
+              <h3>Managed execution model</h3>
+              <dl class="odte-card-grid">
+                <div><dt>Model position size</dt><dd>1 contract</dd></div>
+                <div><dt>Planned stop-loss amount</dt><dd>N/A — rules adopted afterward</dd></div>
+                <div><dt>Maximum capital at risk</dt><dd>$220 (full premium)</dd></div>
+                <div><dt>Scales</dt><dd>N/A — pre-rule baseline</dd></div>
+                <div><dt>Modeled exit</dt><dd>$0.60</dd></div>
+                <div><dt>% result</dt><dd>−72.7%</dd></div>
+                <div><dt>$ result</dt><dd>−$160</dd></div>
+                <div><dt>Rule compliance</dt><dd>N/A — RULES ADOPTED AFTERWARD</dd></div>
+                <div><dt>Opportunity Capture Rate</dt><dd>—</dd></div>
+              </dl>
+              <p><a href="#journal-2026-09-01-qqq-707p">Open journal</a></p>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="principles">
+      <div class="section-head">
+        <h2>Five principles</h2>
+        <p class="asof">In force for rules-based tickets</p>
+      </div>
+      <ol class="odte-plain">
+        <li>
+          <h3>Eligible underlyings only</h3>
+          <p>SPY, QQQ, IWM. Index ETFs. No single-name lotto. This book is not a sector-swing blotter.</p>
+        </li>
+        <li>
+          <h3>One official record every market day</h3>
+          <p>Executed trade, or NO QUALIFYING ENTRY — CAPITAL PRESERVED, or market closed, or data unavailable. A watch-only name is not a second official candidate.</p>
+        </li>
+        <li>
+          <h3>GEX is a destination, not a signal</h3>
+          <p>A GEX snapshot can name a price. It is not an entry by itself. Tape has to qualify. No GEX-only fills.</p>
+        </li>
+        <li>
+          <h3>Defined risk. Planned stop vs max capital at risk.</h3>
+          <p>Size is set at entry. We do not add after a loser. We do not widen a stop. Planned stop-loss amount is a plan. Maximum capital at risk on a long option is the full premium. Never treat a $100 planned stop as the absolute max when premium is larger.</p>
+        </li>
+        <li>
+          <h3>Time has a vote. Overnight is labeled overnight.</h3>
+          <p>0DTE and 1DTE are labeled on every card. SPY, QQQ, and IWM are ETF options, not cash-settled index options — verify the eligible trading time for the exact product (typically 4:15 PM ET on regular sessions for these three). A 1DTE carry is one trade, one P&amp;L, two calendar cards.</p>
+        </li>
+      </ol>
+      <div class="odte-protocol" id="evidence-protocol">
+        <p class="odte-board-kicker">Desk rule · every ticket</p>
+        <h3>Preserve the tape before the chain disappears</h3>
+        <p>AWAITING VERIFIED QUOTE DATA is only while the contract is still live and still quoted. After the 0DTE leaves the chain, there is no later lookup.</p>
+        <p>Before the contract disappears from the normal TradingView workflow — typical SPY/QQQ/IWM ETF-option cutoff 4:15 PM ET; verify the product, do not assume — open the exact contract and keep three separate records:</p>
+        <ol class="odte-plain">
+          <li>
+            <h3>CHARTED PEAK</h3>
+            <p>Highest traded price after the public alert / reference entry and before cutoff. Superchart 1m OHLC high, timestamped screenshot. Not an executable bid.</p>
+          </li>
+          <li>
+            <h3>VERIFIED EXECUTABLE PEAK</h3>
+            <p>Highest executable bid / NBBO / broker-verified price with preserved quote evidence — chain bid and size, timestamped. If the chain is gone, mark NOT PRESERVED — insufficient historical quote evidence. Never invent a bid.</p>
+          </li>
+          <li>
+            <h3>MANAGED RESULT</h3>
+            <p>The actual result from the published management rules. Never the peak.</p>
+          </li>
+        </ol>
+        <p>These three never mix. Missing bid evidence on an expired contract is a protocol miss, not a pending lookup.</p>
+      </div>
+    </section>
+
+    <section class="wrap section" id="timeline">
+      <div class="section-head">
+        <h2>Daily Timeline Archive</h2>
+        <p class="asof">Grouped by ET date · append-only</p>
+      </div>
+      <p class="intro">Today stays open. Completed days start collapsed. One historical day open at a time. Timeline event ids are permanent. If live JSON cannot load, this static snapshot stays on the page.</p>
+
+      <div class="odte-archive" id="odte-archive">
+        <article class="odte-day is-today is-open" id="2026-09-02" data-odte-day="2026-09-02" data-odte-today="true">
+          <h3>
+            <button type="button" class="odte-day-btn" aria-expanded="true" aria-controls="odte-day-panel-2026-09-02" id="odte-day-btn-2026-09-02">
+              <span class="odte-day-date">Sep 2, 2026</span>
+              <span class="odte-day-rec">NO QUALIFYING ENTRY — CAPITAL PRESERVED</span>
+            </button>
+          </h3>
+          <div class="odte-day-panel" id="odte-day-panel-2026-09-02" role="region" aria-labelledby="odte-day-btn-2026-09-02">
+            <p class="odte-day-status"><span class="status-badge status-watch">WATCHING — NO ENTRY</span> <span class="odte-dte">0DTE</span></p>
+            <p>Official same-day record. Candidates monitored: SPY, QQQ, IWM. Why none qualified: positive GEX pin; IWM 290 not broken; no chase into Beige Book / leftover 707 puts. Same-day P&amp;L <strong>$0</strong>.</p>
+            <aside class="odte-carry">
+              <p class="odte-watch-kicker">Carry-in · same journal</p>
+              <p><span class="status-badge status-closed">CARRY-IN FROM SEP 1</span> Trade Zero realized −$160 here only. <a href="#journal-2026-09-01-qqq-707p">Open journal</a></p>
+            </aside>
+            <ol class="odte-timeline">
+              <li id="2026-09-02-0929-hold-protect">
+                <p class="odte-tl-action">HOLD/PROTECT</p>
+                <time class="stamp-et odte-tl-stamp" datetime="2026-09-02T09:29:00-04:00" data-et data-et-approx>Sep 2, 2026, ~9:29 AM ET</time>
+                <p>Bookmap QQQ ~707.06, overnight low ~703.60, offers 708/709/709.60/711, bids 706/705/700. Classified PROTECTED RUNNER. Invalidation tightened to 711 (hard 717). Premium floor $2.75. Indicated ~$4.00 unaudited. Source clock: 6:29 AM PT Bookmap.</p>
+              </li>
+              <li id="2026-09-02-0930-execution-mfe">
+                <p class="odte-tl-action">MFE / OVERNIGHT</p>
+                <time class="stamp-et odte-tl-stamp" datetime="2026-09-02T09:30:00-04:00" data-et data-et-approx>Sep 2, 2026, ~9:30 AM ET</time>
+                <p>Overnight indicated +100% (~$4.40 = 2× $2.20 fill) UNAUDITED, not harvested. No OPRA bid/ask captured. Official P&amp;L is the later $0.60 close (−$160). Logged later. This line does not rewrite ENTER, HOLD, or CLOSE fills.</p>
+              </li>
+              <li id="2026-09-02-0930-cash-open-254">
+                <p class="odte-tl-action">CASH OPEN / MARK</p>
+                <time class="stamp-et odte-tl-stamp" datetime="2026-09-02T09:30:00-04:00" data-et data-et-approx>Sep 2, 2026, ~9:30 AM ET</time>
+                <p>QQQ Sep 2 707P cash open <strong>$2.54</strong> user-stated. Fill $2.20 → $2.54 is +$0.34 / ~+15%. Not an OPRA verify. Official CLOSE remains $0.60 vs $2.20 (−$160).</p>
+              </li>
+              <li id="2026-09-02-1003-hold-update">
+                <p class="odte-tl-action">HOLD/UPDATE</p>
+                <time class="stamp-et odte-tl-stamp" datetime="2026-09-02T10:03:00-04:00" data-et data-et-approx>Sep 2, 2026, ~10:03 AM ET</time>
+                <p>Desk lock on the official OPEN. Invalidation: tape 711 / hard GEX 717 / today’s 0DTE HVL reclaim 707 if it holds. Floor: ~$2.75 min protect after +50%. Cancel 700 if GEX flips positive. Source clock: 7:03 AM PT desk lock.</p>
+              </li>
+              <li id="2026-09-02-1003-iwm-no-trade">
+                <p class="odte-tl-action">NO TRADE</p>
+                <time class="stamp-et odte-tl-stamp" datetime="2026-09-02T10:03:00-04:00" data-et data-et-approx>Sep 2, 2026, ~10:03 AM ET</time>
+                <p>IWM same-day 0DTE is watch / no-entry. Not an official candidate. No 292P or 293C fill. Spot ~292.5. GEX snapshot: 0DTE net +16.7M positive gamma, pin 291–293, C1 293, HVL/P1 290. Capital preserved.</p>
+              </li>
+              <li id="2026-09-02-1225-close">
+                <p class="odte-tl-action">CLOSE</p>
+                <time class="stamp-et odte-tl-stamp" datetime="2026-09-02T12:25:00-04:00" data-et data-et-approx>Sep 2, 2026, ~12:25 PM ET</time>
+                <p>QQQ Sep 2 707P SIMULATED 1x CLOSED @ $0.60 vs fill $2.20. Official P&amp;L −$160. 707 HVL reclaim held ~2h; GEX flipped positive; 700 thesis cancelled. Carry-in realized here only.</p>
+              </li>
+              <li id="2026-09-02-1235-lesson-01">
+                <p class="odte-tl-action">LESSON</p>
+                <time class="stamp-et odte-tl-stamp" datetime="2026-09-02T12:35:00-04:00" data-et data-et-approx>Sep 2, 2026, ~12:35 PM ET</time>
+                <p>LESSON 01 — PROTECT THE GIFT adopted, forward only. Does not rewrite Trade Zero.</p>
+              </li>
+              <li id="2026-09-02-1325-watching-no-entry">
+                <p class="odte-tl-action">WATCHING</p>
+                <time class="stamp-et odte-tl-stamp" datetime="2026-09-02T13:25:00-04:00" data-et data-et-approx>Sep 2, 2026, ~1:25 PM ET</time>
+                <p>Official same-day record remains NO QUALIFYING ENTRY — CAPITAL PRESERVED while the session hunt is still open. Monitoring SPY, QQQ, and IWM. Same-day P&amp;L $0.</p>
+              </li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="odte-day" id="2026-09-01" data-odte-day="2026-09-01">
+          <h3>
+            <button type="button" class="odte-day-btn" aria-expanded="false" aria-controls="odte-day-panel-2026-09-01" id="odte-day-btn-2026-09-01">
+              <span class="odte-day-date">Sep 1, 2026</span>
+              <span class="odte-day-rec">OPEN — CARRIED OVERNIGHT</span>
+            </button>
+          </h3>
+          <div class="odte-day-panel" id="odte-day-panel-2026-09-01" role="region" aria-labelledby="odte-day-btn-2026-09-01" hidden>
+            <p class="odte-day-status"><span class="status-badge status-open">OPEN — CARRIED OVERNIGHT</span> <span class="odte-dte">1DTE</span></p>
+            <p>Official record: executed Trade Zero. No realized P&amp;L on the entry date. Realized P&amp;L posts on the exit date only.</p>
+            <aside class="odte-carry">
+              <p class="odte-watch-kicker">Carry-out · same journal</p>
+              <p>QQQ Sep 2 707 put entered @ $2.20. <a href="#journal-2026-09-01-qqq-707p">Open journal</a></p>
+            </aside>
+            <ol class="odte-timeline">
+              <li id="2026-09-01-1615-enter">
+                <p class="odte-tl-action">ENTER</p>
+                <time class="stamp-et odte-tl-stamp" datetime="2026-09-01T16:15:00-04:00" data-et>Sep 1, 2026, 4:15 PM ET</time>
+                <p>QQQ Sep 2 707P SIMULATED 1x @ $2.20. Target QQQ 700. Invalidation 717. 1DTE overnight. Source: desk alert.</p>
+              </li>
+            </ol>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="rules">
+      <div class="section-head">
+        <h2>Complete rules</h2>
+        <p class="asof">Collapsed · forward-only ladder</p>
+      </div>
+      <details class="odte-rulebook" id="odte-rulebook">
+        <summary>Open the complete rulebook</summary>
+        <div class="odte-method">
+          <h3>What this challenge is</h3>
+          <p>A 30-day public audit of index-ETF 0DTE and 1DTE tickets, 1 Sep 2026 through 1 Oct 2026. One simulated book. One official daily record every market day. The page is a ledger, not a gallery of winning screenshots.</p>
+
+          <h3>How a day is logged</h3>
+          <p>Official means the documented record that day: an executed trade, NO QUALIFYING ENTRY — CAPITAL PRESERVED, market closed, or data unavailable. A failed or watch-only name is not a second official card. Sep 2 IWM is that watch — officialCandidate false.</p>
+
+          <h3>Three questions, never one “trade result”</h3>
+          <p><strong>Peak Opportunity After Alert</strong> = (highest verified executable bid after referenceEntry − referenceEntry) ÷ referenceEntry × 100. Reference entry is the first verifiable executable ASK after the timestamped public alert that sits inside the preferred range, does not exceed the maximum entry, arrives before the alert expires or invalidates, and has enough displayed size. Candle highs, last-trade highs, ask highs, midpoints, theoretical marks, overnight closed-market indications, and TradingView Superchart traded OHLC are rejected for official Peak. Only VERIFIED NBBO and BROKER QUOTE VERIFIED enter official Peak aggregates. Official verified Opportunity Identified YES requires +25% on a verified executable bid. A public-card YES may be labeled CHARTED when a traded-price high clears +25% — that charted YES never increments verified +25% counts.</p>
+          <p><strong>All-or-Nothing</strong> is a $1,000 fixed-notional counterfactual with no stop and no scaling, held to the predetermined terminal exit. Hypothetical $1,000 fixed-notional research model. Not the model-account position size and not realized performance. It never changes the $10,000 managed account.</p>
+          <p><strong>Managed Execution</strong> is the only input to the $10,000 model. Underlying invalidation is the primary exit; 50% premium loss is the emergency backstop. Planned stop-loss amount and maximum capital at risk are different numbers.</p>
+          <p><strong>Opportunity Capture Rate</strong> = managed realized profit ÷ maximum verified opportunity profit, shown only when Peak Opportunity is positive, managed profit is positive, and both use verified executable data. Capturing 100% of the intraday max is not a realistic standard.</p>
+
+          <h3>End-of-window processing</h3>
+          <p>The desk does not tick every second. After the window, compute the record from preserved evidence — not from a single 12:30 PM check, a five-minute-before-close check, or a closing snapshot. AWAITING VERIFIED QUOTE DATA is only while the contract is still quoted. If the chain is gone and the bid tape was not kept, Official Peak is NOT PRESERVED — insufficient historical quote evidence. That is a protocol miss, not a later lookup. See <a href="#evidence-protocol">Preserve the tape before the chain disappears</a>.</p>
+
+          <h3>How fills and marks work</h3>
+          <p>Official managed P&amp;L uses the documented fill. Desk-indicated marks are labeled UNAUDITED and are not official returns. We do not invent an OPRA bid/ask. Commissions and slippage are not modeled unless a row says they are. SPY, QQQ, and IWM are ETF options (physically settled), not cash-settled index options.</p>
+
+          <h3>Overnight carry</h3>
+          <p>One trade object, one executed count, one P&amp;L. The entry-date card shows OPEN — CARRIED OVERNIGHT with no realized P&amp;L. The exit-date card shows CARRY-IN FROM the entry date; realized P&amp;L posts there only. Both cards link to the same journal. Counters iterate unique trade ids, never timeline length, never day-card count.</p>
+
+          <h3>Position-sizing defaults</h3>
+          <p>This challenge is on a 1-lot default until a later ticket says otherwise. Planned stop-loss target 1% / $100 of the $10,000 model. Max premium per position 5% / $500. Max combined open premium 7.5% / $750. Max planned daily stop-loss 2% / $200. Maximum possible loss is 100% of premium deployed.</p>
+          <p>Example: 2 contracts at $1.50 = $300 premium; a 30% planned stop is about $90; maximum capital at risk is $300. Show both numbers. Never call $100 the absolute max risk when premium is larger than $100.</p>
+
+          <h3>Profit-protection ladder — forward only</h3>
+          <p>Adopted <time class="stamp-et" datetime="2026-09-02T12:35:00-04:00" data-et data-et-approx>Sep 2, 2026, ~12:35 PM ET</time>. Applies to rules-based tickets opened after this stamp. Does not rewrite Trade Zero.</p>
+          <ol class="falls">
+            <li>
+              <span class="fall-n">01</span>
+              <span class="fall-name">+25%</span>
+              <span class="fall-why">Publish a premium floor. Protect first.</span>
+            </li>
+            <li>
+              <span class="fall-n">02</span>
+              <span class="fall-name">+50%</span>
+              <span class="fall-why">REALIZE PROFIT or PROTECTED RUNNER. No third option on a 1-lot.</span>
+            </li>
+            <li>
+              <span class="fall-n">03</span>
+              <span class="fall-name">+75%</span>
+              <span class="fall-why">Unprotected hold prohibited.</span>
+            </li>
+            <li>
+              <span class="fall-n">04</span>
+              <span class="fall-name">+100%</span>
+              <span class="fall-why">Tighten the floor. Harvest if the destination stalls.</span>
+            </li>
+            <li>
+              <span class="fall-n">05</span>
+              <span class="fall-name">+200%</span>
+              <span class="fall-why">Leftover runner only, and only with a hard floor.</span>
+            </li>
+          </ol>
+          <div class="odte-size">
+            <article>
+              <h3>1 contract</h3>
+              <ul>
+                <li>Entire risk is one defined-risk debit.</li>
+                <li>+50%: REALIZE PROFIT or classify PROTECTED RUNNER.</li>
+                <li>+75%: unprotected hold prohibited.</li>
+                <li>+100% / +200%: trail the floor; harvest if the destination fails.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>2 contracts</h3>
+              <ul>
+                <li>First lot between +50% and +75%. The remaining lot becomes a PROTECTED RUNNER with a published floor.</li>
+                <li>Never add the second lot after a loser.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>3 contracts</h3>
+              <ul>
+                <li>One at +50%, one at +100%, one protected runner.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>4+ contracts</h3>
+              <ul>
+                <li>25% at +50%, 25% at +100%, 25% at the primary target, 25% protected runner.</li>
+              </ul>
+            </article>
+          </div>
+
+          <h3>What this page does not publish</h3>
+          <p>This challenge does not publish sector-scoring internals. GEX snapshots name structure — not entries by themselves.</p>
+        </div>
+      </details>
+
+      <article class="odte-journal" id="journal-2026-09-01-qqq-707p">
+        <h3>Trade journal · 2026-09-01-qqq-707p</h3>
+        <p class="odte-board-kicker">PRE-RULE BASELINE — TRADE ZERO · 1DTE · unique id counted once</p>
+        <button type="button" class="ghost-btn odte-details-btn" id="odte-journal-btn" aria-expanded="false" aria-controls="odte-journal-body">VIEW FULL TRADE DETAILS</button>
+        <div class="odte-details odte-three" id="odte-journal-body" hidden>
+          <dl class="odte-card-grid">
+            <div><dt>Classification</dt><dd>pre-rule-baseline</dd></div>
+            <div><dt>Compliance</dt><dd>N/A — RULES ADOPTED AFTERWARD</dd></div>
+            <div><dt>Underlying</dt><dd>QQQ</dd></div>
+            <div><dt>Exact contract</dt><dd>QQQ Sep 2 2026 707 put</dd></div>
+            <div><dt>0DTE or 1DTE</dt><dd>1DTE</dd></div>
+            <div><dt>Entry</dt><dd>$2.20 · Sep 1, 4:15 PM ET</dd></div>
+            <div><dt>Cash-open mark</dt><dd class="warn">$2.54 user-stated — not a verified executable bid</dd></div>
+            <div><dt>Overnight indication</dt><dd class="warn">~$4.00–$4.40 — not executable while the options market was closed</dd></div>
+            <div><dt>Exit</dt><dd>$0.60 · Sep 2, ~12:25 PM ET</dd></div>
+            <div><dt>Managed historical result</dt><dd>−$160</dd></div>
+            <div><dt>Opportunity identified</dt><dd>YES · CHARTED</dd></div>
+            <div><dt>Official Peak Opportunity</dt><dd>NOT PRESERVED — insufficient historical quote evidence</dd></div>
+            <div><dt>Charted peak after alert</dt><dd>+28.6% · $2.83 traded-price high</dd></div>
+            <div><dt>Indicative overnight</dt><dd>~$4.00–$4.40 — not the peak; excluded</dd></div>
+          </dl>
+          <section>
+            <h3>Signal quality</h3>
+            <dl class="odte-card-grid">
+              <div><dt>Opportunity identified</dt><dd>YES · CHARTED</dd></div>
+              <div><dt>Qualifier</dt><dd>CHARTED — traded-price high, not a verified executable bid</dd></div>
+              <div><dt>Reference entry</dt><dd>$2.20 published alert / desk fill — not a verified ASK tape</dd></div>
+              <div><dt>Verified executable bid</dt><dd>NOT PRESERVED — insufficient historical quote evidence</dd></div>
+              <div><dt>Official Peak Opportunity</dt><dd>NOT PRESERVED — insufficient historical quote evidence</dd></div>
+              <div><dt>Official verification</dt><dd>NOT PRESERVED — insufficient historical quote evidence</dd></div>
+              <div><dt>Charted peak after alert</dt><dd>+28.6%</dd></div>
+              <div><dt>Charted high / time</dt><dd>$2.83 · Sep 2, 2026, 9:30 AM ET</dd></div>
+              <div><dt>Charted verification</dt><dd>TRADINGVIEW TRADED-PRICE HIGH — NOT A VERIFIED EXECUTABLE BID</dd></div>
+              <div><dt>MAE before peak</dt><dd>—</dd></div>
+              <div><dt>Time to peak</dt><dd>Overnight carry into the 9:30 AM ET cash-open minute (charted high)</dd></div>
+              <div><dt>Peak vs managed invalidation</dt><dd>—</dd></div>
+              <div><dt>Peak day</dt><dd>Later day — Sep 2 expiration session</dd></div>
+            </dl>
+            <p class="odte-charted-disc">The contract recorded a $2.83 traded-price high during the 9:30 AM ET one-minute candle, approximately 28.6% above the $2.20 reference entry. This establishes a charted opportunity above the challenge’s +25% threshold, but it does not prove that the entire position could have been sold at that price. On-chart 2.59 is a later local peak label — not the session high, not the charted peak, not a verified bid, not the managed result. On-chart 1.61 is a local trough, not a peak.</p>
+            <p>Do not classify $2.54 as an official positive opportunity. Do not use overnight $4.00–$4.40 as a verified executable bid or as the charted peak. The bid/NBBO was not captured before this 0DTE expired, so Official Peak cannot be verified later.</p>
+            <figure class="odte-evidence">
+              <img src="evidence/trade-zero-qqq-707p-2026-09-02-0930-1m.png" alt="TradingView one-minute chart of QQQ Sep 2, 2026 $707 put, 9:30 AM ET candle">
+              <figcaption>
+                <span class="mono">TradingView · One minute · Sep 2, 2026, 9:30 AM ET</span>
+                <span>Contract: QQQ Sep 2, 2026 $707 put</span>
+                <span>OHLC: $2.18 / $2.83 / $2.12 / $2.45</span>
+                <span>Evidence level: Charted traded-price data</span>
+                <span>Executable-bid verification: NOT PRESERVED — insufficient historical quote evidence</span>
+                <span>quoteSource: TradingView Superchart 1m traded OHLC (not NBBO)</span>
+              </figcaption>
+            </figure>
+          </section>
+          <section>
+            <h3>All-or-nothing research model</h3>
+            <p>Hypothetical $1,000 fixed-notional research model. Not the model-account position size and not realized performance.</p>
+            <dl class="odte-card-grid">
+              <div><dt>Notional</dt><dd>$1,000</dd></div>
+              <div><dt>Terminal exit time</dt><dd>Sep 2, ~12:25 PM ET last known exit — no invented cutoff bid</dd></div>
+              <div><dt>Terminal value</dt><dd>$0.60 INDICATIVE / UNAVAILABLE</dd></div>
+              <div><dt>% outcome</dt><dd>−72.7% indicative</dd></div>
+              <div><dt>$ outcome</dt><dd>Not entered in official AON totals</dd></div>
+              <div><dt>Max possible loss</dt><dd>$1,000</dd></div>
+            </dl>
+          </section>
+          <section>
+            <h3>Managed execution model</h3>
+            <dl class="odte-card-grid">
+              <div><dt>Model position size</dt><dd>1 contract</dd></div>
+              <div><dt>Planned stop-loss amount</dt><dd>N/A — rules adopted afterward</dd></div>
+              <div><dt>Maximum capital at risk</dt><dd>$220 (full premium)</dd></div>
+              <div><dt>Modeled exit</dt><dd>$0.60</dd></div>
+              <div><dt>% result</dt><dd>−72.7%</dd></div>
+              <div><dt>$ result</dt><dd>−$160</dd></div>
+              <div><dt>Rule compliance</dt><dd>N/A — RULES ADOPTED AFTERWARD</dd></div>
+              <div><dt>Opportunity Capture Rate</dt><dd>—</dd></div>
+            </dl>
+            <p>Excluded from rules-based W/L and compliance. The −$160 sits in model cash once as approved pre-rule baseline accounting ($9,840).</p>
+          </section>
+
+          <h4>GEX maps (original + intraday updates)</h4>
+          <p><strong>Overnight (Sep 1):</strong> QQQ 707.76 · net GEX −86.5M (negative) · HVL/flip 717 · P1 magnet 700 · C1 725. QQQ under the 717 flip with 700 as put-side magnet.</p>
+          <p><strong>Cash open (Sep 2, 9:30 AM ET):</strong> 707 HVL reclaimed · net GEX flipped positive · call wall rolled to 708 · 700 thesis CANCELLED.</p>
+          <h4>Original thesis</h4>
+          <p>1DTE put against QQQ 700 (GEX P1) with hard invalidation at HVL 717. Overnight carry into expiration. Not a same-day 0DTE entry.</p>
+          <h4>Thesis updates</h4>
+          <ul>
+            <li><time class="stamp-et" datetime="2026-09-02T10:03:00-04:00" data-et data-et-approx>Sep 2, ~10:03 AM ET</time> — Cancel 700 if GEX flips positive / HVL 707 reclaimed and holds.</li>
+            <li><time class="stamp-et" datetime="2026-09-02T12:25:00-04:00" data-et data-et-approx>Sep 2, ~12:25 PM ET</time> — 700 thesis CANCELLED: 707 HVL held ~2h; GEX positive; call wall 708.</li>
+          </ul>
+          <h4>Targets captured vs peak</h4>
+          <dl class="odte-card-grid">
+            <div><dt>Initial target</dt><dd>QQQ $700 (GEX P1 magnet)</dd></div>
+            <div><dt>Structural / GEX target</dt><dd>700 magnet — CANCELLED after HVL reclaim</dd></div>
+            <div><dt>Profit actually captured</dt><dd>Managed exit $0.60 — −$160 realized</dd></div>
+            <div><dt>Peak opportunity (charted)</dt><dd>+28.6% / $2.83 — CHARTED, not verified executable bid</dd></div>
+            <div><dt>Peak opportunity (verified executable bid)</dt><dd>NOT PRESERVED — insufficient historical quote evidence</dd></div>
+          </dl>
+
+          <h4>Thesis (summary)</h4>
+          <p>1DTE put against QQQ 700 (GEX P1) with hard invalidation at HVL 717. Overnight carry into expiration. Not a same-day 0DTE entry. QQQ is an ETF option, not a cash-settled index option.</p>
+          <h4>Commentary</h4>
+          <p>Rules — including the profit-protection ladder — were adopted after this ticket’s open (LESSON 01, 12:35 PM ET). Managed historical result −$160. Charted peak after alert is +28.6% from the $2.83 9:30 AM ET traded-price high vs $2.20 — CHARTED, not a verified executable bid. Official Peak is NOT PRESERVED — insufficient historical quote evidence. Overnight indication is not the peak. Cash open $2.54 is user-stated, not a close. On-chart 2.59 is a later local label, not used.</p>
+          <h4>Bid / ask history</h4>
+          <p>Official paper exit $0.60 from the desk lock. Charted 9:30 AM ET 1-minute OHLC $2.18 / $2.83 / $2.12 / $2.45 from TradingView Superchart traded prices — not NBBO. Cash open $2.54 user-stated, not an OPRA verify. Overnight indication ~$4.00–$4.40 UNAUDITED, occurred while options were closed, and is not the peak. Historical NBBO: NOT PRESERVED — insufficient historical quote evidence. The bid tape was not captured before the contract left the chain, so it cannot be verified later.</p>
+          <h4>GEX snapshot</h4>
+          <p>At the cut: 707 HVL reclaim held ~2h; GEX flipped positive; 700 thesis cancelled. Entry snapshot 2026-09-01 ~1:13 PT (QQQ 707.76, HVL 717, P1 700, C1 725, net GEX −86.5M).</p>
+          <h4>Math</h4>
+          <p>Managed: 1 contract × ($0.60 − $2.20) × 100 = −$160. Model $10,000 − $160 = $9,840. Charted peak: ($2.83 − $2.20) ÷ $2.20 × 100 = +28.6%. Official Peak formula is not applied to traded-price highs or overnight marks. All-or-nothing $1,000 is not added to this balance and does not use $2.83 as a terminal exit.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap section" id="disclosures">
+      <div class="section-head">
+        <h2>Risk disclosure</h2>
+        <p class="asof">Read before any ticket</p>
+      </div>
+      <div class="odte-disc">
+        <p>Stops and invalidations are management instructions, not guaranteed fills. A long option may gap through its intended stop and can lose up to 100% of the premium paid.</p>
+        <p>Peak Opportunity After Alert is the largest verifiable executable gain that became available after the timestamped alert and before the contract’s trading window ended. It is not realized profit and does not mean anyone captured the full move.</p>
+        <ul>
+          <li>Planned stop-loss amount is a plan, not a guaranteed fill.</li>
+          <li>Maximum capital at risk on a long option equals the full premium deployed.</li>
+          <li>Targets on the $10,000 model: planned stop-loss 1% / $100; max premium per position 5% / $500; max combined open premium 7.5% / $750; max planned daily stop-loss 2% / $200; maximum possible loss = 100% of premium deployed.</li>
+          <li>Example: 2 contracts at $1.50 = $300 premium; 30% planned stop ≈ $90; maximum capital at risk $300. Never call $100 the absolute max risk when premium is larger than $100.</li>
+          <li>Paper / simulated unless a row says LIVE. This challenge is one simulated book.</li>
+          <li>Commissions and slippage are not modeled unless a row says they are.</li>
+          <li>Indicated marks are labeled and are not official P&amp;L.</li>
+          <li>Corrections are appended, never overwritten.</li>
+          <li>Educational research. Not a guarantee. Not advice. Publisher, not an adviser.</li>
+        </ul>
+        <p>We are not a registered investment adviser, broker-dealer, or commodity trading advisor. Nothing here is personalized financial advice or an offer to buy or sell any security or option.</p>
+      </div>
+    </section>
+
+    <section class="wrap section page-cta" id="capture">
+      <div class="section-head">
+        <h2>Challenge updates</h2>
+        <p class="asof">Publication list · not a live desk</p>
+      </div>
+      <p class="intro">Follow the experiment via the CosAnalyst newsletter. This is list capture for research updates — not a real-time trade-alert service and not a promise of fills.</p>
+      <p><a class="cta-btn" href="/newsletter/">Subscribe to The CosAnalyst Market Brief →</a></p>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p><strong>BOOK FACT · NOT A TICKET</strong></p>
+      <p>CosAnalyst is a research desk publication. Simulated research. Publisher + AI-assisted. Not advice and not a ticket. The 0DTE Challenge is a public audit of index-ETF 0DTE/1DTE tickets on one simulated book — not a gallery of winning-trade screenshots.</p>
+      <p>Desk: <a href="mailto:desk@cosanalyst.com">desk@cosanalyst.com</a> · <a href="https://x.com/CosAnalyst">@CosAnalyst</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

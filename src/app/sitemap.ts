@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: item.href === "/" ? 1 : 0.7,
     })),
     {
+      url: absUrl("/0dte-challenge/"),
+      lastModified: now,
+      changeFrequency: "daily" as const,
+      priority: 0.85,
+    },
+    {
       url: absUrl("/articles/"),
       lastModified: now,
       changeFrequency: "weekly" as const,
