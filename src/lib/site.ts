@@ -22,6 +22,7 @@ export const nav = [
   { href: "/options/", label: "Options" },
   { href: "/commodities/", label: "Commodities" },
   { href: "/crypto/", label: "Crypto" },
+  { href: "/0dte-challenge/", label: "0DTE Challenge" },
   { href: "/research/", label: "Research" },
   { href: "/projects/", label: "Projects" },
   { href: "/newsletter/", label: "Newsletter" },

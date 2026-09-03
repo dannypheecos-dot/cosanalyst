@@ -22,6 +22,15 @@ export default function Page() {
           </p>
         </div>
         <div className="grid">
+          <a className="card" href="/0dte-challenge/">
+            <div className="meta">Live experiment</div>
+            <h3>0DTE Challenge</h3>
+            <p>
+              A public, timestamped experiment in same-day options using market
+              structure, GEX snapshots, and defined-risk rules. Simulated
+              research — not a signal service.
+            </p>
+          </a>
           <a className="card" href={site.sectorSelectorUrl} rel="noopener noreferrer">
             <div className="meta">Research project</div>
             <h3>Sector Selector</h3>
