@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cosanalyst.com/0dte-challenge/lab.schema.json",
+  "title": "CosAnalyst Daily Options Lab book",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "name",
+    "tagline",
+    "description",
+    "lastUpdatedEt",
+    "learningFocus",
+    "today",
+    "entries",
+    "learningNotes",
+    "corrections"
+  ],
+  "properties": {
+    "version": { "const": 1 },
+    "name": { "const": "THE COSANALYST DAILY OPTIONS LAB" },
+    "tagline": { "type": "string" },
+    "description": { "type": "string" },
+    "lastUpdatedEt": { "type": ["string", "null"] },
+    "learningFocus": { "type": "string" },
+    "today": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sessionDate", "status", "entryId", "note"],
+      "properties": {
+        "sessionDate": { "type": ["string", "null"] },
+        "status": {
+          "enum": [
+            "SELECTING",
+            "ENTRY LOGGED",
+            "TRACKING",
+            "RESULT COMPLETE",
+            "TECHNICAL EXCEPTION"
+          ]
+        },
+        "entryId": { "type": ["string", "null"] },
+        "note": { "type": "string" }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entry" }
+    },
+    "learningNotes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "entryId", "sessionDate", "appendedAtEt", "body"],
+        "properties": {
+          "id": { "type": "string" },
+          "entryId": { "type": "string" },
+          "sessionDate": { "type": "string" },
+          "appendedAtEt": { "type": "string" },
+          "body": { "type": "string" }
+        }
+      }
+    },
+    "corrections": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/correction" }
+    }
+  },
+  "$defs": {
+    "correction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "appendedAtEt", "body"],
+      "properties": {
+        "id": { "type": "string" },
+        "appendedAtEt": { "type": "string" },
+        "body": { "type": "string" }
+      }
+    },
+    "fill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "filledAtEt", "fillPremium", "neverBackdated"],
+      "properties": {
+        "source": { "const": "TRADINGVIEW_PAPER" },
+        "filledAtEt": { "type": "string" },
+        "fillPremium": { "type": "number", "exclusiveMinimum": 0 },
+        "screenshot": { "type": "string" },
+        "neverBackdated": { "const": true }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sessionDate",
+        "status",
+        "label",
+        "underlying",
+        "side",
+        "strike",
+        "expiration",
+        "expirationKind",
+        "expirationRationale",
+        "quantity",
+        "capitalUnitUsd",
+        "capitalUnitException",
+        "corrections"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "sessionDate": { "type": "string" },
+        "status": {
+          "enum": [
+            "SELECTING",
+            "ENTRY LOGGED",
+            "TRACKING",
+            "RESULT COMPLETE",
+            "TECHNICAL EXCEPTION"
+          ]
+        },
+        "label": { "const": "DAILY TEST ENTRY" },
+        "underlying": { "enum": ["QQQ", "SPY", "IWM"] },
+        "side": { "enum": ["CALL", "PUT"] },
+        "strike": { "type": "number" },
+        "expiration": { "type": "string" },
+        "expirationKind": { "enum": ["0DTE", "NEXT_SESSION"] },
+        "expirationRationale": { "type": "string" },
+        "fill": { "$ref": "#/$defs/fill" },
+        "quantity": { "type": "integer", "minimum": 1 },
+        "capitalUnitUsd": { "const": 500 },
+        "capitalUnitException": { "type": "boolean" },
+        "officialSimulatedPnl": { "type": "number" },
+        "officialSimulatedPnlPct": { "type": "number" },
+        "maxOpportunityAfterAlert": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["dollar", "pct", "notRealized", "note"],
+          "properties": {
+            "dollar": { "type": "number" },
+            "pct": { "type": "number" },
+            "notRealized": { "const": true },
+            "note": { "type": "string" }
+          }
+        },
+        "evidence": { "type": "object" },
+        "learningNote": { "type": "string" },
+        "corrections": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/correction" }
+        },
+        "technicalException": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["reason", "atEt"],
+          "properties": {
+            "reason": { "type": "string" },
+            "atEt": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

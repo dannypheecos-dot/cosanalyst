@@ -72,6 +72,42 @@ if (maps.length) {
   process.exit(1);
 }
 
+const labHtmlPath = join(root, "0dte-challenge/index.html");
+if (!existsSync(labHtmlPath)) {
+  hits.push("lab-page missing out/0dte-challenge/index.html");
+} else {
+  const labHtml = readFileSync(labHtmlPath, "utf8");
+  if (/<link[^>]+challenge\.css|<script[^>]+0dte-challenge\/app\.js/.test(labHtml)) {
+    hits.push("lab-page still links old challenge.css or app.js");
+  }
+  if (!/DAILY OPTIONS LAB/i.test(labHtml)) {
+    hits.push("lab-page missing Daily Options Lab identity");
+  }
+  if (!/canonical[^>]+https:\/\/cosanalyst\.com\/0dte-challenge\//i.test(labHtml)) {
+    hits.push("lab-page missing apex canonical https://cosanalyst.com/0dte-challenge/");
+  }
+  if (/www\.cosanalyst\.com\/0dte-challenge/.test(labHtml)) {
+    hits.push("lab-page should canonicalize to bare cosanalyst.com, not www");
+  }
+}
+
+if (existsSync(join(root, "0dte-challenge/challenge.css"))) {
+  hits.push("old challenge.css still exported");
+}
+if (existsSync(join(root, "0dte-challenge/app.js"))) {
+  hits.push("old challenge app.js still exported");
+}
+
+const labJsonPath = join(root, "0dte-challenge/lab.json");
+if (!existsSync(labJsonPath)) {
+  hits.push("lab.json missing from export");
+} else {
+  const live = JSON.parse(readFileSync(labJsonPath, "utf8"));
+  if (!Array.isArray(live.entries) || live.entries.length !== 0) {
+    hits.push("live lab.json must ship with an empty entries array");
+  }
+}
+
 if (hits.length || rgHits) {
   console.error("check-ship: forbidden tokens in production output");
   if (hits.length) console.error(hits.join("\n"));
@@ -83,3 +119,4 @@ console.log("anonymity + brand grep: clean");
 console.log("Tanuki / TanukiTrade / GEX Live: zero hits");
 console.log("personal tokens: zero hits");
 console.log("CNAME: cosanalyst.com");
+console.log("Daily Options Lab: old challenge CSS disconnected; live book empty");

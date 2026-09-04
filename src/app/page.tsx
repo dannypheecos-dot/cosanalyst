@@ -40,7 +40,7 @@ export default function HomePage() {
             ) : null}
             <Link className="desk-row" href="/0dte-challenge/">
               <span className="label">Active project</span>
-              <span className="value">30-Day AI 0DTE Challenge</span>
+              <span className="value">Daily Options Lab</span>
             </Link>
             <a className="desk-row" href={site.sectorSelectorUrl}>
               <span className="label">Sector research</span>
@@ -116,13 +116,13 @@ export default function HomePage() {
             </article>
             <article className="pillar">
               <p className="kicker">03</p>
-              <h3>0DTE Lab</h3>
+              <h3>Daily Options Lab</h3>
               <p>
-                A public, timestamped experiment in same-day options. Simulated
-                research — not a signal service.
+                One session. One entry. A transparent simulated-research record
+                — not a signal service.
               </p>
               <Link className="btn btn-ghost" href="/0dte-challenge/">
-                Enter the challenge →
+                Enter the lab →
               </Link>
             </article>
           </div>

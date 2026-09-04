@@ -1,0 +1,386 @@
+/* Daily Options Lab page styles — v2026-09-04. Next hashes this file. */
+.lab {
+  --lab-dark: var(--card-dark);
+  --lab-dark-2: var(--card-dark-2);
+  --lab-line: #2a3832;
+  --lab-mute: #9bb5a8;
+  --lab-warn: #d4b46a;
+}
+
+.lab-hero {
+  padding: 2.6rem 0 2.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.lab-hero-copy {
+  max-width: 46rem;
+}
+
+.lab-hero h1 {
+  max-width: 16ch;
+  font-size: clamp(2.15rem, 6vw, 3.6rem);
+}
+
+.lab-hero .dek {
+  font-size: clamp(1.05rem, 2.4vw, 1.2rem);
+  margin: 0 0 1.25rem;
+}
+
+.lab-banners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 1.15rem;
+}
+
+.lab-banner {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--forest);
+  color: var(--forest);
+  background: color-mix(in srgb, var(--forest-soft) 55%, var(--ivory));
+}
+
+.lab-banner.ink {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--ivory);
+}
+
+.lab-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+  margin: 1.4rem 0 0;
+}
+
+.lab-jump a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.lab-jump a:hover {
+  color: var(--forest);
+}
+
+.lab-section {
+  padding: 2.6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.lab-section .intro,
+.lab-copy {
+  max-width: 62ch;
+  text-wrap: pretty;
+}
+
+.lab-dark {
+  background: var(--lab-dark);
+  color: var(--ivory);
+  border: 1px solid var(--lab-line);
+  padding: 1.35rem 1.3rem 1.4rem;
+}
+
+.lab-dark h2,
+.lab-dark h3 {
+  color: var(--ivory);
+}
+
+.lab-dark .kicker,
+.lab-dark .asof {
+  color: var(--lab-mute);
+}
+
+.lab-dark p,
+.lab-dark .intro {
+  color: #d7e2dc;
+}
+
+.lab-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--lab-line);
+  color: var(--ivory);
+  background: var(--lab-dark-2);
+}
+
+.lab-empty {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  line-height: 1.3;
+  color: var(--ivory);
+}
+
+.lab-empty-note {
+  margin: 0.7rem 0 0;
+  color: #b7cfc2;
+  max-width: 52ch;
+}
+
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.lab-grid.dense {
+  grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+}
+
+.lab-stat {
+  background: var(--lab-dark-2);
+  border: 1px solid var(--lab-line);
+  padding: 0.75rem 0.85rem;
+  min-inline-size: 0;
+}
+
+.lab-stat .label {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 650;
+  color: var(--lab-mute);
+}
+
+.lab-stat .value {
+  font-family: var(--display);
+  font-size: 1.28rem;
+  line-height: 1.2;
+  color: var(--ivory);
+  margin-top: 0.2rem;
+}
+
+.lab-stat .note {
+  color: #8fa89c;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.lab-metrics {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.1rem;
+}
+
+.lab-metric {
+  border: 1px solid var(--lab-line);
+  padding: 0.9rem 1rem;
+}
+
+.lab-metric dt {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 650;
+  color: var(--lab-mute);
+}
+
+.lab-metric dd {
+  margin: 0.35rem 0 0;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  color: var(--ivory);
+}
+
+.lab-metric .disc {
+  display: block;
+  margin-top: 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--lab-warn);
+}
+
+.lab-list {
+  margin: 0;
+  padding-inline-start: 1.15rem;
+  max-width: 62ch;
+}
+
+.lab-list li + li {
+  margin-top: 0.45rem;
+}
+
+.lab-paper {
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  padding: 1.2rem 1.25rem 1.3rem;
+}
+
+.lab-paper h3 {
+  margin: 0 0 0.45rem;
+}
+
+.lab-paper p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.lab-archive-empty,
+.lab-learn-empty {
+  border: 1px dashed var(--line);
+  background: var(--paper-2);
+  padding: 1.4rem 1.25rem;
+}
+
+.lab-archive-empty strong,
+.lab-learn-empty strong {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.lab-prev {
+  background: var(--paper-2);
+}
+
+.lab-prev-flag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ivory);
+  background: var(--ink);
+  padding: 0.4rem 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.lab-prev .intro {
+  color: var(--ink);
+}
+
+.lab-prev-card {
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  padding: 1.2rem 1.25rem 1.3rem;
+  margin-top: 1rem;
+}
+
+.lab-prev-card h3 {
+  margin: 0 0 0.35rem;
+}
+
+.lab-dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 0.65rem;
+  margin: 1rem 0;
+}
+
+.lab-dl div {
+  border-left: 3px solid var(--forest);
+  padding: 0.35rem 0 0.35rem 0.7rem;
+}
+
+.lab-dl dt {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 650;
+  color: var(--forest);
+}
+
+.lab-dl dd {
+  margin: 0.15rem 0 0;
+  font-family: var(--display);
+  font-size: 1.05rem;
+}
+
+.lab-shot {
+  margin: 1.1rem 0 0;
+}
+
+.lab-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
+
+.lab-shot figcaption {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.45rem;
+}
+
+.lab-details {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  background: var(--ivory);
+  padding: 0.2rem 0.9rem 0.9rem;
+}
+
+.lab-details summary {
+  cursor: pointer;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  padding: 0.75rem 0;
+}
+
+.lab-details[open] summary {
+  color: var(--forest);
+}
+
+.lab-timeline {
+  list-style: none;
+  margin: 0.8rem 0 0;
+  padding: 0;
+}
+
+.lab-timeline li {
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.lab-timeline .action {
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--forest);
+  margin: 0 0 0.2rem;
+}
+
+.lab-timeline time {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.lab-timeline p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .lab-grid,
+  .lab-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-hero h1 {
+    max-width: none;
+  }
+}
