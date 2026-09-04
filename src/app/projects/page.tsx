@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Sector Selector and the 30-Day AI 0DTE Challenge. CosAnalyst stays the publication.",
+    "Sector Selector and the CosAnalyst Daily Options Lab. CosAnalyst stays the publication.",
   alternates: { canonical: "/projects/" },
 };
 
@@ -35,11 +35,11 @@ export default function Page() {
           </a>
           <Link className="card" href="/0dte-challenge/">
             <div className="meta">Live experiment</div>
-            <h3>30-Day AI 0DTE Challenge</h3>
+            <h3>Daily Options Lab</h3>
             <p>
-              A public, timestamped experiment in same-day options using market
-              structure, GEX snapshots, and defined-risk rules. Simulated
-              research — not a signal service.
+              One session. One entry. A public simulated-research experiment
+              testing GEX-informed ticker, direction, expiration, and timing.
+              Same URL: /0dte-challenge/.
             </p>
           </Link>
           <div className="card" aria-label="Future desks">

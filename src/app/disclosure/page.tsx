@@ -27,7 +27,7 @@ export default function Page() {
           audited results, AUM, or institutional adoption we do not have.
         </p>
         <p>
-          Sector Selector and the 0DTE Challenge are research projects, not
+          Sector Selector and the Daily Options Lab are research projects, not
           signal services. {site.newsletter} is a separate opt-in.
         </p>
         <p>
