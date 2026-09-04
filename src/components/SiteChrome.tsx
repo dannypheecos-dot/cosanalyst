@@ -88,19 +88,17 @@ export function SiteHeader() {
                 >
                   {item.label}
                 </Link>
-                <div className="nav-sub" role="list">
-                  {item.children.map((child) =>
-                    child.external ? (
-                      <a key={child.href} href={child.href} role="listitem">
-                        {child.label}
-                      </a>
-                    ) : (
-                      <Link key={child.href} href={child.href} role="listitem">
-                        {child.label}
-                      </Link>
-                    ),
-                  )}
-                </div>
+                <ul className="nav-sub">
+                  {item.children.map((child) => (
+                    <li key={child.href}>
+                      {child.external ? (
+                        <a href={child.href}>{child.label}</a>
+                      ) : (
+                        <Link href={child.href}>{child.label}</Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </div>
             );
           })}
