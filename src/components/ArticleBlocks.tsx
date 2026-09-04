@@ -67,12 +67,23 @@ function BlockView({ block }: { block: Block }) {
   }
 }
 
-export function ArticleBlocks({ article }: { article: Article }) {
+export function ArticleBlocks({
+  article,
+  skipFirstFigure = false,
+}: {
+  article: Article;
+  skipFirstFigure?: boolean;
+}) {
+  let skipped = !skipFirstFigure;
   return (
     <>
-      {article.body.map((block, index) => (
-        <BlockView key={`${article.slug}-${index}`} block={block} />
-      ))}
+      {article.body.map((block, index) => {
+        if (!skipped && block.type === "figure") {
+          skipped = true;
+          return null;
+        }
+        return <BlockView key={`${article.slug}-${index}`} block={block} />;
+      })}
     </>
   );
 }

@@ -3,10 +3,10 @@ import { ResearchArchive } from "@/components/ResearchArchive";
 import { articleTeasers, articles } from "@/content/articles";
 
 export const metadata: Metadata = {
-  title: "Research",
+  title: "Research archive",
   description:
-    "CosAnalyst desk notes. Simulated. Publisher + AI-assisted. Not a ticket.",
-  alternates: { canonical: "/research/" },
+    "Searchable CosAnalyst desk notes. Simulated. Publisher + AI-assisted. Not a ticket.",
+  alternates: { canonical: "/research/archive/" },
 };
 
 export default function Page() {
@@ -15,11 +15,10 @@ export default function Page() {
       <div className="wrap">
         <div className="page-head">
           <p className="kicker">Publication</p>
-          <h1>Research</h1>
+          <h1>Research archive</h1>
           <p>
-            {articles.length} verified desk notes. Search and filter the
-            archive. CosAnalyst.com is the publication home. We do not invent
-            GEX, CMT, or FedWatch.
+            {articles.length} verified desk notes. Same book as{" "}
+            <a href="/research/">/research/</a>.
           </p>
         </div>
         <ResearchArchive articles={articleTeasers()} />
