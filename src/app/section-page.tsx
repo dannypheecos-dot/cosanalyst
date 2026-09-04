@@ -1,5 +1,5 @@
 import { NoteCard } from "@/components/NoteCard";
-import { articlesFor } from "@/content/articles";
+import { articlesFor, toTeaser } from "@/content/articles";
 import { sections, type SectionId } from "@/lib/site";
 
 export function SectionPage({ id }: { id: SectionId }) {
@@ -17,7 +17,7 @@ export function SectionPage({ id }: { id: SectionId }) {
         {notes.length ? (
           <div className="grid">
             {notes.map((article) => (
-              <NoteCard key={article.slug} article={article} />
+              <NoteCard key={article.slug} article={toTeaser(article)} />
             ))}
           </div>
         ) : (

@@ -81,7 +81,7 @@ export default function RootLayout({
     <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
       <body>
         <a className="skip" href="#main">
-          Skip to the desk
+          Skip to content
         </a>
         <OrganizationJsonLd />
         <SiteHeader />

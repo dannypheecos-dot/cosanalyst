@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { NoteCard } from "@/components/NoteCard";
-import { articles } from "@/content/articles";
+import { articles, toTeaser } from "@/content/articles";
 
 export const metadata: Metadata = {
   title: "Articles",
@@ -17,12 +17,13 @@ export default function Page() {
           <h1>Articles</h1>
           <p>
             {articles.length} verified notes. CosAnalyst.com is the publication
-            home.
+            home. The searchable archive lives at{" "}
+            <a href="/research/">/research/</a>.
           </p>
         </div>
         <div className="grid">
           {articles.map((article) => (
-            <NoteCard key={article.slug} article={article} />
+            <NoteCard key={article.slug} article={toTeaser(article)} />
           ))}
         </div>
       </div>
