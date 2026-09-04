@@ -4,6 +4,7 @@ import flip717 from "./717-flip-ism-jolts";
 import energyLoad from "./energy-load-not-a-ticket";
 import hormuz from "./hormuz-larak-not-a-90-breakout";
 import japan from "./japan-10y-highest-since-1996";
+import laborDay from "./labor-day-hangover";
 import noWarsh from "./no-warsh-tuesday";
 import qqq from "./qqq-0dte-close-vs-midday";
 import robustness from "./robustness-is-the-edge";
@@ -12,6 +13,7 @@ import printZero from "./the-print-was-zero";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  laborDay,
   flip717,
   energyLoad,
   printZero,
