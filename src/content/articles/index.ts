@@ -10,9 +10,11 @@ import qqq from "./qqq-0dte-close-vs-midday";
 import robustness from "./robustness-is-the-edge";
 import spy from "./spy-friday-gamma";
 import printZero from "./the-print-was-zero";
+import washToRepair from "./wash-to-repair-week-sep-5-11";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  washToRepair,
   laborDay,
   flip717,
   energyLoad,
