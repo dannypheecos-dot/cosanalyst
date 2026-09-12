@@ -83,13 +83,13 @@ export default async function ArticlePage({ params }: Props) {
       </div>
       <article className="wrap article">
         <p className="kicker">
-          {sectionLabel(article.section)} · desk note
+          {sectionLabel(article.section)} · {article.kicker ?? "desk note"}
         </p>
         <h1>{article.title}</h1>
         <p className="dek">{article.dek}</p>
         <p className="byline">
-          {formatDate(article.date)} · {site.name} · {site.publisherLine} ·{" "}
-          {site.tagline}
+          {article.asOf ?? formatDate(article.date)} · {site.name} ·{" "}
+          {site.publisherLine} · {site.tagline}
         </p>
         <ArticleBlocks article={article} skipFirstFigure={Boolean(figure)} />
         {isSectorRelevant(article.slug) ? <SectorSelectorModule /> : null}

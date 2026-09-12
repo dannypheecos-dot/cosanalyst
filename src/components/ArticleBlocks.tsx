@@ -2,7 +2,13 @@ import { RichText } from "@/components/RichText";
 import type { Article, Block } from "@/content/types";
 import { asset } from "@/lib/asset";
 
-function BlockView({ block }: { block: Block }) {
+function BlockView({
+  block,
+  articleSlug,
+}: {
+  block: Block;
+  articleSlug: string;
+}) {
   switch (block.type) {
     case "lede":
       return (
@@ -18,6 +24,36 @@ function BlockView({ block }: { block: Block }) {
       );
     case "h2":
       return <h2>{block.text}</h2>;
+    case "h3":
+      return <h3>{block.text}</h3>;
+    case "table":
+      return (
+        <div className="article-table-wrap">
+          <table className="article-table">
+            <thead>
+              <tr>
+                {block.columns.map((column, index) => (
+                  <th key={`${column}-${index}`}>
+                    <RichText text={column} />
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, rowIndex) => (
+                <tr key={`${articleSlug}-row-${rowIndex}`}>
+                  {row.map((cell, cellIndex) => (
+                    <td key={`${rowIndex}-${cellIndex}`}>
+                      <RichText text={cell} />
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          {block.caption ? <p className="table-caption">{block.caption}</p> : null}
+        </div>
+      );
     case "stats":
       return (
         <div className="stats">
@@ -82,7 +118,13 @@ export function ArticleBlocks({
           skipped = true;
           return null;
         }
-        return <BlockView key={`${article.slug}-${index}`} block={block} />;
+        return (
+          <BlockView
+            key={`${article.slug}-${index}`}
+            articleSlug={article.slug}
+            block={block}
+          />
+        );
       })}
     </>
   );
