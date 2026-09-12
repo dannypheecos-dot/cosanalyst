@@ -103,7 +103,7 @@ const article: Article = {
     },
     {
       type: "p",
-      text: "Wash Thursday. Repair *attempt* Friday. The word is attempt.",
+      text: "Wash Thursday. Repair attempt Friday. The word is attempt.",
     },
     { type: "h2", text: "CPI + oil invoice" },
     {
@@ -152,7 +152,7 @@ const article: Article = {
     },
     {
       type: "p",
-      text: "**CONTESTED — hike narrative:** Post-print X tape argued a hike was suddenly live for Wed FOMC. That is chamber/prediction color, not a Cos FedWatch print. Cos does **not** publish FedWatch %. The fact on this page is narrower: core hot (+0.3% MoM vs +0.2% est), gasoline +3.9% MoM, $WTI Cos stamps as above, FOMC calendar Tue–Wed Sep 15–16 SEP*. Whether that *authorizes* a hike is contested — Warsh/reaction-function frame, not a Cos odds number. Label it **CONTESTED**. Skip is first-class until the meeting sits.",
+      text: "**CONTESTED — hike narrative:** Post-print X tape argued a hike was suddenly live for Wed FOMC. That is chamber/prediction color, not a Cos FedWatch print. Cos does **not** publish FedWatch %. The fact on this page is narrower: core hot (+0.3% MoM vs +0.2% est), gasoline +3.9% MoM, $WTI Cos stamps as above, FOMC calendar Tue–Wed Sep 15–16 SEP*. Whether that authorizes a hike is contested — Warsh/reaction-function frame, not a Cos odds number. Label it **CONTESTED**. Skip is first-class until the meeting sits.",
     },
     {
       type: "callout",

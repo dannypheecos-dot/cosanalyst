@@ -1,14 +1,11 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-const TOKEN = /(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*)/g;
+const TOKEN = /(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g;
 
 function renderChunk(chunk: string, key: number): ReactNode {
   if (chunk.startsWith("**") && chunk.endsWith("**")) {
     return <strong key={key}>{chunk.slice(2, -2)}</strong>;
-  }
-  if (chunk.startsWith("*") && chunk.endsWith("*")) {
-    return <em key={key}>{chunk.slice(1, -1)}</em>;
   }
 
   const link = chunk.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
