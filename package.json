@@ -5,8 +5,8 @@
   "description": "CosAnalyst publication — book fact, not a ticket.",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/strip-maps.mjs && node scripts/check-ship.mjs",
-    "test:odte": "node --check public/0dte-challenge/app.js && node scripts/odte-three-model-test.mjs",
+    "build": "next build && node scripts/strip-maps.mjs && node scripts/check-ship.mjs && npm run test:odte",
+    "test:odte": "node scripts/odte-three-model-test.mjs && node scripts/lab-book-test.mjs",
     "start": "npx --yes serve out"
   },
   "dependencies": {

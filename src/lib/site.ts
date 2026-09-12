@@ -45,7 +45,7 @@ export const primaryNav: readonly NavItem[] = [
       },
       {
         href: "/0dte-challenge/",
-        label: "30-Day AI 0DTE Challenge",
+        label: "Daily Options Lab",
       },
     ],
   },
@@ -57,7 +57,7 @@ export const footerNav = [
   { href: "/markets/", label: "Markets" },
   { href: "/projects/", label: "Projects" },
   { href: "https://sectorselector.ai/", label: "Sector Selector", external: true },
-  { href: "/0dte-challenge/", label: "0DTE Challenge" },
+  { href: "/0dte-challenge/", label: "Daily Options Lab" },
   { href: "/about/", label: "About" },
   { href: "/methodology/", label: "Methodology" },
   { href: "/disclosure/", label: "Disclosure" },
@@ -97,7 +97,7 @@ export const nav = [
   { href: "/options/", label: "Options" },
   { href: "/commodities/", label: "Commodities" },
   { href: "/crypto/", label: "Crypto" },
-  { href: "/0dte-challenge/", label: "0DTE Challenge" },
+  { href: "/0dte-challenge/", label: "Daily Options Lab" },
   { href: "/newsletter/", label: "Newsletter" },
 ] as const;
 
