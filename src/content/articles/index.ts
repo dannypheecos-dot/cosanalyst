@@ -3,6 +3,7 @@ import type { SectionId } from "@/lib/site";
 import flip717 from "./717-flip-ism-jolts";
 import energyLoad from "./energy-load-not-a-ticket";
 import hormuz from "./hormuz-larak-not-a-90-breakout";
+import innovationExemption from "./innovation-exemption-tokenized-nms-sandbox";
 import japan from "./japan-10y-highest-since-1996";
 import laborDay from "./labor-day-hangover";
 import noWarsh from "./no-warsh-tuesday";
@@ -15,6 +16,7 @@ import washToRepair from "./wash-to-repair-week-sep-5-11";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  innovationExemption,
   twoClocks,
   washToRepair,
   laborDay,
