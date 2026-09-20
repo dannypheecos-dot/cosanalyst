@@ -5,7 +5,7 @@ import { absUrl, sitemapPaths } from "@/lib/site";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date("2026-09-18T20:00:00.000Z");
+  const now = new Date("2026-09-19T20:00:00.000Z");
 
   const routes: MetadataRoute.Sitemap = sitemapPaths.map((path) => ({
     url: absUrl(path),
