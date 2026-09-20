@@ -1,6 +1,7 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
 import flip717 from "./717-flip-ism-jolts";
+import energyInto66 from "./energy-into-66-xle-sep-2026";
 import energyLoad from "./energy-load-not-a-ticket";
 import hormuz from "./hormuz-larak-not-a-90-breakout";
 import innovationExemption from "./innovation-exemption-tokenized-nms-sandbox";
@@ -16,6 +17,7 @@ import washToRepair from "./wash-to-repair-week-sep-5-11";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  energyInto66,
   innovationExemption,
   twoClocks,
   washToRepair,
@@ -69,6 +71,7 @@ export function articleTeasers(list: Article[] = articles): ArticleTeaser[] {
 }
 
 const SECTOR_RELEVANT = new Set([
+  "energy-into-66-xle-sep-2026",
   "robustness-is-the-edge",
   "energy-load-not-a-ticket",
   "wti-not-a-ticket",
