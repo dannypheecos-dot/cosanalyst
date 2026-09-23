@@ -29,8 +29,8 @@ export default function Page() {
         </p>
         <p>
           Desk notes live here. Sector Selector is a research project at{" "}
-          <a href={site.sectorSelectorUrl}>sectorselector.ai</a>. The 30-Day AI
-          0DTE Challenge is a public, timestamped experiment at{" "}
+          <a href={site.sectorSelectorUrl}>sectorselector.ai</a>. The CosAnalyst
+          Daily Options Lab is a public, timestamped experiment at{" "}
           <a href="/0dte-challenge/">/0dte-challenge/</a>.
         </p>
         <p>

@@ -6,7 +6,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
-const blotterPath = join("public", "0dte-challenge", "odte-blotter.json");
+const blotterPath = join("public", "0dte-challenge", "previous-format", "odte-blotter.json");
 const raw = readFileSync(blotterPath, "utf8");
 const data = JSON.parse(raw);
 

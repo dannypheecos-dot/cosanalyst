@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "name": "THE COSANALYST DAILY OPTIONS LAB",
+  "tagline": "One session. One entry. A transparent record.",
+  "description": "A public simulated-research experiment testing whether GEX-informed analysis can produce a profitable track record over time through better ticker selection, direction, expiration and entry timing.",
+  "lastUpdatedEt": null,
+  "learningFocus": "The desk is building the first Daily Test Entry under the new lab rules. No fabricated live ticket.",
+  "today": {
+    "sessionDate": null,
+    "status": "SELECTING",
+    "entryId": null,
+    "note": "No Daily Test Entry is on the book. The live scorecard stays empty until a TradingView paper fill is logged with an official ET timestamp and screenshot."
+  },
+  "entries": [],
+  "learningNotes": [],
+  "corrections": []
+}
