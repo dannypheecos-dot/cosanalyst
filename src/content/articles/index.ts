@@ -2,6 +2,7 @@ import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
 import flip717 from "./717-flip-ism-jolts";
 import energyInto66 from "./energy-into-66-xle-sep-2026";
+import lightningX402 from "./lightning-x402-ai-agents-pay-sep-2026";
 import energyLoad from "./energy-load-not-a-ticket";
 import hormuz from "./hormuz-larak-not-a-90-breakout";
 import innovationExemption from "./innovation-exemption-tokenized-nms-sandbox";
@@ -17,6 +18,7 @@ import washToRepair from "./wash-to-repair-week-sep-5-11";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  lightningX402,
   energyInto66,
   innovationExemption,
   twoClocks,
