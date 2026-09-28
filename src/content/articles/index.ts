@@ -10,6 +10,7 @@ import innovationExemption from "./innovation-exemption-tokenized-nms-sandbox";
 import japan from "./japan-10y-highest-since-1996";
 import laborDay from "./labor-day-hangover";
 import noWarsh from "./no-warsh-tuesday";
+import positiveVsNegativeGamma from "./positive-vs-negative-gamma";
 import qqq from "./qqq-0dte-close-vs-midday";
 import robustness from "./robustness-is-the-edge";
 import spy from "./spy-friday-gamma";
@@ -20,6 +21,7 @@ import whatIsGammaExposure from "./what-is-gamma-exposure";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  positiveVsNegativeGamma,
   whatIsGammaExposure,
   fedHikeOdds,
   lightningX402,
