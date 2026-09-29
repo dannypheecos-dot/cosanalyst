@@ -5,6 +5,7 @@ import energyInto66 from "./energy-into-66-xle-sep-2026";
 import lightningX402 from "./lightning-x402-ai-agents-pay-sep-2026";
 import energyLoad from "./energy-load-not-a-ticket";
 import fedHikeOdds from "./fed-hike-odds-october-december-2026";
+import gammaFlip from "./gamma-flip";
 import hormuz from "./hormuz-larak-not-a-90-breakout";
 import innovationExemption from "./innovation-exemption-tokenized-nms-sandbox";
 import japan from "./japan-10y-highest-since-1996";
@@ -21,6 +22,7 @@ import whatIsGammaExposure from "./what-is-gamma-exposure";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  gammaFlip,
   positiveVsNegativeGamma,
   whatIsGammaExposure,
   fedHikeOdds,
