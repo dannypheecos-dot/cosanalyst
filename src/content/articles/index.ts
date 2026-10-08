@@ -4,6 +4,7 @@ import flip717 from "./717-flip-ism-jolts";
 import energyInto66 from "./energy-into-66-xle-sep-2026";
 import lightningX402 from "./lightning-x402-ai-agents-pay-sep-2026";
 import energyLoad from "./energy-load-not-a-ticket";
+import fedCreditJunk from "./fed-says-credit-is-fine-junk-market-disagrees-oct-2026";
 import fedHikeOdds from "./fed-hike-odds-october-december-2026";
 import gammaFlip from "./gamma-flip";
 import hormuz from "./hormuz-larak-not-a-90-breakout";
@@ -22,6 +23,7 @@ import whatIsGammaExposure from "./what-is-gamma-exposure";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  fedCreditJunk,
   gammaFlip,
   positiveVsNegativeGamma,
   whatIsGammaExposure,
