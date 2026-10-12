@@ -1,6 +1,7 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
 import flip717 from "./717-flip-ism-jolts";
+import calmBeforeCpi from "./calm-before-cpi-has-no-cushion-oct-2026";
 import energyInto66 from "./energy-into-66-xle-sep-2026";
 import lightningX402 from "./lightning-x402-ai-agents-pay-sep-2026";
 import energyLoad from "./energy-load-not-a-ticket";
@@ -23,6 +24,7 @@ import whatIsGammaExposure from "./what-is-gamma-exposure";
 import wti from "./wti-not-a-ticket";
 
 export const articles: Article[] = [
+  calmBeforeCpi,
   fedCreditJunk,
   gammaFlip,
   positiveVsNegativeGamma,
