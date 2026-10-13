@@ -65,7 +65,10 @@ export default function HomePage() {
           </div>
           {latest ? (
             <div className="lead-grid">
-              <NoteCard article={toTeaser(latest)} lead />
+              <div className="lead-col">
+                <NoteCard article={toTeaser(latest)} lead />
+                <SectorSelectorBanner placement="homepage" compact />
+              </div>
               <div className="stack-cards">
                 <TelegramPromo titleId="home-telegram-promo-title" compact />
                 {secondary.map((article) => (
@@ -76,12 +79,6 @@ export default function HomePage() {
           ) : (
             <p className="empty">No Cos-verified notes on the desk yet.</p>
           )}
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="wrap-wide">
-          <SectorSelectorBanner placement="homepage" />
         </div>
       </section>
 
