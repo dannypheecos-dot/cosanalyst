@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { NoteCard } from "@/components/NoteCard";
 import { SectorSelectorBanner } from "@/components/SectorSelectorBanner";
+import { TelegramPromo } from "@/components/TelegramPromo";
 import { publishedBookViews } from "@/content/book";
 import { articles, toTeaser } from "@/content/articles";
 import { formatDate } from "@/lib/format";
@@ -50,6 +51,12 @@ export default function HomePage() {
           </aside>
         </div>
       </section>
+
+      <div className="tg-home">
+        <div className="wrap">
+          <TelegramPromo titleId="home-telegram-promo-title" />
+        </div>
+      </div>
 
       <section className="section">
         <div className="wrap">

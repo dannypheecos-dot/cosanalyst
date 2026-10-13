@@ -1184,3 +1184,375 @@ figure.shot figcaption {
     height: 0.75rem;
   }
 }
+
+/* Telegram promo card */
+.tg-home {
+  padding: 1.4rem 0 0.15rem;
+}
+
+.tg-promo {
+  background: #111111;
+  color: #f6f1e6;
+  border-top: 4px solid #ff2a2a;
+}
+
+.tg-promo-in {
+  container: tg-promo / inline-size;
+  padding: 1.15rem 1.15rem 1rem;
+}
+
+.tg-promo p,
+.tg-promo li {
+  max-width: none;
+}
+
+.tg-promo p {
+  margin: 0;
+}
+
+.tg-layout {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.tg-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.45rem 0.8rem;
+}
+
+.tg-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.3;
+  color: #f6f1e6;
+}
+
+.tg-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #3ddc84;
+  color: #111111;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  padding: 0.28rem 0.48rem 0.24rem;
+  border-radius: 999px;
+}
+
+.tg-live-dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #0b3d22;
+}
+
+.tg-promo h2,
+.article .tg-promo h2 {
+  font-family: var(--font-condensed), "Arial Narrow", "Franklin Gothic Medium", sans-serif;
+  font-weight: 700;
+  font-stretch: condensed;
+  font-size: 1.85rem;
+  font-size: clamp(1.7rem, 4.4cqi, 2.75rem);
+  line-height: 0.96;
+  letter-spacing: -0.015em;
+  color: #f6f1e6;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.tg-accent {
+  color: #ff2a2a;
+}
+
+.tg-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+  max-width: 68ch;
+}
+
+.article .tg-bullets {
+  padding-left: 0;
+}
+
+.tg-bullets li {
+  position: relative;
+  margin: 0;
+  padding-inline-start: 1.05rem;
+  color: #f6f1e6;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.tg-bullets li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.48em;
+  width: 0.42rem;
+  height: 0.42rem;
+  background: #ff2a2a;
+}
+
+.tg-visual {
+  display: grid;
+  gap: 0.75rem;
+  align-content: center;
+  min-width: 0;
+}
+
+.tg-devices {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: center;
+}
+
+.tg-phone,
+.tg-qr-link {
+  width: min(100%, 11.5rem);
+}
+
+.tg-phone {
+  display: flex;
+  flex-direction: column;
+  background: #1a1a1a;
+  border: 1px solid #3a3a3a;
+  border-radius: 1rem;
+  padding: 0.4rem 0.4rem 0.5rem;
+  min-height: 0;
+}
+
+.tg-phone-speaker {
+  width: 2rem;
+  height: 0.22rem;
+  margin: 0.2rem auto 0.4rem;
+  border-radius: 999px;
+  background: #3f3f3f;
+}
+
+.tg-phone-screen {
+  flex: 1;
+  background: #f6f1e6;
+  color: #141210;
+  border-radius: 0.55rem;
+  padding: 0.35rem 0.45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 0;
+}
+
+.tg-phone-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  padding-block: 0.28rem;
+  border-bottom: 1px solid #e4dccb;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #141210;
+}
+
+.tg-phone-row:last-child {
+  border-bottom: 0;
+}
+
+.tg-phone-mark {
+  flex: none;
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-top: 0.16rem;
+  background: #ff2a2a;
+}
+
+.tg-qr-link {
+  display: block;
+  background: #f6f1e6;
+  border: 2px solid #f6f1e6;
+  line-height: 0;
+  min-width: 0;
+}
+
+.tg-qr-link:hover {
+  border-color: #ff2a2a;
+}
+
+.tg-qr svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+}
+
+.tg-promo a.tg-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  width: 100%;
+  background: #c4171d;
+  border: 1px solid #c4171d;
+  color: #f6f1e6;
+  text-decoration: none;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  padding: 0.85rem 1rem;
+  text-align: center;
+}
+
+.tg-promo a.tg-cta:hover {
+  background: #f6f1e6;
+  border-color: #f6f1e6;
+  color: #111111;
+}
+
+.tg-cta svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.tg-foot {
+  display: grid;
+  gap: 0.35rem;
+  border-top: 1px solid rgba(246, 241, 230, 0.22);
+  padding-top: 0.75rem;
+}
+
+.tg-soon {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #f6f1e6;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.tg-soon-mark {
+  flex: none;
+  width: 0.45rem;
+  height: 0.45rem;
+  background: #ff2a2a;
+}
+
+.tg-fine {
+  color: #c8c0b2;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.tg-promo a:focus-visible {
+  outline: 2px solid #f6f1e6;
+  outline-offset: 3px;
+}
+
+@container tg-promo (min-width: 18rem) {
+  .tg-devices {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .tg-phone,
+  .tg-qr-link {
+    width: 100%;
+  }
+}
+
+@container tg-promo (min-width: 42rem) {
+  .tg-layout {
+    grid-template-columns: minmax(0, 1fr) 20.5rem;
+    grid-template-areas:
+      "kicker visual"
+      "headline visual"
+      "bullets visual"
+      "foot foot";
+    column-gap: 1.75rem;
+    row-gap: 0.8rem;
+    align-items: center;
+  }
+
+  .tg-kicker {
+    grid-area: kicker;
+  }
+
+  .tg-headline {
+    grid-area: headline;
+  }
+
+  .tg-bullets {
+    grid-area: bullets;
+  }
+
+  .tg-visual {
+    grid-area: visual;
+  }
+
+  .tg-foot {
+    grid-area: foot;
+  }
+}
+
+.article-layout {
+  width: min(46rem, calc(100% - 2.4rem));
+  max-width: none;
+  margin-inline: auto;
+}
+
+.article-promo {
+  margin: 0 0 1.5rem;
+}
+
+.article-layout .article-intro,
+.article-layout .article-body {
+  min-width: 0;
+}
+
+@media (min-width: 68rem) {
+  .article-layout {
+    width: min(72rem, calc(100% - 2.4rem));
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 22.5rem;
+    grid-template-areas:
+      "intro promo"
+      "body promo";
+    column-gap: 2rem;
+    row-gap: 0;
+    align-items: start;
+  }
+
+  .article-layout .article-intro {
+    grid-area: intro;
+  }
+
+  .article-layout .article-body {
+    grid-area: body;
+  }
+
+  .article-layout .article-promo {
+    grid-area: promo;
+    margin: 0;
+    position: sticky;
+    top: 4.75rem;
+    align-self: start;
+    z-index: 1;
+  }
+}

@@ -4,6 +4,7 @@ import { ArticleBlocks } from "@/components/ArticleBlocks";
 import { FollowShare } from "@/components/FollowShare";
 import { NewsArticleJsonLd } from "@/components/JsonLd";
 import { SectorSelectorModule } from "@/components/SectorSelectorModule";
+import { TelegramPromo } from "@/components/TelegramPromo";
 import { articles, getArticle, isSectorRelevant } from "@/content/articles";
 import type { Block } from "@/content/types";
 import { asset } from "@/lib/asset";
@@ -81,20 +82,27 @@ export default async function ArticlePage({ params }: Props) {
       <div className="article-art">
         <img src={asset(artSrc)} alt={artAlt} />
       </div>
-      <article className="wrap article">
-        <p className="kicker">
-          {sectionLabel(article.section)} · {article.kicker ?? "desk note"}
-        </p>
-        <h1>{article.title}</h1>
-        <p className="dek">{article.dek}</p>
-        <p className="byline">
-          {article.asOf ?? formatDate(article.date)} · {site.name} ·{" "}
-          {site.publisherLine} · {site.tagline}
-        </p>
-        <ArticleBlocks article={article} skipFirstFigure={Boolean(figure)} />
-        {isSectorRelevant(article.slug) ? <SectorSelectorModule /> : null}
-        <div className="article-end">
-          <FollowShare title={article.title} path={path} />
+      <article className="article article-layout">
+        <header className="article-intro">
+          <p className="kicker">
+            {sectionLabel(article.section)} · {article.kicker ?? "desk note"}
+          </p>
+          <h1>{article.title}</h1>
+          <p className="dek">{article.dek}</p>
+          <p className="byline">
+            {article.asOf ?? formatDate(article.date)} · {site.name} ·{" "}
+            {site.publisherLine} · {site.tagline}
+          </p>
+        </header>
+        <aside className="article-promo">
+          <TelegramPromo titleId="article-telegram-promo-title" />
+        </aside>
+        <div className="article-body">
+          <ArticleBlocks article={article} skipFirstFigure={Boolean(figure)} />
+          {isSectorRelevant(article.slug) ? <SectorSelectorModule /> : null}
+          <div className="article-end">
+            <FollowShare title={article.title} path={path} />
+          </div>
         </div>
       </article>
     </>
