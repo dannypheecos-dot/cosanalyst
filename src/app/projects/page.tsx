@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TelegramMark } from "@/components/TelegramMark";
 import { asset } from "@/lib/asset";
 import { site } from "@/lib/site";
 
@@ -49,11 +50,12 @@ export default function Page() {
                 Educational only, not financial advice.
               </p>
               <a
-                className="btn"
+                className="join-tg"
                 href={site.telegramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <TelegramMark />
                 Join free on Telegram
               </a>
             </div>

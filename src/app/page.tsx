@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { NoteCard } from "@/components/NoteCard";
 import { SectorSelectorBanner } from "@/components/SectorSelectorBanner";
+import { TelegramMark } from "@/components/TelegramMark";
 import { TelegramPromo } from "@/components/TelegramPromo";
 import { publishedBookViews } from "@/content/book";
 import { articles, toTeaser } from "@/content/articles";
@@ -126,12 +127,13 @@ export default function HomePage() {
                 {site.channelAlertsSubline} Fox Alerts is one alert type.
               </p>
               <a
-                className="btn btn-ghost"
+                className="join-tg"
                 href={site.telegramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Join free on Telegram →
+                <TelegramMark />
+                Join free on Telegram
               </a>
             </article>
           </div>

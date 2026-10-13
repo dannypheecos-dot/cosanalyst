@@ -11,6 +11,7 @@
   --forest: #1b4332;
   --forest-mid: #245c44;
   --forest-soft: #dce6df;
+  --telegram-blue: #0077B5;
   --card-dark: #1a2420;
   --card-dark-2: #24302b;
   --max: 72rem;
@@ -321,9 +322,8 @@ h3,
   gap: 0.4rem;
   flex-shrink: 0;
   text-decoration: none;
-  color: var(--ivory);
-  background: var(--ink);
-  border: 1px solid var(--ink);
+  border: 1px solid transparent;
+  border-radius: 0;
   font-size: 0.7rem;
   font-weight: 650;
   letter-spacing: 0.1em;
@@ -332,11 +332,27 @@ h3,
   white-space: nowrap;
 }
 
-.follow-x:hover,
-.join-tg:hover {
+.follow-x {
+  color: var(--ivory);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.follow-x:hover {
   background: var(--forest);
   border-color: var(--forest);
   color: var(--ivory);
+}
+
+.join-tg {
+  color: #fff;
+  background: var(--telegram-blue);
+  border-color: var(--telegram-blue);
+}
+
+.join-tg:hover {
+  --telegram-blue: #229ED9;
+  color: #fff;
 }
 
 .follow-x svg,
@@ -345,6 +361,10 @@ h3,
   height: 0.85rem;
   flex-shrink: 0;
   fill: currentColor;
+}
+
+.join-tg svg {
+  fill: #fff;
 }
 
 .follow-x-short {
@@ -761,6 +781,10 @@ h3,
   flex: 1;
 }
 
+.pillar .join-tg {
+  align-self: flex-start;
+}
+
 /* —— Cos book —— */
 .book-empty {
   border: 1px solid var(--line);
@@ -1062,6 +1086,10 @@ figure.shot figcaption {
   gap: 1rem;
 }
 
+.article-end > .join-tg {
+  justify-self: start;
+}
+
 .follow-share {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1146,6 +1174,14 @@ figure.shot figcaption {
   margin: 1.15rem auto 0;
   font-size: 0.82rem;
   line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.foot-telegram p {
+  margin: 0;
 }
 
 .empty {
@@ -1484,35 +1520,14 @@ figure.shot figcaption {
 }
 
 .tg-promo a.tg-cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.45rem;
-  width: 100%;
-  background: #c4171d;
-  border: 1px solid #c4171d;
-  color: #f6f1e6;
-  text-decoration: none;
-  font-family: var(--sans);
-  font-size: 0.92rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  line-height: 1.2;
-  padding: 0.85rem 1rem;
-  text-align: center;
-}
-
-.tg-promo a.tg-cta:hover {
-  background: #f6f1e6;
-  border-color: #f6f1e6;
-  color: #111111;
+  justify-self: start;
+  align-self: flex-start;
+  width: max-content;
+  max-width: 100%;
 }
 
 .tg-cta svg {
-  width: 1rem;
-  height: 1rem;
-  fill: currentColor;
-  flex-shrink: 0;
+  fill: #fff;
 }
 
 .tg-foot {
@@ -1639,8 +1654,6 @@ figure.shot figcaption {
 
 .tg-compact a.tg-cta {
   margin-top: 0.15rem;
-  padding: 0.5rem 0.7rem;
-  font-size: 0.82rem;
 }
 
 .project-card {
@@ -1664,7 +1677,7 @@ figure.shot figcaption {
   padding: 1.15rem 1.2rem 1.25rem;
 }
 
-.project-card .btn {
+.project-card .join-tg {
   align-self: flex-start;
   margin-top: 0.25rem;
 }

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArticleBlocks } from "@/components/ArticleBlocks";
 import { FollowShare } from "@/components/FollowShare";
 import { FaqPageJsonLd, NewsArticleJsonLd } from "@/components/JsonLd";
+import { JoinTelegram } from "@/components/SiteChrome";
 import { SectorSelectorModule } from "@/components/SectorSelectorModule";
 import { TelegramPromo } from "@/components/TelegramPromo";
 import { articles, getArticle, isSectorRelevant } from "@/content/articles";
@@ -107,6 +108,7 @@ export default async function ArticlePage({ params }: Props) {
           {isSectorRelevant(article.slug) ? <SectorSelectorModule /> : null}
           <div className="article-end">
             <FollowShare title={article.title} path={path} />
+            <JoinTelegram />
           </div>
         </div>
       </article>

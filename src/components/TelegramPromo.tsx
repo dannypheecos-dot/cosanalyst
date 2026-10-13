@@ -59,7 +59,7 @@ export async function TelegramPromo({
           </h2>
           <p className="tg-sub">{telegramPromo.subline}</p>
           <a
-            className="tg-cta"
+            className="tg-cta join-tg"
             href={telegramPromo.href}
             target="_blank"
             rel="noopener noreferrer"
@@ -118,7 +118,7 @@ export async function TelegramPromo({
               </a>
             </div>
             <a
-              className="tg-cta"
+              className="tg-cta join-tg"
               href={telegramPromo.href}
               target="_blank"
               rel="noopener noreferrer"

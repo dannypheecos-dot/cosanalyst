@@ -180,13 +180,10 @@ export function SiteFooter() {
           </p>
         </div>
       </div>
-      <p className="wrap foot-telegram">
-        Free research notes on Telegram:{" "}
-        <a href={site.telegramUrl} target="_blank" rel="noopener noreferrer">
-          t.me/CosAnalystSignals
-        </a>
-        . Not financial advice.
-      </p>
+      <div className="wrap foot-telegram">
+        <p>Free research notes on Telegram. Not financial advice.</p>
+        <JoinTelegram />
+      </div>
     </footer>
   );
 }
