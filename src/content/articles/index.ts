@@ -25,8 +25,9 @@ import twoClocks from "./two-clocks-triple-witching-sp-rebalance-sep-2026";
 import washToRepair from "./wash-to-repair-week-sep-5-11";
 import whatIsGammaExposure from "./what-is-gamma-exposure";
 import wti from "./wti-not-a-ticket";
+import { publishedAt as stamps } from "./timestamps";
 
-export const articles: Article[] = [
+const rawArticles: Article[] = [
   cpiTomorrow,
   banksBeat,
   seoulChips,
@@ -52,7 +53,14 @@ export const articles: Article[] = [
   hormuz,
   robustness,
   spy,
-].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.slug.localeCompare(b.slug)));
+];
+
+export const articles: Article[] = rawArticles
+  .map((article) => ({
+    ...article,
+    publishedAt: article.publishedAt ?? stamps[article.slug] ?? `${article.date}T12:00:00-04:00`,
+  }))
+  .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.slug.localeCompare(b.slug)));
 
 export function getArticle(slug: string): Article | undefined {
   return articles.find((article) => article.slug === slug);
@@ -69,6 +77,8 @@ export type ArticleTeaser = {
   title: string;
   dek: string;
   date: string;
+  publishedAt?: string;
+  updatedAt?: string;
   section: SectionId;
   ogImage: string;
   ogAlt: string;
@@ -80,6 +90,8 @@ export function toTeaser(article: Article): ArticleTeaser {
     title: article.title,
     dek: article.dek,
     date: article.date,
+    publishedAt: article.publishedAt,
+    updatedAt: article.updatedAt,
     section: article.section,
     ogImage: article.ogImage,
     ogAlt: article.ogAlt,

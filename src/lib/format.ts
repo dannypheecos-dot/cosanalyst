@@ -12,3 +12,13 @@ export function formatDate(iso: string): string {
 export function sectionLabel(section: string): string {
   return section.replace(/^\w/, (c) => c.toUpperCase());
 }
+
+const ET_ZONE = "America/New_York";
+
+export function formatEt(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return iso;
+  const day = d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: ET_ZONE });
+  const time = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: ET_ZONE });
+  return `${day} · ${time} ET`;
+}

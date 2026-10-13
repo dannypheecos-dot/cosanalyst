@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ArticleTeaser } from "@/content/articles";
+import { PublishTime } from "@/components/PublishTime";
 import { formatDate, sectionLabel } from "@/lib/format";
 
 export function NoteCard({
@@ -9,7 +10,16 @@ export function NoteCard({
   article: ArticleTeaser;
   lead?: boolean;
 }) {
-  const meta = `${sectionLabel(article.section)} · ${formatDate(article.date)}`;
+  const meta = (
+    <>
+      {sectionLabel(article.section)} ·{" "}
+      {article.publishedAt ? (
+        <PublishTime publishedAt={article.publishedAt} updatedAt={article.updatedAt} />
+      ) : (
+        formatDate(article.date)
+      )}
+    </>
+  );
 
   if (lead) {
     return (

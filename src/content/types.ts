@@ -27,6 +27,8 @@ export type Article = {
   also: SectionId[];
   kicker?: string;
   asOf?: string;
+  publishedAt?: string;
+  updatedAt?: string;
   ogImage: string;
   ogAlt: string;
   body: Block[];

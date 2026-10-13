@@ -9,7 +9,8 @@ import { articles, getArticle, isSectorRelevant } from "@/content/articles";
 import type { Block } from "@/content/types";
 import { asset } from "@/lib/asset";
 import { faqPairs } from "@/lib/faq";
-import { formatDate, sectionLabel } from "@/lib/format";
+import { PublishTime } from "@/components/PublishTime";
+import { sectionLabel } from "@/lib/format";
 import { site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -36,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: path,
-      publishedTime: article.date,
-      modifiedTime: article.date,
+      publishedTime: article.publishedAt ?? article.date,
+      modifiedTime: article.updatedAt ?? article.publishedAt ?? article.date,
       siteName: site.name,
       images: [
         {
@@ -76,7 +77,8 @@ export default async function ArticlePage({ params }: Props) {
       <NewsArticleJsonLd
         title={article.title}
         dek={article.dek}
-        date={article.date}
+        date={article.publishedAt ?? article.date}
+        modified={article.updatedAt ?? article.publishedAt}
         path={path}
         image={article.ogImage}
       />
@@ -92,7 +94,8 @@ export default async function ArticlePage({ params }: Props) {
           <h1>{article.title}</h1>
           <p className="dek">{article.dek}</p>
           <p className="byline">
-            {article.asOf ?? formatDate(article.date)} · {site.name} ·{" "}
+            <PublishTime publishedAt={article.publishedAt ?? article.date} updatedAt={article.updatedAt} />
+            {article.asOf ? <> · {article.asOf}</> : null} · {site.name} ·{" "}
             {site.publisherLine} · {site.tagline}
           </p>
         </header>

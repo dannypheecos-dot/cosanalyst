@@ -1,3 +1,4 @@
+import { PublishTime } from "@/components/PublishTime";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { articlesFor, toTeaser } from "@/content/articles";
@@ -42,7 +43,7 @@ export default function Page() {
                 <p>{meta.dek}</p>
                 {latest ? (
                   <p className="latest">
-                    Latest: {toTeaser(latest).title} · {formatDate(latest.date)}
+                    Latest: {toTeaser(latest).title} · {latest.publishedAt ? <PublishTime publishedAt={latest.publishedAt} updatedAt={latest.updatedAt} /> : formatDate(latest.date)}
                   </p>
                 ) : (
                   <p className="empty">

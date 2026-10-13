@@ -25,12 +25,14 @@ export function NewsArticleJsonLd({
   title,
   dek,
   date,
+  modified,
   path,
   image,
 }: {
   title: string;
   dek: string;
   date: string;
+  modified?: string;
   path: string;
   image: string;
 }) {
@@ -40,7 +42,7 @@ export function NewsArticleJsonLd({
     headline: title,
     description: dek,
     datePublished: date,
-    dateModified: date,
+    dateModified: modified ?? date,
     mainEntityOfPage: `${site.url}${path}`,
     image: [`${site.url}${image}`],
     author: {
