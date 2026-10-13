@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleBlocks } from "@/components/ArticleBlocks";
 import { FollowShare } from "@/components/FollowShare";
-import { NewsArticleJsonLd } from "@/components/JsonLd";
+import { FaqPageJsonLd, NewsArticleJsonLd } from "@/components/JsonLd";
 import { SectorSelectorModule } from "@/components/SectorSelectorModule";
 import { TelegramPromo } from "@/components/TelegramPromo";
 import { articles, getArticle, isSectorRelevant } from "@/content/articles";
 import type { Block } from "@/content/types";
 import { asset } from "@/lib/asset";
+import { faqPairs } from "@/lib/faq";
 import { formatDate, sectionLabel } from "@/lib/format";
 import { site } from "@/lib/site";
 
@@ -79,6 +80,7 @@ export default async function ArticlePage({ params }: Props) {
         path={path}
         image={article.ogImage}
       />
+      <FaqPageJsonLd pairs={faqPairs(article.body)} />
       <div className="article-art">
         <img src={asset(artSrc)} alt={artAlt} />
       </div>

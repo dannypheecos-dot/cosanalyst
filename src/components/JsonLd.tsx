@@ -1,3 +1,4 @@
+import { faqPageSchema, type FaqPair } from "@/lib/faq";
 import { site } from "@/lib/site";
 
 export function OrganizationJsonLd() {
@@ -62,6 +63,19 @@ export function NewsArticleJsonLd({
       cssSelector: [".lede", "h1"],
     },
   };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export function FaqPageJsonLd({ pairs }: { pairs: FaqPair[] }) {
+  if (pairs.length === 0) return null;
+
+  const data = faqPageSchema(pairs);
 
   return (
     <script
