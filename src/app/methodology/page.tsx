@@ -31,10 +31,6 @@ export default function Page() {
           BUY or SELL. {site.bookFact}.
         </p>
         <p>
-          The 0DTE Challenge is simulated research on a public blotter. Losers
-          stay. No advertised hit rate is manufactured to fill a page.
-        </p>
-        <p>
           Sector Selector is a Friday-close ranking. A ranking is not a
           prophecy and not an auto-enroll into {site.newsletter}.
         </p>

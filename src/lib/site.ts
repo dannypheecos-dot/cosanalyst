@@ -6,6 +6,10 @@ export const site = {
   handle: "@CosAnalyst",
   xUrl: "https://x.com/CosAnalyst",
   telegramUrl: "https://t.me/CosAnalystSignals",
+  /** Free Telegram channel. Calls and puts on SPY, QQQ, and IWM. */
+  channelAlertsLabel: "Free SPY, QQQ & IWM Trade Alerts",
+  channelAlertsSubline:
+    "Calls and puts on index ETFs. Entry, stop, two targets, 12:30 PT time exit. Every result posted publicly. Testing phase.",
   sectorSelector: false as const,
   sectorSelectorUrl: "https://sectorselector.ai/",
   newsletter: "The CosAnalyst Market Brief",
@@ -45,8 +49,9 @@ export const primaryNav: readonly NavItem[] = [
         external: true,
       },
       {
-        href: "/0dte-challenge/",
-        label: "30-Day AI 0DTE Challenge",
+        href: site.telegramUrl,
+        label: site.channelAlertsLabel,
+        external: true,
       },
     ],
   },
@@ -58,7 +63,7 @@ export const footerNav = [
   { href: "/markets/", label: "Markets" },
   { href: "/projects/", label: "Projects" },
   { href: "https://sectorselector.ai/", label: "Sector Selector", external: true },
-  { href: "/0dte-challenge/", label: "0DTE Challenge" },
+  { href: site.telegramUrl, label: site.channelAlertsLabel, external: true },
   { href: "/about/", label: "About" },
   { href: "/methodology/", label: "Methodology" },
   { href: "/disclosure/", label: "Disclosure" },
@@ -83,7 +88,6 @@ export const sitemapPaths = [
   "/contact/",
   "/newsletter/",
   "/articles/",
-  "/0dte-challenge/",
 ] as const;
 
 /** @deprecated Prefer primaryNav. Kept so existing section routes stay first-class. */
@@ -98,7 +102,6 @@ export const nav = [
   { href: "/options/", label: "Options" },
   { href: "/commodities/", label: "Commodities" },
   { href: "/crypto/", label: "Crypto" },
-  { href: "/0dte-challenge/", label: "0DTE Challenge" },
   { href: "/newsletter/", label: "Newsletter" },
 ] as const;
 

@@ -57,11 +57,7 @@ export async function TelegramPromo({
           <h2 id={titleId} className="tg-headline">
             {accentedHeadline(telegramPromo.headline, telegramPromo.headlineAccent)}
           </h2>
-          <ul className="tg-bullets">
-            {telegramPromo.compactBullets.map((bullet) => (
-              <li key={bullet}>{bullet}</li>
-            ))}
-          </ul>
+          <p className="tg-sub">{telegramPromo.subline}</p>
           <a
             className="tg-cta"
             href={telegramPromo.href}
@@ -92,6 +88,7 @@ export async function TelegramPromo({
           <h2 id={titleId} className="tg-headline">
             {accentedHeadline(telegramPromo.headline, telegramPromo.headlineAccent)}
           </h2>
+          <p className="tg-sub">{telegramPromo.subline}</p>
           <ul className="tg-bullets">
             {telegramPromo.bullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>

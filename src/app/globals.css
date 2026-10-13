@@ -426,6 +426,12 @@ h3,
   line-height: 1.3;
 }
 
+.desk-row .sub {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: #c5d6cc;
+}
+
 .desk-foot {
   margin: 0.85rem 0 0;
   padding-top: 0.8rem;
@@ -1607,6 +1613,18 @@ figure.shot figcaption {
 .article .tg-compact h2 {
   font-size: 1.22rem;
   line-height: 0.98;
+}
+
+.tg-sub {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: #d9d0c2;
+}
+
+.tg-compact .tg-sub {
+  font-size: 0.82rem;
+  line-height: 1.35;
 }
 
 .tg-compact .tg-bullets {

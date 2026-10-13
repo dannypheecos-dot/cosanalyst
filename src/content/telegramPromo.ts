@@ -15,21 +15,16 @@ export const telegramPromo = {
   href: site.telegramUrl,
   eyebrow: "NEVER MISS AN ALERT",
   live: "LIVE",
-  headline: "Free 0DTE index signals. Every trade gets a receipt.",
-  headlineAccent: "receipt",
+  headline: site.channelAlertsLabel,
+  headlineAccent: "Alerts",
+  subline: site.channelAlertsSubline,
   bullets: [
-    "Free live SPY, QQQ and IWM 0DTE signals with entry, stop and two targets",
-    "Every trade gets a public receipt, win or loss",
+    "Every result posted publicly, win or loss",
     "Signals post instantly and automatically, nothing cherry-picked",
     "Premarket levels and a daily recap, plus a simple rulebook for trading the levels",
   ] as const satisfies ThreeToFive,
   /** Phone mockup labels only. No prices and no extra claims. */
   phoneNotes: ["Premarket levels", "SPY, QQQ, IWM", "Daily recap"] as const,
-  /** Homepage stack only. Two short lines, so the card stays about one note tall. */
-  compactBullets: [
-    "SPY, QQQ, IWM. Entry, stop, two targets.",
-    "A public receipt, win or loss.",
-  ] as const,
   soon: "Mag 7 signals coming soon.",
   cta: "Join free on Telegram",
   finePrint: "Free to join. Educational only, not financial advice.",

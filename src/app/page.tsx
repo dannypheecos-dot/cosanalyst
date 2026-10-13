@@ -39,10 +39,16 @@ export default function HomePage() {
                 <span className="value">{latest.title}</span>
               </Link>
             ) : null}
-            <Link className="desk-row" href="/0dte-challenge/">
+            <a
+              className="desk-row"
+              href={site.telegramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span className="label">Active project</span>
-              <span className="value">30-Day AI 0DTE Challenge</span>
-            </Link>
+              <span className="value">{site.channelAlertsLabel}</span>
+              <span className="sub">{site.channelAlertsSubline}</span>
+            </a>
             <a className="desk-row" href={site.sectorSelectorUrl}>
               <span className="label">Sector research</span>
               <span className="value">Sector Selector</span>
@@ -115,14 +121,18 @@ export default function HomePage() {
             </article>
             <article className="pillar">
               <p className="kicker">03</p>
-              <h3>0DTE Lab</h3>
+              <h3>{site.channelAlertsLabel}</h3>
               <p>
-                A public, timestamped experiment in same-day options. Simulated
-                research — not a signal service.
+                {site.channelAlertsSubline} Fox Alerts is one alert type.
               </p>
-              <Link className="btn btn-ghost" href="/0dte-challenge/">
-                Enter the challenge →
-              </Link>
+              <a
+                className="btn btn-ghost"
+                href={site.telegramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join free on Telegram →
+              </a>
             </article>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Sector Selector and Fox Alerts by CosAnalyst. CosAnalyst stays the publication.",
+    "Sector Selector and Free SPY, QQQ & IWM Trade Alerts. CosAnalyst stays the publication.",
   alternates: { canonical: "/projects/" },
 };
 
@@ -43,11 +43,10 @@ export default function Page() {
             />
             <div className="copy">
               <div className="meta">Live</div>
-              <h3>Fox Alerts by CosAnalyst</h3>
+              <h3>{site.channelAlertsLabel}</h3>
               <p>
-                Free live SPY, QQQ and IWM 0DTE signals on Telegram, with entry,
-                stop and two targets. Every trade gets a public receipt, win or
-                loss. Educational only, not financial advice.
+                {site.channelAlertsSubline} Fox Alerts is one alert type.
+                Educational only, not financial advice.
               </p>
               <a
                 className="btn"

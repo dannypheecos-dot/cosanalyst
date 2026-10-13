@@ -27,8 +27,8 @@ export default function Page() {
           audited results, AUM, or institutional adoption we do not have.
         </p>
         <p>
-          Sector Selector and the 0DTE Challenge are research projects, not
-          signal services. {site.newsletter} is a separate opt-in.
+          Sector Selector is a research project, not a signal service.{" "}
+          {site.newsletter} is a separate opt-in.
         </p>
         <p>
           <strong>{site.bookFact}</strong>

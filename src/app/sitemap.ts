@@ -10,11 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = sitemapPaths.map((path) => ({
     url: absUrl(path),
     lastModified: now,
-    changeFrequency: (path === "/" || path === "/0dte-challenge/"
-      ? "daily"
-      : "weekly") as "daily" | "weekly",
-    priority:
-      path === "/" ? 1 : path === "/0dte-challenge/" ? 0.85 : path === "/research/" ? 0.8 : 0.7,
+    changeFrequency: (path === "/" ? "daily" : "weekly") as "daily" | "weekly",
+    priority: path === "/" ? 1 : path === "/research/" ? 0.8 : 0.7,
   }));
 
   const notes: MetadataRoute.Sitemap = articles.map((article) => ({

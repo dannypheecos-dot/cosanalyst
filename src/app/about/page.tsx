@@ -29,9 +29,13 @@ export default function Page() {
         </p>
         <p>
           Desk notes live here. Sector Selector is a research project at{" "}
-          <a href={site.sectorSelectorUrl}>sectorselector.ai</a>. The 30-Day AI
-          0DTE Challenge is a public, timestamped experiment at{" "}
-          <a href="/0dte-challenge/">/0dte-challenge/</a>.
+          <a href={site.sectorSelectorUrl}>sectorselector.ai</a>.{" "}
+          {site.channelAlertsLabel} is the free Telegram channel. Fox Alerts is
+          one alert type:{" "}
+          <a href={site.telegramUrl} target="_blank" rel="noopener noreferrer">
+            t.me/CosAnalystSignals
+          </a>
+          .
         </p>
         <p>
           Oil is $WTI. Never $CL. Public copy says GEX snapshot, never a vendor
