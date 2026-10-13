@@ -314,10 +314,12 @@ h3,
   padding: 0.5rem 0.9rem;
 }
 
-.follow-x {
+.follow-x,
+.join-tg {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  flex-shrink: 0;
   text-decoration: none;
   color: var(--ivory);
   background: var(--ink);
@@ -327,17 +329,21 @@ h3,
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0.55rem 0.75rem;
+  white-space: nowrap;
 }
 
-.follow-x:hover {
+.follow-x:hover,
+.join-tg:hover {
   background: var(--forest);
   border-color: var(--forest);
   color: var(--ivory);
 }
 
-.follow-x svg {
+.follow-x svg,
+.join-tg svg {
   width: 0.85rem;
   height: 0.85rem;
+  flex-shrink: 0;
   fill: currentColor;
 }
 
@@ -1055,6 +1061,12 @@ figure.shot figcaption {
   letter-spacing: 0.1em;
 }
 
+.foot-telegram {
+  margin: 1.15rem auto 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .empty {
   color: var(--muted);
   max-width: 50ch;
@@ -1109,6 +1121,7 @@ figure.shot figcaption {
 
   .menu-toggle {
     display: inline-flex;
+    flex-shrink: 0;
   }
 
   .follow-x-full {
@@ -1117,6 +1130,17 @@ figure.shot figcaption {
 
   .follow-x-short {
     display: inline;
+  }
+
+  .mast-end {
+    gap: 0.4rem;
+  }
+
+  .follow-x,
+  .join-tg,
+  .menu-toggle {
+    padding: 0.45rem 0.55rem;
+    letter-spacing: 0.05em;
   }
 
   .ss-banner-img {
@@ -1129,5 +1153,34 @@ figure.shot figcaption {
 
   .stats {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .mast-inner {
+    flex-wrap: wrap;
+    row-gap: 0.45rem;
+  }
+
+  .mast-end {
+    flex: 1 1 100%;
+    margin-inline-start: 0;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  .follow-x,
+  .join-tg,
+  .menu-toggle {
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    padding: 0.4rem 0.45rem;
+  }
+
+  .follow-x svg,
+  .join-tg svg {
+    width: 0.75rem;
+    height: 0.75rem;
   }
 }

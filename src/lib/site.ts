@@ -5,6 +5,7 @@ export const site = {
   email: "desk@cosanalyst.com",
   handle: "@CosAnalyst",
   xUrl: "https://x.com/CosAnalyst",
+  telegramUrl: "https://t.me/CosAnalystSignals",
   sectorSelector: false as const,
   sectorSelectorUrl: "https://sectorselector.ai/",
   newsletter: "The CosAnalyst Market Brief",

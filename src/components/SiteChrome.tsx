@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
+import { TelegramMark } from "@/components/TelegramMark";
 import { XMark } from "@/components/XMark";
 import { asset } from "@/lib/asset";
 import { footerNav, primaryNav, site } from "@/lib/site";
@@ -35,6 +36,20 @@ export function FollowCosAnalyst({ compact = false }: { compact?: boolean }) {
           <span className="follow-x-short">Follow</span>
         </>
       )}
+    </a>
+  );
+}
+
+export function JoinTelegram() {
+  return (
+    <a
+      className="join-tg"
+      href={site.telegramUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <TelegramMark />
+      Join free Telegram
     </a>
   );
 }
@@ -105,6 +120,7 @@ export function SiteHeader() {
         </nav>
         <div className="mast-end">
           <FollowCosAnalyst />
+          <JoinTelegram />
           {site.membershipActivated ? (
             <Link className="btn" href="/members/">
               Sign in
@@ -164,6 +180,13 @@ export function SiteFooter() {
           </p>
         </div>
       </div>
+      <p className="wrap foot-telegram">
+        Free research notes on Telegram:{" "}
+        <a href={site.telegramUrl} target="_blank" rel="noopener noreferrer">
+          t.me/CosAnalystSignals
+        </a>
+        . Not financial advice.
+      </p>
     </footer>
   );
 }
