@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { asset } from "@/lib/asset";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Sector Selector and the 30-Day AI 0DTE Challenge. CosAnalyst stays the publication.",
+    "Sector Selector and Fox Alerts by CosAnalyst. CosAnalyst stays the publication.",
   alternates: { canonical: "/projects/" },
 };
 
@@ -33,15 +33,32 @@ export default function Page() {
               auto-enroll into {site.newsletter}.
             </p>
           </a>
-          <Link className="card" href="/0dte-challenge/">
-            <div className="meta">Live experiment</div>
-            <h3>30-Day AI 0DTE Challenge</h3>
-            <p>
-              A public, timestamped experiment in same-day options using market
-              structure, GEX snapshots, and defined-risk rules. Simulated
-              research — not a signal service.
-            </p>
-          </Link>
+          <article className="card project-card">
+            <img
+              className="art"
+              src={asset("/projects/fox-alerts.png")}
+              width={1200}
+              height={630}
+              alt="FOX ALERTS on black, with the red line Every trade gets a receipt, beside a phone of SPY, QQQ and IWM alerts showing entry, stop, T1 and T2."
+            />
+            <div className="copy">
+              <div className="meta">Live</div>
+              <h3>Fox Alerts by CosAnalyst</h3>
+              <p>
+                Free live SPY, QQQ and IWM 0DTE signals on Telegram, with entry,
+                stop and two targets. Every trade gets a public receipt, win or
+                loss. Educational only, not financial advice.
+              </p>
+              <a
+                className="btn"
+                href={site.telegramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join free on Telegram
+              </a>
+            </div>
+          </article>
           <div className="card" aria-label="Future desks">
             <div className="meta">Future desks</div>
             <h3>More when they are public</h3>

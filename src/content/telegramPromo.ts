@@ -25,6 +25,11 @@ export const telegramPromo = {
   ] as const satisfies ThreeToFive,
   /** Phone mockup labels only. No prices and no extra claims. */
   phoneNotes: ["Premarket levels", "SPY, QQQ, IWM", "Daily recap"] as const,
+  /** Homepage stack only. Two short lines, so the card stays about one note tall. */
+  compactBullets: [
+    "SPY, QQQ, IWM. Entry, stop, two targets.",
+    "A public receipt, win or loss.",
+  ] as const,
   soon: "Mag 7 signals coming soon.",
   cta: "Join free on Telegram",
   finePrint: "Free to join. Educational only, not financial advice.",

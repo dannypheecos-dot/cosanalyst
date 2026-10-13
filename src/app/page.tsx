@@ -52,12 +52,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="tg-home">
-        <div className="wrap">
-          <TelegramPromo titleId="home-telegram-promo-title" />
-        </div>
-      </div>
-
       <section className="section">
         <div className="wrap">
           <div className="section-head">
@@ -73,6 +67,7 @@ export default function HomePage() {
             <div className="lead-grid">
               <NoteCard article={toTeaser(latest)} lead />
               <div className="stack-cards">
+                <TelegramPromo titleId="home-telegram-promo-title" compact />
                 {secondary.map((article) => (
                   <NoteCard key={article.slug} article={toTeaser(article)} />
                 ))}

@@ -39,7 +39,43 @@ async function telegramQrSvg(url: string): Promise<string> {
 
 const qrSvgPromise = telegramQrSvg(telegramPromo.href);
 
-export async function TelegramPromo({ titleId }: { titleId: string }) {
+export async function TelegramPromo({
+  titleId,
+  compact = false,
+}: {
+  titleId: string;
+  compact?: boolean;
+}) {
+  if (compact) {
+    return (
+      <section
+        className={`tg-promo tg-compact ${condensed.variable}`}
+        aria-labelledby={titleId}
+      >
+        <div className="tg-promo-in">
+          <p className="tg-eyebrow">{telegramPromo.eyebrow}</p>
+          <h2 id={titleId} className="tg-headline">
+            {accentedHeadline(telegramPromo.headline, telegramPromo.headlineAccent)}
+          </h2>
+          <ul className="tg-bullets">
+            {telegramPromo.compactBullets.map((bullet) => (
+              <li key={bullet}>{bullet}</li>
+            ))}
+          </ul>
+          <a
+            className="tg-cta"
+            href={telegramPromo.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TelegramMark />
+            {telegramPromo.cta}
+          </a>
+        </div>
+      </section>
+    );
+  }
+
   const qrSvg = await qrSvgPromise;
 
   return (

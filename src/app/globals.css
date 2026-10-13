@@ -1186,10 +1186,6 @@ figure.shot figcaption {
 }
 
 /* Telegram promo card */
-.tg-home {
-  padding: 1.4rem 0 0.15rem;
-}
-
 .tg-promo {
   background: #111111;
   color: #f6f1e6;
@@ -1509,6 +1505,67 @@ figure.shot figcaption {
   .tg-foot {
     grid-area: foot;
   }
+}
+
+/* Homepage stack: one note tall, no phone and no QR. */
+.tg-compact .tg-promo-in {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.8rem 0.95rem 0.85rem;
+}
+
+.tg-compact .tg-eyebrow {
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+}
+
+.tg-compact h2,
+.article .tg-compact h2 {
+  font-size: 1.22rem;
+  line-height: 0.98;
+}
+
+.tg-compact .tg-bullets {
+  gap: 0.22rem;
+}
+
+.tg-compact .tg-bullets li {
+  font-size: 0.82rem;
+  line-height: 1.28;
+  padding-inline-start: 0.85rem;
+}
+
+.tg-compact a.tg-cta {
+  margin-top: 0.15rem;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.82rem;
+}
+
+.project-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-card .art {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+  background: #0e0e0e;
+}
+
+.project-card .copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 1.15rem 1.2rem 1.25rem;
+}
+
+.project-card .btn {
+  align-self: flex-start;
+  margin-top: 0.25rem;
 }
 
 .article-layout {
