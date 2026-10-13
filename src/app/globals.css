@@ -223,8 +223,9 @@ h3,
 
 .mast-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1.1rem;
+  gap: 0.45rem 1.1rem;
   padding: 0.7rem 0;
 }
 
@@ -232,9 +233,9 @@ h3,
   display: flex;
   align-items: center;
   gap: 0.65rem;
+  flex-shrink: 0;
   text-decoration: none;
   color: var(--ink);
-  min-inline-size: 0;
 }
 
 .brand img {
@@ -254,6 +255,7 @@ h3,
 .mast-end {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 0.65rem;
   margin-inline-start: auto;
 }
@@ -261,6 +263,7 @@ h3,
 .mast-nav {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 0.15rem 0.15rem;
 }
 
@@ -333,6 +336,18 @@ h3,
   background: var(--forest);
   border-color: var(--forest);
   color: var(--ivory);
+}
+
+.follow-telegram:hover {
+  background: #14658a;
+  border-color: #2aabee;
+  color: var(--ivory);
+}
+
+.social-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .follow-x svg {

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
+import { TelegramMark } from "@/components/TelegramMark";
 import { XMark } from "@/components/XMark";
 import { asset } from "@/lib/asset";
 import { footerNav, primaryNav, site } from "@/lib/site";
@@ -33,6 +34,28 @@ export function FollowCosAnalyst({ compact = false }: { compact?: boolean }) {
         <>
           <span className="follow-x-full">Follow {site.handle}</span>
           <span className="follow-x-short">Follow</span>
+        </>
+      )}
+    </a>
+  );
+}
+
+export function JoinTelegram({ compact = false }: { compact?: boolean }) {
+  return (
+    <a
+      className="follow-x follow-telegram"
+      href="https://t.me/CosAnalystSignals"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Join CosAnalyst Signals on Telegram"
+    >
+      <TelegramMark />
+      {compact ? (
+        <span className="follow-x-short">Join</span>
+      ) : (
+        <>
+          <span className="follow-x-full">Join on Telegram</span>
+          <span className="follow-x-short">Join</span>
         </>
       )}
     </a>
@@ -104,7 +127,10 @@ export function SiteHeader() {
           })}
         </nav>
         <div className="mast-end">
-          <FollowCosAnalyst />
+          <div className="social-badges">
+            <FollowCosAnalyst />
+            <JoinTelegram />
+          </div>
           {site.membershipActivated ? (
             <Link className="btn" href="/members/">
               Sign in
