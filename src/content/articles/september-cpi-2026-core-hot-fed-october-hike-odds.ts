@@ -12,6 +12,7 @@ const article: Article = {
   ],
   "kicker": "cpi day",
   "asOf": "Wed Oct 14, 2026, 5:52 AM PT",
+  "updatedAt": "2026-10-14T12:45:00-04:00",
   "ogImage": "/og/september-cpi-2026-core-hot-fed-october-hike-odds.png",
   "ogAlt": "Core ran hot. Hike odds jumped. September CPI, Oct 14, 2026. @CosAnalyst",
   "body": [
@@ -24,6 +25,26 @@ const article: Article = {
     {
       "type": "callout",
       "text": "**The short answer (as of 5:52 AM PT / 8:52 AM ET, Wed Oct 14, 2026):** September core CPI came in hot at 0.3% month over month and 2.6% year over year, a tenth above consensus on both. Headline CPI rose 3.7% year over year against 3.6% expected, with the monthly 0.6% in line. On Polymarket, the odds of a 25 basis point Fed hike at the Oct 27-28 meeting went from about 18% before the print to 38.5% right after and 46.5% now. The 2-year Treasury yield jumped about 12 basis points to 4.92%, and Nasdaq and small-cap futures are taking the biggest hit."
+    },
+    {
+      "type": "h2",
+      "text": "Update, 12:45 PM ET: the hot CPI hangover deepens"
+    },
+    {
+      "type": "p",
+      "text": "Four hours after the print, the hot CPI October 2026 story has moved from futures to the cash tape, and the selling has widened. As of 12:45 PM ET, SPY is down 0.99% at 770.27, QQQ is off 1.63% and the small-cap IWM has dropped 1.82%. The VIX has climbed 7.53% to 16.42. The 10-year Treasury yield sits at 5.236%, the dollar index (DXY) is up 0.60%, and $WTI is up 1.70% near $95.74, which keeps the pressure on headline inflation."
+    },
+    {
+      "type": "p",
+      "text": "The rotation is textbook risk-off. Health care (XLV, +2.07%) and consumer staples (XLP, +1.31%) lead the sector board, with energy (XLE, +0.55%) also green. Semiconductors are the weak link: SMH is down 3.18% and technology (XLK) 2.40%, as investors sell the stocks most sensitive to higher rates. High-yield credit (HYG, -0.39%) is soft as well."
+    },
+    {
+      "type": "p",
+      "text": "Fed hike odds for October have settled below their early-morning high but remain far above where they stood before the report. As of midday, Polymarket prices a 25 basis point hike at the Oct 27-28 meeting at 33.5%, with no change at 65.5%. CME FedWatch, as reported after the print, puts the October hike closer to 44%, against about 56% for a hold. The two venues disagree, and the gap is worth watching: the prediction market still leans harder toward a skip than futures do. For December, Polymarket shows a 79.5% chance of a 25 basis point hike, while FedWatch puts the cumulative odds of at least one 25 basis point increase near 55% and of 50 basis points near 40%."
+    },
+    {
+      "type": "p",
+      "text": "The calendar does not let up. Richmond Fed President Barkin speaks at 1:30 PM ET, and the Beige Book follows at 2:00 PM ET. With PPI tomorrow, Thursday is the bigger test: PPI, retail sales and jobless claims all land at 8:30 AM ET, and Fed Chair Warsh speaks Thursday night at 11:30 PM ET. Friday brings monthly options expiration. The original 5:52 AM PT report follows below."
     },
     {
       "type": "lede",
@@ -357,7 +378,7 @@ const article: Article = {
       "type": "list",
       "items": [
         "**Wed Oct 14, 1:30 PM ET / 10:30 AM PT:** Richmond Fed's Barkin speaks.",
-        "**Wed Oct 14, 2:30 PM ET / 11:30 AM PT:** The Fed's Beige Book, its anecdotal survey of regional conditions. Watch the language on prices and wages.",
+        "**Wed Oct 14, 2:00 PM ET / 11:00 AM PT:** The Fed's Beige Book, its anecdotal survey of regional conditions. Watch the language on prices and wages.",
         "**Wed Oct 14, 10:55 PM ET / 7:55 PM PT:** Fed Governor Bowman speaks.",
         "**Thu Oct 15, 8:30 AM ET / 5:30 AM PT:** PPI (forecast 0.5% month over month, prior 0.4%; core 0.3%, prior 0.2%), retail sales (0.3%, prior 1.2%; control group 0.3%, prior 1.4%), jobless claims (200K), Philly Fed and Empire State.",
         "**Thu Oct 15, 11:30 PM ET / 8:30 PM PT:** Fed Chair Warsh speaks, the highest-importance event of the week for October odds.",
@@ -455,6 +476,14 @@ const article: Article = {
     },
     {
       "type": "h3",
+      "text": "What is next after the hot CPI report?"
+    },
+    {
+      "type": "p",
+      "text": "As of 12:45 PM ET Wednesday, Barkin speaks at 1:30 PM ET and the Beige Book is out at 2:00 PM ET. Thursday brings PPI, retail sales and jobless claims at 8:30 AM ET, then Fed Chair Warsh at 11:30 PM ET. Friday is monthly options expiration. Midday Fed hike odds for October were 33.5% on Polymarket and about 44% on CME FedWatch."
+    },
+    {
+      "type": "h3",
       "text": "What economic data is out Thursday Oct 15?"
     },
     {
@@ -471,7 +500,7 @@ const article: Article = {
     },
     {
       "type": "callout",
-      "text": "**BOOK FACT · NOT A TICKET.** CosAnalyst research and analysis, not financial advice or a trade recommendation. CPI data and component detail from the [BLS](https://www.bls.gov/news.release/cpi.nr0.htm) and the TradingView economic calendar; Reuters preview via [Investing.com](https://www.investing.com/news/economy-news/high-gasoline-prices-expected-to-boost-us-consumer-inflation-in-september-4947970); Franklin Templeton comment via [Morningstar](https://www.morningstar.com/economy/cpi-forecasts-show-moderated-inflation-september-keeping-fed-hold); Reuters/Ipsos poll; consensus from FactSet (AP), Investing.com and FXStreet/Danske Bank. Prediction-market odds from Polymarket (gamma API and CLOB price history). Quotes, yields and futures from TradingView, with stocks and ETFs about 15 minutes delayed and futures about 10 minutes. Earnings and analyst actions from CNBC and Investing.com; earnings schedule and Beige Book time from Bespoke; year-end put flow from VolSignals on X. FOMC date from the Federal Reserve calendar. Options-implied ranges are from the CosAnalyst desk. Prediction-market odds can change quickly."
+      "text": "**BOOK FACT · NOT A TICKET.** CosAnalyst research and analysis, not financial advice or a trade recommendation. CPI data and component detail from the [BLS](https://www.bls.gov/news.release/cpi.nr0.htm) and the TradingView economic calendar; Reuters preview via [Investing.com](https://www.investing.com/news/economy-news/high-gasoline-prices-expected-to-boost-us-consumer-inflation-in-september-4947970); Franklin Templeton comment via [Morningstar](https://www.morningstar.com/economy/cpi-forecasts-show-moderated-inflation-september-keeping-fed-hold); Reuters/Ipsos poll; consensus from FactSet (AP), Investing.com and FXStreet/Danske Bank. Prediction-market odds from Polymarket (gamma API and CLOB price history); midday CME FedWatch figures as reported by Gate News, PANews and CNBC. Quotes, yields and futures from TradingView, with stocks and ETFs about 15 minutes delayed and futures about 10 minutes. Earnings and analyst actions from CNBC and Investing.com; earnings schedule and Beige Book time from Bespoke; year-end put flow from VolSignals on X. FOMC date from the Federal Reserve calendar. Options-implied ranges are from the CosAnalyst desk. Prediction-market odds can change quickly."
     }
   ]
 };
