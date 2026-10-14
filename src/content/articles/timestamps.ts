@@ -12,6 +12,7 @@ export const publishedAt: Record<string, string> = {
   "fed-says-credit-is-fine-junk-market-disagrees-oct-2026": "2026-10-08T04:00:00-04:00",
   "gamma-flip": "2026-09-29T03:56:00-04:00",
   "hormuz-larak-not-a-90-breakout": "2026-08-30T16:00:00-04:00",
+  "hot-core-cpi-close-tech-sells-defensives-bid-oct-2026": "2026-10-14T17:20:00-04:00",
   "innovation-exemption-tokenized-nms-sandbox": "2026-09-18T20:00:00-04:00",
   "japan-10y-highest-since-1996": "2026-08-31T16:00:00-04:00",
   "labor-day-hangover": "2026-09-04T12:17:51-04:00",
