@@ -1,6 +1,7 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
 import flip717 from "./717-flip-ism-jolts";
+import cpiDayCoreHot from "./september-cpi-2026-core-hot-fed-october-hike-odds";
 import calmBeforeCpi from "./calm-before-cpi-has-no-cushion-oct-2026";
 import cpiTomorrow from "./cpi-tomorrow-hot-headline-soft-core-oct-2026";
 import banksBeat from "./banks-beat-stocks-sold-oct-2026";
@@ -29,6 +30,7 @@ import wti from "./wti-not-a-ticket";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  cpiDayCoreHot,
   latencyLeaders,
   cpiTomorrow,
   banksBeat,

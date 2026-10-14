@@ -21,6 +21,7 @@ export const publishedAt: Record<string, string> = {
   "positive-vs-negative-gamma": "2026-09-28T04:00:00-04:00",
   "qqq-0dte-close-vs-midday": "2026-08-31T16:00:00-04:00",
   "robustness-is-the-edge": "2026-08-28T16:00:00-04:00",
+  "september-cpi-2026-core-hot-fed-october-hike-odds": "2026-10-14T08:57:00-04:00",
   "seoul-chips-cracked-sp-yawned-oct-2026": "2026-10-13T11:07:00-04:00",
   "spy-friday-gamma": "2026-08-28T16:00:00-04:00",
   "the-print-was-zero": "2026-08-31T16:00:00-04:00",
