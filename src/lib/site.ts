@@ -2,7 +2,7 @@ export const site = {
   name: "CosAnalyst",
   oneWord: "CosAnalyst",
   url: "https://cosanalyst.com",
-  email: "desk@cosanalyst.com",
+  email: "ops@cosanalyst.com",
   handle: "@CosAnalyst",
   xUrl: "https://x.com/CosAnalyst",
   telegramUrl: "https://t.me/CosAnalystSignals",
