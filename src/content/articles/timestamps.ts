@@ -15,6 +15,7 @@ export const publishedAt: Record<string, string> = {
   "innovation-exemption-tokenized-nms-sandbox": "2026-09-18T20:00:00-04:00",
   "japan-10y-highest-since-1996": "2026-08-31T16:00:00-04:00",
   "labor-day-hangover": "2026-09-04T12:17:51-04:00",
+  "latency-leaders-ai-stocks-long-term": "2026-10-14T01:55:00-04:00",
   "lightning-x402-ai-agents-pay-sep-2026": "2026-09-24T16:00:00-04:00",
   "no-warsh-tuesday": "2026-08-31T16:00:00-04:00",
   "positive-vs-negative-gamma": "2026-09-28T04:00:00-04:00",
