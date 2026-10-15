@@ -20,6 +20,7 @@ export const publishedAt: Record<string, string> = {
   "lightning-x402-ai-agents-pay-sep-2026": "2026-09-24T16:00:00-04:00",
   "no-warsh-tuesday": "2026-08-31T16:00:00-04:00",
   "positive-vs-negative-gamma": "2026-09-28T04:00:00-04:00",
+  "ppi-september-2026-producer-prices-jump-10-year-falls-oct-2026": "2026-10-15T08:50:00-04:00",
   "qqq-0dte-close-vs-midday": "2026-08-31T16:00:00-04:00",
   "robustness-is-the-edge": "2026-08-28T16:00:00-04:00",
   "september-cpi-2026-core-hot-fed-october-hike-odds": "2026-10-14T08:57:00-04:00",

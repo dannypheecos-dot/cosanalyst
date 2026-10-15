@@ -7,6 +7,7 @@ import calmBeforeCpi from "./calm-before-cpi-has-no-cushion-oct-2026";
 import cpiTomorrow from "./cpi-tomorrow-hot-headline-soft-core-oct-2026";
 import banksBeat from "./banks-beat-stocks-sold-oct-2026";
 import latencyLeaders from "./latency-leaders-ai-stocks-long-term";
+import ppiMorningRecap from "./ppi-september-2026-producer-prices-jump-10-year-falls-oct-2026";
 import seoulCircuitBreaker from "./seoul-circuit-breaker-10y-fell-anyway-oct-2026";
 import seoulChips from "./seoul-chips-cracked-sp-yawned-oct-2026";
 import energyInto66 from "./energy-into-66-xle-sep-2026";
@@ -32,6 +33,7 @@ import wti from "./wti-not-a-ticket";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  ppiMorningRecap,
   seoulCircuitBreaker,
   cpiCloseRecap,
   cpiDayCoreHot,
