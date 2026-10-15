@@ -6,6 +6,7 @@ export const publishedAt: Record<string, string> = {
   "banks-beat-stocks-sold-oct-2026": "2026-10-13T16:22:00-04:00",
   "calm-before-cpi-has-no-cushion-oct-2026": "2026-10-12T09:20:00-04:00",
   "cpi-tomorrow-hot-headline-soft-core-oct-2026": "2026-10-13T16:53:00-04:00",
+  "eia-crude-inventories-plunge-energy-stocks-slip-oct-2026": "2026-10-15T12:52:00-04:00",
   "energy-into-66-xle-sep-2026": "2026-09-18T16:00:00-04:00",
   "energy-load-not-a-ticket": "2026-09-01T06:50:18-04:00",
   "fed-hike-odds-october-december-2026": "2026-09-24T16:00:00-04:00",
