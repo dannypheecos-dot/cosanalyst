@@ -15,6 +15,7 @@ export const publishedAt: Record<string, string> = {
   "gamma-flip": "2026-09-29T03:56:00-04:00",
   "hormuz-larak-not-a-90-breakout": "2026-08-30T16:00:00-04:00",
   "hot-core-cpi-close-tech-sells-defensives-bid-oct-2026": "2026-10-14T17:20:00-04:00",
+  "first-nasdaq-weekly-loss-in-five-weeks-ai-cyber-selloff-opex-oct-2026": "2026-10-16T12:57:00-04:00",
   "import-prices-september-2026-2-year-yield-barely-moves-opex-oct-2026": "2026-10-16T08:52:00-04:00",
   "innovation-exemption-tokenized-nms-sandbox": "2026-09-18T20:00:00-04:00",
   "japan-10y-highest-since-1996": "2026-08-31T16:00:00-04:00",
