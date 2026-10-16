@@ -31,6 +31,7 @@ export const publishedAt: Record<string, string> = {
   "spy-friday-gamma": "2026-08-28T16:00:00-04:00",
   "the-print-was-zero": "2026-08-31T16:00:00-04:00",
   "two-clocks-triple-witching-sp-rebalance-sep-2026": "2026-09-17T12:00:00-04:00",
+  "warsh-didnt-say-hold-market-heard-it-oct-2026": "2026-10-16T04:02:00-04:00",
   "wash-to-repair-week-sep-5-11": "2026-09-11T18:50:00-04:00",
   "what-is-gamma-exposure": "2026-09-25T04:10:00-04:00",
   "wti-not-a-ticket": "2026-08-31T16:00:00-04:00",
