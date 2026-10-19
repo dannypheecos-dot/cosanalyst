@@ -13,6 +13,7 @@ export const publishedAt: Record<string, string> = {
   "energy-load-not-a-ticket": "2026-09-01T06:50:18-04:00",
   "fed-hike-odds-october-december-2026": "2026-09-24T16:00:00-04:00",
   "fed-says-credit-is-fine-junk-market-disagrees-oct-2026": "2026-10-08T04:00:00-04:00",
+  "fridays-rotation-runs-in-reverse-earnings-week-oct-2026": "2026-10-19T09:18:00-04:00",
   "gamma-flip": "2026-09-29T03:56:00-04:00",
   "hormuz-larak-not-a-90-breakout": "2026-08-30T16:00:00-04:00",
   "hot-core-cpi-close-tech-sells-defensives-bid-oct-2026": "2026-10-14T17:20:00-04:00",

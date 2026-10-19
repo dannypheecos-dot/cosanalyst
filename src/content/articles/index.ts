@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import rotationInReverse from "./fridays-rotation-runs-in-reverse-earnings-week-oct-2026";
 import nasdaqWeeklyLossClose from "./close-nasdaq-first-weekly-loss-in-five-weeks-qqq-down-5-5-percent-oct-2026";
 import nasdaqWeeklyLossMidday from "./first-nasdaq-weekly-loss-in-five-weeks-ai-cyber-selloff-opex-oct-2026";
 import flip717 from "./717-flip-ism-jolts";
@@ -39,6 +40,7 @@ import wti from "./wti-not-a-ticket";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  rotationInReverse,
   nasdaqWeeklyLossClose,
   nasdaqWeeklyLossMidday,
   importPricesMorningRecap,
