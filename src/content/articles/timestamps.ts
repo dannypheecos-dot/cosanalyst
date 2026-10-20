@@ -29,6 +29,7 @@ export const publishedAt: Record<string, string> = {
   "ppi-september-2026-producer-prices-jump-10-year-falls-oct-2026": "2026-10-15T08:50:00-04:00",
   "qqq-0dte-close-vs-midday": "2026-08-31T16:00:00-04:00",
   "robustness-is-the-edge": "2026-08-28T16:00:00-04:00",
+  "rotation-holds-dow-530-ai-lags-netflix-close-oct-2026": "2026-10-20T17:04:15-04:00",
   "september-cpi-2026-core-hot-fed-october-hike-odds": "2026-10-14T08:57:00-04:00",
   "seoul-circuit-breaker-10y-fell-anyway-oct-2026": "2026-10-15T04:07:00-04:00",
   "seoul-chips-cracked-sp-yawned-oct-2026": "2026-10-13T11:07:00-04:00",
