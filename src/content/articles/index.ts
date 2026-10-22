@@ -38,9 +38,11 @@ import twoClocks from "./two-clocks-triple-witching-sp-rebalance-sep-2026";
 import washToRepair from "./wash-to-repair-week-sep-5-11";
 import whatIsGammaExposure from "./what-is-gamma-exposure";
 import wti from "./wti-not-a-ticket";
+import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  qqqBreadth,
   rotationHoldsClose,
   rotationInReverse,
   nasdaqWeeklyLossClose,

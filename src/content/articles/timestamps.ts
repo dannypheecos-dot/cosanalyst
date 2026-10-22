@@ -2,6 +2,7 @@
 // otherwise the git author date of the commit that added the file when its ET day matches the
 // article date and it is not a bulk import; else 4:00 PM ET (market close) on the article date.
 export const publishedAt: Record<string, string> = {
+  "qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026": "2026-10-22T09:15:00-04:00",
   "717-flip-ism-jolts": "2026-09-01T17:14:12-04:00",
   "banks-beat-stocks-sold-oct-2026": "2026-10-13T16:22:00-04:00",
   "calm-before-cpi-has-no-cushion-oct-2026": "2026-10-12T09:20:00-04:00",
