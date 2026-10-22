@@ -10,9 +10,9 @@ const article: Article = {
   "kicker": "close recap",
   "asOf": "Close, Tue Oct 20, 2026",
   "ogImage": "/og/rotation-holds-dow-530-ai-lags-netflix-close-oct-2026.jpg",
-  "ogAlt": "THE ROTATION HELD. 404 of 503 S&P stocks up. Tech lagged. CosAnalyst, @CosAnalyst. BOOK FACT, NOT A TICKET.",
+  "ogAlt": "Paper collage: a broad field of ivory cards rises in the light while a small cluster of charcoal blocks sits in shadow, joined by a thin mint strip. Headline: The rotation held.",
   "body": [
-    { "type": "figure", "src": "/og/rotation-holds-dow-530-ai-lags-netflix-close-oct-2026-hero.jpg", "alt": "THE ROTATION HELD. 404 of 503 S&P stocks up. Tech lagged. CosAnalyst, @CosAnalyst. BOOK FACT, NOT A TICKET.", "caption": "BOOK FACT · NOT A TICKET" },
+    { "type": "figure", "src": "/og/rotation-holds-dow-530-ai-lags-netflix-close-oct-2026-hero.jpg", "alt": "Paper collage: a broad field of ivory cards rises in the light while a small cluster of charcoal blocks sits in shadow, joined by a thin mint strip. Headline: The rotation held.", "caption": "BOOK FACT · NOT A TICKET" },
     { "type": "lede", "text": "The rotation held to the bell. Monday was a narrow AI bounce with most of the market falling. Tuesday was the mirror image: 404 of 503 S&P 500 stocks rose, the Dow jumped 530 points, and tech was the only sector in the red." },
     { "type": "h2", "text": "The board" },
     { "type": "list", "items": [
