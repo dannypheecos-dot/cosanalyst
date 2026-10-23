@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import oilAbove100 from "./oil-above-100-wti-brent-dow-2026-10-23";
 import rotationHoldsClose from "./rotation-holds-dow-530-ai-lags-netflix-close-oct-2026";
 import rotationInReverse from "./fridays-rotation-runs-in-reverse-earnings-week-oct-2026";
 import nasdaqWeeklyLossClose from "./close-nasdaq-first-weekly-loss-in-five-weeks-qqq-down-5-5-percent-oct-2026";
@@ -42,6 +43,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  oilAbove100,
   qqqBreadth,
   rotationHoldsClose,
   rotationInReverse,
