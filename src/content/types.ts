@@ -21,12 +21,16 @@ export type Block =
 export type Article = {
   slug: string;
   title: string;
+  /** Document title when it should differ from the H1. */
+  titleTag?: string;
   dek: string;
   date: string;
   section: SectionId;
   also: SectionId[];
   kicker?: string;
   asOf?: string;
+  /** Visible clock when it should not be rendered in Eastern time. */
+  displayTime?: string;
   publishedAt?: string;
   updatedAt?: string;
   ogImage: string;

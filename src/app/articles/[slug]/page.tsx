@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleBlocks } from "@/components/ArticleBlocks";
 import { FollowShare } from "@/components/FollowShare";
-import { FaqPageJsonLd, NewsArticleJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, FaqPageJsonLd, NewsArticleJsonLd } from "@/components/JsonLd";
 import { JoinTelegram } from "@/components/SiteChrome";
 import { SectorSelectorModule } from "@/components/SectorSelectorModule";
 import { TelegramPromo } from "@/components/TelegramPromo";
@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {};
 
   const path = `/articles/${article.slug}/`;
-  const title = article.title;
+  const title = article.titleTag ?? article.title;
   const description = article.dek;
 
   return {
-    title,
+    title: article.titleTag ? { absolute: article.titleTag } : title,
     description,
     alternates: { canonical: path },
     openGraph: {
@@ -82,7 +82,9 @@ export default async function ArticlePage({ params }: Props) {
         modified={article.updatedAt ?? article.publishedAt}
         path={path}
         image={article.ogImage}
+        section={sectionLabel(article.section)}
       />
+      <BreadcrumbJsonLd title={article.title} path={path} />
       <FaqPageJsonLd pairs={faqPairs(article.body)} />
       <div className="article-art">
         <img src={asset(artSrc)} alt={artAlt} />
@@ -95,7 +97,11 @@ export default async function ArticlePage({ params }: Props) {
           <h1>{article.title}</h1>
           <p className="dek">{article.dek}</p>
           <p className="byline">
-            <PublishTime publishedAt={article.publishedAt ?? article.date} updatedAt={article.updatedAt} />
+            <PublishTime
+              publishedAt={article.publishedAt ?? article.date}
+              updatedAt={article.updatedAt}
+              label={article.displayTime}
+            />
             {article.asOf ? <> · {article.asOf}</> : null} · {site.name} ·{" "}
             {site.publisherLine} · {site.tagline}
           </p>

@@ -14,7 +14,11 @@ export function NoteCard({
     <>
       {sectionLabel(article.section)} ·{" "}
       {article.publishedAt ? (
-        <PublishTime publishedAt={article.publishedAt} updatedAt={article.updatedAt} />
+        <PublishTime
+          publishedAt={article.publishedAt}
+          updatedAt={article.updatedAt}
+          label={article.displayTime}
+        />
       ) : (
         formatDate(article.date)
       )}

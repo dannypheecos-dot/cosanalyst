@@ -1,9 +1,17 @@
 import { formatEt } from "@/lib/format";
 
-export function PublishTime({ publishedAt, updatedAt }: { publishedAt: string; updatedAt?: string }) {
+export function PublishTime({
+  publishedAt,
+  updatedAt,
+  label,
+}: {
+  publishedAt: string;
+  updatedAt?: string;
+  label?: string;
+}) {
   return (
     <span className="publish-time">
-      <time dateTime={publishedAt}>{formatEt(publishedAt)}</time>
+      <time dateTime={publishedAt}>{label ?? formatEt(publishedAt)}</time>
       {updatedAt && updatedAt !== publishedAt ? (
         <>
           {" · Updated "}

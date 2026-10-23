@@ -28,6 +28,7 @@ export function NewsArticleJsonLd({
   modified,
   path,
   image,
+  section,
 }: {
   title: string;
   dek: string;
@@ -35,6 +36,7 @@ export function NewsArticleJsonLd({
   modified?: string;
   path: string;
   image: string;
+  section?: string;
 }) {
   const data = {
     "@context": "https://schema.org",
@@ -44,6 +46,7 @@ export function NewsArticleJsonLd({
     datePublished: date,
     dateModified: modified ?? date,
     mainEntityOfPage: `${site.url}${path}`,
+    ...(section ? { articleSection: section } : {}),
     image: [`${site.url}${image}`],
     author: {
       "@type": "Organization",
@@ -64,6 +67,25 @@ export function NewsArticleJsonLd({
       "@type": "SpeakableSpecification",
       cssSelector: [".lede", "h1"],
     },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export function BreadcrumbJsonLd({ title, path }: { title: string; path: string }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${site.url}/` },
+      { "@type": "ListItem", position: 2, name: "Research", item: `${site.url}/research/` },
+      { "@type": "ListItem", position: 3, name: title, item: `${site.url}${path}` },
+    ],
   };
 
   return (

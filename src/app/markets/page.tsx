@@ -43,7 +43,7 @@ export default function Page() {
                 <p>{meta.dek}</p>
                 {latest ? (
                   <p className="latest">
-                    Latest: {toTeaser(latest).title} · {latest.publishedAt ? <PublishTime publishedAt={latest.publishedAt} updatedAt={latest.updatedAt} /> : formatDate(latest.date)}
+                    Latest: {toTeaser(latest).title} · {latest.publishedAt ? <PublishTime publishedAt={latest.publishedAt} updatedAt={latest.updatedAt} label={toTeaser(latest).displayTime} /> : formatDate(latest.date)}
                   </p>
                 ) : (
                   <p className="empty">

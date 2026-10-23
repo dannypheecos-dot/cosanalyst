@@ -27,6 +27,7 @@ export const publishedAt: Record<string, string> = {
   "lightning-x402-ai-agents-pay-sep-2026": "2026-09-24T16:00:00-04:00",
   "no-warsh-tuesday": "2026-08-31T16:00:00-04:00",
   "oil-above-100-wti-brent-dow-2026-10-23": "2026-10-23T12:48:00-04:00",
+  "oil-price-this-week-wti-dow-close-2026-10-23": "2026-10-23T16:45:00-04:00",
   "positive-vs-negative-gamma": "2026-09-28T04:00:00-04:00",
   "ppi-september-2026-producer-prices-jump-10-year-falls-oct-2026": "2026-10-15T08:50:00-04:00",
   "qqq-0dte-close-vs-midday": "2026-08-31T16:00:00-04:00",

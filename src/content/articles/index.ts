@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import oilPriceThisWeek from "./oil-price-this-week-wti-dow-close-2026-10-23";
 import oilAbove100 from "./oil-above-100-wti-brent-dow-2026-10-23";
 import rotationHoldsClose from "./rotation-holds-dow-530-ai-lags-netflix-close-oct-2026";
 import rotationInReverse from "./fridays-rotation-runs-in-reverse-earnings-week-oct-2026";
@@ -43,6 +44,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  oilPriceThisWeek,
   oilAbove100,
   qqqBreadth,
   rotationHoldsClose,
@@ -90,7 +92,13 @@ export const articles: Article[] = rawArticles
     ...article,
     publishedAt: article.publishedAt ?? stamps[article.slug] ?? `${article.date}T12:00:00-04:00`,
   }))
-  .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.slug.localeCompare(b.slug)));
+  .sort((a, b) => {
+    if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+    const aTime = a.publishedAt ?? "";
+    const bTime = b.publishedAt ?? "";
+    if (aTime !== bTime) return aTime < bTime ? 1 : -1;
+    return a.slug.localeCompare(b.slug);
+  });
 
 export function getArticle(slug: string): Article | undefined {
   return articles.find((article) => article.slug === slug);
@@ -109,6 +117,7 @@ export type ArticleTeaser = {
   date: string;
   publishedAt?: string;
   updatedAt?: string;
+  displayTime?: string;
   section: SectionId;
   ogImage: string;
   ogAlt: string;
@@ -122,6 +131,7 @@ export function toTeaser(article: Article): ArticleTeaser {
     date: article.date,
     publishedAt: article.publishedAt,
     updatedAt: article.updatedAt,
+    displayTime: article.displayTime,
     section: article.section,
     ogImage: article.ogImage,
     ogAlt: article.ogAlt,
