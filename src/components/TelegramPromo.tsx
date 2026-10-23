@@ -28,7 +28,7 @@ async function telegramQrSvg(url: string): Promise<string> {
     type: "svg",
     errorCorrectionLevel: "Q",
     margin: 2,
-    color: { dark: "#141210", light: "#f6f1e6" },
+    color: { dark: "#141210", light: "#fefefc" },
   });
   const trimmed = svg.trim();
   if (!trimmed.startsWith("<svg") || trimmed.includes("<script")) {

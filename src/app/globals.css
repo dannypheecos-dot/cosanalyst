@@ -1,12 +1,12 @@
 :root {
-  --paper: #f9f7f2;
-  --paper-2: #f3efe6;
-  --ivory: #fbf9f4;
+  --paper: #fdfdfb;
+  --paper-2: #f6f6f3;
+  --ivory: #fefefc;
   --ink: #1a1d23;
   --navy: #161b22;
   --muted: #5c6460;
   --dim: #7a827c;
-  --line: #d8d2c6;
+  --line: #d8d8d4;
   --line-strong: #2c3138;
   --forest: #1b4332;
   --forest-mid: #245c44;
@@ -45,20 +45,6 @@ body {
   line-height: 1.65;
   min-height: 100%;
   background-color: var(--paper);
-  background-image:
-    linear-gradient(180deg, rgba(26, 29, 35, 0.03), transparent 14rem),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.12  0 0 0 0 0.1  0 0 0 0 0.07  0 0 0 0.28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 400;
-  opacity: 0.045;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.55'/%3E%3C/svg%3E");
 }
 
 ::selection {
@@ -704,7 +690,7 @@ h3,
   text-align: center;
   text-decoration: none;
   color: var(--forest);
-  background: #f4efe4;
+  background: var(--paper);
   border: 1px solid var(--forest);
   padding: 1rem 1.15rem 1.1rem;
   min-height: 0;
@@ -712,7 +698,7 @@ h3,
 
 .ss-compact:hover {
   color: var(--forest);
-  background: #f7f3ea;
+  background: var(--paper-2);
 }
 
 .ss-compass {
@@ -1463,7 +1449,7 @@ figure.shot figcaption {
 
 .tg-phone-screen {
   flex: 1;
-  background: #f6f1e6;
+  background: #fefefc;
   color: #141210;
   border-radius: 0.55rem;
   padding: 0.35rem 0.45rem;
@@ -1479,7 +1465,7 @@ figure.shot figcaption {
   gap: 0.35rem;
   margin: 0;
   padding-block: 0.28rem;
-  border-bottom: 1px solid #e4dccb;
+  border-bottom: 1px solid #e6e6e2;
   font-family: var(--sans);
   font-size: 0.68rem;
   font-weight: 700;
@@ -1502,8 +1488,8 @@ figure.shot figcaption {
 
 .tg-qr-link {
   display: block;
-  background: #f6f1e6;
-  border: 2px solid #f6f1e6;
+  background: #fefefc;
+  border: 2px solid #fefefc;
   line-height: 0;
   min-width: 0;
 }
