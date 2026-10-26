@@ -17,12 +17,12 @@ const article: Article = {
   "displayTime": "Oct 26, 2026 · 6:31 AM PT",
   "publishedAt": "2026-10-26T06:31:00-07:00",
   "ogImage": "/og/brazil-stocks-lula-ewz-premarket-2026-10-26.png",
-  "ogAlt": "Paper collage of ticker tape dropping into a dark gap, CosAnalyst",
+  "ogAlt": "Paper collage of green and yellow torn paper bars stepping down into a dark gap, Brazil fell first, CosAnalyst",
   "body": [
     {
       "type": "figure",
       "src": "/og/brazil-stocks-lula-ewz-premarket-2026-10-26.png",
-      "alt": "Paper collage of ticker tape dropping into a dark gap, CosAnalyst",
+      "alt": "Paper collage of green and yellow torn paper bars stepping down into a dark gap, Brazil fell first, CosAnalyst",
       "caption": "BOOK FACT · NOT A TICKET"
     },
     {
