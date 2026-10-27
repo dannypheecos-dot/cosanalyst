@@ -2,6 +2,7 @@ import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
 import anthropicIpoDate from "./anthropic-ipo-date-ticker-valuation-how-to-buy-2026-10-27";
 import anthropicS1Recap from "./anthropic-s1-tech-bounce-brazil-circuit-breaker-2026-10-26";
+import fedVoteCount from "./fed-vote-count-fomc-dissent-odds-october-2026";
 import brazilRecap from "./brazil-stocks-lula-ewz-premarket-2026-10-26";
 import oilPriceThisWeek from "./oil-price-this-week-wti-dow-close-2026-10-23";
 import oilAbove100 from "./oil-above-100-wti-brent-dow-2026-10-23";
@@ -49,6 +50,7 @@ import { publishedAt as stamps } from "./timestamps";
 const rawArticles: Article[] = [
   anthropicIpoDate,
   anthropicS1Recap,
+  fedVoteCount,
   brazilRecap,
   oilPriceThisWeek,
   oilAbove100,
