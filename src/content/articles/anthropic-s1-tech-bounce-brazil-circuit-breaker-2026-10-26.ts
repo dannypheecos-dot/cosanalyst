@@ -48,7 +48,7 @@ const article: Article = {
     {
       "type": "list",
       "items": [
-        "**H1 2026 revenue: $16.3B**, up 1,258% from a year earlier (Seeking Alpha and Yahoo Finance, from the filing).",
+        "**H1 2026 revenue: $16.3B**, up about 1,300% from a year earlier (the S-1's own growth rate, as reported by Seeking Alpha and Yahoo Finance).",
         "**H1 2026 loss: $80.7B** (CNBC).",
         "**Risk factors:** 94 pages, including an uninsurable \"catastrophic AI-related incident\" (WSJ).",
         "**Stakes:** CNBC's live blog says the S-1 discloses Alphabet's and Amazon's stakes in Anthropic."
@@ -259,7 +259,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Per the filing as reported, Anthropic had H1 2026 revenue of $16.3B, up 1,258% from a year earlier (Seeking Alpha and Yahoo Finance), and an H1 loss of $80.7B (CNBC). The S-1 also has 94 pages of risk factors, including an uninsurable catastrophic AI-related incident (WSJ)."
+      "text": "Per the filing as reported, Anthropic had H1 2026 revenue of $16.3B, up about 1,300% from a year earlier (the S-1's own growth rate, as reported by Seeking Alpha and Yahoo Finance), and an H1 loss of $80.7B (CNBC). The S-1 also has 94 pages of risk factors, including an uninsurable catastrophic AI-related incident (WSJ)."
     },
     {
       "type": "h3",
