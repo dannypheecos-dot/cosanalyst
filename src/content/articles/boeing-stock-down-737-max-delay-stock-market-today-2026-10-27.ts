@@ -13,8 +13,8 @@ const article: Article = {
   ],
   "kicker": "market recap",
   "asOf": "Prices at the 1:00 PM PT close (TradingView, pulled 1:02 PM PT); economic data from the TradingView calendar; Polymarket as of 1:02 PM PT",
-  "displayTime": "Oct 27, 2026 · 1:45 PM PT",
-  "publishedAt": "2026-10-27T13:45:00-07:00",
+  "displayTime": "Oct 27, 2026 · 1:05 PM PT",
+  "publishedAt": "2026-10-27T13:05:00-07:00",
   "ogImage": "/og/boeing-stock-down-737-max-delay-stock-market-today-2026-10-27-og.png",
   "ogAlt": "CosAnalyst card: Full order book. Slow ramp. Boeing Q3, Tue Oct 27, 2026. BOOK FACT · NOT A TICKET",
   "body": [
