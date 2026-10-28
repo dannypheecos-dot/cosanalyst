@@ -15,6 +15,7 @@ const article: Article = {
   "asOf": "Market levels as of 6:35 AM PT; Polymarket as of 6:35 AM PT; options data desk estimate from delayed Cboe chains at 6:35 AM PT",
   "displayTime": "Oct 28, 2026 · 6:45 AM PT",
   "publishedAt": "2026-10-28T06:45:00-07:00",
+  "updatedAt": "2026-10-28T13:15:00-07:00",
   "ogImage": "/og/fed-decision-today-warsh-december-hike-2026-10-28-og.png",
   "ogAlt": "CosAnalyst card: The hold is priced. December is the bet. Fed decision day, Wed Oct 28, 2026. BOOK FACT · NOT A TICKET",
   "body": [
@@ -27,6 +28,10 @@ const article: Article = {
     {
       "type": "p",
       "text": "**As of 6:35 AM PT on Wed Oct 28, 2026. Written before the decision.** Market levels are TradingView reads at 6:35 AM PT, Polymarket prices are a public API pull at 6:35 AM PT, and options figures are our desk estimate from delayed Cboe data at 6:35 AM PT. Odds are market prices, not forecasts, and they move. This page will be updated after the statement."
+    },
+    {
+      "type": "p",
+      "text": "UPDATE, 1:15 PM PT: the Fed held. Read what happened: [Did the Fed raise rates today? Warsh decision and vote](/articles/fed-decision-recap-did-the-fed-raise-rates-warsh-vote-2026-10-28/)"
     },
     {
       "type": "lede",
