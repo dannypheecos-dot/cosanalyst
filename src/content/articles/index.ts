@@ -2,6 +2,7 @@ import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
 import anthropicIpoDate from "./anthropic-ipo-date-ticker-valuation-how-to-buy-2026-10-27";
 import anthropicS1Recap from "./anthropic-s1-tech-bounce-brazil-circuit-breaker-2026-10-26";
+import fedDecisionToday from "./fed-decision-today-warsh-december-hike-2026-10-28";
 import fedVoteCount from "./fed-vote-count-fomc-dissent-odds-october-2026";
 import boeingStockDown from "./boeing-stock-down-737-max-delay-stock-market-today-2026-10-27";
 import brazilRecap from "./brazil-stocks-lula-ewz-premarket-2026-10-26";
@@ -51,6 +52,7 @@ import { publishedAt as stamps } from "./timestamps";
 const rawArticles: Article[] = [
   anthropicIpoDate,
   anthropicS1Recap,
+  fedDecisionToday,
   fedVoteCount,
   boeingStockDown,
   brazilRecap,
