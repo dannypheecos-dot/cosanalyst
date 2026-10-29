@@ -7,6 +7,7 @@ import fedDecisionRecap from "./fed-decision-recap-did-the-fed-raise-rates-warsh
 import marketCloseRecap from "./why-is-google-stock-down-after-hours-microsoft-alphabet-fed-hold-2026-10-28";
 import alphabetSearchScare from "./why-is-alphabet-stock-down-today-search-revenue-miss-2026-10-29";
 import averageStockMidday from "./google-stock-down-equal-weight-sp-500-up-eli-lilly-earnings-ecb-2026-10-29";
+import polymarketCancelOnly from "./is-polymarket-down-cancel-only-mode-wallet-drain-2026-10-29";
 import fedVoteCount from "./fed-vote-count-fomc-dissent-odds-october-2026";
 import boeingStockDown from "./boeing-stock-down-737-max-delay-stock-market-today-2026-10-27";
 import brazilRecap from "./brazil-stocks-lula-ewz-premarket-2026-10-26";
@@ -61,6 +62,7 @@ const rawArticles: Article[] = [
   marketCloseRecap,
   alphabetSearchScare,
   averageStockMidday,
+  polymarketCancelOnly,
   fedVoteCount,
   boeingStockDown,
   brazilRecap,
