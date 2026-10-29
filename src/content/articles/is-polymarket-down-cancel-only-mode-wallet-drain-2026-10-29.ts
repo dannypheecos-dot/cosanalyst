@@ -34,7 +34,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "**UPDATE 12:10 PM PT: We hold positions on Polymarket too, and right now we can't sell them either. Cancel-only mode means you can pull open orders, but the order book won't match new ones, so there is no exit until trading resumes.**"
+      "text": "**UPDATE 12:10 PM PT: Traders can't sell positions right now. Cancel-only mode lets you pull open orders, but the order book won't match new ones, so there is no exit until trading resumes. We added guidance on withdrawals below.**"
     },
     {
       "type": "lede",
@@ -214,7 +214,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "No. Cancel-only mode means you can pull open orders, but the order book will not match new ones, so there is no exit until trading resumes. We hold positions on Polymarket too, and right now we cannot sell them either."
+      "text": "No. Traders can't sell positions right now. Cancel-only mode lets you pull open orders, but the order book won't match new ones, so there is no exit until trading resumes."
     },
     {
       "type": "h3",
