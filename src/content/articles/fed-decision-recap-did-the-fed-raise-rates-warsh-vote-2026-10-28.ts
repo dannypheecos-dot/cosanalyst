@@ -15,6 +15,7 @@ const article: Article = {
   "asOf": "Market levels as of 12:54 PM PT; Polymarket as of 12:54 PM PT; options data desk estimate from delayed Cboe chains at 12:55 PM PT",
   "displayTime": "Oct 28, 2026 · 1:15 PM PT",
   "publishedAt": "2026-10-28T13:15:00-07:00",
+  "updatedAt": "2026-10-28T17:40:00-07:00",
   "ogImage": "/og/fed-decision-recap-did-the-fed-raise-rates-warsh-vote-2026-10-28-og.png",
   "ogAlt": "CosAnalyst card: Held. Split 10-2. December still live. Fed decision recap, Wed Oct 28, 2026. BOOK FACT · NOT A TICKET",
   "body": [
@@ -27,6 +28,10 @@ const article: Article = {
     {
       "type": "p",
       "text": "**As of 12:54 PM PT on Wed Oct 28, 2026. Written after the decision and published after the 1:00 PM PT close.** Market levels are TradingView reads at 12:54 PM PT, Polymarket prices are a public API pull at 12:54 PM PT, and options figures are our desk estimate from delayed Cboe data at 12:55 PM PT. Odds are market prices, not forecasts, and they move."
+    },
+    {
+      "type": "p",
+      "text": "UPDATE, 5:40 PM PT: the close and after-hours earnings are in. Read the market close recap: [Why Is Google Stock Down After Hours? Alphabet vs Microsoft](/articles/why-is-google-stock-down-after-hours-microsoft-alphabet-fed-hold-2026-10-28/)"
     },
     {
       "type": "lede",
