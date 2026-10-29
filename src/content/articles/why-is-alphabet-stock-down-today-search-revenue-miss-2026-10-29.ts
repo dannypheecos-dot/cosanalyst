@@ -87,11 +87,15 @@ const article: Article = {
     },
     {
       "type": "h2",
-      "text": "Microsoft up, Alphabet down: the AI spending split"
+      "text": "Microsoft holds up, Alphabet sinks: the AI spending split"
     },
     {
       "type": "p",
-      "text": "Microsoft (MSFT) was at **540.94** premarket, up 1.9% (Yahoo Finance, 5:48 AM PT). It beat on revenue and profit, Azure grew faster than expected, and cash flow beat by a wide margin (Reuters). Both companies are spending heavily on AI. The market is rewarding the one still funding the build from its own cash flow and punishing the one burning cash while its core business slows."
+      "text": "**UPDATE 8:25 AM PT: after the open, GOOGL was 286.76, down 11.7% from Wednesday's 324.89 close, while MSFT was 523.19, down 1.5% from 531.01. QQQ was down 1.3% and SPY down 0.3% (Yahoo Finance, 8:25 AM PT).**"
+    },
+    {
+      "type": "p",
+      "text": "Microsoft gave back its premarket gain after the open and slipped with the rest of tech, but it is holding up far better. It beat on revenue and profit, Azure grew faster than expected, and cash flow beat by a wide margin (Reuters). A 1.5% dip is in line with the Nasdaq 100. Alphabet's 11.7% drop is the outlier. Both companies are spending heavily on AI. The market is going easier on the one still funding the build from its own cash flow and punishing the one burning cash while its core business slows."
     },
     {
       "type": "p",
@@ -182,11 +186,11 @@ const article: Article = {
     },
     {
       "type": "h3",
-      "text": "Why is Microsoft stock up while Google is down?"
+      "text": "Why is Alphabet falling so much more than Microsoft?"
     },
     {
       "type": "p",
-      "text": "Microsoft beat on revenue and profit, Azure grew faster than expected and cash flow beat by a wide margin (Reuters). Alphabet missed on search and burned cash. Investors are rewarding AI spending funded by cash flow and punishing AI spending that burns it."
+      "text": "Microsoft beat on revenue and profit, Azure grew faster than expected and cash flow beat by a wide margin (Reuters). Alphabet missed on search and burned cash. After the open Microsoft was down 1.5%, about in line with QQQ, while Alphabet was down 11.7% (Yahoo Finance, 8:25 AM PT). Investors are going easier on AI spending funded by cash flow and punishing AI spending that burns it."
     },
     {
       "type": "h3",
@@ -218,7 +222,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Alphabet's AI story did not break overnight. Its search business missed while the AI bill kept growing, and the market is asking whether the core can keep paying for the build. GOOGL was down about 11.5% premarket, Microsoft was up, GDP ran hot, inflation stayed in line and December hike odds sit near 77.5%. The close decides whether this is Alphabet's worst earnings day ever."
+      "text": "Alphabet's AI story did not break overnight. Its search business missed while the AI bill kept growing, and the market is asking whether the core can keep paying for the build. GOOGL was down about 11.5% premarket and 11.7% after the open while Microsoft slipped just 1.5%, GDP ran hot, inflation stayed in line and December hike odds sit near 77.5%. The close decides whether this is Alphabet's worst earnings day ever."
     },
     {
       "type": "p",
