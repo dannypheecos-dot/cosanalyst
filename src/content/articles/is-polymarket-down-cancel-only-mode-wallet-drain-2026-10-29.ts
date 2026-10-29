@@ -11,9 +11,10 @@ const article: Article = {
     "markets"
   ],
   "kicker": "Breaking",
-  "asOf": "Polymarket status page and public X posts checked at 11:30 AM PT; story is developing",
+  "asOf": "Polymarket status page and public X posts checked at 12:10 PM PT; story is developing",
   "displayTime": "Oct 29, 2026 · 11:34 AM PT",
   "publishedAt": "2026-10-29T11:34:00-07:00",
+  "updatedAt": "2026-10-29T12:10:00-07:00",
   "ogImage": "/og/is-polymarket-down-cancel-only-mode-wallet-drain-2026-10-29-og.png",
   "ogAlt": "CosAnalyst card: Polymarket goes cancel-only. Don't sign. Breaking, Thu Oct 29, 2026. BOOK FACT · NOT A TICKET",
   "body": [
@@ -29,7 +30,11 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "**As of 11:30 AM PT on Thu Oct 29, 2026. Developing story.** Status details are from Polymarket's official status page. Loss figures are user claims and press reports and are not confirmed by Polymarket. We will update as Polymarket speaks."
+      "text": "**As of 12:10 PM PT on Thu Oct 29, 2026. Developing story.** Status details are from Polymarket's official status page. Loss figures are user claims and press reports and are not confirmed by Polymarket. We will update as Polymarket speaks."
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE 12:10 PM PT: We hold positions on Polymarket too, and right now we can't sell them either. Cancel-only mode means you can pull open orders, but the order book won't match new ones, so there is no exit until trading resumes.**"
     },
     {
       "type": "lede",
@@ -120,6 +125,26 @@ const article: Article = {
     },
     {
       "type": "h2",
+      "text": "Can I withdraw my funds from Polymarket right now?"
+    },
+    {
+      "type": "p",
+      "text": "This is our guidance, based on the status page and on user and press reports. It is not guidance from Polymarket."
+    },
+    {
+      "type": "p",
+      "text": "Withdrawals run through Polymarket's relayer. The status page says relayer actions are paused, so the normal withdraw flow likely will not work."
+    },
+    {
+      "type": "p",
+      "text": "Reports say the site's frontend may be compromised, and the reported drains involved users signing on it. Attempting to withdraw through the website now is the riskiest move."
+    },
+    {
+      "type": "p",
+      "text": "Funds sitting in an account are not moved unless the owner signs a transaction. The safest step is no signing and no wallet connecting until Polymarket's status page or its verified X account says the incident is resolved. Withdraw after that."
+    },
+    {
+      "type": "h2",
       "text": "Not Polymarket's first security scare this year"
     },
     {
@@ -182,6 +207,22 @@ const article: Article = {
     {
       "type": "p",
       "text": "No timeline has been given. The status page still read Investigating as of 11:30 AM PT."
+    },
+    {
+      "type": "h3",
+      "text": "Can I sell my Polymarket positions right now?"
+    },
+    {
+      "type": "p",
+      "text": "No. Cancel-only mode means you can pull open orders, but the order book will not match new ones, so there is no exit until trading resumes. We hold positions on Polymarket too, and right now we cannot sell them either."
+    },
+    {
+      "type": "h3",
+      "text": "Can I withdraw from Polymarket right now?"
+    },
+    {
+      "type": "p",
+      "text": "Our guidance, based on reports and the status page, not on anything Polymarket has said: the normal withdraw flow likely will not work, because withdrawals run through the relayer and the status page says those actions are paused. Reports say the frontend may be compromised and that the reported drains involved users signing on the site, so trying to withdraw through the website now is the riskiest move. Funds sitting in an account are not moved unless the owner signs a transaction. Do not sign and do not connect a wallet until the status page or Polymarket's verified X account says it is resolved, then withdraw."
     },
     {
       "type": "h2",
