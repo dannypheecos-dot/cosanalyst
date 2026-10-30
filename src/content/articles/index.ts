@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import qqq4pctStudy from "./what-happens-after-qqq-drops-4-percent-in-a-day-2026-10-30";
 import qqqMiddayChips from "./why-is-qqq-down-today-intel-chip-selloff-vix-20-2026-10-30";
 import nasdaqFuturesPremarket from "./why-are-nasdaq-futures-down-today-amazon-capex-2026-10-30";
 import goldBelow4000 from "./why-is-gold-down-today-gold-below-4000-silver-below-50-2026-10-30";
@@ -60,6 +61,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  qqq4pctStudy,
   qqqMiddayChips,
   nasdaqFuturesPremarket,
   goldBelow4000,
