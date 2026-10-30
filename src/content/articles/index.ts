@@ -1,6 +1,7 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
 import nasdaqFuturesPremarket from "./why-are-nasdaq-futures-down-today-amazon-capex-2026-10-30";
+import goldBelow4000 from "./why-is-gold-down-today-gold-below-4000-silver-below-50-2026-10-30";
 import intelWorstDay from "./why-is-intel-stock-down-today-intc-worst-day-since-1974-q4-guide-2026-10-30";
 import anthropicIpoDate from "./anthropic-ipo-date-ticker-valuation-how-to-buy-2026-10-27";
 import anthropicS1Recap from "./anthropic-s1-tech-bounce-brazil-circuit-breaker-2026-10-26";
@@ -59,6 +60,7 @@ import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
   nasdaqFuturesPremarket,
+  goldBelow4000,
   intelWorstDay,
   anthropicIpoDate,
   anthropicS1Recap,
