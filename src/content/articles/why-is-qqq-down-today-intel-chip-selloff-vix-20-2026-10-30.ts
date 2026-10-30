@@ -25,6 +25,10 @@ const article: Article = {
       "caption": "BOOK FACT · NOT A TICKET"
     },
     {
+      "type": "p",
+      "text": "**UPDATE, 2:15 PM PT: the closing numbers are in. Stocks bounced off the lows but still closed sharply lower. Read the close recap: [Why Did Stocks Fall Today? Intel's Worst Day Since 1974](https://cosanalyst.com/articles/why-did-stocks-fall-today-intel-worst-day-since-1974-big-tech-week-2026-10-30/)**"
+    },
+    {
       "type": "lede",
       "text": "The stock market is down today because the AI-capex selloff that started with [Alphabet's after-hours drop](/articles/why-is-google-stock-down-after-hours-microsoft-alphabet-fed-hold-2026-10-28/) on Wednesday spread to chips, led by Intel, and the losses deepened into midday. As of 11:36 AM PT, QQQ traded at $684.72 (-4.28%), the Nasdaq 100 at 28,181 (-4.16%), the Nasdaq Composite at 25,195 (-3.78%), the S&P 500 at 7,536 (-2.39%) and the Dow at 51,608 (-1.40%) (Yahoo Finance data). The VIX rose about 29% to roughly 22."
     },
