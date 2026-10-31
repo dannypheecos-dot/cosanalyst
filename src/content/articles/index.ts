@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import iranStrikesNov4 from "./will-us-strike-iran-after-midterms-november-4-oil-stocks-2026-10-30";
 import closeRecap1030 from "./why-did-stocks-fall-today-intel-worst-day-since-1974-big-tech-week-2026-10-30";
 import qqq4pctStudy from "./what-happens-after-qqq-drops-4-percent-in-a-day-2026-10-30";
 import qqqMiddayChips from "./why-is-qqq-down-today-intel-chip-selloff-vix-20-2026-10-30";
@@ -62,6 +63,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  iranStrikesNov4,
   closeRecap1030,
   qqq4pctStudy,
   qqqMiddayChips,
