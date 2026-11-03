@@ -2,27 +2,110 @@ import type { Article } from "@/content/types";
 
 const article: Article = {
   "slug": "will-us-strike-iran-after-midterms-november-4-oil-stocks-2026-10-30",
-  "title": "Will the US Strike Iran After the Midterms? What a Nov. 4 Attack Could Mean for Oil and Stocks",
-  "titleTag": "Will the US Strike Iran After the Midterms? Oil and Stocks",
-  "dek": "MS NOW says Gulf allies were told to prepare for US strikes on Iran as soon as Nov. 4. No decision yet. WTI settled $104.12. What it means for oil and stocks.",
+  "title": "US Strikes Iran's Qeshm Island: What It Means for Oil and the Strait of Hormuz",
+  "titleTag": "US Strikes Iran's Qeshm Island: Oil and Strait of Hormuz",
+  "dek": "The WSJ reports the US struck Iran's Qeshm Island near the Strait of Hormuz, citing US officials. CENTCOM has not commented. WTI settled $96.46 Monday. What it means for oil.",
   "date": "2026-10-30",
   "section": "markets",
   "also": [
     "research"
   ],
-  "kicker": "Breaking",
-  "asOf": "Oil settlements Oct 30, 2026; reports as of 9:15 PM PT",
-  "displayTime": "Oct 30, 2026 · 9:30 PM PT",
+  "kicker": "Update",
+  "asOf": "Oil quotes as of 5:01 PM PT Nov 2, 2026; reports as of 5:15 PM PT",
+  "displayTime": "Updated Nov 2, 2026 · 5:30 PM PT",
   "publishedAt": "2026-10-30T21:30:00-07:00",
-  "updatedAt": "2026-10-30T21:30:00-07:00",
-  "ogImage": "/og/will-us-strike-iran-after-midterms-november-4-oil-stocks-2026-10-30-og.png",
-  "ogAlt": "CosAnalyst card: Iran strikes Nov. 4? Oil already at $104.",
+  "updatedAt": "2026-11-02T17:30:00-08:00",
+  "ogImage": "/og/will-us-strike-iran-after-midterms-november-4-oil-stocks-2026-10-30-update-2026-11-02-og.png",
+  "ogAlt": "CosAnalyst card: US strikes Iran's Qeshm. Hormuz on edge.",
   "body": [
     {
       "type": "figure",
-      "src": "/og/will-us-strike-iran-after-midterms-november-4-oil-stocks-2026-10-30.png",
-      "alt": "CosAnalyst card: Iran strikes Nov. 4? Oil already at $104.",
+      "src": "/og/will-us-strike-iran-after-midterms-november-4-oil-stocks-2026-10-30-update-2026-11-02.png",
+      "alt": "CosAnalyst card: US strikes Iran's Qeshm. Hormuz on edge.",
       "caption": "BOOK FACT · NOT A TICKET"
+    },
+    {
+      "type": "callout",
+      "text": "UPDATE, Nov. 2, 2026, 5:30 PM PT: The Wall Street Journal reported Monday that the United States struck Iran's Qeshm Island, near the Strait of Hormuz, citing U.S. officials ([Reuters via Devdiscourse](https://www.devdiscourse.com/article/international/4000958-us-struck-irans-qeshm-island-wall-street-journal-reports), [The Herald Business](https://biz.heraldcorp.com/article/10923687)). U.S. Central Command did not immediately respond to a request for comment, and the strike has not been confirmed by CENTCOM. Targets, damage and casualties have not been officially reported. The headline first circulated on X at 5:02 PM PT via @zerohedge."
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "label": "WTI crude (Dec)",
+          "value": "$96.90",
+          "note": "+0.46% after hours, 5:01 PM PT (CNBC quote)"
+        },
+        {
+          "label": "Brent (Jan)",
+          "value": "$105.20",
+          "note": "+0.41% after hours, 5:01 PM PT (CNBC quote)"
+        },
+        {
+          "label": "WTI Monday settle",
+          "value": "$96.46",
+          "note": "-7.4%, biggest daily drop since July 27 (CNBC)"
+        },
+        {
+          "label": "Brent Monday settle",
+          "value": "$104.77",
+          "note": "-7.6% (CNBC)"
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Did the US strike Iran's Qeshm Island?"
+    },
+    {
+      "type": "p",
+      "text": "According to the Wall Street Journal, yes. Reuters relayed the Journal's report that the U.S. struck Qeshm Island on Monday, citing U.S. officials. That is a report, not an official statement. CENTCOM had not commented as of this update, and we have not seen a Pentagon or White House statement confirming it. We will update this page when there is one."
+    },
+    {
+      "type": "p",
+      "text": "The report followed a day of incidents around the island. Iran's official IRNA news agency reported several explosions on Qeshm, with the cause unclear ([Arab News/Reuters](https://www.arabnews.com/middle-east/explosions-heard-on-irans-qeshm-island-irna-says-3009496)). Fars reported explosions in waters off Bandar Lengeh. Iran's Revolutionary Guard (IRGC) claimed it shot down a U.S. MQ-9 drone east of the Strait of Hormuz and brought down MQM-170 reconnaissance drones near Qeshm ([NDTV](https://www.ndtv.com/world-news/multiple-explosions-heard-on-qeshm-island-bandar-lengeh-in-iran-report-12273948)). Those claims could not be independently verified, and Gulf News reported CENTCOM dismissed the drone-capture claim as false ([Gulf News](https://gulfnews.com/world/mena/iran-claims-us-drone-downed-qeshm-blasts-reported-trump-cites-oil-drop-1.500733429))."
+    },
+    {
+      "type": "p",
+      "text": "Earlier Monday, President Trump told [Axios](https://www.axios.com/2026/11/02/trump-axios-interview-no-rush-resume-war) he was \"in no rush\" to decide whether to resume fighting in Iran. \"One way or the other, we will do something, but there is no rush,\" he said. Axios reported Qatari mediators have written a draft agreement aimed at restarting direct U.S.-Iran talks."
+    },
+    {
+      "type": "h2",
+      "text": "Why Qeshm Island matters for the Strait of Hormuz"
+    },
+    {
+      "type": "p",
+      "text": "Qeshm is Iran's largest island and sits inside the Strait of Hormuz, next to Bandar Abbas. The strait normally carries around a fifth of the world's oil, and shipping through it has been heavily disrupted since the war began in late February ([Euronews](https://www.euronews.com/2026/11/02/oil-slides-on-hormuz-deal-hopes-but-trump-keeps-iran-strikes-on-the-table)). A strike there, if confirmed, would be military action right on the main export lane for Gulf crude, not a distant target."
+    },
+    {
+      "type": "h2",
+      "text": "Oil and Hormuz: what the market is pricing"
+    },
+    {
+      "type": "p",
+      "text": "The report landed after a big down day for crude. On Monday, Nov. 2, WTI fell 7.4% to settle at $96.46 and Brent fell 7.6% to settle at $104.77, as both Washington and Tehran signaled openness to a deal ([CNBC](https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html)). In after-hours trading at 5:01 PM PT, December WTI futures were at $96.90 (+0.46%) and January Brent at $105.20 (+0.41%), per CNBC quotes. That is a modest move so far. One after-hours print is not a trend, and prices can move fast on the next headline."
+    },
+    {
+      "type": "p",
+      "text": "Two forces are pulling on price. Goldman Sachs said a geopolitical risk premium of about $27 a barrel explains most of October's crude rally (Euronews). Monday's selloff took a chunk of that premium out on deal hopes. TD Securities' Ryan McKay told CNBC that as long as there is no concrete end to the war and tanker and Houthi attacks continue, he does not expect diplomacy headlines alone to erase the premium. A confirmed U.S. strike in the strait would test that view."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Reported:** U.S. struck Qeshm Island (WSJ, citing U.S. officials, via Reuters).",
+        "**Not confirmed:** CENTCOM has not commented. No official U.S. statement on targets or damage.",
+        "**Iranian claims, unverified:** IRGC says it downed a U.S. MQ-9 east of Hormuz and drones near Qeshm.",
+        "**Watch:** any CENTCOM statement, Iranian retaliation against shipping or Gulf energy sites, and UKMTO shipping advisories.",
+        "**Watch:** whether Qatari-mediated talks continue after the report."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Background: the Oct. 30 report on strikes after the midterms"
+    },
+    {
+      "type": "p",
+      "text": "The original version of this page, published Oct. 30, covered reports that the U.S. told Gulf allies to prepare for strikes on Iran as soon as Nov. 4. It is kept below for context. Prices in that section are Oct. 30 settlements."
     },
     {
       "type": "lede",
@@ -164,6 +247,22 @@ const article: Article = {
     },
     {
       "type": "h3",
+      "text": "Did the US strike Iran's Qeshm Island?"
+    },
+    {
+      "type": "p",
+      "text": "The Wall Street Journal reported on Nov. 2, 2026, citing U.S. officials, that the U.S. struck Qeshm Island near the Strait of Hormuz. CENTCOM had not commented as of 5:30 PM PT, so the strike is reported but not officially confirmed."
+    },
+    {
+      "type": "h3",
+      "text": "How did oil react to the Qeshm strike report?"
+    },
+    {
+      "type": "p",
+      "text": "Modestly so far. At 5:01 PM PT Nov. 2, December WTI futures were at $96.90 (+0.46%) and January Brent at $105.20 (+0.41%), after settling at $96.46 and $104.77 on a 7%+ drop earlier Monday."
+    },
+    {
+      "type": "h3",
       "text": "Will the US strike Iran on November 4?"
     },
     {
@@ -200,11 +299,11 @@ const article: Article = {
     },
     {
       "type": "callout",
-      "text": "Disclaimer: This article is for informational and educational purposes only and is not financial advice. It does not predict whether military action will happen. Do your own research or talk to a licensed professional before making investment decisions."
+      "text": "Disclaimer: This article is for informational and educational purposes only and is not financial advice. It does not predict military action or oil prices, and reported events may change as officials comment. Do your own research or talk to a licensed professional before making investment decisions."
     },
     {
       "type": "p",
-      "text": "Sources: MS NOW (Oct. 30), Associated Press via WBBH (Oct. 28), Axios (Oct. 28 and Oct. 31), Wall Street Journal (as cited by MS NOW and AP), CNBC/Reuters (oil settlements), The National, Newsquawk, Walter Bloomberg on X. Times are Pacific. Report last checked 9:15 PM PT Oct. 30."
+      "text": "Sources: Wall Street Journal (via Reuters/Devdiscourse and The Herald Business, Nov. 2), CNBC (Nov. 2 settlements and after-hours quotes), Axios (Nov. 2), IRNA and Fars (via Arab News/Reuters, NDTV, Gulf News), Euronews, MS NOW (Oct. 30), Associated Press via WBBH (Oct. 28), Axios (Oct. 28 and Oct. 31), CNBC/Reuters (Oct. 30 settlements), The National, Newsquawk, Walter Bloomberg on X. Times are Pacific. Last checked 5:15 PM PT Nov. 2."
     },
     {
       "type": "p",
