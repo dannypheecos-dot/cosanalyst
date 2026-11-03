@@ -1,5 +1,8 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import oilUpQeshm1103 from "./why-is-oil-up-today-us-strike-iran-qeshm-island-2026-11-03";
+import treasuryRefunding1103 from "./treasury-refunding-announcement-november-2026-stocks-bonds";
+import canadaHousing1103 from "./canada-housing-market-crash-what-it-means-for-us-housing-2026-11";
 import iranStrikesNov4 from "./will-us-strike-iran-after-midterms-november-4-oil-stocks-2026-10-30";
 import middayRecap1102 from "./oil-prices-today-crude-plunges-iran-peace-talks-stock-market-midday-recap-2026-11-02";
 import closeCorrection1102 from "./nasdaq-100-correction-apple-palantir-earnings-stock-market-close-recap-2026-11-02";
@@ -66,6 +69,9 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  oilUpQeshm1103,
+  treasuryRefunding1103,
+  canadaHousing1103,
   closeCorrection1102,
   middayRecap1102,
   premarketRecap1102,
