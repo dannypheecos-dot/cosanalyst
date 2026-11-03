@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import electionDay1103 from "./is-the-stock-market-open-on-election-day-midterm-elections-stock-market-2026-11-03";
 import oilUpQeshm1103 from "./why-is-oil-up-today-us-strike-iran-qeshm-island-2026-11-03";
 import treasuryRefunding1103 from "./treasury-refunding-announcement-november-2026-stocks-bonds";
 import canadaHousing1103 from "./canada-housing-market-crash-what-it-means-for-us-housing-2026-11";
@@ -69,6 +70,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  electionDay1103,
   oilUpQeshm1103,
   treasuryRefunding1103,
   canadaHousing1103,
