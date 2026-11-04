@@ -11,37 +11,41 @@ const FS = "https://x.com/FirstSquawk/status/2117789806868717733";
 const ASIA = "https://x.com/RealNickMugalli/status/2117799347597496645";
 const BBG = "https://x.com/business/status/2117799073340141912";
 const NST = "https://www.nst.com.my/business/corporate/2026/11/1570270/us-stock-futures-dip-investors-await-midterm-election-results";
+const PMH = "https://polymarket.com/event/which-party-will-win-the-house-in-2026";
+const PMS = "https://polymarket.com/event/which-party-will-win-the-senate-in-2026";
 const ED = "/articles/is-the-stock-market-open-on-election-day-midterm-elections-stock-market-2026-11-03/";
 
 const article: Article = {
   "slug": "why-are-stock-futures-falling-tonight-democrats-sweep-midterms-nasdaq-2026-11-03",
   "title": "Why Are Stock Futures Falling Tonight? Nasdaq Drops 1.9% as Democrats Sweep the Midterms",
   "titleTag": "Why Are Stock Futures Falling Tonight? Democrats Sweep, Nasdaq Futures Drop",
-  "dek": "Nasdaq 100 futures fell about 1.9% and S&P 500 futures about 0.9% on election night as Democratic sweep odds hit roughly 95%. The AI and data-center trade took the hit, yields fell, and Asian chip stocks slid. What moved, why, and the if/then levels for Wednesday.",
+  "dek": "Nasdaq 100 futures fell about 1.9% and S&P 500 futures about 0.9% on election night as Polymarket put Democrats above 99% to win both the House and the Senate. The AI and data-center trade took the hit, yields fell, and Asian chip stocks slid. What moved, why, and the if/then levels for Wednesday.",
   "date": "2026-11-03",
   "section": "markets",
   "also": ["equities"],
   "kicker": "Breaking",
-  "asOf": "Futures and posts read 6:05 PM PT Nov 3, 2026",
+  "asOf": "Updated 6:30 PM PT Nov 3, 2026; Polymarket odds read 6:15 PM PT",
   "displayTime": "Nov 3, 2026 · 6:30 PM PT",
   "publishedAt": "2026-11-03T18:30:00-08:00",
   "ogImage": "/og/why-are-stock-futures-falling-tonight-democrats-sweep-midterms-nasdaq-2026-11-03-og.png",
   "ogAlt": "CosAnalyst cream card: Blue sweep. Nasdaq -1.9%. AI trade hit.",
   "body": [
     { "type": "figure", "src": "/og/why-are-stock-futures-falling-tonight-democrats-sweep-midterms-nasdaq-2026-11-03.png", "alt": "CosAnalyst cream card: Blue sweep. Nasdaq -1.9%. AI trade hit.", "caption": "Sources: The Kobeissi Letter, CNBC, zerohedge. Figures as of about 6:00 PM PT, Nov. 3, 2026." },
+    { "type": "h2", "text": "Update (Nov 3, ~6:30 PM PT)" },
+    { "type": "p", "text": "Polymarket now has Democrats at about 99.6% to control the House and about 99.2% to control the Senate, as of about 6:15 PM PT ([Polymarket House](" + PMH + "), [Polymarket Senate](" + PMS + ")). Neither chamber has been called yet, and prediction-market odds are not results. CNBC's 6 PM PT update had Nasdaq 100 futures down 1.6% and S&P 500 futures down 0.7%, a bit off the earlier lows ([CNBC](" + CNBC + "))." },
     { "type": "lede", "text": "At 4 PM ET on Tuesday the Nasdaq had just snapped a three-day losing streak on a chip rebound. Three hours later, as polls closed and the counts came in blue, Nasdaq 100 futures had given back all of it and more. By about 5:45 PM PT they were down roughly 1.9%, at the lowest level since July 26, per [The Kobeissi Letter](" + K1 + ")." },
     { "type": "p", "text": "The trigger was not one race. It was the market repricing a near-certain Democratic sweep of Congress, and with it, the odds of tighter rules on the AI data-center buildout that has carried this market." },
     { "type": "h2", "text": "Why are stock futures falling tonight?" },
     { "type": "list", "items": [
-      "**Sweep odds jumped.** Prediction-market odds of a Democratic sweep rose to about 95%, per [Kobeissi](" + K2 + "). CNBC reported Kalshi odds near 90% for Democratic Senate control and 97% for the House earlier in the evening ([CNBC](" + CNBC + "))."
+      "**Sweep odds jumped.** Polymarket odds of Democratic control rose to about 99.6% for the House and 99.2% for the Senate by about 6:15 PM PT ([House](" + PMH + "), [Senate](" + PMS + ")). Neither chamber had been called."
       ,"**The AI trade is the target.** Investors fear a big Democratic win means more data-center restrictions nationwide, CNBC reported, with the Texas governor race flagged as a key swing ([CNBC](" + CNBC2 + "))."
       ,"**Texas.** zerohedge said Nasdaq futures fell as the Texas governor race swung toward Democrat Hinojosa, framing it as a threat to the state's data-center buildout ([zerohedge](" + ZH + ")). That race had not been called when we published."
       ,"**Speed.** The S&P 500 erased about $500 billion in market value in roughly two hours, per [Kobeissi](" + K2 + ")."
     ] },
     { "type": "h2", "text": "The numbers at about 6 PM PT" },
     { "type": "list", "items": [
-      "Nasdaq 100 futures: about -1.9% ([Kobeissi](" + K1 + ")); zerohedge flagged a 2% decline ([zerohedge](" + ZH2 + "))",
-      "S&P 500 futures: about -0.9%; Dow futures about -0.5% ([Kobeissi](" + K1 + "))",
+      "Nasdaq 100 futures: about -1.9% at the 5:45 PM PT low ([Kobeissi](" + K1 + ")); zerohedge flagged a 2% decline ([zerohedge](" + ZH2 + ")); about -1.6% at CNBC's 6 PM PT update ([CNBC](" + CNBC + "))",
+      "S&P 500 futures: about -0.9%; Dow futures about -0.5% ([Kobeissi](" + K1 + ")); S&P about -0.7% at CNBC's 6 PM PT update ([CNBC](" + CNBC + "))",
       "Crude oil about -1.0%; gold about +0.7% ([Kobeissi](" + K1 + "))",
       "10-year Treasury yield down 6 to 7 bps to about 4.907% ([Mike Zaccardi](" + ZAC + ")); 2-year down 6 bps to 4.573% ([First Squawk](" + FS + "))",
       "Dollar lower, Treasuries bid ([Bloomberg](" + BBG + "))",
