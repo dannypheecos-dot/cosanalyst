@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import middayDow1104 from "./why-is-the-stock-market-up-today-dow-jumps-1500-points-midterms-oil-2026-11-04";
 import pmWhales1104 from "./is-big-money-on-polymarket-swaying-the-midterms-whale-wallets-2026-11-04";
 import demSweepTrump1104 from "./is-a-democratic-sweep-good-for-trump-what-it-means-for-stocks-2026-11-04";
 import electionTape1103 from "./election-day-stock-market-close-qqq-ceiling-amd-earnings-2026-11-03";
@@ -75,6 +76,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  middayDow1104,
   demSweepTrump1104,
   pmWhales1104,
   electionTape1103,
