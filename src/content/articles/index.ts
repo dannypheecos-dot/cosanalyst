@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import electionTape1103 from "./election-day-stock-market-close-qqq-ceiling-amd-earnings-2026-11-03";
 import equityPerps1103 from "./what-are-equity-perpetual-futures-stock-perps-cftc-approval-2026-11-03";
 import demSweep1103 from "./why-are-stock-futures-falling-tonight-democrats-sweep-midterms-nasdaq-2026-11-03";
 import electionDay1103 from "./is-the-stock-market-open-on-election-day-midterm-elections-stock-market-2026-11-03";
@@ -72,6 +73,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  electionTape1103,
   demSweep1103,
   equityPerps1103,
   electionDay1103,
