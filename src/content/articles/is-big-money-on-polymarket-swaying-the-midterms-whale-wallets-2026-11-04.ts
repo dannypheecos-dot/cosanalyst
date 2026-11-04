@@ -10,15 +10,15 @@ const article: Article = {
   "also": ["markets", "crypto"],
   "kicker": "On-chain study",
   "asOf": "Data pulled evening of Nov 3, 2026 PT",
-  "displayTime": "Nov 4, 2026 · PT",
-  "publishedAt": "2026-11-04T06:00:00-08:00",
+  "displayTime": "Nov 4, 2026 · 1:55 AM ET",
+  "publishedAt": "2026-11-04T06:55:00Z",
   "ogImage": "/og/is-big-money-on-polymarket-swaying-the-midterms-whale-wallets-2026-11-04-og.png",
-  "ogAlt": "CosAnalyst dark chart card: Whales bought the blue wave? We traced the wallets.",
+  "ogAlt": "CosAnalyst cream editorial card titled Is Big Money on Polymarket Swaying the Midterms?",
   "body": [
     {
       "type": "figure",
       "src": "/og/is-big-money-on-polymarket-swaying-the-midterms-whale-wallets-2026-11-04.png",
-      "alt": "CosAnalyst dark chart card: Whales bought the blue wave? We traced the wallets.",
+      "alt": "CosAnalyst cream editorial card titled Is Big Money on Polymarket Swaying the Midterms?",
       "caption": "Data pulled Nov. 3, 2026, evening PT, from Polymarket's public Gamma and Data (v2) APIs, Polygon public RPC and Kalshi's public API."
     },
     {
