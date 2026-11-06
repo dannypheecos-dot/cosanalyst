@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import orclMsft1106 from "./why-is-oracle-stock-down-microsoft-ends-ai-cloud-capacity-deal-2026-11-06";
 import jobs1106 from "./what-do-todays-jobs-numbers-mean-for-the-stock-market-october-2026-jobs-report";
 import aiCrash1106 from "./why-did-the-stock-market-crash-nasdaq-ai-selloff-nvidia-2026-11-06";
 import middayDow1104 from "./why-is-the-stock-market-up-today-dow-jumps-1500-points-midterms-oil-2026-11-04";
@@ -78,6 +79,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  orclMsft1106,
   jobs1106,
   aiCrash1106,
   middayDow1104,
