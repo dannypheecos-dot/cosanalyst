@@ -1,0 +1,58 @@
+import type { Article } from "@/content/types";
+
+const LETTER = "https://nvidianews.nvidia.com/news/a-message-to-our-company";
+const BOARD = "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors";
+const CNBC = "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-email-board-of-directors-statement.html";
+const NBC = "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-investigation-rcna608148";
+const CRASH =
+  "/articles/why-did-the-stock-market-crash-nasdaq-ai-selloff-nvidia-2026-11-06/";
+const ALT =
+  "CosAnalyst cream card: Huang apologizes, Nvidia board opens independent probe, NVDA faces Monday.";
+
+const article: Article = {
+  "slug": "nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08",
+  "title": "Is Nvidia Stock in Trouble? Jensen Huang Apologizes as Nvidia's Board Opens an Investigation",
+  "titleTag": "Jensen Huang Investigation: What It Means for NVDA Stock",
+  "dek": "Nvidia CEO Jensen Huang admitted he was unfaithful to his wife, and Nvidia's board launched an independent investigation into reports he was targeted by a foreign intelligence effort. Here is what the company actually said, what it did not say, and the levels and signals to watch when NVDA trades again.",
+  "date": "2026-11-08",
+  "section": "markets",
+  "also": ["equities", "macro"],
+  "kicker": "Nvidia CEO Probe",
+  "asOf": "As of about 2:30 PM PT Nov 8, 2026",
+  "displayTime": "Nov 8, 2026 · 2:30 PM PT",
+  "publishedAt": "2026-11-08T14:30:00-08:00",
+  "ogImage": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08-og.png",
+  "ogAlt": ALT,
+  "body": [
+    { "type": "figure", "src": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08.png", "alt": ALT, "caption": "Sources: Nvidia newsroom, Nov. 8, 2026 (CEO letter and Board statement); NVDA close per Nvidia investor relations." },
+    { "type": "lede", "text": "On a Sunday, with markets closed, the CEO of a company worth about $4.5 trillion sent his entire staff a letter that opened with an apology. \"I was unfaithful to my wife,\" Jensen Huang wrote ([Nvidia newsroom](" + LETTER + ")). The same day, Nvidia's board said it is opening an independent investigation into reports that Huang was the target of a foreign intelligence effort ([Board statement](" + BOARD + "))." },
+    { "type": "p", "text": "This is not a rumor anymore. Both documents are on Nvidia's own newsroom, and CNBC published the full staff email and board statement ([CNBC](" + CNBC + ")). The question every NVDA holder will type into Google tonight is simple: is Nvidia stock in trouble?" },
+    { "type": "h2", "text": "The facts in one table" },
+    { "type": "table", "columns": ["Item", "What happened", "Why it matters"], "rows": [
+      ["CEO letter", "Huang admits he was unfaithful, takes full responsibility, says he supports the probe", "He addressed shareholders directly, not just family"],
+      ["Board action", "Independent investigation into reports Huang was targeted by a foreign intelligence effort", "Run by a committee of independent directors with outside independent counsel"],
+      ["Board's current view", "No reason to believe national security or Nvidia secrets were compromised", "That is a starting position, and the inquiry will examine all available information"],
+      ["Leadership", "Board says it has confidence in Huang; company told CNBC he will lead \"without interruption\"", "No CEO change announced"],
+      ["The reporting", "NYT and FT reported a relationship with Alice Huang, a Chinese businesswoman U.S. agencies say was recruited by Chinese intelligence (no relation)", "Her Singapore-based company was buying Nvidia's advanced chips, per those reports via NBC"]
+    ], "caption": "Sources: Nvidia newsroom (Nov. 8, 2026), CNBC, NBC News. NBC said it has not independently confirmed the NYT/FT reports." },
+    { "type": "h2", "text": "What Nvidia said, and what it did not" },
+    { "type": "p", "text": "Read the two statements closely. Huang's letter is a personal apology plus a commitment: \"I am fully committed to NVIDIA and will work to earn back your confidence.\" The board's statement is about process. It names who runs the inquiry (independent directors and outside counsel) and says the board \"prioritizes U.S. national and economic security, which is paramount to the interests of NVIDIA and its shareholders.\"" },
+    { "type": "p", "text": "What neither statement does: give a timeline, say what the investigation will cover beyond \"all available information,\" or address the chip sales to the Singapore-based company named in the reporting ([NBC News](" + NBC + ")). Those gaps are where the next headlines come from." },
+    { "type": "h2", "text": "Why this hits NVDA at an awkward moment" },
+    { "type": "p", "text": "NVDA closed Friday at $186.64, per Nvidia investor relations. On Oct. 6 it closed at $239.24. That is a drop of about 22% in a month, including a slide from $200.13 to $181.60 on Thursday's AI selloff ([our recap of that day](" + CRASH + ")). The stock was already wobbling before anyone read this letter." },
+    { "type": "p", "text": "Huang is not a normal CEO in investors' minds. He founded the company, he is its public face with customers and governments, and he has been a key voice against tighter chip export controls on China. A story that mixes him, China, and national security lands right on the policy fight Nvidia cares about most." },
+    { "type": "h2", "text": "If/then: what to watch when NVDA trades again" },
+    { "type": "list", "items": [
+      "If Nasdaq 100 futures and NVDA in overnight and pre-market trading barely move, the market is treating this as a personal scandal with a board already in control, not a business event.",
+      "If NVDA loses Thursday's close near $181.60 early in the week, the headline is adding to an existing downtrend, and $181 becomes the level everyone quotes.",
+      "If lawmakers formally demand briefings or hearings, or a U.S. agency comments on the chip buyer named in the reports, the story moves from governance to export-control risk.",
+      "If the board names its outside counsel and gives a timeline quickly, that usually calms governance worries. Silence for weeks keeps the overhang alive.",
+      "If any customer, partner, or government delays an Nvidia deal and cites this, that is the first real business impact. Until then, it is headline risk."
+    ] },
+    { "type": "callout", "text": "Not financial advice. This is a developing story and facts may change. Nothing here guarantees any market outcome." },
+    { "type": "p", "text": "Follow [@CosAnalyst on X](https://x.com/CosAnalyst), like the [CosAnalyst Facebook Page](https://www.facebook.com/profile.php?id=61595911140925) for plain-English market notes, and join our Telegram at [@CosAnalystSignals](https://t.me/CosAnalystSignals)." },
+    { "type": "p", "text": "**Your call:** Should Jensen Huang stay on as CEO while his own board investigates, or should Nvidia put someone else in charge until it is done? Pick a side in the comments." }
+  ]
+};
+
+export default article;
