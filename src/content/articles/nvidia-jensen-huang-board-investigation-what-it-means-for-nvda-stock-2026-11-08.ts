@@ -21,10 +21,12 @@ const article: Article = {
   "asOf": "As of about 2:30 PM PT Nov 8, 2026",
   "displayTime": "Nov 8, 2026 · 2:30 PM PT",
   "publishedAt": "2026-11-08T14:30:00-08:00",
+  "updatedAt": "2026-11-08T16:15:00-08:00",
   "ogImage": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08.png", "alt": ALT, "caption": "Sources: Nvidia newsroom, Nov. 8, 2026 (CEO letter and Board statement); NVDA close per Nvidia investor relations." },
+    { "type": "p", "text": "**UPDATE Nov 8, 4:15 PM PT: Futures opened at 6 PM ET with Nasdaq 100 futures down about 0.8% and S&P 500 futures down about 0.4%, per CNBC. Within minutes dip buyers erased the drop, and by early evening Nasdaq futures were up about 0.3% and S&P futures up about 0.1%. Separately, CNBC reports three Republican House committee chairs asked Huang to appear at a closed-door briefing on Nov. 18. The board probe is still open, so the key-man question is not settled by one green futures session.**" },
     { "type": "lede", "text": "On a Sunday, with markets closed, the CEO of a company worth about $4.5 trillion sent his entire staff a letter that opened with an apology. \"I was unfaithful to my wife,\" Jensen Huang wrote ([Nvidia newsroom](" + LETTER + ")). The same day, Nvidia's board said it is opening an independent investigation into reports that Huang was the target of a foreign intelligence effort ([Board statement](" + BOARD + "))." },
     { "type": "p", "text": "This is not a rumor anymore. Both documents are on Nvidia's own newsroom, and CNBC published the full staff email and board statement ([CNBC](" + CNBC + ")). The question every NVDA holder will type into Google tonight is simple: is Nvidia stock in trouble?" },
     { "type": "h2", "text": "The facts in one table" },
