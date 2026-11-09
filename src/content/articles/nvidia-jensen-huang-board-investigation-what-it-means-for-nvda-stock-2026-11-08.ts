@@ -4,6 +4,11 @@ const LETTER = "https://nvidianews.nvidia.com/news/a-message-to-our-company";
 const BOARD = "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors";
 const CNBC = "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-email-board-of-directors-statement.html";
 const NBC = "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-investigation-rcna608148";
+const WSO = "https://wallstreetobserver.com/articles/nvidia-board-investigation-huang";
+const TAIEX =
+  "https://www.moneycontrol.com/news/business/markets/taiwan-stocks-jump-as-authorities-move-to-stem-market-rout-14075122.html";
+const ASIA =
+  "https://www.businesstimes.com.sg/companies-markets/asia-stocks-follow-us-gains-nvidia-probe-looms";
 const CRASH =
   "/articles/why-did-the-stock-market-crash-nasdaq-ai-selloff-nvidia-2026-11-06/";
 const ALT =
@@ -21,11 +26,12 @@ const article: Article = {
   "asOf": "As of about 2:30 PM PT Nov 8, 2026",
   "displayTime": "Nov 8, 2026 · 2:30 PM PT",
   "publishedAt": "2026-11-08T14:30:00-08:00",
-  "updatedAt": "2026-11-08T16:15:00-08:00",
+  "updatedAt": "2026-11-08T19:15:00-08:00",
   "ogImage": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08.png", "alt": ALT, "caption": "Sources: Nvidia newsroom, Nov. 8, 2026 (CEO letter and Board statement); NVDA close per Nvidia investor relations." },
+    { "type": "p", "text": "**UPDATE Nov 8, 7:15 PM PT: NVDA traded about 3.8% lower in Sunday overnight trading, near $179.60 vs Friday's $186.64 close (Robinhood overnight data via **[Wall Street Observer](" + WSO + ")**; FinancialJuice cited a ~3.5% drop on the Blue Ocean venue). Asia did not follow it down: Japan's Nikkei opened up about 2% (**[The Business Times](" + ASIA + ")**) and Taiwan's Taiex rose as much as 6.4%, its biggest gain since July, as Taiwan's new short-selling curbs and its NT$500 billion stabilization fund took effect (**[Bloomberg](" + TAIEX + ")**). Separately, Huang said China is not an enemy and called US chip policy a mistake. The bigger tell for Monday is whether NVDA's overnight dip holds into the 6:30 AM PT cash open while chip stocks in Asia rally.**" },
     { "type": "p", "text": "**UPDATE Nov 8, 4:15 PM PT: Futures opened at 6 PM ET with Nasdaq 100 futures down about 0.8% and S&P 500 futures down about 0.4%, per CNBC. Within minutes dip buyers erased the drop, and by early evening Nasdaq futures were up about 0.3% and S&P futures up about 0.1%. Separately, CNBC reports three Republican House committee chairs asked Huang to appear at a closed-door briefing on Nov. 18. The board probe is still open, so the key-man question is not settled by one green futures session.**" },
     { "type": "lede", "text": "On a Sunday, with markets closed, the CEO of a company worth about $4.5 trillion sent his entire staff a letter that opened with an apology. \"I was unfaithful to my wife,\" Jensen Huang wrote ([Nvidia newsroom](" + LETTER + ")). The same day, Nvidia's board said it is opening an independent investigation into reports that Huang was the target of a foreign intelligence effort ([Board statement](" + BOARD + "))." },
     { "type": "p", "text": "This is not a rumor anymore. Both documents are on Nvidia's own newsroom, and CNBC published the full staff email and board statement ([CNBC](" + CNBC + ")). The question every NVDA holder will type into Google tonight is simple: is Nvidia stock in trouble?" },
