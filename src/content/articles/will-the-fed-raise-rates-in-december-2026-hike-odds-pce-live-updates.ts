@@ -14,7 +14,7 @@ const article: Article = {
   "asOf": "Polymarket and Kalshi odds pulled 1:10 PM PT Oct 29; developing story",
   "displayTime": "Oct 29, 2026 · 1:30 PM PT",
   "publishedAt": "2026-10-29T13:30:00-07:00",
-  "updatedAt": "2026-11-10T08:15:00-08:00",
+  "updatedAt": "2026-11-10T09:05:00-08:00",
   "ogImage": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates-og.png",
   "ogAlt": "CosAnalyst card: December hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026. BOOK FACT · NOT A TICKET",
   "body": [
@@ -23,6 +23,10 @@ const article: Article = {
       "src": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates.png",
       "alt": "CosAnalyst card: December Fed hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026",
       "caption": "BOOK FACT · NOT A TICKET"
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE Nov 10, 9:05 AM PT: Treasury yields kept climbing after the hot October CPI. The 10-year is back above 5.00% (about 5.004%, first time in 12 days), the 2-year is up about 20bp on the day to roughly 4.76-4.77%, and the 30-year is near 5.36%. Polymarket Dec odds are steady: 25bp hike about 84.5%, 50bp or more about 10.7%, no change about 4.2%.**"
     },
     {
       "type": "p",
