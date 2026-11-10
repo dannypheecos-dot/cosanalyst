@@ -4,7 +4,12 @@ const BLS = "https://www.bls.gov/news.release/cpi.nr0.htm";
 const BLS_FAQ = "https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi-faq.htm";
 const BLS_CAL = "https://www.bls.gov/schedule/news_release/cpi.htm";
 const CNBC = "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html";
+const CNBC_CPI = "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html";
+const CNBC_BONDS = "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html";
+const CNBC_LIVE = "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html";
 const CNBC_WALLER = "https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html";
+const REUTERS = "https://www.theglobeandmail.com/business/article-us-cpi-october-2026-inflation-federal-reserve-rate/";
+const COINDESK = "https://www.coindesk.com/markets/2026/11/10/u-s-cpi-rose-stronger-than-expected-0-4-in-october-core-rate-rose-0-3";
 const CLEV = "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting";
 const FOMC = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm";
 const POLY = "https://polymarket.com/event/fed-decision-in-december-20260729232808632";
@@ -27,11 +32,12 @@ const article: Article = {
   "asOf": "As of about 9:00 PM PT Nov 9, 2026",
   "displayTime": "Nov 9, 2026 · 9:00 PM PT",
   "publishedAt": "2026-11-09T21:00:00-08:00",
-  "updatedAt": "2026-11-10T01:15:00-08:00",
+  "updatedAt": "2026-11-10T06:10:00-08:00",
   "ogImage": "/og/what-could-tomorrows-cpi-do-to-december-fed-odds-and-stocks-october-2026-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/what-could-tomorrows-cpi-do-to-december-fed-odds-and-stocks-october-2026.png", "alt": ALT, "caption": "October CPI is scheduled for 8:30 AM ET / 5:30 AM PT Tuesday, Nov. 10, 2026. Consensus and the missing annual rate are explained in the tables below. Conceptual art, not a chart of the print." },
+    { "type": "p", "text": "**Nov 10, 6:10 AM PT UPDATE: October CPI came in hot. The hot scenario below is what printed: core at 0.3% (the 0.3% or higher case) and headline at 0.4% versus a 0.3% consensus, after September at 0.6% headline and 0.3% core. BLS published no year-over-year rate, because there was no October 2025 report during the government shutdown (**[CNBC](" + CNBC_CPI + ")**, **[Reuters](" + REUTERS + ")**, **[CoinDesk](" + COINDESK + ")**). The 2-year yield jumped about 15 basis points to about 4.70%, and the 10-year rose about 7 to 8 basis points to about 4.94% (**[CNBC](" + CNBC_BONDS + ")**). Futures after the print: S&P 500 down about 0.5%, Nasdaq-100 down about 1% to 1.2%, Dow roughly flat. Chip stocks led the losses, with Marvell about 5% lower and Intel and Micron about 3% lower (**[CNBC](" + CNBC_LIVE + ")**). Bitcoin dipped to about $73,600. **[Polymarket](" + POLY + ")**'s December Fed decision market, read at 6:10 AM PT, had a 25 bp hike at about 86%, a hike of 50 bp or more at about 12% (up from about 3% overnight), and no change at about 3% (down from about 15%). Waller said overnight that a 50 bp hike should be considered if core ran about 0.3% or more, and core printed exactly 0.3%. Is 50 in December now the right call, or would it break something?**" },
     { "type": "p", "text": "**UPDATE Nov 10, 1:15 AM PT: Fed Governor Waller just raised the stakes for this report: he said a half-point December hike should be considered if October core CPI comes in around 0.3% or higher (**[CNBC](" + CNBC_WALLER + ")**). **[Polymarket](" + POLY + ")** prices a 50+ bps hike at about 3% and a 25 bps hike at about 84%.**" },
     { "type": "lede", "text": "Tomorrow morning, at 5:30 AM PT, the last official consumer price index before the Federal Reserve's December meeting hits the tape. It will not look like a normal CPI report. Because of last year's government shutdown, the Bureau of Labor Statistics will not publish a year-over-year inflation rate for most indexes, including headline and core. What Wall Street still gets, and what the market will trade, is the monthly change." },
     { "type": "p", "text": "The [Dow Jones consensus, via CNBC](" + CNBC + "), is 0.3% for headline CPI and 0.2% for core, which strips out food and energy. That would be a slowdown from September, when headline jumped 0.6% and core rose 0.3% ([BLS](" + BLS + ")). It would not, on its own, tell you inflation is back at the Fed's 2% goal. And it arrives one trading day after $QQQ bounced 3.5% and $SPY 2.4%, with December hike odds already near 80%." },

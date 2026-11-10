@@ -14,7 +14,7 @@ const article: Article = {
   "asOf": "Polymarket and Kalshi odds pulled 1:10 PM PT Oct 29; developing story",
   "displayTime": "Oct 29, 2026 · 1:30 PM PT",
   "publishedAt": "2026-10-29T13:30:00-07:00",
-  "updatedAt": "2026-11-10T01:15:00-08:00",
+  "updatedAt": "2026-11-10T06:10:00-08:00",
   "ogImage": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates-og.png",
   "ogAlt": "CosAnalyst card: December hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026. BOOK FACT · NOT A TICKET",
   "body": [
@@ -23,6 +23,10 @@ const article: Article = {
       "src": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates.png",
       "alt": "CosAnalyst card: December Fed hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026",
       "caption": "BOOK FACT · NOT A TICKET"
+    },
+    {
+      "type": "p",
+      "text": "**Nov 10, 6:10 AM PT UPDATE: October CPI came in hot. October CPI rose 0.4% on the month, versus 0.3% expected, after 0.6% in September. Core CPI rose 0.3%, versus 0.2% expected, matching September at 0.3%. BLS published no year-over-year numbers, because there was no October 2025 report during the government shutdown (**[CNBC](https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html)**, **[Reuters](https://www.theglobeandmail.com/business/article-us-cpi-october-2026-inflation-federal-reserve-rate/)**, **[CoinDesk](https://www.coindesk.com/markets/2026/11/10/u-s-cpi-rose-stronger-than-expected-0-4-in-october-core-rate-rose-0-3)**). The 2-year yield jumped about 15 basis points to about 4.70%, and the 10-year rose about 7 to 8 basis points to about 4.94% (**[CNBC](https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html)**). Futures after the print: S&P 500 down about 0.5%, Nasdaq-100 down about 1% to 1.2%, Dow roughly flat. Chip stocks led the losses, with Marvell about 5% lower and Intel and Micron about 3% lower (**[CNBC](https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html)**). Bitcoin dipped to about $73,600. **[Polymarket](https://polymarket.com/event/fed-decision-in-december-20260729232808632)**'s December Fed decision market, read at 6:10 AM PT, had a 25 bp hike at about 86%, a hike of 50 bp or more at about 12% (up from about 3% overnight), and no change at about 3% (down from about 15%). Fed Governor Waller said overnight that a 50 bp hike should be considered if core ran about 0.3% or more. Core printed exactly 0.3%. Is 50 in December now the right call, or would it break something?**"
     },
     {
       "type": "p",
