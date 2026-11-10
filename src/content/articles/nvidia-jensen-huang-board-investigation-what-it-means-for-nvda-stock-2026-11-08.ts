@@ -11,6 +11,10 @@ const ASIA =
   "https://www.businesstimes.com.sg/companies-markets/asia-stocks-follow-us-gains-nvidia-probe-looms";
 const CRASH =
   "/articles/why-did-the-stock-market-crash-nasdaq-ai-selloff-nvidia-2026-11-06/";
+const ABC =
+  "https://abcnews.com/Politics/house-republicans-issuing-subpoena-nvidia-ceo-jensen-huang/story?id=138022782";
+const HFAC =
+  "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-request-jensen-huang-brief-congress-on-link-to-chinese-intelligence-asset";
 const ALT =
   "CosAnalyst cream card: Huang apologizes, Nvidia board opens independent probe, NVDA faces Monday.";
 
@@ -26,11 +30,12 @@ const article: Article = {
   "asOf": "As of about 2:30 PM PT Nov 8, 2026",
   "displayTime": "Nov 8, 2026 · 2:30 PM PT",
   "publishedAt": "2026-11-08T14:30:00-08:00",
-  "updatedAt": "2026-11-10T11:15:00-08:00",
+  "updatedAt": "2026-11-10T14:05:00-08:00",
   "ogImage": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08.png", "alt": ALT, "caption": "Sources: Nvidia newsroom, Nov. 8, 2026 (CEO letter and Board statement); NVDA close per Nvidia investor relations." },
+    { "type": "p", "text": "**UPDATE Nov 10, 2:05 PM PT: House Foreign Affairs Chair Brian Mast told **[ABC News](" + ABC + ")** he is \"absolutely\" prepared to subpoena Jensen Huang if he does not respond by Wednesday, Nov 11, to a request from three Republican committee chairs (Mast, Moolenaar of the China Select Committee, Crawford of House Intelligence) for a closed-door briefing on Nov 18 about his interactions with Megaspeed executive Alice Huang and Nvidia's safeguards against espionage (**[House Foreign Affairs Committee press release](" + HFAC + ")**). Nvidia's board says it has no reason to believe national security or company secrets were compromised. NVDA closed at $168.89, down 5.5% on the day. The next dates to watch: the Nov 11 response deadline, the Nov 18 briefing request, and Nvidia earnings on Nov 17.**" },
     { "type": "p", "text": "**UPDATE Nov 10, 11:15 AM PT: Nvidia has hired Wachtell Lipton for the board's independent probe of CEO Jensen Huang, according to The New York Times, with the work led by partner Joon Kim, a former acting U.S. Attorney for the Southern District of New York. Pressure is also coming from Washington: Senate Democratic leader Chuck Schumer called President Trump's defense of Huang troubling and asked for a full accounting, and House Democratic leader Hakeem Jeffries called for a full congressional briefing and tighter limits on U.S. chip sales to China. NVDA is still trading near its lowest level since March 31, about 5% lower on the day. Earnings are due Nov 17.**" },
     { "type": "p", "text": "**UPDATE Nov 10, 9:05 AM PT: Microsoft passed Nvidia in market value intraday, about $4.035 trillion vs $4.032 trillion, the first time since June 2025. Nvidia was down about 5.4% near $169, and its value is down roughly $1.7 trillion since Oct 6. On Monday's close Nvidia still led by about $266 billion. Earnings are expected Nov 17.**" },
     { "type": "p", "text": "**3:15 AM PT UPDATE (Nov 10): The Information reported Tuesday, citing two people who know her, that Jensen Huang's relationship with Alice Huang, the Chinese businesswoman U.S. officials allege was working for Beijing, helped enable at least $7.5 billion of Nvidia chip shipments, with ties dating back to 2023. Reuters said it could not independently verify the report and Nvidia did not immediately respond to Reuters. Separately, Bank of America was reported to have removed Nvidia, Micron and Lam Research from its US 1 List of top stock picks. CPI hits at 5:30 AM PT, so NVDA's premarket reaction to the report will compete with the inflation print for the open.**" },
