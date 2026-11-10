@@ -14,6 +14,7 @@ const article: Article = {
   "asOf": "Polymarket and Kalshi odds pulled 1:10 PM PT Oct 29; developing story",
   "displayTime": "Oct 29, 2026 · 1:30 PM PT",
   "publishedAt": "2026-10-29T13:30:00-07:00",
+  "updatedAt": "2026-11-10T01:15:00-08:00",
   "ogImage": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates-og.png",
   "ogAlt": "CosAnalyst card: December hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026. BOOK FACT · NOT A TICKET",
   "body": [
@@ -22,6 +23,10 @@ const article: Article = {
       "src": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates.png",
       "alt": "CosAnalyst card: December Fed hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026",
       "caption": "BOOK FACT · NOT A TICKET"
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE Nov 10, 1:15 AM PT: Fed Governor Christopher Waller said in a London speech Tuesday that he is leaning toward a quarter-point hike in December even if October CPI comes in softer, and that a half-point hike \"should be considered\" if October core CPI runs around 0.3% or hotter, because \"hiking only 25 basis points would put our credibility at risk\" (**[CNBC](https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html)**). **[Polymarket](https://polymarket.com/event/fed-decision-in-december-20260729232808632)**'s December Fed market now prices a 25 bps hike at about 84%, no change at about 15%, and a 50+ bps hike at about 3%, up roughly 2 points on the day. October CPI is due at 8:30 AM ET (5:30 AM PT), with economists expecting +0.3% headline and +0.2% to +0.3% core for the month. The question now: does a 0.3% core print make 50 a live option?**"
     },
     {
       "type": "p",
