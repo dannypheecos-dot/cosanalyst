@@ -14,7 +14,7 @@ const article: Article = {
   "asOf": "Polymarket and Kalshi odds pulled 1:10 PM PT Oct 29; developing story",
   "displayTime": "Oct 29, 2026 · 1:30 PM PT",
   "publishedAt": "2026-10-29T13:30:00-07:00",
-  "updatedAt": "2026-11-10T06:10:00-08:00",
+  "updatedAt": "2026-11-10T08:15:00-08:00",
   "ogImage": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates-og.png",
   "ogAlt": "CosAnalyst card: December hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026. BOOK FACT · NOT A TICKET",
   "body": [
@@ -23,6 +23,10 @@ const article: Article = {
       "src": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates.png",
       "alt": "CosAnalyst card: December Fed hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026",
       "caption": "BOOK FACT · NOT A TICKET"
+    },
+    {
+      "type": "p",
+      "text": "**Nov 10, 8:15 AM PT UPDATE: Dallas Fed President Lorie Logan, a 2026 FOMC voter, said in a speech at about 10:50 AM ET that the Fed needs at least two more quarter-point rate hikes. She said the policy rate is at least 50 basis points below a modestly restrictive level, that faster hikes may be needed this winter, and that the hot October CPI raises the risk that PCE inflation rises. After two more hikes, she said, it would make sense to pause and assess. Deutsche Bank added a January 2027 hike to its call after the CPI report and now expects 25 bp hikes in December, January and March, taking the range to 4.50% to 4.75%. **[Polymarket](https://polymarket.com/event/fed-decision-in-december-20260729232808632)**'s December Fed decision market (Polymarket only), read at about 8:15 AM PT, had a 25 bp hike at about 85%, a hike of 50 bp or more at about 11%, and no change at about 5%. That is barely changed from the 6:10 AM PT read (about 86% for a 25 bp hike, about 12% for 50 bp or more, and about 3% for no change), so traders had largely priced the hawkish turn already. The Nasdaq-100 was down about 0.7%. Nvidia was about 5% lower near $169, its lowest since March 31. Bitcoin was under $73,000 after about $200 million of long liquidations in 15 minutes. Is the path two hikes and a pause, or three hikes through March?**"
     },
     {
       "type": "p",
