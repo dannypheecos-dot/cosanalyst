@@ -1,10 +1,16 @@
 import type { Article } from "@/content/types";
 
+const CNBC_IPO =
+  "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html";
+const REUTERS_IPO =
+  "https://www.channelnewsasia.com/business/anthropic-targets-1-trillion-ipo-valuation-in-test-wall-streets-ai-fervor-6539066";
+const AXIOS_IPO = "https://www.axios.com/2026/11/10/anthropic-ipo-terms";
+
 const article: Article = {
   "slug": "anthropic-ipo-date-ticker-valuation-how-to-buy-2026-10-27",
   "title": "Anthropic IPO Date, Ticker and Valuation: How to Buy ANT Stock",
   "titleTag": "Anthropic IPO Date: Ticker ANT, Valuation, How to Buy Stock",
-  "dek": "Anthropic has not set an IPO date. WSJ reports the week of Nov 16. The S-1 lists ANT on Nasdaq, price range blank. What's filed and how to buy.",
+  "dek": "Anthropic's Nov 10 filing prices 825 million ANT shares at $70 to $78. Pricing is expected Wednesday, with trading Thursday, Nov 19, 2026. Reuters puts the valuation at up to about $1.02 trillion.",
   "date": "2026-10-27",
   "section": "markets",
   "also": [
@@ -15,6 +21,7 @@ const article: Article = {
   "asOf": "Tue Oct 27, 2026, about 5:45 AM PT / 8:45 AM ET",
   "displayTime": "Oct 27, 2026 · 7:30 AM PT",
   "publishedAt": "2026-10-27T07:30:00-07:00",
+  "updatedAt": "2026-11-10T04:15:00-08:00",
   "ogImage": "/og/anthropic-ipo-date-ticker-valuation-how-to-buy-2026-10-27.png",
   "ogAlt": "Paper-cut collage of a charcoal tower and a grid of blank ivory squares, one outlined in mint, CosAnalyst",
   "body": [
@@ -26,15 +33,19 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "**As of about 5:45 AM PT / 8:45 AM ET on Tue Oct 27, 2026.** Anthropic has not priced its IPO, so there is no ANT quote in this article. Everything below comes from the SEC filing, company statements or named press reports, and it can change the day Anthropic files an amended S-1."
-    },
-    {
-      "type": "lede",
-      "text": "Anthropic's S-1 is public, but it leaves the IPO date, share count and price range blank. Here is what is filed, what is only reported, and how regular investors could get ANT shares."
+      "text": "**UPDATE Nov 10, 2026, 4:15 AM PT: Anthropic launched its IPO roadshow Tuesday with an updated SEC filing offering 825 million Class A shares (about 801.35 million sold by Anthropic and about 23.65 million by existing holders) at $70 to $78 a share, ticker ANT on Nasdaq ([CNBC](" + CNBC_IPO + "), [Axios](" + AXIOS_IPO + ")). At the top of the range the IPO would raise up to about $64.35 billion, and [Reuters](" + REUTERS_IPO + ") calculates a valuation of up to about $1.02 trillion on outstanding shares, while CNBC reports up to about $1.405 trillion fully diluted, versus $965 billion in the May funding round. Separately, AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC agreed to buy $26 billion of Class N stock in a private placement at the IPO price, and those shares are not subject to the underwriter lock-up, which Reuters says brings the total raise to up to about $90.4 billion. Pricing is expected next Wednesday, and the expected first trading day is Thursday, Nov 19, 2026, according to Bloomberg headlines via @DeItaone. The filing shows $33.24 billion of revenue for the nine months ended Sept 30 and a $104 billion net loss that CNBC says comes mostly from fair-value changes on convertible notes and derivatives, after some investors pushed back on earlier $1.5 trillion to $2 trillion talk.**"
     },
     {
       "type": "p",
-      "text": "Anthropic filed its public S-1 on Monday, Oct 26, and searches for the Anthropic IPO date, the Anthropic stock symbol and how to buy Anthropic stock jumped with it. The filing answers some of those questions and leaves the biggest ones blank. For how markets reacted on filing day, see our [Monday midday recap](https://cosanalyst.com/articles/anthropic-s1-tech-bounce-brazil-circuit-breaker-2026-10-26/)."
+      "text": "**As of about 5:45 AM PT / 8:45 AM ET on Tue Oct 27, 2026.** Anthropic had not priced its IPO, so there is no ANT quote in this article. The Nov 10 update above covers the amended filing. Everything below comes from the SEC filing, company statements or named press reports, and the final price is still not set."
+    },
+    {
+      "type": "lede",
+      "text": "Anthropic's updated SEC filing sets a $70 to $78 range for 825 million Class A shares of ANT on Nasdaq. Pricing is expected next Wednesday, and the expected first trading day is Thursday, Nov 19, 2026. Here is what is filed, what is only reported, and how regular investors could get ANT shares."
+    },
+    {
+      "type": "p",
+      "text": "Anthropic filed its public S-1 on Monday, Oct 26, and searches for the Anthropic IPO date, the Anthropic stock symbol and how to buy Anthropic stock jumped with it. That filing answered some of those questions and left the price, share count and date blank. The Nov 10 update above fills in the range and the share count. For how markets reacted on filing day, see our [Monday midday recap](https://cosanalyst.com/articles/anthropic-s1-tech-bounce-brazil-circuit-breaker-2026-10-26/)."
     },
     {
       "type": "h2",
@@ -43,11 +54,11 @@ const article: Article = {
     {
       "type": "list",
       "items": [
-        "**Anthropic IPO date: not set. The Wall Street Journal reports the week of Nov 16** (via Yahoo Finance). That is a press report, not a company statement. The S-1 leaves the share count, price range and prospectus date blank (SEC EDGAR, Anthropic press release).",
+        "**Anthropic IPO date: not final. Pricing is expected next Wednesday, and the expected first trading day is Thursday, Nov 19, 2026** (Bloomberg headlines via @DeItaone). That timing is a press report. The Nov 10 filing set a $70 to $78 range. The original Oct 26 S-1 left the date blank.",
         "**Ticker: ANT.** Anthropic says it applied to list its Class A common stock on the Nasdaq Global Select Market. It is not trading yet.",
-        "**Valuation: not in the S-1.** The last private round was $965B post-money in May (Anthropic, via NerdWallet and Yahoo Finance). The WSJ reports an IPO valuation of $1.5 trillion to $2 trillion (via Yahoo Finance).",
+        "**Price and valuation:** $70 to $78 for 825 million Class A shares. At the top of the range the IPO would raise up to about $64.35 billion. Reuters calculates up to about $1.02 trillion on outstanding shares, and CNBC reports up to about $1.405 trillion fully diluted, versus $965 billion post-money in May. Earlier $1.5 trillion to $2 trillion figures were press reports, and some investors pushed back on them.",
         "**Lead banks: Goldman Sachs and Morgan Stanley**, in a 22-bank syndicate (CNBC, Yahoo Finance).",
-        "**How to buy: not possible yet.** No retail broker allocation has been announced (Yahoo Finance)."
+        "**How to buy: ANT is not trading yet.** No retail broker allocation has been announced (Yahoo Finance). The price range is now filed, which is when some brokers open IPO requests. An allocation is not guaranteed."
       ]
     },
     {
@@ -56,11 +67,11 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Anthropic filed the S-1 with the SEC on Monday, Oct 26. EDGAR accepted it at 9:00:11 AM ET / 6:00 AM PT (SEC EDGAR filing index). The cover page leaves the number of shares, the price range and the prospectus date blank. That means the Anthropic IPO price range is empty today, and Anthropic's press release says the number of shares and the price range are not determined. Anthropic's press release also says the registration statement \"has not yet become effective\", so the shares cannot be sold or ordered until it does. When we searched EDGAR at about 5:40 AM PT Tuesday, the original S-1 was the only S-1 on file (the earlier confidential drafts show only as DRS filings), so there is no amended S-1 with a price range yet."
+      "text": "Anthropic filed the S-1 with the SEC on Monday, Oct 26. EDGAR accepted it at 9:00:11 AM ET / 6:00 AM PT (SEC EDGAR filing index). That cover page left the number of shares, the price range and the prospectus date blank, and Anthropic's press release that day said the number of shares and the price range were not determined. Anthropic's press release also said the registration statement \"has not yet become effective\", so the shares could not be sold or ordered until it does. When we searched EDGAR at about 5:40 AM PT on Oct 27, the original S-1 was the only S-1 on file (the earlier confidential drafts show only as DRS filings). An updated filing on Nov 10 added the share count and the $70 to $78 range, covered in the update at the top of this page."
     },
     {
       "type": "p",
-      "text": "Anthropic IPO when? Here is what the press reports about timing, none of it confirmed by the company:"
+      "text": "Anthropic IPO when? Here is what the press reported about timing on Oct 26, none of it confirmed by the company:"
     },
     {
       "type": "list",
@@ -77,7 +88,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "So the honest answer to \"Anthropic IPO date\" is unknown. The next hard signal is an amended S-1 that adds the price range and share count."
+      "text": "The original filing did not set an IPO date. The Nov 10 update above is the later filing: a $70 to $78 range, with pricing expected next Wednesday and a first trading day expected Thursday, Nov 19, 2026 (Bloomberg headlines via @DeItaone). The final price is still not set."
     },
     {
       "type": "h2",
@@ -98,15 +109,15 @@ const article: Article = {
     {
       "type": "list",
       "items": [
-        "**Filed:** nothing. With the price range and share count blank, the S-1 gives no price per share and no market value, and you cannot work out a per-share price from it.",
+        "**Filed on Nov 10:** 825 million Class A shares at $70 to $78. At the top of the range that is up to about $64.35 billion. Reuters calculates up to about $1.02 trillion on outstanding shares, and CNBC reports up to about $1.405 trillion fully diluted ([CNBC](" + CNBC_IPO + "), [Reuters](" + REUTERS_IPO + ")). The Oct 26 S-1 had left the price range and share count blank.",
         "**Last private round:** $965B post-money after a $65B Series H in May 2026 (Anthropic, via NerdWallet and Yahoo Finance).",
-        "**Reported IPO valuation:** $1.5 trillion to $2 trillion, raising $100 billion or more (WSJ via Yahoo Finance). Bloomberg reported on Oct 1 that some prospective investors saw $1.8 trillion to $2 trillion as fair. Reuters reported on Oct 26 that some investors now value Anthropic at about $1.5 trillion, down from roughly $2 trillion a week earlier, after it shared some financial details at an investor event.",
+        "**Earlier reported range:** $1.5 trillion to $2 trillion, raising $100 billion or more (WSJ via Yahoo Finance, Oct 26). Bloomberg reported on Oct 1 that some prospective investors saw $1.8 trillion to $2 trillion as fair. Reuters reported on Oct 26 that some investors then valued Anthropic at about $1.5 trillion. Some investors later pushed back on those figures, which is the context for the lower Nov 10 range.",
         "**Prediction market:** Polymarket traders put about 40% on a first-day close above $2 trillion, down from about 62% a month earlier (Yahoo Finance, Oct 26). Those are traders' odds, not a forecast."
       ]
     },
     {
       "type": "p",
-      "text": "To put the range in revenue terms: Anthropic's second-quarter revenue was $11.555B (S-1). Times four is about $46B a year, the same figure Yahoo Finance used. At $1.5 trillion that is about 32 times, and at $2 trillion about 43 times (our arithmetic). Annualizing one quarter is a simple projection, not guidance. The S-1 says Anthropic does not expect revenue to keep growing at comparable rates."
+      "text": "To put that earlier reported range in revenue terms: Anthropic's second-quarter revenue was $11.555B (S-1). Times four is about $46B a year, the same figure Yahoo Finance used. At $1.5 trillion that is about 32 times, and at $2 trillion about 43 times (our arithmetic). Annualizing one quarter is a simple projection, not guidance, and it is not the Nov 10 valuation. The S-1 says Anthropic does not expect revenue to keep growing at comparable rates."
     },
     {
       "type": "p",
@@ -194,9 +205,9 @@ const article: Article = {
     {
       "type": "list",
       "items": [
-        "**Amended S-1:** this is where the price range and share count should appear. Robinhood says it opens IPO requests only after a price range is set.",
-        "**Roadshow:** reported to start as soon as the week of Nov 9 (Bloomberg). Not confirmed by the company.",
-        "**Effectiveness, pricing and first trade:** the SEC must declare the registration effective first. The reported debut is the week of Nov 16 (WSJ).",
+        "**Amended filing:** the Nov 10 filing adds a $70 to $78 range and 825 million Class A shares. Robinhood says it opens IPO requests only after a price range is set. No retail broker list has been announced.",
+        "**Roadshow:** launched Tuesday, Nov 10, with the updated filing (Reuters via CNA, CNBC).",
+        "**Pricing and first trade:** pricing is expected next Wednesday, and the expected first trading day is Thursday, Nov 19, 2026 (Bloomberg headlines via @DeItaone). The registration still has to become effective before shares can be sold.",
         "**This week:** the Fed decides Wednesday, Oct 28, and Microsoft and Alphabet report after the close that day. Our latest read on [Fed hike odds](https://cosanalyst.com/articles/fed-hike-odds-october-december-2026/) covers the rate side."
       ]
     },
@@ -210,7 +221,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "No date is set. The S-1 filed Oct 26 leaves the price range, share count and prospectus date blank. The Wall Street Journal reports a target debut the week of Nov 16 (via Yahoo Finance), which is a press report, not a company statement. As of about 5:45 AM PT on Oct 27, there was no amended S-1 on EDGAR."
+      "text": "No final price is set. An updated SEC filing on Nov 10, 2026 launched the roadshow with a $70 to $78 range for 825 million Class A shares. Pricing is expected next Wednesday, and the expected first trading day is Thursday, Nov 19, 2026, according to Bloomberg headlines via @DeItaone. That timing is a press report. The original S-1 filed Oct 26 left the date, share count and price range blank."
     },
     {
       "type": "h3",
@@ -226,7 +237,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Neither is in the S-1, because the price range and share count are blank. Anthropic's last private round was $965B post-money in May. The WSJ reports an IPO valuation of $1.5 trillion to $2 trillion (via Yahoo Finance), and Reuters says some investors now value it at about $1.5 trillion. Those are press reports, not company statements."
+      "text": "The updated filing sets a range of $70 to $78 a share for 825 million Class A shares. At the top of the range the IPO would raise up to about $64.35 billion. Reuters calculates a valuation of up to about $1.02 trillion on outstanding shares, and CNBC reports up to about $1.405 trillion fully diluted, compared with $965 billion in the May funding round. A separate private placement would add $26 billion of Class N stock, for a total raise of up to about $90.4 billion, per Reuters. Earlier reports of $1.5 trillion to $2 trillion were press figures, and some investors pushed back on them. The final price is not set until the deal prices."
     },
     {
       "type": "h3",
@@ -242,7 +253,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Unknown. As of Oct 27, no retail brokerage has been announced for the Anthropic IPO (Yahoo Finance). For SpaceX's IPO, E*TRADE, Fidelity, Schwab, Robinhood and SoFi offered shares (NerdWallet), but that is precedent, not an ANT plan. Robinhood opens IPO requests only after the price range is set, and allocation is not guaranteed."
+      "text": "Unknown. As of Oct 27, no retail brokerage has been announced for the Anthropic IPO (Yahoo Finance), and none has been named in the Nov 10 filing coverage. For SpaceX's IPO, E*TRADE, Fidelity, Schwab, Robinhood and SoFi offered shares (NerdWallet), but that is precedent, not an ANT plan. Robinhood opens IPO requests only after the price range is set, and that range is now filed. Allocation is not guaranteed."
     },
     {
       "type": "h3",
@@ -258,7 +269,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Revenue was $16.286B in the first half of 2026, against $1.163B a year earlier and $4.585B for all of 2025. The net loss was $80.748B, of which $72.388B was a change in the fair value of convertible notes, derivative liabilities and SAFEs that the S-1 ties mainly to the rise in Anthropic's own valuation. The operating loss was $693M for the half (S-1)."
+      "text": "Revenue was $16.286B in the first half of 2026, against $1.163B a year earlier and $4.585B for all of 2025. The net loss was $80.748B, of which $72.388B was a change in the fair value of convertible notes, derivative liabilities and SAFEs that the S-1 ties mainly to the rise in Anthropic's own valuation. The operating loss was $693M for the half (S-1). The Nov 10 filing shows $33.24 billion of revenue for the nine months ended Sept 30 and a $104 billion net loss, mostly from fair-value changes on convertible notes and derivatives (CNBC)."
     },
     {
       "type": "h3",
@@ -274,7 +285,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Anthropic's S-1 settles the ticker, the exchange and the lead banks. It does not settle the IPO date, the price or the valuation, which are still press reports. The numbers it does give are striking: $16.286B of first-half revenue, an operating profit in the second quarter, and an $80.748B net loss that is mostly an accounting charge tied to its own valuation. If you want shares, the only paths are a broker IPO allocation that has not been announced, or an order on Nasdaq after ANT lists. Be wary of any pre-IPO offer. The amended S-1 with a price range is the next thing to watch."
+      "text": "Anthropic's original S-1 settled the ticker, the exchange and the lead banks. The Nov 10 filing added a $70 to $78 range on 825 million Class A shares. Reuters puts the valuation at up to about $1.02 trillion on outstanding shares, and the expected first trading day is Thursday, Nov 19, 2026. The same filing shows $33.24 billion of revenue for the nine months ended Sept 30, and a $104 billion net loss that is mostly an accounting charge. ANT is not trading yet. The paths for shares are a broker IPO allocation, if one is offered, or an order on Nasdaq after ANT lists. Be wary of any pre-IPO offer. The final price is the next thing to watch."
     },
     {
       "type": "p",
@@ -286,7 +297,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Sources: SEC EDGAR Form S-1 (Anthropic, PBC, accession 0001628280-26-067168, accepted Oct 26, 2026, 9:00:11 AM ET); Anthropic press release (Oct 26); CNBC live coverage (Oct 26); Reuters via CNA and Nikkei Asia (Oct 26); Yahoo Finance (Oct 26); Bloomberg (Oct 1); NerdWallet (Oct 26); Benzinga; Motley Fool; BrokerChooser; Robinhood IPO Access pages; SEC Division of Corporation Finance draft registration statement FAQs; WSJ earnings calendar via the CosAnalyst desk trends report; Polymarket odds as reported by Yahoo Finance."
+      "text": "Sources: SEC EDGAR Form S-1 (Anthropic, PBC, accession 0001628280-26-067168, accepted Oct 26, 2026, 9:00:11 AM ET); Anthropic press release (Oct 26); [CNBC](" + CNBC_IPO + ") (Nov 10); [Reuters via CNA](" + REUTERS_IPO + ") (Nov 10); [Axios](" + AXIOS_IPO + ") (Nov 10); Bloomberg headlines via @DeItaone (Nov 10); CNBC live coverage (Oct 26); Reuters via CNA and Nikkei Asia (Oct 26); Yahoo Finance (Oct 26); Bloomberg (Oct 1); NerdWallet (Oct 26); Benzinga; Motley Fool; BrokerChooser; Robinhood IPO Access pages; SEC Division of Corporation Finance draft registration statement FAQs; WSJ earnings calendar via the CosAnalyst desk trends report; Polymarket odds as reported by Yahoo Finance."
     }
   ]
 };
