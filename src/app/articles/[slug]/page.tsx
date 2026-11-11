@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const path = `/articles/${article.slug}/`;
   const title = article.titleTag ?? article.title;
-  const description = article.dek;
+  const description = article.metaDescription ?? article.dek;
 
   return {
     title: article.titleTag ? { absolute: article.titleTag } : title,
@@ -76,8 +76,8 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <>
       <NewsArticleJsonLd
-        title={article.title}
-        dek={article.dek}
+        title={article.schemaHeadline ?? article.title}
+        dek={article.metaDescription ?? article.dek}
         date={article.publishedAt ?? article.date}
         modified={article.updatedAt ?? article.publishedAt}
         path={path}

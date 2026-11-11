@@ -24,6 +24,10 @@ export type Article = {
   /** Document title when it should differ from the H1. */
   titleTag?: string;
   dek: string;
+  /** Search, social, and schema description when it should differ from the visible dek. */
+  metaDescription?: string;
+  /** Schema.org headline when it should differ from the H1. */
+  schemaHeadline?: string;
   date: string;
   section: SectionId;
   also: SectionId[];
