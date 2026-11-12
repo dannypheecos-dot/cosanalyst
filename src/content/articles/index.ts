@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import msftOutlook1112 from "./why-didnt-microsoft-stock-drop-after-todays-outlook-outage-2026-11-12";
 import cpiOctPreview1110 from "./what-could-tomorrows-cpi-do-to-december-fed-odds-and-stocks-october-2026";
 import nvdaHuang1108 from "./nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08";
 import mexcBan1106 from "./why-did-the-us-ban-mexc-treasury-fincen-crypto-exchange-2026-11-06";
@@ -82,6 +83,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  msftOutlook1112,
   cpiOctPreview1110,
   nvdaHuang1108,
   mexcBan1106,
