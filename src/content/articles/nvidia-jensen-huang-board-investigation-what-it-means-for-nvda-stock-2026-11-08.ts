@@ -22,23 +22,24 @@ const ALT =
 
 const article: Article = {
   "slug": "nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08",
-  "title": "Is Nvidia Stock in Trouble? Jensen Huang Apologizes as Nvidia's Board Opens an Investigation",
-  "titleTag": "Is Nvidia Firing Jensen Huang? Board Prepares to Oust CEO, NVDA Stock Falls",
+  "title": "Jensen Huang Resigns as Nvidia CEO: What It Means for NVDA Stock",
+  "titleTag": "Jensen Huang Resigns as Nvidia CEO: What It Means for NVDA Stock",
   "dek": "Nvidia CEO Jensen Huang admitted he was unfaithful to his wife, and Nvidia's board launched an independent investigation into reports he was targeted by a foreign intelligence effort. Here is what the company actually said, what it did not say, and the levels and signals to watch when NVDA trades again.",
-  "metaDescription": "WSJ reports Nvidia's board is preparing to oust CEO Jensen Huang after a second affair report. NVDA fell about 8% to 10% after hours. What it means for the stock, earnings Nov 17, and who could lead.",
-  "schemaHeadline": "Is Nvidia Firing Jensen Huang? Board Prepares to Oust CEO, NVDA Stock Falls",
-  "date": "2026-11-08",
+  "metaDescription": "Jensen Huang resigned as Nvidia CEO effective immediately. CFO Colette Kress is interim CEO, Harvey Jones is chair, and NVDA fell about 10% premarket. Full timeline and levels.",
+  "schemaHeadline": "Jensen Huang Resigns as Nvidia CEO: What It Means for NVDA Stock",
+  "date": "2026-11-12",
   "section": "markets",
   "also": ["equities", "macro"],
   "kicker": "Nvidia CEO Probe",
   "asOf": "As of about 2:30 PM PT Nov 8, 2026",
   "displayTime": "Nov 8, 2026 · 2:30 PM PT",
   "publishedAt": "2026-11-08T14:30:00-08:00",
-  "updatedAt": "2026-11-11T19:15:00-08:00",
+  "updatedAt": "2026-11-12T06:15:00-08:00",
   "ogImage": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08.png", "alt": ALT, "caption": "Sources: Nvidia newsroom, Nov. 8, 2026 (CEO letter and Board statement); NVDA close per Nvidia investor relations." },
+    { "type": "p", "text": "**Nov 12, 6:15 AM PT UPDATE: Jensen Huang has resigned. Nvidia's board announced at 8:48 AM ET (5:48 AM PT) that Huang resigned as President, CEO and a member of the board, effective immediately. CFO Colette Kress is interim CEO and keeps the CFO role until a permanent successor is named. The board is searching internal and external candidates. Harvey C. Jones, a former Synopsys CEO, becomes Nvidia's first-ever board chair. Huang co-founded Nvidia in 1993 and was its only CEO for 33 years. NVDA traded about 10% to 11% lower premarket, near $155 to $156, versus Wednesday's $173.73 close. AI cloud names fell harder premarket: Nebius about 20% lower, CoreWeave about 14% lower. Nvidia says Q3 results are still set for Tuesday, Nov 17, around 1:20 PM PT. What to watch: whether NVDA holds the premarket low at the open, and whether Nov 17 guidance changes now that the CFO is also running the company. Sources: Nvidia press release (GlobeNewswire), AP, NBC News, CNBC, Business Insider.**" },
     { "type": "p", "text": "**UPDATE Nov 11, 7:15 PM PT: Semafor reported that some Nvidia directors favor Chief Financial Officer Colette Kress as interim CEO if Jensen Huang is removed. Kress has been Nvidia's CFO since 2013. Reuters, citing a person familiar with the matter, reported the board is meeting late Wednesday to decide whether to oust Huang; under Nvidia's bylaws, directors can remove the CEO with or without cause by majority vote. No decision has been announced and Nvidia has not commented. The question now: does a CFO caretaker steady the stock, or does Wall Street need a product leader named fast?**" },
     { "type": "p", "text": "**UPDATE Nov 11, 4:10 PM PT: Bloomberg reported that Nvidia is working with an outside firm to find possible candidates to succeed Jensen Huang, and that the company is weighing naming a temporary CEO before a wider search. The board can meet as soon as Wednesday to decide Huang's future, per the earlier Wall Street Journal report. No decision has been announced, and Nvidia has not commented. NVDA was down about 9% in after-hours trading versus its $173.73 close. Separately, The Information reported earlier that search firms had floated names including Arm CEO Rene Haas, and CFO Colette Kress has been mentioned by outside experts as a possible interim pick; neither is confirmed by Nvidia. Nvidia reports third-quarter earnings after the close on Nov 17.**" },
     { "type": "p", "text": "**UPDATE Nov 11, 3:15 PM PT: The Wall Street Journal reported that Nvidia's board is preparing to oust Jensen Huang and could meet as soon as Wednesday to decide his future, citing people familiar with the matter. Reuters and CNBC carried the report; Nvidia did not immediately comment and no decision has been announced. Nvidia shares fell about 8% to 10% in after-hours trading, to roughly $157 to $160, reversing the regular session's 2.9% gain to $173.73. CoreWeave fell about 6% after hours and US stock futures slipped. Nvidia has not disclosed a succession plan, and it reports third-quarter earnings on Nov 17. On Nov 8 the board said it had confidence in Huang and his leadership team.**" },
@@ -84,7 +85,7 @@ const article: Article = {
     ] },
     { "type": "callout", "text": "Not financial advice. This is a developing story and facts may change. Nothing here guarantees any market outcome." },
     { "type": "p", "text": "Follow [@CosAnalyst on X](https://x.com/CosAnalyst), like the [CosAnalyst Facebook Page](https://www.facebook.com/profile.php?id=61595911140925) for plain-English market notes, and join our Telegram at [@CosAnalystSignals](https://t.me/CosAnalystSignals)." },
-    { "type": "p", "text": "**Your call:** Should Jensen Huang stay on as CEO while his own board investigates, or should Nvidia put someone else in charge until it is done? Pick a side in the comments." }
+    { "type": "p", "text": "So pick a side: can Nvidia keep its AI lead without Jensen Huang, or was the founder the moat?" }
   ]
 };
 
