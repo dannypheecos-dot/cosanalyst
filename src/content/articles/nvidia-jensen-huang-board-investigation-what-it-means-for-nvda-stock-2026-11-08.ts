@@ -17,6 +17,10 @@ const HFAC =
   "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-request-jensen-huang-brief-congress-on-link-to-chinese-intelligence-asset";
 const REUTERS =
   "https://www.investing.com/news/world-news/exclusiveplalinked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-records-show-5017712";
+const CNN_INTEL =
+  "https://krdo.com/politics/cnn-us-politics/2026/11/12/us-intel-isnt-sure-if-businesswoman-spied-on-nvidia-for-china-doesnt-mean-she-wasnt-a-risk-sources-say/";
+const WIRED =
+  "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/";
 const ALT =
   "CosAnalyst cream card: Huang apologizes, Nvidia board opens independent probe, NVDA faces Monday.";
 
@@ -34,11 +38,12 @@ const article: Article = {
   "asOf": "As of about 2:30 PM PT Nov 8, 2026",
   "displayTime": "Nov 8, 2026 · 2:30 PM PT",
   "publishedAt": "2026-11-08T14:30:00-08:00",
-  "updatedAt": "2026-11-12T14:15:00-08:00",
+  "updatedAt": "2026-11-12T23:15:00-08:00",
   "ogImage": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08.png", "alt": ALT, "caption": "Sources: Nvidia newsroom, Nov. 8, 2026 (CEO letter and Board statement); NVDA close per Nvidia investor relations." },
+    { "type": "p", "text": "**UPDATE Nov 12, 11:15 PM PT: **[CNN](" + CNN_INTEL + ")** reports, citing multiple sources in the US intelligence community, that the intelligence collected so far on Alice Huang does not prove she was acting as a spy for China. Officials disagree on how strong the evidence is, though some still see her as a counterintelligence risk. Attorney General Todd Blanche said Thursday there are \"no conclusions reached\" on who she is or is not, and President Trump said whether Huang stepping down was right depends on whether she was a spy. Separately, **[WIRED](" + WIRED + ")** reports an internal Nvidia employee post urging the board to weigh staff sentiment has drawn more than 1,600 comments, several asking the board to bring Huang back. Earlier Thursday, Senate Banking Chair Tim Scott called on Huang and Commerce Secretary Lutnick to testify. Why it matters for NVDA: the spy question is now the swing factor in whether the leadership change is permanent, so watch for any DOJ or intelligence conclusion before Friday's open.**" },
     { "type": "p", "text": "**UPDATE Nov 12, 2:15 PM PT: NVDA finished at $166.19, down 4.3% on the day, after falling as much as about 16% intraday (low near $148.80) on Huang's resignation. Volume ran about 737 million shares, roughly 5x its three-month average (Motley Fool/NBC). Nvidia's market value ended just above $4 trillion after trading below it for much of the session (CNBC). Money rotated to other AI chip names: AMD +5.9%, Broadcom +5.5%, while the S&P 500 slipped 0.35% (Motley Fool).**" },
     { "type": "p", "text": "**Reuters, in an exclusive citing two people familiar with the matter, reports Huang had an intimate relationship with another Nvidia employee, separate from the previously reported relationships with Alice Huang and Kimberly Powell. Reuters is not naming the employee. Nvidia declined to comment.**" },
     { "type": "p", "text": "**Reuters also reports senior White House officials are discussing whether Commerce Secretary Howard Lutnick should be pushed out over export-control oversight tied to the Nvidia scandal. A White House official said President Trump \"maintains complete confidence\" in Lutnick (Reuters, Axios).**" },
