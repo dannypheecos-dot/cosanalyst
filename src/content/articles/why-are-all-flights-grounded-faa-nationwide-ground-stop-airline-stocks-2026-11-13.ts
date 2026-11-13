@@ -13,6 +13,14 @@ const NWS = "https://x.com/financialjuice/status/2121362903572070638";
 const CNN_CYBER = "https://x.com/WatcherGuru/status/2121359635131126082";
 const FLIGHTAWARE = "https://x.com/DeItaone/status/2121356471220785413";
 const AIRBORNE = "https://x.com/Cointelegraph/status/2121363394125058201";
+const FAA_RECOVER = "https://x.com/financialjuice/status/2121375094010188082";
+const FAA_HALT = "https://x.com/financialjuice/status/2121374994877866100";
+const CNN_RADAR = "https://x.com/financialjuice/status/2121373749887041854";
+const KPRC_AI = "https://www.click2houston.com/news/local/2026/11/13/faa-investigating-whether-new-ai-technology-contributed-to-nationwide-ground-stop/";
+const NYP_SMART = "https://nypost.com/2026/11/13/us-news/faa-launched-new-ai-smart-tool-to-all-air-route-traffic-control-centers-just-days-before-nationwide-ground-stop/";
+const UW_SOFTWARE = "https://x.com/unusual_whales/status/2121367686936658113";
+const VERIZON = "https://x.com/DeItaone/status/2121368389255930276";
+const FAA_ADVISORY = "https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?day=11132026&number=111";
 const CNBC_2023 = "https://www.cnbc.com/2023/01/11/faa-orders-airlines-to-pause-departures-until-9-am-et-after-system-outage.html";
 const WRTV_2023 = "https://www.wrtv.com/news/airline-stocks-rise-on-wall-street-despite-faa-outage-grounding-us-flights/";
 const CNBC_DELTA = "https://www.cnbc.com/2024/07/31/delta-ceo-crowdstrike-microsoft-outage-cost-the-airline-500-million.html";
@@ -30,14 +38,16 @@ const article: Article = {
   "section": "markets",
   "also": ["equities"],
   "kicker": "FAA Ground Stop",
-  "asOf": "As of about 2:10 PM PT Nov 13, 2026",
-  "displayTime": "Nov 13, 2026 · 2:10 PM PT",
+  "asOf": "As of about 3:15 PM PT Nov 13, 2026",
+  "displayTime": "Nov 13, 2026 · 3:15 PM PT",
   "publishedAt": "2026-11-13T14:13:00-08:00",
+  "updatedAt": "2026-11-13T15:15:00-08:00",
   "ogImage": "/og/why-are-all-flights-grounded-faa-nationwide-ground-stop-airline-stocks-2026-11-13-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/why-are-all-flights-grounded-faa-nationwide-ground-stop-airline-stocks-2026-11-13.png", "alt": ALT, "caption": "Sources: FAA and Transportation Secretary statements, FlightAware via Bloomberg headlines, TradingView after-hours quotes as of about 2:10 PM PT Nov 13, 2026." },
     { "type": "lede", "text": "Short answer: all U.S. flights are grounded because the FAA lost communications at its Air Route Traffic Control Centers, the 22 regional centers that guide planes between airports. Transportation Secretary Sean Duffy said the nationwide ground stop followed \"a communication issue impacting all Air Route Traffic Control Centers\" ([Duffy on X](" + DUFFY + "), [AP](" + AP + ")). The FAA later called it a temporary telecom outage and said all flights were halted as a precaution ([FAA via FinancialJuice](" + FAA_TELECOM + "))." },
+    { "type": "p", "text": "**UPDATE 3:15 PM PT: The ground stop is still in effect ([FAA via FinancialJuice](" + FAA_HALT + ")), but the FAA says that as its en route centers recover, flights will be allowed to depart in coordination with its command center ([FinancialJuice](" + FAA_RECOVER + ")). The FAA advisory runs the stop until 8:30 PM PT for now, subject to change ([FAA advisory](" + FAA_ADVISORY + ")). CNN reports the outages hit air traffic control radar and radio frequencies ([via FinancialJuice](" + CNN_RADAR + ")). On the cause, Homeland Security Secretary Markwayne Mullin said DHS, through CISA, is checking whether the FAA's new AI traffic tool, SMART, played a role ([KPRC](" + KPRC_AI + ")). The tool was expanded to all 22 en route centers on Tuesday, three days before the stop ([New York Post](" + NYP_SMART + ")). Mullin also said there is no reason to believe this was an attack and that he believes it was a software update ([via Unusual Whales](" + UW_SOFTWARE + ")). Verizon says its network is working normally ([via Bloomberg headlines](" + VERIZON + ")). No official cause has been confirmed yet.**" },
     { "type": "p", "text": "The stop hit just before 1 PM PT, about 3:54 PM ET, six minutes before the stock market closed. That means Wall Street has not had a full session with this news in it yet. The first real test for airline stocks is Monday's open." },
     { "type": "stats", "items": [
       { "label": "Flights delayed or canceled", "value": "~7,000", "note": "FlightAware, per Bloomberg headline (DeItaone)" },
@@ -52,7 +62,8 @@ const article: Article = {
       "The FAA said every flight is accounted for ([FAA via FinancialJuice](" + FAA_ACCOUNTED + ")).",
       "Major airports including Atlanta, Reagan National, Miami, BWI and Houston Bush confirmed the stop ([BBC](" + BBC + ")).",
       "The National Weather Service separately reported nationwide internet and communication disruptions around the same time ([NWS via FinancialJuice](" + NWS + ")). Officials have not said whether the two are linked.",
-      "As of about 2:10 PM PT, the FAA had not given a time for the stop to be lifted."
+      "As of about 2:10 PM PT, the FAA had not given a time for the stop to be lifted.",
+      "As of about 3:15 PM PT, the FAA said departures will restart in coordination with its command center as centers recover, with no exact restart time."
     ] },
     { "type": "h2", "text": "Is it a cyberattack?" },
     { "type": "p", "text": "Not according to early reporting. CNN reported the ground stop does not appear to be a cyberattack ([via Watcher.Guru](" + CNN_CYBER + ")), and the FAA described a temporary telecom outage. Homeland Security Secretary Markwayne Mullin said there is no cause for public alarm and that the president has been briefed ([via FinancialJuice](" + DHS + ")). He also said officials are not excluding any options at this stage, so treat \"not a cyberattack\" as preliminary until the FAA finishes its review." },
@@ -91,6 +102,8 @@ const article: Article = {
     { "type": "p", "text": "This is only the second nationwide ground stop since Sept. 11, 2001, according to the Washington Post. The other was the January 2023 NOTAM outage." },
     { "type": "h3", "text": "What does this mean for airline stocks?" },
     { "type": "p", "text": "Airline stocks were down about 1.5% to 3% after hours Friday. History says a short outage is a headline, while a multi-day disruption can cost an airline hundreds of millions. How long it lasts is the whole trade." },
+    { "type": "h3", "text": "Did the FAA's new AI system cause the ground stop?" },
+    { "type": "p", "text": "Not confirmed. DHS says it is looking at whether the FAA's new SMART air traffic tool, expanded to all 22 en route centers on Nov 10, played a role, and Secretary Mullin said he believes a software update was involved. The FAA has not named a cause." },
     { "type": "callout", "text": "Not financial advice. Flight counts, statements and after-hours quotes are snapshots as of about 2:10 PM PT Nov 13, 2026 and can change quickly. Nothing here guarantees any market outcome." },
     { "type": "p", "text": "Follow [@CosAnalyst on X](https://x.com/CosAnalyst), like the [CosAnalyst Facebook Page](https://www.facebook.com/profile.php?id=61595911140925) for plain-English market notes, and join our Telegram at [@CosAnalystSignals](https://t.me/CosAnalystSignals)." },
     { "type": "p", "text": "**Your call:** Is this a one-night headline that airline stocks shrug off by Monday like January 2023, or the start of a Delta-2024-style weekend meltdown? Pick a side in the comments." }
