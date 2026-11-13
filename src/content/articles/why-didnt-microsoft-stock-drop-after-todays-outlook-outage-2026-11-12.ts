@@ -15,6 +15,18 @@ const WINDOWS_CENTRAL =
 const STATUS = "https://status.cloud.microsoft/m365/";
 const BLEEPING =
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-causes-email-failures-auth-issues/";
+const CRYPTO_BRIEFING =
+  "https://cryptobriefing.com/microsoft-365-outage-74-countries/";
+const THE_STAR =
+  "https://www.thestar.com.my/tech/tech-news/2026/11/13/microsoft-outage-banks-in-malaysia-report-email-disruptions";
+const FORTUNE_INDIA =
+  "https://www.fortuneindia.com/technology/microsoft-365-outage-bots-call-centres-net-banking-find-prominence-as-online-email-services-stall-globally/170205";
+const ASIAN_BANKER =
+  "https://www.theasianbanker.com/updates-and-articles/microsoft-outage-disrupts-banking-communications-ai-reshapes-lending-and-staffing";
+const REUTERS_APAC =
+  "https://live.euronext.com/en/financial-news/microsoft-outage-spills-asia-pacific-business-hours-despite-partial-recovery";
+const GUARDIAN_LIVE =
+  "https://www.theguardian.com/technology/live/2026/nov/13/microsoft-outage-down-today-live-update-outlook-teams-365-when-fixed-latest-status-cause-news";
 const ALT =
   "CosAnalyst cream card: Outlook is down. MSFT barely budged. 130k-plus Outlook reports, dipped then recovered.";
 
@@ -30,10 +42,16 @@ const article: Article = {
   "asOf": "As of about 12:40 PM PT Nov 12, 2026",
   "displayTime": "Nov 12, 2026 · 12:40 PM PT",
   "publishedAt": "2026-11-12T12:40:00-08:00",
+  "updatedAt": "2026-11-13T04:15:00-08:00",
   "ogImage": "/og/why-didnt-microsoft-stock-drop-after-todays-outlook-outage-2026-11-12-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/why-didnt-microsoft-stock-drop-after-todays-outlook-outage-2026-11-12.png", "alt": ALT, "caption": "Sources: AP, Fox Business, and Euronews on Downdetector Outlook reports; TradingView session tape as of about 12:40 PM PT Nov 12, 2026. Intraday levels move." },
+    { "type": "p", "text": "**UPDATE Nov 13, 4:15 AM PT: Outage passes 12 hours, hits 74 countries. The Microsoft outage that started around 8:17 AM PT (16:17 UTC) on Thursday, Nov 12, ran past 12 hours, and searches for microsoft.com down tracked the same failure.** [Crypto Briefing](" + CRYPTO_BRIEFING + ") **reported user complaints from 74 countries and territories. Downdetector logged a US peak of more than 130,000 Outlook complaints.**" },
+    { "type": "p", "text": "**Outlook, Teams, Copilot, SharePoint Online, and OneDrive were affected through Exchange Online. Microsoft says it is not a cyberattack: unexpectedly unavailable servers pushed load onto the remaining infrastructure, and some servers stopped responding again when traffic returned, so the first fixes did not hold (**[The Asian Banker](" + ASIAN_BANKER + ")**).**" },
+    { "type": "p", "text": "**Banks and governments felt it. In Malaysia, Maybank, CIMB, RHB, and others warned of email delays and pushed customers to phone and app channels (**[The Star](" + THE_STAR + ")**). Banks in India gave the same warning (**[Fortune India](" + FORTUNE_INDIA + ")**).** [Reuters](" + REUTERS_APAC + ") **reported a Taiwanese financial firm canceled a scheduled bond repurchase transaction. Courts and visa processing slowed in several countries (**[Crypto Briefing](" + CRYPTO_BRIEFING + ")**).**" },
+    { "type": "p", "text": "**Early Friday, Microsoft said it was seeing encouraging recovery progress in Europe, with Japan comparatively more stable and North America improving (**[The Guardian](" + GUARDIAN_LIVE + ")**).**" },
+    { "type": "p", "text": "**The stock question for Friday is whether a 12-hour, multi-country outage changes the story for enterprise cloud reliability, or stays a headline like past outages. Watch MSFT in pre-market, and whether Microsoft offers customer credits.**" },
     { "type": "lede", "text": "This morning, the Cos desk called ADP payroll support and was told they were down because Microsoft was down. That is how a cloud outage shows up in real life: not as a status-page code, but as a payroll desk that cannot help you, an inbox that will not open, and a Teams chat that goes nowhere." },
     { "type": "p", "text": "By midday PT, it was still a mess. Outlook and Exchange Online, Teams, OneDrive, SharePoint, Microsoft 365 Copilot, and Defender XDR were all caught in it. Microsoft logged the incident as EX1550543 (with a related Microsoft 365 incident, MO1550821), said a large number of servers had become \"unexpectedly unavailable,\" and paused deployments. Downdetector logged more than 130,000 Outlook reports around 1 p.m. ET, according to [AP](" + AP + "), [Fox Business](" + FOX + "), and [Euronews](" + EURONEWS + ")." },
     { "type": "p", "text": "Microsoft stock barely cared. As of about 12:40 PM PT, MSFT was at $521.77, up 0.12% on the day, while QQQ was down 0.46% and SPY was down 0.36%, per TradingView (Cboe One, live). There was a dip. Traders who only look at the daily change will miss it." },
