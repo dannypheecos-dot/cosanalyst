@@ -12,7 +12,24 @@ export type Block =
   | { type: "h3"; text: string }
   | { type: "lede"; text: string }
   | { type: "stats"; items: Stat[] }
-  | { type: "figure"; src: string; alt: string; caption?: string }
+  | {
+      type: "figure";
+      src: string;
+      alt: string;
+      /** Caption supports the same inline markdown links as paragraphs. */
+      caption?: string;
+      width?: number;
+      height?: number;
+      /** Responsive variants: [src, intrinsic width in px]. */
+      srcSet?: [string, number][];
+      /** Photo credit line for schema (creditText). */
+      credit?: string;
+      license?: string;
+      /** License or rights page (schema license / acquireLicensePage). */
+      licenseUrl?: string;
+      /** Original file page (DVIDS, Wikimedia Commons). */
+      sourcePage?: string;
+    }
   | { type: "callout"; text: string }
   | { type: "list"; items: string[] }
   | { type: "quote"; text: string; cite?: string }
@@ -39,5 +56,7 @@ export type Article = {
   updatedAt?: string;
   ogImage: string;
   ogAlt: string;
+  /** Extra NewsArticle schema images (16:9, 4:3, 1:1 hero crops), site-relative. */
+  schemaImages?: string[];
   body: Block[];
 };

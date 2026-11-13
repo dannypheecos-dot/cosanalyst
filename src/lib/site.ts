@@ -5,6 +5,7 @@ export const site = {
   email: "ops@cosanalyst.com",
   handle: "@CosAnalyst",
   xUrl: "https://x.com/CosAnalyst",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61595911140925",
   telegramUrl: "https://t.me/CosAnalystSignals",
   /** Free Telegram channel. Calls and puts on SPY, QQQ, and IWM. */
   channelAlertsLabel: "Free SPY, QQQ & IWM Trade Alerts",

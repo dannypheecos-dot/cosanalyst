@@ -1,4 +1,4 @@
-import { FollowCosAnalyst } from "@/components/SiteChrome";
+import { FollowCosAnalyst, FollowFacebook } from "@/components/SiteChrome";
 import { shareOnXUrl, site } from "@/lib/site";
 
 export function FollowShare({
@@ -13,7 +13,10 @@ export function FollowShare({
       <div className="module">
         <h2>Follow the desk</h2>
         <p>Live notes land on X before they become a cadence.</p>
-        <FollowCosAnalyst />
+        <div className="follow-actions">
+          <FollowCosAnalyst />
+          <FollowFacebook />
+        </div>
       </div>
       <div className="module">
         <h2>Share on X</h2>

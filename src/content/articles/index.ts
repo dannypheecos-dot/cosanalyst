@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import iranEscalation1113 from "./is-the-us-about-to-strike-iran-what-it-means-for-oil-and-stocks-2026-11-13";
 import faaGroundStop1113 from "./why-are-all-flights-grounded-faa-nationwide-ground-stop-airline-stocks-2026-11-13";
 import tenYear1113 from "./why-is-the-10-year-treasury-yield-above-5-percent-stocks-mortgage-rates-2026-11-13";
 import msftOutlook1112 from "./why-didnt-microsoft-stock-drop-after-todays-outlook-outage-2026-11-12";
@@ -85,6 +86,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  iranEscalation1113,
   faaGroundStop1113,
   tenYear1113,
   msftOutlook1112,

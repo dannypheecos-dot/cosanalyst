@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleBlocks } from "@/components/ArticleBlocks";
 import { FollowShare } from "@/components/FollowShare";
-import { BreadcrumbJsonLd, FaqPageJsonLd, NewsArticleJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, FaqPageJsonLd, ImageObjectsJsonLd, NewsArticleJsonLd } from "@/components/JsonLd";
 import { JoinTelegram } from "@/components/SiteChrome";
 import { SectorSelectorModule } from "@/components/SectorSelectorModule";
 import { TelegramPromo } from "@/components/TelegramPromo";
@@ -81,13 +81,38 @@ export default async function ArticlePage({ params }: Props) {
         date={article.publishedAt ?? article.date}
         modified={article.updatedAt ?? article.publishedAt}
         path={path}
-        image={article.ogImage}
+        image={article.schemaImages ?? article.ogImage}
         section={sectionLabel(article.section)}
       />
       <BreadcrumbJsonLd title={article.title} path={path} />
       <FaqPageJsonLd pairs={faqPairs(article.body)} />
+      <ImageObjectsJsonLd
+        images={article.body.flatMap((block) =>
+          block.type === "figure" && block.credit && block !== figure
+            ? [
+                {
+                  src: block.src,
+                  caption: block.caption,
+                  credit: block.credit,
+                  license: block.license,
+                  licenseUrl: block.licenseUrl,
+                  sourcePage: block.sourcePage,
+                  width: block.width,
+                  height: block.height,
+                },
+              ]
+            : [],
+        )}
+      />
       <div className="article-art">
-        <img src={asset(artSrc)} alt={artAlt} />
+        <img
+          src={asset(artSrc)}
+          alt={artAlt}
+          width={figure?.width}
+          height={figure?.height}
+          fetchPriority="high"
+          decoding="async"
+        />
       </div>
       <article className="article article-layout">
         <header className="article-intro">

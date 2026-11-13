@@ -69,8 +69,25 @@ function BlockView({
     case "figure":
       return (
         <figure className="shot">
-          <img src={asset(block.src)} alt={block.alt} />
-          {block.caption ? <figcaption>{block.caption}</figcaption> : null}
+          <img
+            src={asset(block.src)}
+            alt={block.alt}
+            width={block.width}
+            height={block.height}
+            srcSet={
+              block.srcSet
+                ? block.srcSet.map(([src, w]) => `${asset(src)} ${w}w`).join(", ")
+                : undefined
+            }
+            sizes={block.srcSet ? "(max-width: 760px) 100vw, 720px" : undefined}
+            loading="lazy"
+            decoding="async"
+          />
+          {block.caption ? (
+            <figcaption>
+              <RichText text={block.caption} />
+            </figcaption>
+          ) : null}
         </figure>
       );
     case "callout":

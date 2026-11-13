@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
+import { FacebookMark } from "@/components/FacebookMark";
 import { TelegramMark } from "@/components/TelegramMark";
 import { XMark } from "@/components/XMark";
 import { asset } from "@/lib/asset";
@@ -36,6 +37,20 @@ export function FollowCosAnalyst({ compact = false }: { compact?: boolean }) {
           <span className="follow-x-short">Follow</span>
         </>
       )}
+    </a>
+  );
+}
+
+export function FollowFacebook() {
+  return (
+    <a
+      className="follow-fb"
+      href={site.facebookUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FacebookMark />
+      Facebook
     </a>
   );
 }
@@ -120,6 +135,7 @@ export function SiteHeader() {
         </nav>
         <div className="mast-end">
           <FollowCosAnalyst />
+          <FollowFacebook />
           <JoinTelegram />
           {site.membershipActivated ? (
             <Link className="btn" href="/members/">
@@ -171,6 +187,9 @@ export function SiteFooter() {
             )}
             <a href={site.xUrl} target="_blank" rel="noopener noreferrer">
               {site.handle}
+            </a>
+            <a href={site.facebookUrl} target="_blank" rel="noopener noreferrer">
+              Facebook
             </a>
           </nav>
           <p>

@@ -193,6 +193,14 @@ export default function HomePage() {
             >
               Follow {site.handle} →
             </a>
+            <a
+              className="btn btn-ghost"
+              href={site.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
             <a className="btn btn-ghost" href={`mailto:${site.email}?subject=Join%20the%20Market%20Brief`}>
               Join the brief
             </a>

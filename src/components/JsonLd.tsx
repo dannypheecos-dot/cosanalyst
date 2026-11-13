@@ -8,7 +8,7 @@ export function OrganizationJsonLd() {
     name: site.name,
     url: site.url,
     email: site.email,
-    sameAs: [site.xUrl],
+    sameAs: [site.xUrl, site.facebookUrl],
     logo: `${site.url}/brand/fox-mark-arrow.png`,
     description: site.description,
   };
@@ -35,7 +35,7 @@ export function NewsArticleJsonLd({
   date: string;
   modified?: string;
   path: string;
-  image: string;
+  image: string | string[];
   section?: string;
 }) {
   const data = {
@@ -47,7 +47,7 @@ export function NewsArticleJsonLd({
     dateModified: modified ?? date,
     mainEntityOfPage: `${site.url}${path}`,
     ...(section ? { articleSection: section } : {}),
-    image: [`${site.url}${image}`],
+    image: (Array.isArray(image) ? image : [image]).map((src) => `${site.url}${src}`),
     author: {
       "@type": "Organization",
       name: site.name,
@@ -101,6 +101,39 @@ export function FaqPageJsonLd({ pairs }: { pairs: FaqPair[] }) {
 
   const data = faqPageSchema(pairs);
 
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export type ImageObjectInput = {
+  src: string;
+  caption?: string;
+  credit?: string;
+  license?: string;
+  licenseUrl?: string;
+  sourcePage?: string;
+  width?: number;
+  height?: number;
+};
+
+/** Body-photo ImageObject schema (only figures that carry credit metadata). */
+export function ImageObjectsJsonLd({ images }: { images: ImageObjectInput[] }) {
+  if (images.length === 0) return null;
+  const strip = (text?: string) => text?.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+  const data = images.map((img) => ({
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    contentUrl: `${site.url}${img.src}`,
+    ...(img.caption ? { caption: strip(img.caption) } : {}),
+    ...(img.credit ? { creditText: img.credit } : {}),
+    ...(img.licenseUrl ? { license: img.licenseUrl, acquireLicensePage: img.sourcePage ?? img.licenseUrl } : {}),
+    ...(img.width ? { width: img.width } : {}),
+    ...(img.height ? { height: img.height } : {}),
+  }));
   return (
     <script
       type="application/ld+json"

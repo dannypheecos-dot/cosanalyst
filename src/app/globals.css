@@ -241,6 +241,7 @@ h3,
 .mast-end {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.65rem;
   margin-inline-start: auto;
 }
@@ -302,6 +303,7 @@ h3,
 }
 
 .follow-x,
+.follow-fb,
 .join-tg {
   display: inline-flex;
   align-items: center;
@@ -330,6 +332,18 @@ h3,
   color: var(--ivory);
 }
 
+.follow-fb {
+  color: #fff;
+  background: #1877f2;
+  border-color: #1877f2;
+}
+
+.follow-fb:hover {
+  background: #166fe5;
+  border-color: #166fe5;
+  color: #fff;
+}
+
 .join-tg {
   color: #fff;
   background: var(--telegram-blue);
@@ -342,6 +356,7 @@ h3,
 }
 
 .follow-x svg,
+.follow-fb svg,
 .join-tg svg {
   width: 0.85rem;
   height: 0.85rem;
@@ -1076,6 +1091,12 @@ figure.shot figcaption {
   justify-self: start;
 }
 
+.follow-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .follow-share {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1248,6 +1269,7 @@ figure.shot figcaption {
   }
 
   .follow-x,
+  .follow-fb,
   .join-tg,
   .menu-toggle {
     padding: 0.45rem 0.55rem;
@@ -1282,6 +1304,7 @@ figure.shot figcaption {
 
 @media (max-width: 380px) {
   .follow-x,
+  .follow-fb,
   .join-tg,
   .menu-toggle {
     font-size: 0.62rem;
@@ -1290,6 +1313,7 @@ figure.shot figcaption {
   }
 
   .follow-x svg,
+  .follow-fb svg,
   .join-tg svg {
     width: 0.75rem;
     height: 0.75rem;
