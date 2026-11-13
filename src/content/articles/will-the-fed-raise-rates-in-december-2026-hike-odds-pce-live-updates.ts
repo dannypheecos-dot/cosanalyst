@@ -14,7 +14,7 @@ const article: Article = {
   "asOf": "Polymarket and Kalshi odds pulled 1:10 PM PT Oct 29; developing story",
   "displayTime": "Oct 29, 2026 · 1:30 PM PT",
   "publishedAt": "2026-10-29T13:30:00-07:00",
-  "updatedAt": "2026-11-10T09:05:00-08:00",
+  "updatedAt": "2026-11-13T06:15:00-08:00",
   "ogImage": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates-og.png",
   "ogAlt": "CosAnalyst card: December hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026. BOOK FACT · NOT A TICKET",
   "body": [
@@ -23,6 +23,10 @@ const article: Article = {
       "src": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates.png",
       "alt": "CosAnalyst card: December Fed hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026",
       "caption": "BOOK FACT · NOT A TICKET"
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE Nov 13, 6:15 AM PT: October PPI rose 0.3% on the month, under the 0.4% forecast, but producer prices are up 6.5% from a year ago, the highest since November 2022 (forecast 6.6%, prior 6.3%). Core PPI matched expectations at 0.3% on the month and 5.0% on the year. Traders priced in slightly less Fed tightening after the release. Chicago Fed President Austan Goolsbee told CNBC that inflation is broad-based, going the wrong way, and has spread into categories not driven by energy, and that the Fed is not on track to hit 2%. Bank of America added a January 2027 quarter-point hike to its forecast and now expects hikes in December, January and March, for a peak of 4.5% to 4.75%. Polymarket's December Fed market now shows about 90.5% for a 25 bp hike, about 5.75% for a 50 bp or larger hike and about 2.75% for no change, up from roughly 79.5% for 25 bp on Nov 9. Next test: the 2-year Treasury yield and next week's data. Not financial advice.**"
     },
     {
       "type": "p",
