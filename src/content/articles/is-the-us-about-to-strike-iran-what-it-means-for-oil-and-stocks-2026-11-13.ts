@@ -43,7 +43,7 @@ const article: Article = {
   "asOf": "As of about 4:15 PM PT Nov 13, 2026",
   "displayTime": "Nov 13, 2026 · 4:15 PM PT",
   "publishedAt": "2026-11-13T14:30:00-08:00",
-  "updatedAt": "2026-11-13T16:15:00-08:00",
+  "updatedAt": "2026-11-13T19:15:00-08:00",
   "ogImage": "/og/" + SLUG + "-og.png",
   "ogAlt": ALT,
   "schemaImages": [
@@ -54,6 +54,8 @@ const article: Article = {
   "body": [
     { "type": "figure", "src": "/og/" + SLUG + ".png", "alt": ALT, "width": 1600, "height": 900, "caption": "Sources: CENTCOM statement via RFE/RL and AP, Truth Social post via NBC News, CNBC, TradingView settlement data as of the Nov 13, 2026 close." },
     { "type": "lede", "text": "Short answer: not yet, and the people closest to the decision are pulling in opposite directions. President Trump said Thursday the US doesn't need a deal with Iran (\"Those days have long since passed... we've got their Strait!\") and moved Vice President Vance off the negotiations ([AP](" + AP_VANCE + "), [NBC News](" + NBC_DEAL + ")). Hours later Iran sent two attack drones toward Bahrain, home of the Navy's Fifth Fleet, and US forces shot both down ([RFE/RL](" + RFERL + ")). But Trump also says Saudi Arabia and four other Gulf states asked him to hold off on bigger strikes, and he is holding off for now ([Iran International](" + IRANINTL_GULF + ")). Oil closed the day flat." },
+    { "type": "p", "text": "**UPDATE 7:15 PM PT, Nov 13**" },
+    { "type": "p", "text": "**Secretary of State Marco Rubio said Friday that more US military action against Iran is not needed. In a speech to the Federalist Society, he said \"the economic pain that we are inflicting on that regime is so great that there's no need for military action because we've weakened them so much,\" and added that victory means Iran never gets a nuclear weapon (AP). Separately, the administration extended the Jones Act shipping waiver for another 90 days, starting Nov 16 and running through Feb 14, 2027, so foreign-flagged ships can keep moving oil and other commodities between US ports (CBP notice, Reuters). For traders, Rubio's words lower the odds of a fresh US strike this weekend, but Friday's Iranian drone launch toward Bahrain and the mine claims in the Strait of Hormuz keep the risk alive. Oil futures reopen Sunday at 3 PM PT.**" },
     { "type": "p", "text": "**UPDATE 4:15 PM PT, Nov 13**" },
     { "type": "p", "text": "**The UN nuclear watchdog says it is \"increasingly concerned\" about Iran's underground Isfahan Fuel Enrichment Plant, which Iran declared in June 2025 but has never let inspectors visit. In a confidential report to member states seen by **[Reuters](" + REUTERS_IAEA + ")** and **[the Associated Press](" + AP_IAEA + ")**, the IAEA said it \"does not know IFEP's exact location, status for safeguards purposes or whether it contains nuclear material.\" Iran told the agency that inspections cannot resume while the US president keeps threatening strikes on its nuclear facilities.**" },
     { "type": "p", "text": "**Why it matters for markets: the nuclear file is the clearest trigger for the strike case. A fresh watchdog warning plus Tehran's refusal gives hawks a new argument, even as the White House leans on the blockade instead of bombs. Oil futures are closed until Sunday at 3 PM PT, so that open is the first market read on it.**" },
@@ -116,6 +118,8 @@ const article: Article = {
     { "type": "p", "text": "Multiple reports say RAF Lakenheath and RAF Mildenhall were raised to Force Protection Condition Charlie after a reported Iranian threat. The Air Force said a suspected drone incident at Lakenheath on Friday affected no personnel, aircraft or infrastructure." },
     { "type": "h3", "text": "Is the FAA ground stop related to Iran?" },
     { "type": "p", "text": "Officials say no. The FAA blamed a telecom outage, and Homeland Security said there was no sign of an attack." },
+    { "type": "h3", "text": "Is the US planning more military strikes on Iran?" },
+    { "type": "p", "text": "Not right now, according to Secretary of State Marco Rubio. On Nov 13 he said economic pressure on Iran is so great that more military action is not needed, though he said the goal is still making sure Iran never gets a nuclear weapon." },
     { "type": "callout", "text": "Not financial advice. This is scenario analysis, not a recommendation to buy or sell anything. Statements, claims and prices are as of about 2:30 PM PT Nov 13, 2026, and Iranian claims cited here have not been independently verified. Nothing here guarantees any market outcome." },
     { "type": "p", "text": "Follow [@CosAnalyst on X](https://x.com/CosAnalyst), like the [CosAnalyst Facebook Page](https://www.facebook.com/profile.php?id=61595911140925), and join our Telegram at [@CosAnalystSignals](https://t.me/CosAnalystSignals) for weekend updates." },
     { "type": "p", "text": "**Your call:** Does Trump strike Iran before Monday's open, or do the Gulf allies keep him on the blockade-only path? Pick a side in the comments." }
