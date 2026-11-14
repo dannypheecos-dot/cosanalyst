@@ -11,9 +11,19 @@ if (!existsSync(root)) {
 const maps = [];
 const hits = [];
 
+// finance.yahoo.com is a press citation host (Yahoo Finance article URLs).
+// Personal mailboxes (name@yahoo.com) and any other yahoo.com host stay forbidden.
+function scrubCitations(body) {
+  return body.replace(/finance\.yahoo\.com/gi, "");
+}
+
 const forbidden = [
-  { name: "personal", re: /danny[\s._-]*phee|danny-phee|\bdphee\b|dannyphee|yahoo\.com/gi },
-  { name: "tanuki-brand", re: /tanuki|tanukitrade|gex\s*live/gi },
+  {
+    name: "personal",
+    re: /danny[\s._-]*phee|danny-phee|\bdphee\b|dannyphee|yahoo\.com/gi,
+    scrub: true,
+  },
+  { name: "tanuki-brand", re: /tanuki|tanukitrade|gex\s*live/gi, scrub: false },
 ];
 
 function walk(dir) {
@@ -30,7 +40,8 @@ function walk(dir) {
     if (text.includes(0)) continue;
     const body = text.toString("utf8");
     for (const rule of forbidden) {
-      const found = body.match(rule.re);
+      const scanned = rule.scrub ? scrubCitations(body) : body;
+      const found = scanned.match(new RegExp(rule.re.source, rule.re.flags));
       if (found) {
         hits.push(`${rule.name} ${path}: ${[...new Set(found)].join(", ")}`);
       }
@@ -65,6 +76,14 @@ try {
   } else {
     rgHits = stdout.trim();
   }
+}
+
+if (rgHits) {
+  const stillForbidden = /tanuki|tanukitrade|gex\s*live|dannyphee|danny-phee|\bdphee\b|yahoo\.com/i;
+  rgHits = rgHits
+    .split("\n")
+    .filter((line) => stillForbidden.test(scrubCitations(line)))
+    .join("\n");
 }
 
 if (maps.length) {
