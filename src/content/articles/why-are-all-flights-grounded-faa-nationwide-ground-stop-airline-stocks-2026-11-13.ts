@@ -38,15 +38,16 @@ const article: Article = {
   "section": "markets",
   "also": ["equities"],
   "kicker": "FAA Ground Stop",
-  "asOf": "As of about 3:15 PM PT Nov 13, 2026",
-  "displayTime": "Nov 13, 2026 · 3:15 PM PT",
+  "asOf": "As of about 4:15 PM PT Nov 13, 2026",
+  "displayTime": "Nov 13, 2026 · 4:15 PM PT",
   "publishedAt": "2026-11-13T14:13:00-08:00",
-  "updatedAt": "2026-11-13T15:15:00-08:00",
+  "updatedAt": "2026-11-13T16:15:00-08:00",
   "ogImage": "/og/why-are-all-flights-grounded-faa-nationwide-ground-stop-airline-stocks-2026-11-13-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/why-are-all-flights-grounded-faa-nationwide-ground-stop-airline-stocks-2026-11-13.png", "alt": ALT, "caption": "Sources: FAA and Transportation Secretary statements, FlightAware via Bloomberg headlines, TradingView after-hours quotes as of about 2:10 PM PT Nov 13, 2026." },
     { "type": "lede", "text": "Short answer: all U.S. flights are grounded because the FAA lost communications at its Air Route Traffic Control Centers, the 22 regional centers that guide planes between airports. Transportation Secretary Sean Duffy said the nationwide ground stop followed \"a communication issue impacting all Air Route Traffic Control Centers\" ([Duffy on X](" + DUFFY + "), [AP](" + AP + ")). The FAA later called it a temporary telecom outage and said all flights were halted as a precaution ([FAA via FinancialJuice](" + FAA_TELECOM + "))." },
+    { "type": "p", "text": "**4:15 PM PT: The ground stop is still in effect. CBS News, citing multiple sources, reports that an update to the private communications network that links U.S. air traffic control caused the system to reboot and crash, which took down communications. That network is operated by L3Harris (LHX), which had not commented as of CBS's report. Microsoft says the ground stop does not appear to be linked to its services, and Nav Canada says traffic control measures at major Canadian airports were lifted after 6 p.m. ET with systems functioning normally. The FAA's national ground stop advisory is set to run until 8:30 PM PT unless it is lifted earlier.**" },
     { "type": "p", "text": "**UPDATE 3:15 PM PT: The ground stop is still in effect (**[FAA via FinancialJuice](" + FAA_HALT + ")**), but the FAA says that as its en route centers recover, flights will be allowed to depart in coordination with its command center (**[FinancialJuice](" + FAA_RECOVER + ")**). The FAA advisory runs the stop until 8:30 PM PT for now, subject to change (**[FAA advisory](" + FAA_ADVISORY + ")**). CNN reports the outages hit air traffic control radar and radio frequencies (**[via FinancialJuice](" + CNN_RADAR + ")**). On the cause, Homeland Security Secretary Markwayne Mullin said DHS, through CISA, is checking whether the FAA's new AI traffic tool, SMART, played a role (**[KPRC](" + KPRC_AI + ")**). The tool was expanded to all 22 en route centers on Tuesday, three days before the stop (**[New York Post](" + NYP_SMART + ")**). Mullin also said there is no reason to believe this was an attack and that he believes it was a software update (**[via Unusual Whales](" + UW_SOFTWARE + ")**). Verizon says its network is working normally (**[via Bloomberg headlines](" + VERIZON + ")**). No official cause has been confirmed yet.**" },
     { "type": "p", "text": "The stop hit just before 1 PM PT, about 3:54 PM ET, six minutes before the stock market closed. That means Wall Street has not had a full session with this news in it yet. The first real test for airline stocks is Monday's open." },
     { "type": "stats", "items": [
@@ -92,6 +93,8 @@ const article: Article = {
       "If JetBlue (JBLU) keeps underperforming, it is the weakest balance sheet in the group and the most sensitive to a lost weekend."
     ] },
     { "type": "h2", "text": "FAQ" },
+    { "type": "h3", "text": "Who runs the FAA's air traffic control communications network?" },
+    { "type": "p", "text": "CBS News reports the private communications network that connects U.S. air traffic control is operated by L3Harris (LHX). Sources told CBS that an update to that network caused it to reboot and crash, leading to the nationwide ground stop. L3Harris had not commented as of that report, and the FAA has not published a final root cause." },
     { "type": "h3", "text": "Why are all flights grounded today?" },
     { "type": "p", "text": "The FAA issued a nationwide ground stop on Friday, Nov. 13, 2026, after a communications failure affected all of its Air Route Traffic Control Centers. The FAA called it a temporary telecom outage." },
     { "type": "h3", "text": "When will flights resume?" },
