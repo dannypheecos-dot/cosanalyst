@@ -19,6 +19,8 @@ const AP_LAKENHEATH = "https://apnews.com/article/drone-military-base-uk-us-4064
 const BBC_LAKENHEATH = "https://www.bbc.com/news/articles/cwj3k1g55nypo";
 const STRIPES = "https://www.stripes.com/theaters/europe/2026-11-13/eucom-iran-russia-bases-threats-23452807.html";
 const XINHUA_OIL = "https://english.news.cn/20261114/754f202267ed4bb493f98681c351e83a/c.html";
+const REUTERS_IAEA = "https://www.al-monitor.com/originals/2026/11/iaea-increasingly-concerned-about-iranian-enrichment-plant-its-report-says";
+const AP_IAEA = "https://www.latimes.com/world-nation/story/2026-11-13/iran-tells-u-n-nuclear-agency-that-monitoring-cannot-proceed-while-it-is-under-threat";
 const FAA = "/articles/why-are-all-flights-grounded-faa-nationwide-ground-stop-airline-stocks-2026-11-13/";
 const TENYEAR = "/articles/why-is-the-10-year-treasury-yield-above-5-percent-stocks-mortgage-rates-2026-11-13/";
 const QESHM = "/articles/why-is-oil-up-today-us-strike-iran-qeshm-island-2026-11-03/";
@@ -38,9 +40,10 @@ const article: Article = {
   "section": "macro",
   "also": ["commodities", "markets"],
   "kicker": "Iran Escalation",
-  "asOf": "As of about 2:30 PM PT Nov 13, 2026",
-  "displayTime": "Nov 13, 2026 · 2:30 PM PT",
+  "asOf": "As of about 4:15 PM PT Nov 13, 2026",
+  "displayTime": "Nov 13, 2026 · 4:15 PM PT",
   "publishedAt": "2026-11-13T14:30:00-08:00",
+  "updatedAt": "2026-11-13T16:15:00-08:00",
   "ogImage": "/og/" + SLUG + "-og.png",
   "ogAlt": ALT,
   "schemaImages": [
@@ -51,6 +54,9 @@ const article: Article = {
   "body": [
     { "type": "figure", "src": "/og/" + SLUG + ".png", "alt": ALT, "width": 1600, "height": 900, "caption": "Sources: CENTCOM statement via RFE/RL and AP, Truth Social post via NBC News, CNBC, TradingView settlement data as of the Nov 13, 2026 close." },
     { "type": "lede", "text": "Short answer: not yet, and the people closest to the decision are pulling in opposite directions. President Trump said Thursday the US doesn't need a deal with Iran (\"Those days have long since passed... we've got their Strait!\") and moved Vice President Vance off the negotiations ([AP](" + AP_VANCE + "), [NBC News](" + NBC_DEAL + ")). Hours later Iran sent two attack drones toward Bahrain, home of the Navy's Fifth Fleet, and US forces shot both down ([RFE/RL](" + RFERL + ")). But Trump also says Saudi Arabia and four other Gulf states asked him to hold off on bigger strikes, and he is holding off for now ([Iran International](" + IRANINTL_GULF + ")). Oil closed the day flat." },
+    { "type": "p", "text": "**UPDATE 4:15 PM PT, Nov 13**" },
+    { "type": "p", "text": "**The UN nuclear watchdog says it is \"increasingly concerned\" about Iran's underground Isfahan Fuel Enrichment Plant, which Iran declared in June 2025 but has never let inspectors visit. In a confidential report to member states seen by **[Reuters](" + REUTERS_IAEA + ")** and **[the Associated Press](" + AP_IAEA + ")**, the IAEA said it \"does not know IFEP's exact location, status for safeguards purposes or whether it contains nuclear material.\" Iran told the agency that inspections cannot resume while the US president keeps threatening strikes on its nuclear facilities.**" },
+    { "type": "p", "text": "**Why it matters for markets: the nuclear file is the clearest trigger for the strike case. A fresh watchdog warning plus Tehran's refusal gives hawks a new argument, even as the White House leans on the blockade instead of bombs. Oil futures are closed until Sunday at 3 PM PT, so that open is the first market read on it.**" },
     { "type": "p", "text": "That gap between loud headlines and a quiet oil tape is the whole setup for Monday. This page sorts what is confirmed from what is only claimed, then lays out what each path means for oil, defense names and the S&P 500. We will update it, and publish fresh pieces, as the weekend develops." },
     { "type": "h2", "text": "What happened in the last 48 hours" },
     { "type": "list", "items": [
@@ -96,6 +102,8 @@ const article: Article = {
       "**If an attack on US personnel or officials is confirmed,** Trump's own words point to a fast, large response. That is the tail risk that would move every market at once."
     ] },
     { "type": "h2", "text": "FAQ" },
+    { "type": "h3", "text": "What did the IAEA say about Iran on November 13, 2026?" },
+    { "type": "p", "text": "In a confidential report seen by Reuters and the AP, the IAEA said it is increasingly concerned that Iran has not let inspectors visit the Isfahan Fuel Enrichment Plant, and that it does not know the plant's exact location, safeguards status or whether it holds nuclear material. Iran says inspections cannot resume while it faces US threats of more strikes." },
     { "type": "h3", "text": "Is the US about to strike Iran?" },
     { "type": "p", "text": "As of Friday, Nov 13, Trump says he is holding off on broader strikes because Saudi Arabia, Qatar, Kuwait, the UAE and Bahrain asked him to, though he says he is not sure he agrees. He has also said he would have \"no hesitation\" using force if Iran threatens allies or ships." },
     { "type": "h3", "text": "Did Iran attack US forces in Bahrain?" },
