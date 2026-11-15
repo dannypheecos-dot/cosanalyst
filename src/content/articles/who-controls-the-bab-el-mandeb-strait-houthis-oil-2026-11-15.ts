@@ -97,7 +97,7 @@ const article: Article = {
       "width": 1200,
       "height": 1400,
       "alt": "Satellite image of the Bab el-Mandeb Strait with Yemen at upper right, Perim (Mayyun) island in the channel and the African coast at lower left",
-      "caption": "Satellite view of the Bab el-Mandeb Strait, April 2017: Yemen's coast at upper right, Perim (Mayyun) island in the channel, the Horn of Africa at lower left. Image: NASA/METI/AIST/Japan Space Systems and U.S./Japan ASTER Science Team (public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bab-el-Mandeb_Strait,_Africa-Arabia_(ASTER).jpg)).",
+      "caption": "Satellite view of the Bab el-Mandeb Strait, April 2017: Yemen's coast at upper right, Perim (Mayyun) island in the channel, the Horn of Africa at lower left. Image: NASA/METI/AIST/Japan Space Systems and U.S./Japan ASTER Science Team (public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bab-el-Mandeb_Strait,_Africa-Arabia_%28ASTER%29.jpg)).",
       "credit": "NASA/METI/AIST/Japan Space Systems, U.S./Japan ASTER Science Team",
       "license": "Public domain",
       "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bab-el-Mandeb_Strait,_Africa-Arabia_(ASTER).jpg",
@@ -281,7 +281,7 @@ const article: Article = {
         "**If oil futures open higher at 3 PM PT and hold,** the market is pricing the dual squeeze. Brent back near $100 would put energy and tanker names in charge Monday.",
         "**If futures pop and fade,** the surplus story is still winning, and the read is that Houthi control of the shore does not equal a closed strait.",
         "**If the Houthis announce new shipping rules or hit a vessel in the strait,** this stops being a map story and becomes a supply story. Expect a fast gap up in Brent and tanker rates.",
-        "**If Saudi-backed forces retake the heights or the Saudis strike,** the risk premium likely comes back out.",
+        "**If Saudi-backed forces retake the heights around the strait,** the risk premium likely comes back out.",
         "**If Iran confirms or the US confirms damage in Bahrain,** that is a separate escalation on top of this one. See our [Iran explainer](/articles/is-the-us-about-to-strike-iran-what-it-means-for-oil-and-stocks-2026-11-13/)."
       ]
     },
