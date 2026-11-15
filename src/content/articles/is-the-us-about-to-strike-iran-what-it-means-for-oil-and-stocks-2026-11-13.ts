@@ -43,7 +43,7 @@ const article: Article = {
   "asOf": "As of about 4:15 PM PT Nov 13, 2026",
   "displayTime": "Nov 13, 2026 · 4:15 PM PT",
   "publishedAt": "2026-11-13T14:30:00-08:00",
-  "updatedAt": "2026-11-14T07:15:00-08:00",
+  "updatedAt": "2026-11-14T22:30:00-08:00",
   "ogImage": "/og/" + SLUG + "-og.png",
   "ogAlt": ALT,
   "schemaImages": [
@@ -54,6 +54,10 @@ const article: Article = {
   "body": [
     { "type": "figure", "src": "/og/" + SLUG + ".png", "alt": ALT, "width": 1600, "height": 900, "caption": "Sources: CENTCOM statement via RFE/RL and AP, Truth Social post via NBC News, CNBC, TradingView settlement data as of the Nov 13, 2026 close." },
     { "type": "lede", "text": "Short answer: not yet, and the people closest to the decision are pulling in opposite directions. President Trump said Thursday the US doesn't need a deal with Iran (\"Those days have long since passed... we've got their Strait!\") and moved Vice President Vance off the negotiations ([AP](" + AP_VANCE + "), [NBC News](" + NBC_DEAL + ")). Hours later Iran sent two attack drones toward Bahrain, home of the Navy's Fifth Fleet, and US forces shot both down ([RFE/RL](" + RFERL + ")). But Trump also says Saudi Arabia and four other Gulf states asked him to hold off on bigger strikes, and he is holding off for now ([Iran International](" + IRANINTL_GULF + ")). Oil closed the day flat." },
+    { "type": "p", "text": "**UPDATE 10:30 PM PT, Nov 14**" },
+    { "type": "p", "text": "**Bahrain's Interior Ministry issued danger alerts Saturday night urging residents to seek safety, and Bahrain said its air defenses intercepted an Iranian drone (Iran International, Al Jazeera, The National). Hours later Iran's Revolutionary Guard (IRGC) claimed it sent six drones at a US air-defense radar at Bahrain's Al Riffa helicopter base, calling it a second round of retaliation for US military action. That is an Iranian claim only: the US had not responded to it at the time of reporting, and after Friday's similar claim CENTCOM said there was no damage and no injuries (Iran International, Al Jazeera, Times of India).**" },
+    { "type": "p", "text": "**The rhetoric hardened too. Iran's parliament speaker Mohammad Bagher Ghalibaf said Tehran will not stay in a state of \"neither war nor peace\" and that a deal is possible only if Washington accepts Iran's seven conditions, while Israeli Prime Minister Benjamin Netanyahu said the Iran threat must be removed \"once and for all\" (Iran International). The Saudi-led coalition in Yemen said it shot down three more Houthi drones (Al Jazeera).**" },
+    { "type": "p", "text": "**Why it matters for markets: Reuters reported that Trump would hold off on strikes unless Iran or the Houthis provoke the US again. A second claimed drone attack on a US site tests that line just before oil futures reopen Sunday at 3 PM PT. If the US confirms damage or answers with strikes, expect oil to gap up. If CENTCOM again reports nothing hit, the pause probably holds.**" },
     { "type": "p", "text": "**UPDATE 7:15 AM PT, Nov 14**" },
     { "type": "p", "text": "**President Trump has told senior advisers he may hold off on new strikes against Iran as long as Tehran and the Iran-backed Houthis in Yemen avoid fresh provocations, according to three people familiar with the matter (Reuters). Israel is lobbying for renewed strikes, while Saudi Arabia and Turkey have urged him not to restart the war, and officials say he has not made up his mind (Reuters, AP). The White House also says Trump will hold a first-ever three-way meeting with Xi Jinping and Vladimir Putin on the sidelines of the APEC summit in China next week, and US officials say Iran will be on the agenda (ABC News, AP).**" },
     { "type": "p", "text": "**The strait is still the pressure point. Iran's navy says another tanker hit a naval mine and caught fire east of the Strait of Hormuz on Saturday morning, the latest in a string of mine claims from Tehran. Reuters could not independently verify the Iranian accounts. Separately, the Saudi-led coalition in Yemen says it shot down two Houthi drones aimed at Riyadh and southern Saudi Arabia (Al Jazeera).**" },
@@ -108,6 +112,8 @@ const article: Article = {
       "**If an attack on US personnel or officials is confirmed,** Trump's own words point to a fast, large response. That is the tail risk that would move every market at once."
     ] },
     { "type": "h2", "text": "FAQ" },
+    { "type": "h3", "text": "Did Iran attack a US base in Bahrain on November 14, 2026?" },
+    { "type": "p", "text": "Iran's Revolutionary Guard claims it sent six drones at a US air-defense radar at Bahrain's Al Riffa helicopter base on Saturday night, Nov 14. Bahrain issued danger alerts and said it intercepted an Iranian drone. As of late Saturday the US had not confirmed any damage. After a similar claim on Friday, CENTCOM said two drones were shot down with no damage or injuries." },
     { "type": "h3", "text": "What did the IAEA say about Iran on November 13, 2026?" },
     { "type": "p", "text": "In a confidential report seen by Reuters and the AP, the IAEA said it is increasingly concerned that Iran has not let inspectors visit the Isfahan Fuel Enrichment Plant, and that it does not know the plant's exact location, safeguards status or whether it holds nuclear material. Iran says inspections cannot resume while it faces US threats of more strikes." },
     { "type": "h3", "text": "Is the US about to strike Iran?" },
