@@ -16,6 +16,7 @@ const article: Article = {
   "asOf": "As of about 2:15 PM PT Nov 14, 2026",
   "displayTime": "Nov 14, 2026 · 2:15 PM PT",
   "publishedAt": "2026-11-14T14:19:00-08:00",
+  "updatedAt": "2026-11-14T19:15:00-08:00",
   "ogImage": "/og/why-is-bitcoin-crashing-today-btc-below-64000-liquidations-2026-11-14-og.png",
   "ogAlt": "CosAnalyst cream card: Bitcoin breaks below $64,000. Longs got wiped. $645M in longs liquidated in 30 minutes, 3-month low.",
   "body": [
@@ -28,6 +29,10 @@ const article: Article = {
     {
       "type": "lede",
       "text": "Short answer: Bitcoin is crashing today because a crowded pile of leveraged long bets got forced out all at once. BTC slipped under $65,000 around 1 PM PT Saturday, and the selling turned into a liquidation cascade: more than $360 million was liquidated across crypto in five minutes ([Watcher.Guru](https://x.com/WatcherGuru/status/2121710139967242497)) and about $645 million of longs in 30 minutes ([Watcher.Guru](https://x.com/WatcherGuru/status/2121715780337422695)). As of about 2:15 PM PT, Coinbase shows bitcoin at $63,617 (-6.7% over 24 hours) and ether at $1,749 (-9.0%)."
+    },
+    {
+      "type": "p",
+      "text": "**7:15 PM PT UPDATE: Bitcoin just snapped back. After a fresh session low near $61,950 on Coinbase around 5:45 PM PT, BTC ripped back above $65,000 by about 7 PM PT, a bounce of roughly 5.5% in about 75 minutes. Watcher.Guru counted about $130 million in short positions liquidated as it reclaimed $65,000, so the same leverage that drove the flush is now fueling the squeeze. Ether is back near $1,826. Squeezes after a long liquidation are common and can fade fast. The test is whether $65,000 holds through thin weekend trading into Monday's ETF flows; a drop back under $62,000 puts the lows back in play.**"
     },
     {
       "type": "p",
