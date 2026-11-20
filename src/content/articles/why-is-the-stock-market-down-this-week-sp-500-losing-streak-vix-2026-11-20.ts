@@ -16,7 +16,7 @@ const article: Article = {
   "asOf": "As of about 7:10 AM PT Nov 20, 2026",
   "displayTime": "Nov 20, 2026 · 7:10 AM PT",
   "publishedAt": "2026-11-20T07:17:00-08:00",
-  "updatedAt": "2026-11-20T10:09:14-08:00",
+  "updatedAt": "2026-11-20T14:20:00-08:00",
   "ogImage": "/og/why-is-the-stock-market-down-this-week-sp-500-losing-streak-vix-2026-11-20-og.png",
   "ogAlt": "CosAnalyst cream card: six red days, the VIX hit 31, now what? S&P 500 closed at 7,175.83 Thursday after six straight losses.",
   "body": [
@@ -31,6 +31,10 @@ const article: Article = {
     {
       "type": "lede",
       "text": "Short answer: the AI trade cracked and took everything else with it. The S&P 500 fell for a sixth straight session on Thursday, closing at 7,175.83. That is its longest losing streak since April 2024 ([Deutsche Bank via FXStreet](https://www.fxstreet.com/news/equities-broadening-selloff-deepens-losses-deutsche-bank-202611200905)), and a 5.8% drop over those six days (TradingView closes). Anthropic's record IPO was supposed to rescue AI stocks. Instead its shares fell about 9% on Friday morning, Nvidia slid to its lowest since June 2025, and the VIX fear gauge jumped above 31 for the first time since March ([CNBC](https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html), [Investopedia](https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11202026-12266027)). We ran the history on every S&P 500 losing streak since 1950. The 1-month picture after seven straight down days is a coin flip. The 12-month picture is not."
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE 2:20 PM PT: The correction is confirmed. The S&P 500 closed at 6,910.39, down 3.7%, and the Dow closed at 48,147.33, down 949.73 points, or 1.93%. Both finished more than 10% below their record closes. The Nasdaq Composite closed at 22,617.73, down 5.28%, and is down 2.7% for 2026. Close recap and the history since 1950: [S&P 500 Is in a Correction. What Happens Next?](/articles/sp-500-correction-what-happens-next-2026-11-20/). Sources: CNBC, Yahoo Finance.**"
     },
     {
       "type": "p",
