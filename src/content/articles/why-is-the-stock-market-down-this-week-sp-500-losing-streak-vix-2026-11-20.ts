@@ -15,7 +15,7 @@ const article: Article = {
   "kicker": "Data Study",
   "asOf": "As of about 7:10 AM PT Nov 20, 2026",
   "displayTime": "Nov 20, 2026 · 7:10 AM PT",
-  "publishedAt": "2026-11-20T07:30:00-08:00",
+  "publishedAt": "2026-11-20T07:17:00-08:00",
   "ogImage": "/og/why-is-the-stock-market-down-this-week-sp-500-losing-streak-vix-2026-11-20-og.png",
   "ogAlt": "CosAnalyst cream card: six red days, the VIX hit 31, now what? S&P 500 closed at 7,175.83 Thursday after six straight losses.",
   "body": [
