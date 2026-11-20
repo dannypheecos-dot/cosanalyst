@@ -16,6 +16,7 @@ const article: Article = {
   "asOf": "As of about 7:10 AM PT Nov 20, 2026",
   "displayTime": "Nov 20, 2026 · 7:10 AM PT",
   "publishedAt": "2026-11-20T07:17:00-08:00",
+  "updatedAt": "2026-11-20T08:20:00-08:00",
   "ogImage": "/og/why-is-the-stock-market-down-this-week-sp-500-losing-streak-vix-2026-11-20-og.png",
   "ogAlt": "CosAnalyst cream card: six red days, the VIX hit 31, now what? S&P 500 closed at 7,175.83 Thursday after six straight losses.",
   "body": [
@@ -30,6 +31,14 @@ const article: Article = {
     {
       "type": "lede",
       "text": "Short answer: the AI trade cracked and took everything else with it. The S&P 500 fell for a sixth straight session on Thursday, closing at 7,175.83. That is its longest losing streak since April 2024 ([Deutsche Bank via FXStreet](https://www.fxstreet.com/news/equities-broadening-selloff-deepens-losses-deutsche-bank-202611200905)), and a 5.8% drop over those six days (TradingView closes). Anthropic's record IPO was supposed to rescue AI stocks. Instead its shares fell about 9% on Friday morning, Nvidia slid to its lowest since June 2025, and the VIX fear gauge jumped above 31 for the first time since March ([CNBC](https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html), [Investopedia](https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11202026-12266027)). We ran the history on every S&P 500 losing streak since 1950. The 1-month picture after seven straight down days is a coin flip. The 12-month picture is not."
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE 8:20 AM PT, Nov 20**"
+    },
+    {
+      "type": "p",
+      "text": "**The selloff deepened after the open. The Nasdaq 100 was down about 2.7% and the S&P 500 fell as much as about 1.5% to 7,069.39, below the 7,175.83 level that would make a seventh straight loss (TradingView). The Nasdaq Composite dropped to 23,246.59 at its low, within about 5 points of its 2025 closing level of 23,241.99, nearly erasing its 2026 gain (TradingView, Yahoo Finance). Nvidia fell about 5.7% to near $137.69, and bitcoin broke below $60,000 for the first time since July. Full story: [Why Is Bitcoin Crashing Today? BTC Breaks Below $60,000](/articles/why-is-bitcoin-crashing-today-btc-below-60000-2026-11-20/).**"
     },
     {
       "type": "p",

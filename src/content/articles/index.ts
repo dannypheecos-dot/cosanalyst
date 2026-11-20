@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import btc60k1120 from "./why-is-bitcoin-crashing-today-btc-below-60000-2026-11-20";
 import marketStreak1120 from "./why-is-the-stock-market-down-this-week-sp-500-losing-streak-vix-2026-11-20";
 import babElMandeb1115 from "./who-controls-the-bab-el-mandeb-strait-houthis-oil-2026-11-15";
 import btcCrash1114 from "./why-is-bitcoin-crashing-today-btc-below-64000-liquidations-2026-11-14";
@@ -90,6 +91,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  btc60k1120,
   marketStreak1120,
   babElMandeb1115,
   btcCrash1114,
