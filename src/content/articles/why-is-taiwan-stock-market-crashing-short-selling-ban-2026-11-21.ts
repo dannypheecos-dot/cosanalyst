@@ -14,8 +14,8 @@ const article: Article = {
     "macro"
   ],
   "kicker": "Taiwan Selloff",
-  "asOf": "As of about 10:30 AM PT Nov 21, 2026",
-  "displayTime": "Nov 21, 2026 · 10:30 AM PT",
+  "asOf": "As of about 10:15 AM PT Nov 21, 2026",
+  "displayTime": "Nov 21, 2026 · 10:15 AM PT",
   "publishedAt": "2026-11-21T10:18:00-08:00",
   "ogImage": "/og/why-is-taiwan-stock-market-crashing-short-selling-ban-2026-11-21-og.png",
   "ogAlt": "CosAnalyst cream card: Taiwan clamps down on short sellers after a historic week. Paper-cut computer chip with a red down marker.",
