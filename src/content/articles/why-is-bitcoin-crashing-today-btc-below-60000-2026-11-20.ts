@@ -17,7 +17,7 @@ const article: Article = {
   "asOf": "As of about 8:20 AM PT Nov 20, 2026",
   "displayTime": "Nov 20, 2026 · 8:20 AM PT",
   "publishedAt": "2026-11-20T08:21:00-08:00",
-  "updatedAt": "2026-11-20T20:15:00-08:00",
+  "updatedAt": "2026-11-21T06:08:00-08:00",
   "ogImage": "/og/why-is-bitcoin-crashing-today-btc-below-60000-2026-11-20-og.png",
   "ogAlt": "CosAnalyst cream card: Bitcoin breaks below $60,000, half off the top. Coin stack toppling with a red down marker.",
   "body": [
@@ -32,6 +32,10 @@ const article: Article = {
     {
       "type": "lede",
       "text": "Short answer: the AI stock selloff spilled into crypto, record ETF outflows took away the steady buyer, and leveraged longs got forced out. Bitcoin fell below $60,000 on Friday morning for the first time since July ([CNA](https://www.channelnewsasia.com/business/bitcoin-falls-below-60000-level-6570016), [FXStreet](https://www.fxstreet.com/cryptocurrencies/news/breaking-bitcoin-slips-below-60-000-as-selling-pressure-accelerates-202611201542)), then slid under $59,000 to a low of $58,738.20 on Coinbase. As of about 8:20 AM PT it was near $59,700, down about 3.5% on the day, and ether was near $1,656, down about 5.6% (TradingView). Bitcoin is now roughly 52% below its October 2025 record close. We checked every past time bitcoin first fell that far from a record. The answer is split right down the middle."
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE Sat Nov 21, 6:05 AM PT: Bitcoin climbed back above $60,000 early Saturday, with Coinbase spot near $60,700 at about 6:05 AM PT, up roughly 4.5% from about $58,100 two hours earlier and well off Friday night's low in the mid-$55,000s, the lowest since September 2024. The bounce looks like a short squeeze, with about $136 million in crypto shorts liquidated in one hour (per Watcher.Guru, CoinGlass-style data) after roughly $2.7 billion in leveraged positions were wiped out over the prior 24 hours (per The Kobeissi Letter), while flows are still weak: Cointelegraph reports BlackRock's IBIT logged its largest single-day outflow, about $541 million, and spot bitcoin ETFs have seen about $3.47 billion of outflows in November. If bitcoin holds $60,000 into the Sunday night futures open, the selloff pauses; if it loses $60,000 again, the Friday low near $55,800 is the level traders watch. Not financial advice.**"
     },
     {
       "type": "p",
