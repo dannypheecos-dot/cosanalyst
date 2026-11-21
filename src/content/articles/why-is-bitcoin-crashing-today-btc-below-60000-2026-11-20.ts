@@ -17,6 +17,7 @@ const article: Article = {
   "asOf": "As of about 8:20 AM PT Nov 20, 2026",
   "displayTime": "Nov 20, 2026 · 8:20 AM PT",
   "publishedAt": "2026-11-20T08:21:00-08:00",
+  "updatedAt": "2026-11-20T20:15:00-08:00",
   "ogImage": "/og/why-is-bitcoin-crashing-today-btc-below-60000-2026-11-20-og.png",
   "ogAlt": "CosAnalyst cream card: Bitcoin breaks below $60,000, half off the top. Coin stack toppling with a red down marker.",
   "body": [
@@ -31,6 +32,10 @@ const article: Article = {
     {
       "type": "lede",
       "text": "Short answer: the AI stock selloff spilled into crypto, record ETF outflows took away the steady buyer, and leveraged longs got forced out. Bitcoin fell below $60,000 on Friday morning for the first time since July ([CNA](https://www.channelnewsasia.com/business/bitcoin-falls-below-60000-level-6570016), [FXStreet](https://www.fxstreet.com/cryptocurrencies/news/breaking-bitcoin-slips-below-60-000-as-selling-pressure-accelerates-202611201542)), then slid under $59,000 to a low of $58,738.20 on Coinbase. As of about 8:20 AM PT it was near $59,700, down about 3.5% on the day, and ether was near $1,656, down about 5.6% (TradingView). Bitcoin is now roughly 52% below its October 2025 record close. We checked every past time bitcoin first fell that far from a record. The answer is split right down the middle."
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE 8:15 PM PT, Nov 20: Bitcoin broke below $57,000 for the first time since September 2024, which erases all of its gains since the November 2024 election. Coinbase spot traded near $56,070 at about 8:05 PM PT, down roughly 3.7% in under an hour from about $58,200 at 7:13 PM PT. About $385 million in crypto positions were liquidated in five minutes as the level gave way (per WatcherGuru). Ether slipped to about $1,561. Next levels traders are watching: $55,000 as round-number support, and whether BTC can reclaim $57,000 and then $60,000. Not financial advice.**"
     },
     {
       "type": "p",
