@@ -26,15 +26,15 @@ const CSC_SECOND =
 const POLITICO =
   "https://www.politico.com/live-updates/2026/11/12/congress/tim-scott-summons-jensen-huang-howard-lutnick-to-testify-over-nvidia-saga-01164124";
 const ALT =
-  "CosAnalyst cream card: Huang apologizes, Nvidia board opens independent probe, NVDA faces Monday.";
+  "CosAnalyst cream card: Huang is back, Nvidia board reinstates CEO, probe still runs.";
 
 const article: Article = {
   "slug": "nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08",
-  "title": "Jensen Huang Resigns as Nvidia CEO: What It Means for NVDA Stock",
-  "titleTag": "Jensen Huang Resigns as Nvidia CEO: What It Means for NVDA Stock",
+  "title": "Jensen Huang Reinstated as Nvidia CEO: What It Means for NVDA Stock",
+  "titleTag": "Jensen Huang Reinstated as Nvidia CEO: What It Means for NVDA Stock",
   "dek": "Nvidia CEO Jensen Huang admitted he was unfaithful to his wife, and Nvidia's board launched an independent investigation into reports he was targeted by a foreign intelligence effort. Here is what the company actually said, what it did not say, and the levels and signals to watch when NVDA trades again.",
-  "metaDescription": "Jensen Huang resigned as Nvidia CEO effective immediately. CFO Colette Kress is interim CEO, Harvey Jones is chair, and NVDA fell about 10% premarket. Full timeline and levels. Who will replace Jensen Huang is still open.",
-  "schemaHeadline": "Jensen Huang Resigns as Nvidia CEO: What It Means for NVDA Stock",
+  "metaDescription": "Nvidia's board unanimously reinstated Jensen Huang as CEO on Nov 23, 2026, and NVDA jumped about 27% premarket. The board's investigation continues. Timeline, levels and what to watch next.",
+  "schemaHeadline": "Jensen Huang Reinstated as Nvidia CEO: What It Means for NVDA Stock",
   "date": "2026-11-12",
   "section": "markets",
   "also": ["equities", "macro"],
@@ -42,11 +42,12 @@ const article: Article = {
   "asOf": "As of about 2:30 PM PT Nov 8, 2026",
   "displayTime": "Nov 8, 2026 · 2:30 PM PT",
   "publishedAt": "2026-11-08T14:30:00-08:00",
-  "updatedAt": "2026-11-23T04:15:00-08:00",
-  "ogImage": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08-og.png",
+  "updatedAt": "2026-11-23T06:12:00-08:00",
+  "ogImage": "/og/nvidia-huang-reinstated-2026-11-23-og.png",
   "ogAlt": ALT,
   "body": [
-    { "type": "figure", "src": "/og/nvidia-jensen-huang-board-investigation-what-it-means-for-nvda-stock-2026-11-08.png", "alt": ALT, "caption": "Sources: Nvidia newsroom, Nov. 8, 2026 (CEO letter and Board statement); NVDA close per Nvidia investor relations." },
+    { "type": "figure", "src": "/og/nvidia-huang-reinstated-2026-11-23.png", "alt": ALT, "caption": "Sources: Nvidia via GlobeNewswire, Nov. 23, 2026 (board reinstatement release); NVDA Friday close per Nasdaq." },
+    { "type": "p", "text": "**Nov 23, 6:20 AM PT UPDATE: Jensen Huang is back as Nvidia CEO. Nvidia's board voted unanimously to reinstate him as President, CEO and a board director, effective immediately, after a series of discussions and meetings with him, the company announced at 5:55 AM PT. The board said it received input from senior levels of the U.S. government and is confident his return poses no national security risk. Harvey Jones remains board chair, Colette Kress, who served as interim CEO, continues as CFO, and the independent committee's investigation will still proceed to conclusion. NVDA traded near $159.60 premarket, up about 27% from Friday's $125.79 close, which works out to roughly $820 billion of added market value if it holds. That is still below the $166.19 close on Nov 12, the day he resigned. Nasdaq 100 futures were up about 6% and S&P 500 futures about 4%. What to watch: if NVDA holds above about $142.70, the midpoint of today's gap, after the 6:30 AM PT open, the market is treating the CEO question as settled. If it fades back toward Friday's close, traders are still waiting on what the probe finds. Sources: [Nvidia via GlobeNewswire](https://www.globenewswire.com/news-release/2026/11/23/3408381/0/en/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director.html), [CNBC](https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html).**" },
     { "type": "p", "text": "**Nov 23, 4:15 AM PT UPDATE: President Trump on Sunday again urged Nvidia's board to bring back Jensen Huang, writing on Truth Social: \"I hope the Board of Nvidia rehires Jensen Huang. It would be the best thing for the Company, and also, for the U.S.A.\" Nvidia's board has rejected calls to reinstate him, with board Chair Harvey Jones indicating on last week's earnings call that Huang would not return as CEO. Colette Kress remains interim CEO. Separately, the New York Times reported Sunday that Alice Huang stayed in contact with an officer of China's Ministry of State Security from spring 2025 until fall 2026, citing people with knowledge of intelligence reports, Reuters said. Officials have not concluded she was a spy, and Director of National Intelligence Jay Clayton said the matter is under investigation. Sources: [Washington Post](https://www.washingtonpost.com/technology/2026/11/23/trump-urges-nvidia-reinstate-jensen-huang-calling-him-best-thing-us/), [Fox Business](https://www.foxbusiness.com/politics/trump-doubles-down-call-nvidia-rehire-jensen-huang-amid-alleged-chinese-spy-scandal), [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/alice-huang-in-touch-with-chinese-spy-agency-during-affair-with-nvidia-ceo-nyt-says-5044248).**" },
     { "type": "p", "text": "**Nov 20, 2:20 PM PT UPDATE: Reuters reported that SEC enforcement staff are scrutinizing potential accounting issues at Nvidia, according to two people briefed on the matter. The SEC declined to comment, and Nvidia did not immediately respond. Reuters said an investigation is not evidence of wrongdoing, and many close without an enforcement action. The shares extended losses after the report and were down about 13%, after having been down more than 6% before the story. NVDA closed at $125.53, down 14.0% (Yahoo Finance). Separately, a spokesperson for Senate Banking Chair Tim Scott said Jensen Huang will testify publicly before the committee. No date has been announced. Scott initially requested Dec. 3. Huang is also due for a closed-door House interview on Dec. 1. Sources: [Reuters](https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/), [CNBC](https://www.cnbc.com/2026/11/20/jensen-huang-nvidia-senate-testimony.html), Yahoo Finance.**" },
     { "type": "p", "text": "**Nov 13, 11:15 AM PT UPDATE: Nvidia's board said it has not formally engaged any potential CEO candidates, that any speculation is premature, and that it is in the process of selecting a search firm for the CEO role, CNBC reported around 11:10 AM PT Friday. The Financial Times reported this morning that the board had approached Arm CEO Rene Haas. The board now says no candidate has been formally engaged. Colette Kress remains interim CEO. Q3 results are still set for Tuesday, Nov 17. Approximate intraday levels as of about 10:10 AM PT: NVDA about $160.86 (-3.2%), Nasdaq 100 about -1.7%, and the 10-year yield about 5.13%.**" },
