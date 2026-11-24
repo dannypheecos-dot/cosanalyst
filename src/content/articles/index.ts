@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import tariffs1124 from "./why-is-the-stock-market-down-today-new-tariffs-china-eu-14-countries-2026-11-24";
 import marketUp1123 from "./why-is-the-stock-market-up-today-nasdaq-biggest-day-since-april-2025-2026-11-23";
 import crwdZscaler1123 from "./crowdstrike-zscaler-deal-what-it-means-for-crwd-zs-stock-2026-11-23";
 import taiwanShortBan1121 from "./why-is-taiwan-stock-market-crashing-short-selling-ban-2026-11-21";
@@ -96,6 +97,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  tariffs1124,
   marketUp1123,
   crwdZscaler1123,
   taiwanShortBan1121,
