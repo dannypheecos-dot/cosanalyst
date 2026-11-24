@@ -25,6 +25,8 @@ const CSC_SECOND =
   "https://chinaselectcommittee.house.gov/media/press-releases/chairmen-moolenaar-mast-and-crawford-send-second-request-to-jensen-huang-and-nvidia-to-brief-congress";
 const POLITICO =
   "https://www.politico.com/live-updates/2026/11/12/congress/tim-scott-summons-jensen-huang-howard-lutnick-to-testify-over-nvidia-saga-01164124";
+const NYPOST =
+  "https://nypost.com/2026/11/24/us-news/trump-leaves-door-open-to-jensen-huang-pardon-and-urges-him-not-to-plead-5th-to-congress-next-week/";
 const ALT =
   "CosAnalyst cream card: Huang is back, Nvidia board reinstates CEO, probe still runs.";
 
@@ -42,11 +44,12 @@ const article: Article = {
   "asOf": "As of about 2:30 PM PT Nov 8, 2026",
   "displayTime": "Nov 8, 2026 · 2:30 PM PT",
   "publishedAt": "2026-11-08T14:30:00-08:00",
-  "updatedAt": "2026-11-24T14:10:00-08:00",
+  "updatedAt": "2026-11-24T15:05:00-08:00",
   "ogImage": "/og/nvidia-huang-reinstated-2026-11-23-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/nvidia-huang-reinstated-2026-11-23.png", "alt": ALT, "caption": "Sources: Nvidia via GlobeNewswire, Nov. 23, 2026 (board reinstatement release); NVDA Friday close per Nasdaq." },
+    { "type": "p", "text": "**UPDATE 3:05 PM PT Nov 24: President Trump told the **[New York Post](" + NYPOST + ")** he is willing to pardon Jensen Huang \"if necessary,\" though he said Huang is probably fine without one, and urged Huang not to plead the Fifth when he testifies to Congress next week. NVDA closed near $155.48, down about 5.8% on the day, and traded near $154.57 after hours. A pardon offer is not a charge, and no criminal case against Huang has been announced.**" },
     { "type": "p", "text": "**UPDATE 2:10 PM PT Nov 24: Nvidia closed down about 6% near $155 while semiconductor stocks (SMH) fell about 7%, even as roughly 70% of S&P 500 members finished higher, per a Goldman Sachs note. After the bell, the WSJ reported that Huang disclosed more affairs to the board beyond the two widely reported and was \"contrite,\" POLITICO reported congressional pressure on Nvidia is escalating, and the NYT reported Nvidia Jetson chips were found in autonomous Russian drones in Ukraine.**" },
     { "type": "p", "text": "**UPDATE 11:15 AM PT Nov 24: In his first all-hands since being reinstated as CEO, Jensen Huang apologized to Nvidia staff, said he made \"very serious personal mistakes,\" acknowledged violating the company's code of conduct, and said he has been in therapy \"every day for an hour and a half\" (WIRED, Business Insider, WSJ via zerohedge). Senate Democratic Leader Chuck Schumer said on X that Huang \"shipped extremely advanced chips to China, violating U.S. export control law,\" called it a failure of enforcement by the Trump administration, and urged passage of bipartisan export-control bills (Newsquawk, Investing.com, CP24). That is an accusation by a lawmaker, not a charge. As of about 11:12 AM PT, NVDA traded near $152.91, down about 7.4% on the day, still off its morning low near $151. The Nasdaq 100 (QQQ) was down about 2.0% and the S&P 500 (SPY) about 0.6%, while the Dow (DIA) and small caps (IWM) were green.**" },
     { "type": "p", "text": "**UPDATE 9:05 AM PT Nov 24: Attorney General Todd Blanche called Nvidia \"a good corporate citizen\" and said that if Nvidia were the target of a criminal investigation, \"that wouldn't be the message.\" He declined to say whether any DOJ probe involving Jensen Huang is open or closed (Investing.com, Bloomberg Law, Mediaite). Huang is set to hold an all-hands meeting at 12:30 PM PT today. Around 9:05 AM PT, NVDA traded near $151, down about 8.5% on the day.**" },
@@ -119,6 +122,8 @@ const article: Article = {
       "Dec. 10 (Senate Banking, Lutnick): public hearing."
     ] },
     { "type": "h2", "text": "FAQ" },
+    { "type": "h3", "text": "Will Trump pardon Jensen Huang?" },
+    { "type": "p", "text": "President Trump told the [New York Post](" + NYPOST + ") he is willing to pardon Jensen Huang \"if necessary,\" though he said Huang is probably fine without one, and urged Huang not to plead the Fifth when he testifies to Congress next week. A pardon offer is not a charge, and no criminal case against Huang has been announced. NVDA closed near $155.48, down about 5.8% on the day, and traded near $154.57 after hours." },
     { "type": "h3", "text": "Why is Nvidia stock down today?" },
     { "type": "p", "text": "As of about 11:12 AM PT on Nov. 24, NVDA traded near $152.91, down about 7.4% on the day and still off its morning low near $151, while the Nasdaq 100 (QQQ) was down about 2.0%, the S&P 500 (SPY) about 0.6%, and the Dow (DIA) and small caps (IWM) were green. In his first all-hands since being reinstated as CEO, Jensen Huang apologized to Nvidia staff, said he made \"very serious personal mistakes,\" acknowledged violating the company's code of conduct, and said he has been in therapy \"every day for an hour and a half\" (WIRED, Business Insider, WSJ via zerohedge). Senate Democratic Leader Chuck Schumer said on X that Huang \"shipped extremely advanced chips to China, violating U.S. export control law,\" called it a failure of enforcement by the Trump administration, and urged passage of bipartisan export-control bills; that is an accusation by a lawmaker, not a charge (Newsquawk, Investing.com, CP24)." },
     { "type": "h3", "text": "Who will replace Jensen Huang?" },
