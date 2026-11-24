@@ -16,6 +16,7 @@ const article: Article = {
   "asOf": "As of about 5:15 AM PT Nov 24, 2026",
   "displayTime": "Nov 24, 2026 · 5:15 AM PT",
   "publishedAt": "2026-11-24T05:21:00-08:00",
+  "updatedAt": "2026-11-24T08:05:00-08:00",
   "ogImage": "/og/why-is-the-stock-market-down-today-new-tariffs-china-eu-14-countries-2026-11-24-og.png",
   "ogAlt": "CosAnalyst cream card: New tariffs on China, the EU and 14 more. Stocks slide. Paper-cut bars stepping down to a red bar. WSJ: tariff hike prepared; VIX history since 1990.",
   "body": [
@@ -30,6 +31,10 @@ const article: Article = {
     {
       "type": "lede",
       "text": "Short answer: tariffs are back. The Wall Street Journal reported just after 5 AM PT that the US is preparing to raise tariffs on China, the European Union and 14 other economies, with an announcement possible as soon as this week ([FinancialJuice relaying WSJ](https://x.com/financialjuice/status/2125215359162892425), [Walter Bloomberg](https://x.com/DeItaone/status/2125215179549950355)). Stock futures, already lower after Monday's Nvidia rally, slid further. At about 5:15 AM PT, S&P 500 futures were down about 1.3%, Nasdaq 100 futures about 2.2% and Dow futures about 0.7% (TradingView). The VIX fear gauge touched 32.38, up from Monday's 26.62 close, before easing to about 29.9. We pulled every VIX close since 1990 to see what usually happens after the fear gauge jumps 20% in a day."
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE 8:05 AM PT: The new tariffs expected Tuesday reportedly won't exceed levels in existing trade deals, and the Section 301 tariffs will be targeted rather than a blanket rate, according to a person familiar cited in wire reports. The Nasdaq did not get relief: QQQ was down about 3% (near $632) and SPY about 1.3% (near $713), while small caps (IWM) were down only about 0.4%. Nvidia was down about 8% near $151. CNN Fear & Greed sits at 18 (extreme fear).**"
     },
     {
       "type": "stats",
@@ -238,6 +243,14 @@ const article: Article = {
     {
       "type": "p",
       "text": "On Nov. 24, 2026, stock futures fell after The Wall Street Journal reported the US is preparing to raise tariffs on China, the EU and 14 other economies, possibly this week. Chip stocks were also giving back Monday's Nvidia rally. At about 5:15 AM PT, S&P 500 futures were down about 1.3% and Nasdaq 100 futures about 2.2%."
+    },
+    {
+      "type": "h3",
+      "text": "Why is the Nasdaq down today?"
+    },
+    {
+      "type": "p",
+      "text": "The Nasdaq is down on Nov. 24, 2026 as new tariff headlines landed on top of a renewed AI and chip selloff led by Nvidia and Anthropic. Wire reports, citing a person familiar, say the tariffs expected Tuesday will not exceed levels in existing trade deals, and that the Section 301 tariffs will be targeted rather than a blanket rate. Around 8:05 AM PT, QQQ was down about 3% near $632, Nvidia was down about 8% near $151, Anthropic was down about 10% below $80, and CNN's Fear & Greed index sat at 18, extreme fear."
     },
     {
       "type": "h3",
