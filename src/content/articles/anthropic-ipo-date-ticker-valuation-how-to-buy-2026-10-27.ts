@@ -21,7 +21,7 @@ const article: Article = {
   "asOf": "Tue Oct 27, 2026, about 5:45 AM PT / 8:45 AM ET",
   "displayTime": "Oct 27, 2026 · 7:30 AM PT",
   "publishedAt": "2026-10-27T07:30:00-07:00",
-  "updatedAt": "2026-11-24T08:05:00-08:00",
+  "updatedAt": "2026-11-24T09:05:00-08:00",
   "ogImage": "/og/anthropic-ipo-date-ticker-valuation-how-to-buy-2026-10-27.png",
   "ogAlt": "Paper-cut collage of a charcoal tower and a grid of blank ivory squares, one outlined in mint, CosAnalyst",
   "body": [
@@ -30,6 +30,10 @@ const article: Article = {
       "src": "/og/anthropic-ipo-date-ticker-valuation-how-to-buy-2026-10-27.png",
       "alt": "Paper-cut collage of a charcoal tower and a grid of blank ivory squares, one outlined in mint, CosAnalyst",
       "caption": "BOOK FACT · NOT A TICKET"
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE 9:05 AM PT Nov 24: Anthropic (ANT) slid to about $77 around 9:05 AM PT, down roughly 12% on the day from an $87.64 prior close and about 7% below its $83 IPO price, less than a week after debut. Leveraged 2x long and 2x short Anthropic ETFs began trading today.**"
     },
     {
       "type": "p",
@@ -225,7 +229,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Yes, in early trading on Nov. 24, 2026. On its fourth trading day, Anthropic (ANT) fell about 10% and was trading below $80, about 5% under its $83 IPO price and roughly 31% below its post-IPO high."
+      "text": "Yes. Around 9:05 AM PT on Nov. 24, 2026, Anthropic (ANT) was about $77, down roughly 12% on the day from an $87.64 prior close and about 7% below its $83 IPO price, less than a week after debut."
     },
     {
       "type": "h3",
