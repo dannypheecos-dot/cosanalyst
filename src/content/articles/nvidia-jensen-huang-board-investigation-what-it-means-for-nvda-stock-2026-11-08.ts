@@ -44,11 +44,12 @@ const article: Article = {
   "asOf": "As of about 2:30 PM PT Nov 8, 2026",
   "displayTime": "Nov 8, 2026 · 2:30 PM PT",
   "publishedAt": "2026-11-08T14:30:00-08:00",
-  "updatedAt": "2026-11-24T16:10:00-08:00",
+  "updatedAt": "2026-11-24T19:05:00-08:00",
   "ogImage": "/og/nvidia-huang-reinstated-2026-11-23-og.png",
   "ogAlt": ALT,
   "body": [
     { "type": "figure", "src": "/og/nvidia-huang-reinstated-2026-11-23.png", "alt": ALT, "caption": "Sources: Nvidia via GlobeNewswire, Nov. 23, 2026 (board reinstatement release); NVDA Friday close per Nasdaq." },
+    { "type": "p", "text": "**UPDATE Nov 24, 7:05 PM PT: At his first all-hands since returning as CEO, Jensen Huang told Nvidia employees he violated parts of the company's code of conduct and made \"some terrible mistakes,\" according to a person familiar with the matter cited by Reuters. He said he is in therapy and denied that pressure from President Trump drove his reinstatement. The Guardian and WIRED also reported the apology. NVDA closed at $155.48 on Nov 24, down 5.8%.**" },
     { "type": "p", "text": "**UPDATE 4:10 PM PT Nov 24: In the same **[New York Post](" + NYPOST + ")** interview, President Trump said the US government could still take an equity stake in Nvidia, saying it is \"probably not too late,\" and called the chipmaker vital to US AI leadership. He said he has considered the idea but has not formally proposed it. No plan, size or mechanism has been announced. NVDA closed near $155.48, down about 5.8%, and traded near $152.32 after hours (New York Post, InvestingLive, Newsquawk).**" },
     { "type": "p", "text": "**UPDATE 3:05 PM PT Nov 24: President Trump told the **[New York Post](" + NYPOST + ")** he is willing to pardon Jensen Huang \"if necessary,\" though he said Huang is probably fine without one, and urged Huang not to plead the Fifth when he testifies to Congress next week. NVDA closed near $155.48, down about 5.8% on the day, and traded near $154.57 after hours. A pardon offer is not a charge, and no criminal case against Huang has been announced.**" },
     { "type": "p", "text": "**UPDATE 2:10 PM PT Nov 24: Nvidia closed down about 6% near $155 while semiconductor stocks (SMH) fell about 7%, even as roughly 70% of S&P 500 members finished higher, per a Goldman Sachs note. After the bell, the WSJ reported that Huang disclosed more affairs to the board beyond the two widely reported and was \"contrite,\" POLITICO reported congressional pressure on Nvidia is escalating, and the NYT reported Nvidia Jetson chips were found in autonomous Russian drones in Ukraine.**" },
@@ -123,6 +124,8 @@ const article: Article = {
       "Dec. 10 (Senate Banking, Lutnick): public hearing."
     ] },
     { "type": "h2", "text": "FAQ" },
+    { "type": "h3", "text": "Did Jensen Huang admit violating Nvidia's code of conduct?" },
+    { "type": "p", "text": "At his first all-hands since returning as CEO, Jensen Huang told Nvidia employees he violated parts of the company's code of conduct and made \"some terrible mistakes,\" according to a person familiar with the matter cited by Reuters. He said he is in therapy and denied that pressure from President Trump drove his reinstatement, and The Guardian and WIRED also reported the apology." },
     { "type": "h3", "text": "Will the US government take a stake in Nvidia?" },
     { "type": "p", "text": "President Trump told the [New York Post](" + NYPOST + ") on Nov 24 that it is \"probably not too late\" for the US government to take an equity stake in Nvidia, and that he has considered the idea. He has not formally proposed it, and no plan, size or mechanism has been announced. Treat it as a possibility, not a plan." },
     { "type": "h3", "text": "Will Trump pardon Jensen Huang?" },
