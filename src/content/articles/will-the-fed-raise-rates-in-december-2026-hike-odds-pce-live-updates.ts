@@ -2,19 +2,20 @@ import type { Article } from "@/content/types";
 
 const article: Article = {
   "slug": "will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates",
-  "title": "Will the Fed Raise Rates in December 2026? Hike Odds Slip to 76% After PCE (Live Updates)",
-  "titleTag": "Will the Fed Raise Rates in December 2026? Hike Odds Live",
-  "dek": "December Fed hike odds slipped to about 76% on Polymarket after an in-line September PCE. Live odds, what changed since Warsh and what to watch next.",
+  "title": "Will the Fed Raise Rates in December 2026? Hike Odds After Hot Core PCE (Live Updates)",
+  "titleTag": "Will the Fed Raise Rates in December? PCE Inflation Today",
+  "dek": "Core PCE inflation ran hot at 3.3% in October, above the 3.2% forecast, and Q3 GDP was revised up to 4.3%. Live Polymarket December Fed odds and what the Dec 8-9 meeting means.",
+  "metaDescription": "PCE inflation today: core PCE rose 3.3% in October vs 3.2% expected. Will the Fed raise rates in December? Live Polymarket odds and what Dec 8-9 means.",
   "date": "2026-10-29",
   "section": "markets",
   "also": [
     "macro"
   ],
   "kicker": "Live updates",
-  "asOf": "Polymarket and Kalshi odds pulled 1:10 PM PT Oct 29; developing story",
+  "asOf": "Polymarket odds pulled 6:31 AM PT Nov 25; developing story",
   "displayTime": "Oct 29, 2026 · 1:30 PM PT",
   "publishedAt": "2026-10-29T13:30:00-07:00",
-  "updatedAt": "2026-11-13T06:15:00-08:00",
+  "updatedAt": "2026-11-25T06:35:00-08:00",
   "ogImage": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates-og.png",
   "ogAlt": "CosAnalyst card: December hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026. BOOK FACT · NOT A TICKET",
   "body": [
@@ -23,6 +24,10 @@ const article: Article = {
       "src": "/og/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates.png",
       "alt": "CosAnalyst card: December Fed hike odds slip to 76% after PCE. Live updates, Thu Oct 29, 2026",
       "caption": "BOOK FACT · NOT A TICKET"
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE Nov 25, 6:35 AM PT: Core PCE ran hot in the last big inflation report before the Fed's Dec 8-9 meeting. The PCE price index rose 0.3% in October and 3.8% from a year earlier, up from 3.6% in September. Core PCE, which strips out food and energy, also rose 0.3% on the month and 3.3% on the year, above the 3.2% economists expected and up from 3.1% ([BEA](https://www.bea.gov/news/2026/personal-income-and-outlays-October-2026), [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html)). In the same 5:30 AM PT release window, BEA revised third-quarter GDP growth up to a 4.3% annual rate from 3.4%, led by software investment and consumer spending ([BEA](https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026)). Personal income jumped 0.7%, helped by a one-time Medicare premium rebate, the saving rate was 4.1%, and inflation-adjusted spending slipped by less than 0.1%. [Polymarket](https://polymarket.com/event/fed-decision-in-december-20260729232808632)'s December Fed decision market (Polymarket only), read at 6:31 AM PT, had a 25 bp hike at about 93.5%, a hike of 50 bp or more at about 3% and no change at about 2.9%. Just before the print, at 5:20 AM PT, it read about 93.5%, 2.3% and 4.5%. So the hot core number mostly shrank the small no-change tail; it did not move the base case. A 25 bp hike on Dec 9 would lift the target range to 4.00% to 4.25% from 3.75% to 4%, and that meeting also brings new Fed projections, so the 2027 dots matter as much as the decision. If the next Fed speakers lean toward 50 bp, watch the 50 bp line; if they stay at 25 bp and signal a pause, the tail risk fades. Stocks took it badly: the Nasdaq Composite was down about 3.3% and the S&P 500 about 2.3% shortly after the 6:30 AM PT open, with chips leading, and USTR proposed new tariffs on 14 trading partners the same morning ([why the stock market is down today](/articles/why-is-the-stock-market-down-today-new-tariffs-china-eu-14-countries-2026-11-24/)). Not financial advice.**"
     },
     {
       "type": "p",
@@ -237,7 +242,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "The December hike is still the base case, at roughly 76% on Polymarket and close to 80% on FedWatch, but the post-decision jump is gone. An in-line PCE print and a Fed chair who would not commit pulled the odds back to where they started the week. Jobs, CPI and the first Fed speakers decide the rest."
+      "text": "As of Nov 25, a 25 bp December hike is the clear base case on Polymarket, at about 93.5%, after hot October CPI and a hot core PCE print. The open questions are whether the Fed goes 50 bp (about 3%) and what the Dec 8-9 projections say about more hikes in 2027. (Oct 29 read, for the record: about 76% after an in-line September PCE.)"
     },
     {
       "type": "p",

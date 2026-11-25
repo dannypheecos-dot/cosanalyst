@@ -16,7 +16,7 @@ const article: Article = {
   "asOf": "As of about 5:15 AM PT Nov 24, 2026",
   "displayTime": "Nov 24, 2026 · 5:15 AM PT",
   "publishedAt": "2026-11-24T05:21:00-08:00",
-  "updatedAt": "2026-11-24T08:05:00-08:00",
+  "updatedAt": "2026-11-25T06:35:00-08:00",
   "ogImage": "/og/why-is-the-stock-market-down-today-new-tariffs-china-eu-14-countries-2026-11-24-og.png",
   "ogAlt": "CosAnalyst cream card: New tariffs on China, the EU and 14 more. Stocks slide. Paper-cut bars stepping down to a red bar. WSJ: tariff hike prepared; VIX history since 1990.",
   "body": [
@@ -31,6 +31,10 @@ const article: Article = {
     {
       "type": "lede",
       "text": "Short answer: tariffs are back. The Wall Street Journal reported just after 5 AM PT that the US is preparing to raise tariffs on China, the European Union and 14 other economies, with an announcement possible as soon as this week ([FinancialJuice relaying WSJ](https://x.com/financialjuice/status/2125215359162892425), [Walter Bloomberg](https://x.com/DeItaone/status/2125215179549950355)). Stock futures, already lower after Monday's Nvidia rally, slid further. At about 5:15 AM PT, S&P 500 futures were down about 1.3%, Nasdaq 100 futures about 2.2% and Dow futures about 0.7% (TradingView). The VIX fear gauge touched 32.38, up from Monday's 26.62 close, before easing to about 29.9. We pulled every VIX close since 1990 to see what usually happens after the fear gauge jumps 20% in a day."
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE Nov 25, 6:35 AM PT: The selling got worse at Wednesday's open. Shortly after 6:30 AM PT, the Nasdaq Composite was down about 3.3% near 22,950, the S&P 500 about 2.3% near 7,035 and the Dow about 1.5% near 49,280. Chips led again after the Philadelphia Semiconductor Index fell 7.9% on Tuesday: the index was down about 6.3% more, Nvidia about 7.9% near $143 (Tuesday close $155.38), Micron about 8.4%, AMD about 7.5% and Marvell about 7% (Yahoo Finance quotes, 6:31 AM PT). Two things hit before the bell. First, USTR formally proposed the tariffs this page covered on Tuesday: new Section 301 duties on 14 trading partners after a probe of 16, with 20% on China (on top of earlier tariffs), 18% on Cambodia, Indonesia, Thailand, Bangladesh and Malaysia, 15% on the EU, Japan, South Korea, Taiwan and Switzerland, and 10% on Singapore. They need a comment period and hearing first, so January is the earliest start ([Reuters via Investing.com](https://www.investing.com/news/world-news/us-proposes-new-tariffs-on-14-trading-partners-to-fight-excess-factory-capacity-5050714), [POLITICO](https://www.politico.com/news/2026/11/25/us-threatens-new-tariffs-on-eu-china-12-others-after-investigation-01182957), [Semafor](https://www.semafor.com/article/11/25/2026/us-proposes-sweeping-new-tariffs-on-china-others)). Second, October core PCE inflation came in hot at 3.3% from a year ago versus 3.2% expected, and Q3 GDP was revised up to 4.3% ([BEA](https://www.bea.gov/news/2026/personal-income-and-outlays-October-2026)). Polymarket still has a 25 bp December hike at about 93.5%. Full breakdown: [will the Fed raise rates in December?](/articles/will-the-fed-raise-rates-in-december-2026-hike-odds-pce-live-updates/) Markets are closed Thursday for Thanksgiving and reopen Friday for a half day. Not financial advice.**"
     },
     {
       "type": "p",
