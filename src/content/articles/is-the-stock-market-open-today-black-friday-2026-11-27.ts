@@ -26,6 +26,10 @@ const article: Article = {
       "caption": "Hours per NYSE, Nasdaq and SIFMA. Futures as of about 2:02 AM PT Nov 27, 2026 · NOT ADVICE"
     },
     {
+      "type": "p",
+      "text": "**UPDATE Nov. 27, 2026, 7:10 AM PT: The early futures surge faded at the open. Nasdaq 100 futures were up about 2.3% at 6:00 AM PT; by 7:06 AM PT the Nasdaq Composite was up about 0.55% and the S&P 500 about 0.5% (Yahoo Finance). Nvidia turned negative after a Bloomberg report that Blackwell chips turned up at a China site tied to Alice Huang, and Bitcoin slid about 2.7% to near $58,900. Thin holiday liquidity can exaggerate moves both ways. Stocks still close early today at 1:00 PM ET (10:00 AM PT).**"
+    },
+    {
       "type": "stats",
       "items": [
         {
