@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import silverUp1127 from "./why-is-silver-up-today-2026-11-27";
 import marketOpen1127 from "./is-the-stock-market-open-today-black-friday-2026-11-27";
 import tariffs1124 from "./why-is-the-stock-market-down-today-new-tariffs-china-eu-14-countries-2026-11-24";
 import marketUp1123 from "./why-is-the-stock-market-up-today-nasdaq-biggest-day-since-april-2025-2026-11-23";
@@ -98,6 +99,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  silverUp1127,
   marketOpen1127,
   tariffs1124,
   marketUp1123,
