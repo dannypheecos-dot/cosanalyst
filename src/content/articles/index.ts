@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import wlfiCrash1127 from "./why-is-wlfi-crashing-world-liberty-financial-token-record-low-2026-11-27";
 import unitedFidelity1127 from "./why-did-united-fidelity-bank-fail-first-citizens-is-my-money-safe-2026-11-27";
 import silverUp1127 from "./why-is-silver-up-today-2026-11-27";
 import marketOpen1127 from "./is-the-stock-market-open-today-black-friday-2026-11-27";
@@ -100,6 +101,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  wlfiCrash1127,
   unitedFidelity1127,
   silverUp1127,
   marketOpen1127,
