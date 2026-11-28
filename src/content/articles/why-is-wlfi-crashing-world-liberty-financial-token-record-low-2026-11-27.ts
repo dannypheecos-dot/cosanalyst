@@ -3,10 +3,10 @@ import type { Article } from "@/content/types";
 const article: Article = {
   "slug": "why-is-wlfi-crashing-world-liberty-financial-token-record-low-2026-11-27",
   "title": "Why Is WLFI Crashing? World Liberty Financial Token Plunges to a Record Low",
-  "titleTag": "Why Is WLFI Crashing? Trump-Backed Token Hits Record Low",
+  "titleTag": "Why Is WLFI Crashing? USD1 Depegs as WLFI Hits Record Low",
   "schemaHeadline": "Why Is WLFI Crashing? World Liberty Financial Token Plunges to a Record Low",
   "dek": "The Trump-family-backed token fell more than 50% in 24 hours on Friday night after a World Liberty reserve wallet reportedly sold about $20 million of ether at a steep loss. Here is the timeline, what we know, what we don't, and how far WLFI is from its high.",
-  "metaDescription": "Why is WLFI crashing? World Liberty Financial's token hit a record low Nov. 27, 2026 after a reported reserve ETH sale. WLFI price, timeline, liquidations, what we know.",
+  "metaDescription": "Why is WLFI crashing, and why did USD1 depeg? WLFI hit a record low Nov. 27, 2026, USD1 briefly fell to about $0.94, and Justin Sun alleged fraud. What we know.",
   "date": "2026-11-27",
   "section": "crypto",
   "also": [
@@ -16,6 +16,7 @@ const article: Article = {
   "asOf": "Prices as of about 10:09 PM PT Nov 27, 2026 (CoinGecko); liquidations CoinGlass ~10:20 PM PT",
   "displayTime": "Nov 27, 2026 · 10:24 PM PT",
   "publishedAt": "2026-11-27T22:24:00-08:00",
+  "updatedAt": "2026-11-28T00:15:00-08:00",
   "ogImage": "/og/why-is-wlfi-crashing-world-liberty-financial-token-record-low-2026-11-27-og.png",
   "ogAlt": "CosAnalyst card: Why is WLFI crashing tonight? A cracked token coin with the right half dropping, marking a new record low for World Liberty Financial's token.",
   "body": [
@@ -24,6 +25,10 @@ const article: Article = {
       "src": "/og/why-is-wlfi-crashing-world-liberty-financial-token-record-low-2026-11-27.png",
       "alt": "CosAnalyst card: Why is WLFI crashing tonight? A cracked token coin with the right half dropping, marking a new record low for World Liberty Financial's token.",
       "caption": "World Liberty Financial (WLFI) hit a new record low on Friday night, Nov. 27, 2026 (PT). Prices from CoinGecko; on-chain data from Lookonchain, EmberCN and Arkham · NOT ADVICE"
+    },
+    {
+      "type": "p",
+      "text": "**UPDATE Nov. 28, 2026, 12:15 AM PT: USD1, World Liberty's dollar stablecoin, briefly lost its $1 peg late Friday. It slipped from about $0.997 at 10:15 PM PT to a low near $0.94 around 11:05 PM PT on CoinGecko's aggregate price, in line with a $0.94 low on Binance's USD1/USDT pair; Coinbase's USD1/USD market bottomed at $0.95. By 12:09 AM PT it was back near $0.994, with a market value near $2.84 billion ([CoinGecko](https://www.coingecko.com/en/coins/usd1-wlfi), Binance, Coinbase). On-chain tracker Lookonchain said Jump Crypto was buying USD1 at a discount on exchanges and redeeming it for $1 through BitGo, pulling 43.26 million USD1 off exchanges in an hour ([Lookonchain](https://x.com/lookonchain/status/2126579948244869339)); we saw no public comment from Jump or BitGo. At 11:23 PM PT, Tron founder Justin Sun, who is in a court fight with World Liberty over frozen WLFI tokens, called tonight's episode a rerun of \"insider circular lending to cash out, unauthorized insider selling, the illegal freezing of investor assets, and investor fraud\" and urged exchanges and regulators to act against WLFI and USD1, including delisting ([Justin Sun on X](https://x.com/justinsuntron/status/2126577582841954410)). Those are his allegations, not findings, and World Liberty had not responded on X as of 12:10 AM PT. WLFI traded near $0.0190 at 12:09 AM PT, down about 54% in 24 hours and still above its record low near $0.0167 (CoinGecko).**"
     },
     {
       "type": "stats",
@@ -189,7 +194,7 @@ const article: Article = {
         "**A statement from World Liberty** on why the reserve sold ETH and whether buybacks continue.",
         "**More on-chain moves** from World Liberty-labeled wallets on Arkham and trackers like Lookonchain.",
         "**Whether WLFI holds above tonight's low** near $0.0167. A new low would mean more forced selling is possible; a bounce would not by itself mean the selling is over.",
-        "**USD1.** The reserve took part of its proceeds in USD1, World Liberty's dollar stablecoin. Watch whether USD1 holds its $1 peg; we saw no report of a peg problem tonight."
+        "**USD1.** The reserve took part of its proceeds in USD1, World Liberty's dollar stablecoin. USD1 briefly fell to about $0.94 around 11:05 PM PT before recovering near $0.994 (see the update above). Watch whether it holds near $1 and whether redemptions stay smooth."
       ]
     },
     {
@@ -203,6 +208,30 @@ const article: Article = {
     {
       "type": "p",
       "text": "No official reason yet. The most-cited trigger is a World Liberty strategic reserve wallet selling about 12,121 ETH for about $20 million at roughly half its cost earlier on Friday, followed by heavy liquidations of leveraged long bets (Lookonchain, EmberCN, CoinGlass). World Liberty has not confirmed why it sold."
+    },
+    {
+      "type": "h3",
+      "text": "Why did USD1 depeg?"
+    },
+    {
+      "type": "p",
+      "text": "USD1 briefly fell to about $0.94 around 11:05 PM PT on Nov. 27, 2026, a little over an hour after WLFI hit its record low, per CoinGecko and Binance (Coinbase's low was $0.95). No official cause has been given. Lookonchain said Jump Crypto bought discounted USD1 and redeemed it for $1 through BitGo, the kind of arbitrage that tends to pull a stablecoin back toward its peg. By 12:09 AM PT USD1 traded near $0.994."
+    },
+    {
+      "type": "h3",
+      "text": "Is USD1 depegging right now?"
+    },
+    {
+      "type": "p",
+      "text": "As of 12:09 AM PT on Nov. 28, 2026, USD1 was near $0.994, below $1 but well above its $0.94 low, with a market value near $2.84 billion (CoinGecko). Stablecoin prices can move quickly in stress, so check a live tracker; nothing here guarantees it holds $1."
+    },
+    {
+      "type": "h3",
+      "text": "Did Justin Sun accuse WLFI of fraud?"
+    },
+    {
+      "type": "p",
+      "text": "Yes. In an X post at 11:23 PM PT on Nov. 27, Tron founder Justin Sun accused World Liberty of \"investor fraud\" and \"unauthorized insider selling\" and called on exchanges, regulators and courts to act against WLFI and USD1, including delisting. Sun is in a court fight with World Liberty over frozen WLFI tokens. These are allegations; World Liberty had not responded on X as of 12:10 AM PT."
     },
     {
       "type": "h3",
@@ -234,7 +263,7 @@ const article: Article = {
     },
     {
       "type": "p",
-      "text": "Not as of 10:15 PM PT on Nov. 27. Its most recent X post was on Nov. 20, about burning bought-back tokens."
+      "text": "Not as of 12:10 AM PT on Nov. 28, including on the USD1 depeg or Justin Sun's accusations. Its most recent X post was on Nov. 20, about burning bought-back tokens."
     },
     {
       "type": "h3",
@@ -246,7 +275,7 @@ const article: Article = {
     },
     {
       "type": "callout",
-      "text": "Not financial advice. Prices as of about 10:09 PM PT Nov. 27, 2026 from CoinGecko; liquidation data from CoinGlass at about 10:20 PM PT; on-chain sale details are as reported by Lookonchain and EmberCN and have not been confirmed by World Liberty. Crypto prices move fast, and nothing here predicts or guarantees where WLFI trades next. Also tonight: [Why Did United Fidelity Bank Fail?](/articles/why-did-united-fidelity-bank-fail-first-citizens-is-my-money-safe-2026-11-27/) and [why the US banned MEXC](/articles/why-did-the-us-ban-mexc-treasury-fincen-crypto-exchange-2026-11-06/)."
+      "text": "Not financial advice. Update prices as of about 12:09 AM PT Nov. 28, 2026 (CoinGecko, Binance, Coinbase). Original prices as of about 10:09 PM PT Nov. 27, 2026 from CoinGecko; liquidation data from CoinGlass at about 10:20 PM PT; on-chain sale details are as reported by Lookonchain and EmberCN and have not been confirmed by World Liberty. Crypto prices move fast, and nothing here predicts or guarantees where WLFI trades next. Also tonight: [Why Did United Fidelity Bank Fail?](/articles/why-did-united-fidelity-bank-fail-first-citizens-is-my-money-safe-2026-11-27/) and [why the US banned MEXC](/articles/why-did-the-us-ban-mexc-treasury-fincen-crypto-exchange-2026-11-06/)."
     },
     {
       "type": "p",
