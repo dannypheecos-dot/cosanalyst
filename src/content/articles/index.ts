@@ -1,5 +1,6 @@
 import type { Article } from "@/content/types";
 import type { SectionId } from "@/lib/site";
+import unitedFidelity1127 from "./why-did-united-fidelity-bank-fail-first-citizens-is-my-money-safe-2026-11-27";
 import silverUp1127 from "./why-is-silver-up-today-2026-11-27";
 import marketOpen1127 from "./is-the-stock-market-open-today-black-friday-2026-11-27";
 import tariffs1124 from "./why-is-the-stock-market-down-today-new-tariffs-china-eu-14-countries-2026-11-24";
@@ -99,6 +100,7 @@ import qqqBreadth from "./qqq-breadth-nasdaq-100-200-day-50-percent-oct-2026";
 import { publishedAt as stamps } from "./timestamps";
 
 const rawArticles: Article[] = [
+  unitedFidelity1127,
   silverUp1127,
   marketOpen1127,
   tariffs1124,
